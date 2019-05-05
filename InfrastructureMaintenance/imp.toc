@@ -1,0 +1,318 @@
+\gdef \the@ipfilectr {@-1}
+\contentsline {chapter}{\numberline {1}Level of Service - Impact Hierarchy}{1}{chapter.1}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Bryan T. Adey and Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {1.1}General}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Impact hierarchy - Theory}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}General}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objective}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Stakeholder}{3}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Impact}{3}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Indicator}{3}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}Conclusions}{4}{subsection.1.2.6}
+\contentsline {section}{\numberline {1.3}Impact hierarchy - an example}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Question A}{4}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Answer A}{4}{subsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.2.1}Objective}{4}{subsubsection.1.3.2.1}
+\contentsline {subsubsection}{\numberline {1.3.2.2}Components}{4}{subsubsection.1.3.2.2}
+\contentsline {paragraph}{\numberline {1.3.2.2.1}\relax $\@@underline {\hbox {Stakeholders}}\mathsurround \z@ $\relax }{4}{paragraph.1.3.2.2.1}
+\contentsline {paragraph}{\numberline {1.3.2.2.2}\relax $\@@underline {\hbox {Impact types}}\mathsurround \z@ $\relax }{5}{paragraph.1.3.2.2.2}
+\contentsline {paragraph}{\numberline {1.3.2.2.3}\relax $\@@underline {\hbox {Impact indicators}}\mathsurround \z@ $\relax }{5}{paragraph.1.3.2.2.3}
+\contentsline {subsubsection}{\numberline {1.3.2.3}Impact hierarchy}{6}{subsubsection.1.3.2.3}
+\contentsline {paragraph}{\numberline {1.3.2.3.1}\relax $\@@underline {\hbox {Owner}}\mathsurround \z@ $\relax }{6}{paragraph.1.3.2.3.1}
+\contentsline {paragraph}{\numberline {1.3.2.3.2}\relax $\@@underline {\hbox {User}}\mathsurround \z@ $\relax }{6}{paragraph.1.3.2.3.2}
+\contentsline {paragraph}{\numberline {1.3.2.3.3}\relax $\@@underline {\hbox {Directly affected public (DAP)}}\mathsurround \z@ $\relax }{8}{paragraph.1.3.2.3.3}
+\contentsline {paragraph}{\numberline {1.3.2.3.4}\relax $\@@underline {\hbox {Indirectly affected public (IAP)}}\mathsurround \z@ $\relax }{10}{paragraph.1.3.2.3.4}
+\contentsline {subsection}{\numberline {1.3.3}Question B}{14}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Answer B}{14}{subsection.1.3.4}
+\contentsline {subsubsection}{\numberline {1.3.4.1}Access}{14}{subsubsection.1.3.4.1}
+\contentsline {subsubsection}{\numberline {1.3.4.2}Natural hazard risks}{15}{subsubsection.1.3.4.2}
+\contentsline {section}{\numberline {1.4}Changes in LOSs - Theory}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}General}{15}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Ability to provide LOSs (deterioration)}{16}{subsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2.1}Depth of process analysis}{17}{subsubsection.1.4.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.2}Relationship deterioration process - LOS}{17}{subsubsection.1.4.2.2}
+\contentsline {subsection}{\numberline {1.4.3}Required LOSs}{18}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Methodology}{19}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Change in LOS-Example}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Question C}{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Answer C}{20}{subsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.2.1}Background}{20}{subsubsection.1.5.2.1}
+\contentsline {subsubsection}{\numberline {1.5.2.2}Owner}{21}{subsubsection.1.5.2.2}
+\contentsline {subsubsection}{\numberline {1.5.2.3}Users}{22}{subsubsection.1.5.2.3}
+\contentsline {paragraph}{\numberline {1.5.2.3.1}\relax $\@@underline {\hbox {Safety}}\mathsurround \z@ $\relax }{23}{paragraph.1.5.2.3.1}
+\contentsline {paragraph}{\numberline {1.5.2.3.2}\relax $\@@underline {\hbox {Operation efficiency}}\mathsurround \z@ $\relax }{24}{paragraph.1.5.2.3.2}
+\contentsline {paragraph}{\numberline {1.5.2.3.3}\relax $\@@underline {\hbox {Operational Quality}}\mathsurround \z@ $\relax }{25}{paragraph.1.5.2.3.3}
+\contentsline {paragraph}{\numberline {1.5.2.3.4}Environment preservation (reduction of noise)}{25}{paragraph.1.5.2.3.4}
+\contentsline {section}{\numberline {1.6}Assignments}{26}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Problem A}{26}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Answer A-a}{26}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Answer A-b}{26}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Problem B}{26}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.5}Question B}{27}{subsection.1.6.5}
+\contentsline {subsection}{\numberline {1.6.6}Answer B}{27}{subsection.1.6.6}
+\contentsline {subsection}{\numberline {1.6.7}Problem C}{28}{subsection.1.6.7}
+\contentsline {subsection}{\numberline {1.6.8}Question C}{28}{subsection.1.6.8}
+\contentsline {subsection}{\numberline {1.6.9}Answer C}{28}{subsection.1.6.9}
+\contentsline {section}{References}{28}{subsection.1.6.9}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\contentsline {chapter}{\numberline {2}Level of services indicators - reliability }{29}{chapter.2}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Bryan T. Adey and Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {2.1}Introduction}{29}{section.2.1}
+\contentsline {section}{\numberline {2.2}Reliability of an item}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}General}{29}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Reliability of an item over a specified time period}{30}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Conditional probability of failure and failure rate}{30}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Failure rates}{31}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Failure rate and rate of occurrence of failures}{32}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Reliability of an item with a time invariant failure rate}{32}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Estimating the remaining amount of time an item will provide an adequate LOS}{34}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Reliability of an item with time-variant failure rate}{34}{subsection.2.2.8}
+\contentsline {section}{\numberline {2.3}Estimating reliability when LOS data available}{34}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Example 1: Reliability of an item with time invariant failure rate}{34}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Example 2: Reliability of an item with time-variant failure rate}{35}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Estimating reliability when LOS data not available}{36}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Based on models and uncertainty of variables}{36}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Based on reliability of sub-items}{37}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Sub-items in series}{37}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Sub-items in parallels}{38}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Parallel sub-items connected in series}{39}{subsubsection.2.4.2.3}
+\contentsline {subsubsection}{\numberline {2.4.2.4}Series sub-items connected in parallel}{39}{subsubsection.2.4.2.4}
+\contentsline {subsubsection}{\numberline {2.4.2.5}Complex configurations}{40}{subsubsection.2.4.2.5}
+\contentsline {paragraph}{\numberline {2.4.2.5.1}Pivotal decomposition}{40}{paragraph.2.4.2.5.1}
+\contentsline {paragraph}{\numberline {2.4.2.5.2}Minimal path and minimal cuts}{40}{paragraph.2.4.2.5.2}
+\contentsline {paragraph}{\numberline {2.4.2.5.3}Example}{40}{paragraph.2.4.2.5.3}
+\contentsline {section}{\numberline {2.5}Conclusion}{42}{section.2.5}
+\contentsline {section}{\numberline {2.6}Assignments}{42}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Problem A}{42}{subsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.1.1}Question A1}{42}{subsubsection.2.6.1.1}
+\contentsline {subsubsection}{\numberline {2.6.1.2}Answer A1}{43}{subsubsection.2.6.1.2}
+\contentsline {subsection}{\numberline {2.6.2}Problem B}{43}{subsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.2.1}Question B1}{44}{subsubsection.2.6.2.1}
+\contentsline {subsubsection}{\numberline {2.6.2.2}Answer B1}{45}{subsubsection.2.6.2.2}
+\contentsline {subsubsection}{\numberline {2.6.2.3}Question B2}{46}{subsubsection.2.6.2.3}
+\contentsline {subsubsection}{\numberline {2.6.2.4}Answer B2}{47}{subsubsection.2.6.2.4}
+\contentsline {subsection}{\numberline {2.6.3}Problem C}{47}{subsection.2.6.3}
+\contentsline {subsubsection}{\numberline {2.6.3.1}Question C1}{47}{subsubsection.2.6.3.1}
+\contentsline {subsubsection}{\numberline {2.6.3.2}Answer C1}{47}{subsubsection.2.6.3.2}
+\contentsline {subsubsection}{\numberline {2.6.3.3}Question C2}{48}{subsubsection.2.6.3.3}
+\contentsline {subsubsection}{\numberline {2.6.3.4}Answer C2}{48}{subsubsection.2.6.3.4}
+\contentsline {subsubsection}{\numberline {2.6.3.5}Question C3}{48}{subsubsection.2.6.3.5}
+\contentsline {subsubsection}{\numberline {2.6.3.6}Answer C3}{48}{subsubsection.2.6.3.6}
+\contentsline {subsubsection}{\numberline {2.6.3.7}Question C4}{49}{subsubsection.2.6.3.7}
+\contentsline {subsubsection}{\numberline {2.6.3.8}Answer C4}{49}{subsubsection.2.6.3.8}
+\contentsline {subsubsection}{\numberline {2.6.3.9}Question C5}{49}{subsubsection.2.6.3.9}
+\contentsline {subsubsection}{\numberline {2.6.3.10}Answer C5}{49}{subsubsection.2.6.3.10}
+\contentsline {subsection}{\numberline {2.6.4}Problem D}{50}{subsection.2.6.4}
+\contentsline {subsubsection}{\numberline {2.6.4.1}Question D1}{50}{subsubsection.2.6.4.1}
+\contentsline {subsubsection}{\numberline {2.6.4.2}Answer D1}{50}{subsubsection.2.6.4.2}
+\contentsline {subsubsection}{\numberline {2.6.4.3}Question D2}{51}{subsubsection.2.6.4.3}
+\contentsline {subsubsection}{\numberline {2.6.4.4}Answer D2}{51}{subsubsection.2.6.4.4}
+\contentsline {subsection}{\numberline {2.6.5}Problem E}{52}{subsection.2.6.5}
+\contentsline {subsubsection}{\numberline {2.6.5.1}Question E1}{53}{subsubsection.2.6.5.1}
+\contentsline {subsubsection}{\numberline {2.6.5.2}Answer E1}{53}{subsubsection.2.6.5.2}
+\contentsline {subsection}{\numberline {2.6.6}Problem F}{53}{subsection.2.6.6}
+\contentsline {subsubsection}{\numberline {2.6.6.1}Question F1}{55}{subsubsection.2.6.6.1}
+\contentsline {subsubsection}{\numberline {2.6.6.2}Answer F1}{55}{subsubsection.2.6.6.2}
+\contentsline {subsubsection}{\numberline {2.6.6.3}Question F2}{55}{subsubsection.2.6.6.3}
+\contentsline {subsubsection}{\numberline {2.6.6.4}Answer F2}{56}{subsubsection.2.6.6.4}
+\contentsline {subsubsection}{\numberline {2.6.6.5}Question F3}{56}{subsubsection.2.6.6.5}
+\contentsline {subsubsection}{\numberline {2.6.6.6}Answer F3}{56}{subsubsection.2.6.6.6}
+\contentsline {subsubsection}{\numberline {2.6.6.7}Question F4}{57}{subsubsection.2.6.6.7}
+\contentsline {subsubsection}{\numberline {2.6.6.8}Answer F4}{57}{subsubsection.2.6.6.8}
+\contentsline {subsubsection}{\numberline {2.6.6.9}Question F5}{57}{subsubsection.2.6.6.9}
+\contentsline {subsubsection}{\numberline {2.6.6.10}Answer F5}{57}{subsubsection.2.6.6.10}
+\contentsline {subsubsection}{\numberline {2.6.6.11}Question F6}{58}{subsubsection.2.6.6.11}
+\contentsline {subsubsection}{\numberline {2.6.6.12}Answer F6}{58}{subsubsection.2.6.6.12}
+\contentsline {subsection}{\numberline {2.6.7}Problem G}{59}{subsection.2.6.7}
+\contentsline {subsubsection}{\numberline {2.6.7.1}Question G1}{59}{subsubsection.2.6.7.1}
+\contentsline {subsubsection}{\numberline {2.6.7.2}Answer G1}{59}{subsubsection.2.6.7.2}
+\contentsline {section}{References}{60}{equation.2.6.61}
+\contentsline {section}{\numberline {2.A}Reliability of an item with time invariant failure rate}{61}{section.a.2.A}
+\contentsline {section}{\numberline {2.B}Reliability of an item with time-variant failure rate}{63}{section.a.2.B}
+\contentsline {section}{\numberline {2.C}Maximum likelihood estimation for Weibull model}{64}{section.a.2.C}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\contentsline {chapter}{\numberline {3}Availability and maintainability}{65}{chapter.3}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Bryan T. Adey and Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {3.1}Maintainability of an item}{65}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Time}{65}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Indicators}{66}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Maintainability of an item comprised of sub-items}{66}{section.3.2}
+\contentsline {section}{\numberline {3.3}Availability of an item}{67}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Example}{67}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Question A}{67}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Answer A}{67}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Question B}{68}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Answer B}{68}{subsubsection.3.3.1.4}
+\contentsline {section}{\numberline {3.4}Availability of an item comprised of sub-items}{68}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Example}{68}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Question C}{69}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Question D}{69}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Answer C}{69}{subsubsection.3.4.1.3}
+\contentsline {subsubsection}{\numberline {3.4.1.4}Answer D}{69}{subsubsection.3.4.1.4}
+\contentsline {section}{\numberline {3.5}Trade-offs}{72}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Example}{72}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Question}{73}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Answer}{73}{subsubsection.3.5.1.2}
+\contentsline {paragraph}{\numberline {3.5.1.2.1}Reliability}{73}{paragraph.3.5.1.2.1}
+\contentsline {paragraph}{\numberline {3.5.1.2.2}Maintainability}{74}{paragraph.3.5.1.2.2}
+\contentsline {paragraph}{\numberline {3.5.1.2.3}Availability}{74}{paragraph.3.5.1.2.3}
+\contentsline {paragraph}{\numberline {3.5.1.2.4}Costs}{74}{paragraph.3.5.1.2.4}
+\contentsline {paragraph}{\numberline {3.5.1.2.5}Summary}{75}{paragraph.3.5.1.2.5}
+\contentsline {section}{\numberline {3.6}Assignments}{75}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Problem A}{75}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}Question A1}{76}{subsubsection.3.6.1.1}
+\contentsline {subsubsection}{\numberline {3.6.1.2}Answer A1}{76}{subsubsection.3.6.1.2}
+\contentsline {subsubsection}{\numberline {3.6.1.3}Question A2s}{76}{subsubsection.3.6.1.3}
+\contentsline {subsubsection}{\numberline {3.6.1.4}Answer A2}{76}{subsubsection.3.6.1.4}
+\contentsline {subsubsection}{\numberline {3.6.1.5}Question A3}{78}{subsubsection.3.6.1.5}
+\contentsline {subsubsection}{\numberline {3.6.1.6}Answer A3}{78}{subsubsection.3.6.1.6}
+\contentsline {subsubsection}{\numberline {3.6.1.7}Question A4}{78}{subsubsection.3.6.1.7}
+\contentsline {subsubsection}{\numberline {3.6.1.8}Answer A4}{79}{subsubsection.3.6.1.8}
+\contentsline {subsubsection}{\numberline {3.6.1.9}Question A5}{79}{subsubsection.3.6.1.9}
+\contentsline {subsubsection}{\numberline {3.6.1.10}Answer A5}{79}{subsubsection.3.6.1.10}
+\contentsline {subsubsection}{\numberline {3.6.1.11}Question A6}{79}{subsubsection.3.6.1.11}
+\contentsline {subsubsection}{\numberline {3.6.1.12}Answer A6}{79}{subsubsection.3.6.1.12}
+\contentsline {subsection}{\numberline {3.6.2}Problem B}{80}{subsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.2.1}Question B1}{81}{subsubsection.3.6.2.1}
+\contentsline {subsubsection}{\numberline {3.6.2.2}Answer B1}{81}{subsubsection.3.6.2.2}
+\contentsline {subsubsection}{\numberline {3.6.2.3}Question B2}{86}{subsubsection.3.6.2.3}
+\contentsline {subsubsection}{\numberline {3.6.2.4}Answer B2}{87}{subsubsection.3.6.2.4}
+\contentsline {section}{References}{87}{table.caption.82}
+\contentsline {section}{\numberline {3.A}Example - Reliability \& Availability}{88}{section.b.3.A}
+\contentsline {section}{\numberline {3.B}Example - HongKong tunnel}{90}{section.b.3.B}
+\contentsline {section}{\numberline {3.C}Assignment - Availability-log-normal distribution}{91}{section.b.3.C}
+\contentsline {section}{\numberline {3.D}Assignment - availability, reliability, and impact estimation for the network}{93}{section.b.3.D}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\contentsline {chapter}{\numberline {4}Mechanistic-empirical models and regression models }{97}{chapter.4}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Bryan T. Adey and Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {4.1}General}{97}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Manifest and latent processes}{97}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Continuous vs. discrete states}{97}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Deterministic vs. probabilistic models}{98}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Classification of models}{98}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Mechanistic-empirical models}{99}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Theory}{99}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Example}{99}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Question}{101}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Answer}{101}{subsubsection.4.2.2.2}
+\contentsline {paragraph}{\numberline {4.2.2.2.1}Condition states}{101}{paragraph.4.2.2.2.1}
+\contentsline {paragraph}{\numberline {4.2.2.2.2}Deterioration: Chloride concentration}{101}{paragraph.4.2.2.2.2}
+\contentsline {paragraph}{\numberline {4.2.2.2.3}Deterioration: Corrosion propagation}{103}{paragraph.4.2.2.2.3}
+\contentsline {paragraph}{\numberline {4.2.2.2.4}State distribution as proportional data}{105}{paragraph.4.2.2.2.4}
+\contentsline {paragraph}{\numberline {4.2.2.2.5}Deterioration prediction}{105}{paragraph.4.2.2.2.5}
+\contentsline {paragraph}{\numberline {4.2.2.2.6}Results}{106}{paragraph.4.2.2.2.6}
+\contentsline {section}{\numberline {4.3}Regression models}{107}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Theory}{107}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Example}{109}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Question}{110}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Answer}{110}{subsubsection.4.3.2.2}
+\contentsline {paragraph}{\numberline {4.3.2.2.1}Condition states}{110}{paragraph.4.3.2.2.1}
+\contentsline {paragraph}{\numberline {4.3.2.2.2}Deterioration: Chloride concentration}{110}{paragraph.4.3.2.2.2}
+\contentsline {paragraph}{\numberline {4.3.2.2.3}Deterioration: Crack propagation}{112}{paragraph.4.3.2.2.3}
+\contentsline {paragraph}{\numberline {4.3.2.2.4}Deterioration prediction}{113}{paragraph.4.3.2.2.4}
+\contentsline {paragraph}{\numberline {4.3.2.2.5}Results}{113}{paragraph.4.3.2.2.5}
+\contentsline {section}{\numberline {4.4}Comparison mechanistic-empirical models vs. regression models}{114}{section.4.4}
+\contentsline {section}{\numberline {4.5}Assignments}{114}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Problem A - Erosion of concrete cover of waste water tanks}{114}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Question A1}{115}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Question A2}{115}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Answer A1}{115}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Answer A2}{116}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Problem B - Bridge wear out}{117}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Question}{118}{subsection.4.5.7}
+\contentsline {subsection}{\numberline {4.5.8}Answer}{118}{subsection.4.5.8}
+\contentsline {section}{References}{119}{figure.caption.107}
+\contentsline {section}{\numberline {4.A}R code for the mechanistic-empirical model-concrete bridge slab}{120}{section.c.4.A}
+\contentsline {section}{\numberline {4.B}R code for generating data}{123}{section.c.4.B}
+\contentsline {section}{\numberline {4.C}R code for regression analysis}{125}{section.c.4.C}
+\contentsline {section}{\numberline {4.D}R code for estimation of erosion evolution over 30 years}{126}{section.c.4.D}
+\contentsline {section}{\numberline {4.E}R code for chloride concentration}{127}{section.c.4.E}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\contentsline {chapter}{\numberline {5}Event Tree and Fault Tree Analysis}{129}{chapter.5}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Bryan T. Adey and Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {5.1}Event tree analysis - Theory}{129}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Definition}{129}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Steps}{130}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Example in literature}{130}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Event tree analysis - Example}{131}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Question A}{131}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Answer A}{131}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Question B}{132}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Answer B}{133}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Question C}{134}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Answer C}{135}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Fault tree analysis -- Theory}{139}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Definition}{139}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Symbols}{139}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Steps}{140}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Examples in literature}{140}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Fault tree analysis -- Example B}{141}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Question B1}{141}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Answer B1}{141}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Question B2}{142}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Answer B2}{142}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Assignment}{149}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Problem A: Event tree analysis}{149}{subsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.1.1}Question A1}{149}{subsubsection.5.5.1.1}
+\contentsline {subsubsection}{\numberline {5.5.1.2}Answer A1}{149}{subsubsection.5.5.1.2}
+\contentsline {section}{\numberline {5.6}Problem B1 }{149}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Question B1}{149}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Answer B1}{150}{subsection.5.6.2}
+\contentsline {section}{References}{150}{subsection.5.6.2}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\contentsline {chapter}{\numberline {6}Bayesian Computation and Bayesian Network Models}{151}{chapter.6}
+\vskip -10pt
+\contentsline {chapter}{\hskip 1.3em\mdseries \scshape \scriptsize Nam Lethanh}{}{}
+\vskip 5pt
+\contentsline {section}{\numberline {6.1}Introduction}{151}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Bayes's theorem}{152}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}MCMC Method}{153}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Example into Bayesian thinking}{153}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Bayesian inference for simple linear regression model}{156}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}The joint likelihood for $\alpha $ and $\beta $}{156}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The joint prior for $\alpha $ and $\beta $}{157}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}The join posterior for $\alpha $ and $\beta $}{158}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Example - Accident data on road}{158}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}Question A}{159}{subsubsection.6.2.4.1}
+\contentsline {subsubsection}{\numberline {6.2.4.2}Answer to question A}{159}{subsubsection.6.2.4.2}
+\contentsline {subsubsection}{\numberline {6.2.4.3}Question B}{159}{subsubsection.6.2.4.3}
+\contentsline {subsubsection}{\numberline {6.2.4.4}Answer to question B}{160}{subsubsection.6.2.4.4}
+\contentsline {section}{\numberline {6.3}Bayesian inference for a simple Weibull model}{162}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Maximum likelihood estimation for the Weibull model}{162}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Bayesian inference}{163}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Example: Underground pipeline deterioration}{163}{subsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.1}Question}{164}{subsubsection.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.3.2}Answer}{164}{subsubsection.6.3.3.2}
+\contentsline {subsection}{\numberline {6.3.4}Conclusion}{165}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Bayesian network model}{166}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}General concept}{166}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Introductory example - reliability of a bridge}{167}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Graphical representation and values of nodes}{168}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Estimating the cpt from data}{171}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Forming a BN model from data and the curse of dimensionality}{171}{subsection.6.4.5}
+\contentsline {section}{References}{178}{equation.6.4.46}
+\contentsline {section}{\numberline {6.A}Example into Bayesian thinking}{180}{section.d.6.A}
+\contentsline {section}{\numberline {6.B}Bayesian estimation - Linear model}{181}{section.d.6.B}
+\contentsline {section}{\numberline {6.C}Maximum likelihood estimation estimation - Weibull model}{182}{section.d.6.C}
+\contentsline {section}{\numberline {6.D}Bayesian estimation - Weibull model}{183}{section.d.6.D}
+\contentsline {section}{\numberline {6.E}Bayesian network - bridge reliability (simplified)}{184}{section.d.6.E}
+\contentsline {section}{\numberline {6.F}Bayesian network - bridge reliability (Extended)}{185}{section.d.6.F}
+\contentsline {section}{\numberline {6.G}cpt of the BN simplified example}{188}{section.d.6.G}
+\contentsline {section}{\numberline {6.H}cpt of the BN extended example}{189}{section.d.6.H}
+\contentsline {section}{\numberline {6.I}Bayesian network - Learning structure of a BN from data}{195}{section.d.6.I}
+\gdef \the@ipfilectr {}

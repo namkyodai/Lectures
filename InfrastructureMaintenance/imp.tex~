@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt]{book}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=25mm,
+ right=20mm,
+ top=25mm,
+ bottom=25mm,
+ }
+% choose options for [] as required from the list
+% in the Reference Guide
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage{chapref}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+%
+\usepackage{type1cm}         
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{natbib}
+\usepackage{chapterbib}
+\usepackage{multibib}
+\usepackage{lipsum}
+
+\usepackage{suffix}
+
+\usepackage{hyperref}
+\usepackage[english]{babel}
+
+\newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
+\WithSuffix\newcommand\chapterauthor*[1]{\printchapterauthor{#1}}
+
+\makeatletter
+\newcommand{\printchapterauthor}[1]{%
+  {\parindent0pt\vspace*{-25pt}%
+  \linespread{1.1}\large\scshape#1%
+  \par\nobreak\vspace*{35pt}}
+  \@afterheading%
+}
+\newcommand{\authortoc}[1]{%
+  \addtocontents{toc}{\vskip-10pt}%
+  \addtocontents{toc}{%
+    \protect\contentsline{chapter}%
+    {\hskip1.3em\mdseries\scshape\protect\scriptsize#1}{}{}}
+  \addtocontents{toc}{\vskip5pt}%
+}
+\makeatother
+
+
+\graphicspath{{Figures/}}
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author{Bryan T. Adey and Nam Lethanh}
+\title{Infrastructure Maintenance Processes}
+%\subtitle{Lecture notes}
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./General/foreword}
+
+
+
+\tableofcontents
+
+\include{./General/acronym}
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{./Chapters/part}
+\include{./Chapters/chapter1}
+%\include{./Chapters/chapter2}
+%\include{./Chapters/chapter3}
+%\include{./Chapters/chapter4}
+%\include{./Chapters/chapter5}
+%\include{./Chapters/chapter6}
+%\include{./Chapters/chapter7}
+%\include{./Chapters/chapter8}
+%\include{./Chapters/chapter9}
+%\include{./Chapters/chapter10}
+%\include{./Chapters/chapter11}
+%\include{./Chapters/chapter12}%
+%\include{./Appendix/appendix}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./General/glossary}
+\include{./Solutions/solutions}
+\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{plain} %- originally in jesse thesis
+%\bibliography{strings, thesis}
+%\bibliography{reference}
+
+\end{document}
+
+
+
+
+

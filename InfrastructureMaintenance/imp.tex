@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox,envcountchap,sectrefs,fleqn]{svmono}
+\usepackage{listings}
+% \lstset{numbers=left, numberstyle=\small, numbersep=8pt, frame = single, language=R, framexleftmargin=15pt}
+% \lstset{
+% numbers=left, 
+% numberstyle=\small, 
+% numbersep=8pt, 
+% frame = single, 
+% language=R, 
+% framexleftmargin=15pt}
+\usepackage{minibox}
+\usepackage{nameref}
+\usepackage{color}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+ \usepackage{appendix}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle,language=R}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=25mm,
+ right=20mm,
+ top=25mm,
+ bottom=25mm,
+ }
+% choose options for [] as required from the list
+% \usepackage{setspace}
+% in the Reference Guide
+\usepackage{amsmath,amssymb, amstext, bm}
+\usepackage{manyeqns}
+\usepackage{ragged2e}
+% \usepackage{amssymb}
+%  \usepackage[fleqn]{amsmath}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+%
+\usepackage{xcolor}
+\usepackage{hyperref}
+%\hypersetup{colorlinks=false,linkbordercolor=red,linkcolor=green,pdfborderstyle={/S/U/W 1}}
+% \hypersetup{%
+%   colorlinks=true,% hyperlinks will be coloured
+%   linkcolor=red,% hyperlink text will be green
+%   linkbordercolor=red,% hyperlink border will be red
+% }
+\hypersetup{urlcolor=magenta, colorlinks=true, linkcolor=magenta, citecolor=blue, menucolor=magenta]}
+% \usepackage{cite}
+% \renewcommand{\citeleft}{\textcolor{red}{[}}
+% \renewcommand{\citeright}{\textcolor{red}{]}}
+
+\usepackage{type1cm}         
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+% \usepackage[square, numbers, comma, sort&compress]{natbib} 
+\usepackage{natbib}
+\usepackage{chapterbib}
+\usepackage{tikz}
+\usepackage{suffix}
+\usepackage{enumitem}
+\usepackage{changepage}
+\newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
+\WithSuffix\newcommand\chapterauthor*[1]{\printchapterauthor{#1}}
+% \singlespacing
+\makeatletter
+\newcommand{\printchapterauthor}[1]{%
+  {\parindent0pt\vspace*{-25pt}%
+  \linespread{1.1}\large\scshape#1%
+  \par\nobreak\vspace*{35pt}}
+  \@afterheading%
+}
+\newcommand{\authortoc}[1]{%
+  \addtocontents{toc}{\vskip-10pt}%
+  \addtocontents{toc}{%
+    \protect\contentsline{chapter}%
+    {\hskip1.3em\mdseries\scshape\protect\scriptsize#1}{}{}}
+  \addtocontents{toc}{\vskip5pt}%
+}
+\makeatother
+\graphicspath{{Figures/}}
+% see the list of further useful packages
+% in the Reference Guide
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength\parindent{0pt}
+\setlength{\mathindent}{10pt}
+% \setlength{\parskip}{\baselineskip}
+
+
+\usepackage{rotating}
+\usepackage{booktabs}
+\newcolumntype{P}[2]{%
+  >{\begin{turn}{#1}\begin{minipage}{#2}\small\raggedright\hspace{0pt}}l%
+  <{\end{minipage}\end{turn}}%
+}
+
+% \usepackage{array}
+\newcommand{\spheading}[2][10em]{% \spheading[<width>]{<stuff>}
+  \rotatebox{90}{\parbox{#1}{\raggedright #2}}}
+
+  \usepackage{subcaption}
+\usepackage[section]{placeins}
+
+\begin{document}
+
+\author{Bryan T. Adey and Nam Lethanh}
+\title{Infrastructure Maintenance Processes}
+\subtitle{Lecture notes}
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./General/foreword}
+%\include{./General/preface}
+
+
+\tableofcontents
+
+%\include{acronym}
+
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{\baselineskip}
+
+\include{./Chapters/part}
+\include{./Chapters/introduction}
+\include{./Chapters/los}
+\include{./Chapters/reliability}
+\include{./Chapters/avai-main}
+\include{./Chapters/mecha-empi}
+\include{./Chapters/fault-event-tree}
+\include{./Chapters/bayesian}
+
+
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{./General/glossary}
+%\include{./Solutions/solutions}
+\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
