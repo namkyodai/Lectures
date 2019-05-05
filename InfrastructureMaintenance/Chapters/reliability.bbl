@@ -1,0 +1,23 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Lethanh et~al.(2015)Lethanh, Adey, and Fernando]{Lethanh2015}
+Nam Lethanh, Bryan~T. Adey, and Dilum~N. Fernando.
+\newblock Optimal intervention strategies for multiple objects affected by
+  manifest and latent deterioration processes.
+\newblock \emph{Structure and Infrastructure Engineering}, 11\penalty0
+  (3):\penalty0 389--401, 2015.
+\newblock \doi{10.1080/15732479.2014.889178}.
+\newblock URL \url{http://dx.doi.org/10.1080/15732479.2014.889178}.
+
+\bibitem[Schultz et~al.(2010)Schultz, Gouldby, Simm, and Wibowo]{Schultz2010}
+M.T. Schultz, B.P. Gouldby, J.D. Simm, and J.L. Wibowo.
+\newblock Beyond the factor of safety: Developing fragility curves to
+  characterize system reliability.
+\newblock Technical report, US Army Corps of Engineers, July 2010.
+
+\end{thebibliography}

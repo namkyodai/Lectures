@@ -1,0 +1,1425 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Availability and maintainability}
+\label{avaimain} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\chapterauthor{Bryan T. Adey and Nam Lethanh}
+\section{Maintainability of an item}
+When managing infrastructure the maintainability of an item is often a useful
+bit of information, i.e. how much effort is it to restore the item so that it
+once again provides an adequate LOS. For example, if the speeds of trains need to
+be reduced on a rail link due to deformations in a track, how much will it cost
+to fix the rail link in a way that the trains can once again run at normal speed,
+and how long will this take?
+
+The maintainability of an item only has to do with the execution of
+interventions on the item. The maintainability and reliability together give the
+availability of an item.
+
+\subsection{Time}
+In order to estimate how long it will take to restore an item so that it
+provides an adequate LOS, it is necessary to estimate the steps to be taken from
+the instant that an inadequate LOS is not provided until it is restored. These
+steps include the determination that a failure has occurred, the determination of
+what exactly went wrong, the determination of how to restore the item, the
+execution of the intervention, the testing that the item again can provide an
+adequate LOS and then putting it back in operation so that it does provide an
+adequate LOS. An illustration of this for the restoration of a part of an
+electricity distribution network using Business Process Modelling Notation is
+shown in Figure \ref{avaimain:1}.
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{avaimain-1.eps}
+\caption{Simplified process for the restoration of a part of an electricity
+distribution network}\label{avaimain:1}
+% \end{center}
+\end{figure}
+Once the process has been identified it is necessary to estimate the length of
+time that each of the activities will take. This depends on many factors,
+including the quantity and skill levels of persons required and available, the
+quantity of required replacement parts required and available, and the amount of
+time required to react to an indication that something is not working, sometimes
+referred to as responsiveness.
+\subsection{Indicators}
+Indicators that are often used to express maintainability are the
+mode\footnote{The duration or costs that occurs the most often},
+mean\footnote{The average of the sum of all durations or costs divided by the
+number of values} and maximum\footnote{The largest of all durations or costs
+observed or expected. This is also often given as a percentile of the largest of
+all durations or costs.} amount of duration or cost of interventions. Indicators
+are usually developed for specific types of interventions, e.g. the mean duration
+of a corrective intervention is 3 months, or the mean duration of a preventive
+intervention is 1 week.
+\section{Maintainability of an item comprised of sub-items}
+The maintainability of an item can be estimated by taking into consideration the
+structure of the sub-items in the item, and the maintainability of the sub-items.
+This is advantageous if there is little data on the interventions that have been
+executed on the item itself, e.g. a bridge, but abundant data on interventions
+that have been executed on sub-items similar to those of which the item is
+composed, e.g. a concrete abutment.
+
+If it can be assumed that each intervention is only used to restore one sub-item
+so that it provides an adequate LOS, the durations of the interventions can be
+simply combined, e.g. if it takes 1 week to repair an abutment and 2 weeks to
+repair a deck and both happen once every 10 years, the average time spent to
+repair a bridge per year, i.e. its' maintainability, is 0.30 weeks ((1+2)/10).
+If, however, 50\% of the time the abutment and deck are repaired at the same time
+which takes 2 weeks, 50\% of the time they are repaired separately than the
+average time spent to repair a bridge per year, i.e. its maintainability, is
+0.175 weeks ((0.5(2)+0.25(1+2))/10).
+
+The basic steps to combine sub-items, if it can be assumed that each
+intervention is only used to restore one sub-item so that it provides an adequate
+LOS, are:
+\begin{itemize}
+	\item divide all sub-items by type, so it can be assumed that each sub-item per
+sub-item type behaves in the same way,
+	\item determine the rate of occurrence of the type of intervention of interest, e.g.
+corrective intervention, per sub-item type,
+	\item estimate the rate of occurrence of the type of intervention, per sub-item type
+by multiplying the rate of occurrence of the type of intervention by the number
+of sub-items per sub-type,
+	\item estimate the total duration of the type of intervention per sub-item type by
+multiplying the rate of occurrence of the type of intervention by the mean
+duration of the type of intervention per sub-item type
+	\item estimate the rate of occurrence of an intervention on the item by summing the
+rates of occurrence of the types of interventions per sub-item
+	\item estimate the expected intervention duration, or maintainability, of the item by
+summing the total duration of the type of intervention per sub-item.
+\end{itemize}
+\section{Availability of an item}
+The availability of an item is based on both the reliability of an item and the
+maintainability of an item. Simply, availability is:
+\begin{eqnarray}
+&& {A_i} = \frac{{E\left[ {t_i^{adequate}} \right]}}{{E\left[ {t_i^{adequate}}
+\right] + E\left[ {t_i^{inadequate}} \right]}}
+\label{avaimaineq:1}
+%(1)
+\end{eqnarray}
+Where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$t_i^{adequate}$:] the duration of time item \textit{i} provides an adequate LOS,
+\item[$t_i^{inadequate}$:] the duration of time item \textit{i} provides an inadequate LOS
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+When investigating the availability of an item the exact definition of
+availability used is important. One should be explicit about
+\begin{itemize}
+	\item the types of interventions being considered, e.g. preventive and corrective
+interventions or only corrective interventions
+	\item the type of time being considered, e.g. is the time spent waiting for parts and
+the time on-site to be considered, or only the time on-site.
+\end{itemize}
+Different measure of availability serve different purposes.
+\subsection{Example}
+A road has been in service for 10 years (3'652 days). Over those 10 years, 6
+interventions have been executed. Some of those have been due to rock falls, some
+due to scour and some due to chloride induced corrosion. The total amount of time
+that an adequate LOS was not provided was 156 days, i.e. traffic flow was
+restricted for 156 days in the last 3'652 days.
+\subsubsection{Question A}
+What was the availability of the road link?
+\subsubsection{Answer A}
+The total length of time when an adequate LOS was provided was 3'496 days (3'652
+-- 156). The rate of occurrence of interventions was 0.001716 interventions/day
+(6/3'496). The mean time between interventions is therefore 582.7 days
+(1/0.001716). The availability is then
+\begin{eqnarray}
+&& \begin{array}{l}
+ {A_i} = \frac{{E\left[ {t_i^a} \right]}}{{E\left[ {t_i^a} \right] + E\left[
+{t_i^n} \right]}} = \frac{{582.7}}{{582.7 + 156/6}} = 0.9573
+\end{array} \label{avaimaineq:2}
+%(2)
+\end{eqnarray}
+\subsubsection{Question B}
+Is this also the availability of the road next year?
+\subsubsection{Answer B}
+It depends on the types of failures and how they were repaired. In order to
+state that the availability of the road next year is also 0.9573, it would be
+necessary to be able to model the time between interventions as an exponential
+distribution, meaning that rate of occurrence of failure can be modelled as
+constant. This is essentially saying that no matter how many failure have
+occurred in the past there will be on average the same number in the future. This
+is in many cases not correct. For example, if there is an area in which a
+landslide damages a road, it may be that there will never be another landslide in
+this area. Or, if many interventions has to be executed due the corrosion of the
+reinforcement in deck slabs and waterproofing layers on all than the number of
+interventions per year in the future would change.
+\section{Availability of an item comprised of sub-items}
+In determining the availability of an item comprised of sub-items it is
+important to explicitly take into consideration the structure of the item. The
+availability of item \textit{i} comprised of sub-items connected in series is
+given by:
+\begin{eqnarray}
+&& {A_i} = \prod\limits_j^J {\left( {\frac{{E\left[ {t_j^a} \right]}}{{E\left[
+{t_j^a} \right] + E\left[ {t_j^n} \right]}}} \right)}
+\label{avaimaineq:3}
+%(3)
+\end{eqnarray}
+\subsection{Example}
+You own a water distribution network that is connected as shown in Figure
+\ref{avaimain:2}. The five pipes in the network have life expectancies of 20 years.
+The life expectancies can be modelled using an exponential distribution. It takes
+1 week to repair pipes 1 and 4, 2 weeks for pipes 2 and 5 and 3 weeks for pipe 3,
+once it breaks.
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{avaimain-2.eps}
+\caption{Water distribution network}\label{avaimain:2}
+% \end{center}
+\end{figure}
+\subsubsection{Question C}
+What is the reliability of the network?
+\subsubsection{Question D}
+What is the availability of the network?
+\subsubsection{Answer C}
+Using the pivotal decomposition method, the structure function of the network is
+\begin{eqnarray}
+&& \begin{array}{l}
+\phi (\vec x) = {x_1}{x_3}{x_4} + {x_1}{x_3}{x_5} + {x_2}{x_3}{x_4} +
+{x_2}{x_3}{x_5} + {x_1}{x_2}{x_4}{x_5}\\
+{\rm{          }} - {x_1}{x_2}{x_3}{x_4} - {x_1}{x_3}{x_4}{x_5} -
+{x_1}{x_2}{x_3}{x_5} - {x_2}{x_3}{x_4}{x_5}
+\end{array}
+\label{avaimaineq:4}
+%(4)
+\end{eqnarray}
+The steps to arrive at the above function has been described in section 3.3 of
+the script of week 9.
+
+In term of reliability, the structure function can be rewritten as
+\begin{eqnarray}
+&& \begin{array}{l}
+{R_{network}}(t) = {R_1}(t) \cdot {R_3}(t) \cdot {R_4}(t) + {R_1}(t) \cdot
+{R_3}(t) \cdot {R_5}(t) + {R_2}(t) \cdot {R_3}(t) \cdot {R_4}(t) + {R_2}(t) \cdot
+{R_3}(t) \cdot {R_5}(t)\\
++ {R_1}(t) \cdot {R_2}(t) \cdot {R_4}(t) \cdot {R_5}(t){\rm{ }} - {R_1}(t)
+\cdot {R_2}(t) \cdot {R_3}(t) \cdot {R_4}(t)\\
+- {R_1}(t) \cdot {R_3}(t) \cdot {R_4}(t) \cdot {R_5}(t) - {R_1}(t) \cdot
+{R_2}(t) \cdot {R_3}(t) \cdot {R_5}(t) - {R_2}(t) \cdot {R_3}(t) \cdot {R_4}(t)
+\cdot {R_5}(t)
+\end{array}
+\label{avaimaineq:5}
+%(5)
+\end{eqnarray}
+The reliability of any item \textit{i} at time \textit{t} is defined in \eqref{eqreliability:7}
+
+As the expected time until an inadequate LOS is provided is about 20 years, the
+``failure rate'' can be estimated as follows:
+
+\[
+ \int\limits_0^{ + \infty } {{R_i}(t)} dt = \int\limits_0^{ + \infty } {\exp
+\left( { - {\theta _i} \cdot t} \right)dt}  = \frac{1}{{{\theta _i}}} = 20{\rm{
+years}}
+\]
+\[
+ {\theta _i} = \frac{1}{{20}} = 0.05
+\]
+
+Using equations \eqref{eqreliability:7} the reliability of each sub-item, and the item, in 30 years
+can be estimated (Table \ref{tblavaimain:1}). For example, the probability that sub-item
+1 will provide an adequate LOS until the start of year 14 is 0.522 and the
+probability that the item will provide an adequate LOS until year 14 is 0.346.
+This is illustrated in Figure \ref{avaimain:3}. Only one curve is used to represent
+the reliability of a sub-item, since the reliability for all sub-items is the
+same.
+\begin{table}
+\caption{Reliability}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Time} & \multicolumn{6}{c|}{Reliability} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{(years)} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{Item} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{0.951} & \multicolumn{1}{c|}{0.951} & \multicolumn{1}{c|}{0.951} & \multicolumn{1}{c|}{0.951} & \multicolumn{1}{c|}{0.951} & \multicolumn{1}{c|}{0.987} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{0.905} & \multicolumn{1}{c|}{0.905} & \multicolumn{1}{c|}{0.905} & \multicolumn{1}{c|}{0.905} & \multicolumn{1}{c|}{0.905} & \multicolumn{1}{c|}{0.952} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{0.861} & \multicolumn{1}{c|}{0.861} & \multicolumn{1}{c|}{0.861} & \multicolumn{1}{c|}{0.861} & \multicolumn{1}{c|}{0.861} & \multicolumn{1}{c|}{0.904} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{0.819} & \multicolumn{1}{c|}{0.819} & \multicolumn{1}{c|}{0.819} & \multicolumn{1}{c|}{0.819} & \multicolumn{1}{c|}{0.819} & \multicolumn{1}{c|}{0.847} \\ 
+\hline
+\multicolumn{1}{|c|}{6} & \multicolumn{1}{c|}{0.779} & \multicolumn{1}{c|}{0.779} & \multicolumn{1}{c|}{0.779} & \multicolumn{1}{c|}{0.779} & \multicolumn{1}{c|}{0.779} & \multicolumn{1}{c|}{0.786} \\ 
+\hline
+\multicolumn{1}{|c|}{7} & \multicolumn{1}{c|}{0.741} & \multicolumn{1}{c|}{0.741} & \multicolumn{1}{c|}{0.741} & \multicolumn{1}{c|}{0.741} & \multicolumn{1}{c|}{0.741} & \multicolumn{1}{c|}{0.723} \\ 
+\hline
+\multicolumn{1}{|c|}{8} & \multicolumn{1}{c|}{0.705} & \multicolumn{1}{c|}{0.705} & \multicolumn{1}{c|}{0.705} & \multicolumn{1}{c|}{0.705} & \multicolumn{1}{c|}{0.705} & \multicolumn{1}{c|}{0.66} \\ 
+\hline
+\multicolumn{1}{|c|}{9} & \multicolumn{1}{c|}{0.670} & \multicolumn{1}{c|}{0.670} & \multicolumn{1}{c|}{0.670} & \multicolumn{1}{c|}{0.670} & \multicolumn{1}{c|}{0.670} & \multicolumn{1}{c|}{0.599} \\ 
+\hline
+\multicolumn{1}{|c|}{10} & \multicolumn{1}{c|}{0.638} & \multicolumn{1}{c|}{0.638} & \multicolumn{1}{c|}{0.638} & \multicolumn{1}{c|}{0.638} & \multicolumn{1}{c|}{0.638} & \multicolumn{1}{c|}{0.541} \\ 
+\hline
+\multicolumn{1}{|c|}{11} & \multicolumn{1}{c|}{0.607} & \multicolumn{1}{c|}{0.607} & \multicolumn{1}{c|}{0.607} & \multicolumn{1}{c|}{0.607} & \multicolumn{1}{c|}{0.607} & \multicolumn{1}{c|}{0.487} \\ 
+\hline
+\multicolumn{1}{|c|}{12} & \multicolumn{1}{c|}{0.577} & \multicolumn{1}{c|}{0.577} & \multicolumn{1}{c|}{0.577} & \multicolumn{1}{c|}{0.577} & \multicolumn{1}{c|}{0.577} & \multicolumn{1}{c|}{0.436} \\ 
+\hline
+\multicolumn{1}{|c|}{13} & \multicolumn{1}{c|}{0.549} & \multicolumn{1}{c|}{0.549} & \multicolumn{1}{c|}{0.549} & \multicolumn{1}{c|}{0.549} & \multicolumn{1}{c|}{0.549} & \multicolumn{1}{c|}{0.389} \\ 
+\hline
+\multicolumn{1}{|c|}{14} & \multicolumn{1}{c|}{0.522} & \multicolumn{1}{c|}{0.522} & \multicolumn{1}{c|}{0.522} & \multicolumn{1}{c|}{0.522} & \multicolumn{1}{c|}{0.522} & \multicolumn{1}{c|}{0.346} \\ 
+\hline
+\multicolumn{1}{|c|}{15} & \multicolumn{1}{c|}{0.497} & \multicolumn{1}{c|}{0.497} & \multicolumn{1}{c|}{0.497} & \multicolumn{1}{c|}{0.497} & \multicolumn{1}{c|}{0.497} & \multicolumn{1}{c|}{0.307} \\ 
+\hline
+\multicolumn{1}{|c|}{16} & \multicolumn{1}{c|}{0.472} & \multicolumn{1}{c|}{0.472} & \multicolumn{1}{c|}{0.472} & \multicolumn{1}{c|}{0.472} & \multicolumn{1}{c|}{0.472} & \multicolumn{1}{c|}{0.272} \\ 
+\hline
+\multicolumn{1}{|c|}{17} & \multicolumn{1}{c|}{0.449} & \multicolumn{1}{c|}{0.449} & \multicolumn{1}{c|}{0.449} & \multicolumn{1}{c|}{0.449} & \multicolumn{1}{c|}{0.449} & \multicolumn{1}{c|}{0.241} \\ 
+\hline
+\multicolumn{1}{|c|}{18} & \multicolumn{1}{c|}{0.427} & \multicolumn{1}{c|}{0.427} & \multicolumn{1}{c|}{0.427} & \multicolumn{1}{c|}{0.427} & \multicolumn{1}{c|}{0.427} & \multicolumn{1}{c|}{0.212} \\ 
+\hline
+\multicolumn{1}{|c|}{19} & \multicolumn{1}{c|}{0.407} & \multicolumn{1}{c|}{0.407} & \multicolumn{1}{c|}{0.407} & \multicolumn{1}{c|}{0.407} & \multicolumn{1}{c|}{0.407} & \multicolumn{1}{c|}{0.187} \\ 
+\hline
+\multicolumn{1}{|c|}{20} & \multicolumn{1}{c|}{0.387} & \multicolumn{1}{c|}{0.387} & \multicolumn{1}{c|}{0.387} & \multicolumn{1}{c|}{0.387} & \multicolumn{1}{c|}{0.387} & \multicolumn{1}{c|}{0.164} \\ 
+\hline
+\multicolumn{1}{|c|}{21} & \multicolumn{1}{c|}{0.368} & \multicolumn{1}{c|}{0.368} & \multicolumn{1}{c|}{0.368} & \multicolumn{1}{c|}{0.368} & \multicolumn{1}{c|}{0.368} & \multicolumn{1}{c|}{0.144} \\ 
+\hline
+\multicolumn{1}{|c|}{22} & \multicolumn{1}{c|}{0.350} & \multicolumn{1}{c|}{0.350} & \multicolumn{1}{c|}{0.350} & \multicolumn{1}{c|}{0.350} & \multicolumn{1}{c|}{0.350} & \multicolumn{1}{c|}{0.126} \\ 
+\hline
+\multicolumn{1}{|c|}{23} & \multicolumn{1}{c|}{0.333} & \multicolumn{1}{c|}{0.333} & \multicolumn{1}{c|}{0.333} & \multicolumn{1}{c|}{0.333} & \multicolumn{1}{c|}{0.333} & \multicolumn{1}{c|}{0.111} \\ 
+\hline
+\multicolumn{1}{|c|}{24} & \multicolumn{1}{c|}{0.317} & \multicolumn{1}{c|}{0.317} & \multicolumn{1}{c|}{0.317} & \multicolumn{1}{c|}{0.317} & \multicolumn{1}{c|}{0.317} & \multicolumn{1}{c|}{0.097} \\ 
+\hline
+\multicolumn{1}{|c|}{25} & \multicolumn{1}{c|}{0.301} & \multicolumn{1}{c|}{0.301} & \multicolumn{1}{c|}{0.301} & \multicolumn{1}{c|}{0.301} & \multicolumn{1}{c|}{0.301} & \multicolumn{1}{c|}{0.085} \\ 
+\hline
+\multicolumn{1}{|c|}{26} & \multicolumn{1}{c|}{0.287} & \multicolumn{1}{c|}{0.287} & \multicolumn{1}{c|}{0.287} & \multicolumn{1}{c|}{0.287} & \multicolumn{1}{c|}{0.287} & \multicolumn{1}{c|}{0.074} \\ 
+\hline
+\multicolumn{1}{|c|}{27} & \multicolumn{1}{c|}{0.273} & \multicolumn{1}{c|}{0.273} & \multicolumn{1}{c|}{0.273} & \multicolumn{1}{c|}{0.273} & \multicolumn{1}{c|}{0.273} & \multicolumn{1}{c|}{0.064} \\ 
+\hline
+\multicolumn{1}{|c|}{28} & \multicolumn{1}{c|}{0.259} & \multicolumn{1}{c|}{0.259} & \multicolumn{1}{c|}{0.259} & \multicolumn{1}{c|}{0.259} & \multicolumn{1}{c|}{0.259} & \multicolumn{1}{c|}{0.056} \\ 
+\hline
+\multicolumn{1}{|c|}{29} & \multicolumn{1}{c|}{0.247} & \multicolumn{1}{c|}{0.247} & \multicolumn{1}{c|}{0.247} & \multicolumn{1}{c|}{0.247} & \multicolumn{1}{c|}{0.247} & \multicolumn{1}{c|}{0.049} \\ 
+\hline
+\multicolumn{1}{|c|}{30} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{0.043} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:1}
+\end{table}
+
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=415pt]{avaimain-3.eps}
+\caption{Reliability and availability}\label{avaimain:3}
+% \end{center}
+\end{figure}
+\subsubsection{Answer D}
+The function form for calculating the availability is:
+\begin{eqnarray}
+&& \begin{array}{l}
+{A_{network}}(t) = {A_1}(t) \cdot {A_3}(t) \cdot {A_4}(t) + {A_1}(t) \cdot
+{A_3}(t) \cdot {A_5}(t) + {A_2}(t) \cdot {A_3}(t) \cdot {A_4}(t) + {A_2}(t) \cdot
+{A_3}(t) \cdot {A_5}(t)\\
++ {A_1}(t) \cdot {A_2}(t) \cdot {A_4}(t) \cdot {A_5}(t){\rm{ }} - {A_1}(t)
+\cdot {A_2}(t) \cdot {A_3}(t) \cdot {A_4}(t)\\
+- {A_1}(t) \cdot {A_3}(t) \cdot {A_4}(t) \cdot {A_5}(t) - {A_1}(t) \cdot
+{A_2}(t) \cdot {A_3}(t) \cdot {A_5}(t) - {A_2}(t) \cdot {A_3}(t) \cdot {A_4}(t)
+\cdot {A_5}(t)
+\end{array}
+\label{avaimaineq:6}
+%(9)
+\end{eqnarray}
+where ${A_i}(t)$is the availability of sub-item \textit{i}.
+
+The availability of each sub-item is calculated with equation \eqref{avaimaineq:1}, in which, it
+is necessary to calculate the mean time to repair or the mean time (duration) the
+sub-item is in adequate level of service. This calculation involves the value of
+reliability for each sub-item calculated in previous step.
+
+\begin{eqnarray}
+E(t_i^n) = {\Delta _i} \cdot {F_i}(t) = {\Delta _i} \cdot \left[ {1 - {R_i}(t)}
+\right]
+\label{avaimaineq:7}
+%(10)
+\end{eqnarray}
+
+
+In equation \eqref{avaimaineq:7}, ${F_i}(t)$is the failure probability at time \textit{t}.
+
+The availability of each sub-item in year \textit{t} will be
+\begin{eqnarray}
+A(t_i^{}) = \frac{{E\left[ {t_i^a} \right]}}{{E\left[ {t_i^a} \right] + E\left[
+{t_i^n} \right]}} = \frac{{\int\limits_0^{tu} {{R_i}(t)dt} }}{{\int\limits_0^{tu}
+{{R_i}(t)dt}  + {\Delta _i} \cdot \left[ {1 - {R_i}(tu)} \right]}}
+\label{avaimaineq:8}
+%(11)
+\end{eqnarray}
+The availability of each item and the network in 30 years.
+
+Using equations \eqref{eqreliability:7} the availability of each sub-item, and the item, for periods
+of time up to 30 years can be calculated (Table \ref{tblavaimain:2}). For example, the
+availability of sub-item 1 for a 14 year time period is 0.999090421, and the
+availability of the item for a 14 year time period is 0.999947505. This means
+that on average over periods of time that are 14 years in length that one can
+expect that sub-item 1 would provide an adequate LOS for 13.9872 years and an
+inadequate LOS for 0.01273411 years (4.647949 days), and that the item would
+provide an adequate LOS for 13.99927 years and an inadequate LOS for 0.00073
+years (0.26645 days). The longer the period of time investigated the lower the
+availability because the reliability of the sub-items decreases with age, when
+there is a constant failure rate. This is illustrated in Figure \ref{avaimain:3}.
+
+\begin{table}[h]
+\caption{Availability}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Time} & \multicolumn{6}{c|}{Availability} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{(years)} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{Item} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{0.999509} & \multicolumn{1}{c|}{0.999018} & \multicolumn{1}{c|}{0.997549} & \multicolumn{1}{c|}{0.998038} & \multicolumn{1}{c|}{0.998528} & \multicolumn{1}{c|}{0.999985} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{0.999345} & \multicolumn{1}{c|}{0.998691} & \multicolumn{1}{c|}{0.996735} & \multicolumn{1}{c|}{0.997386} & \multicolumn{1}{c|}{0.998039} & \multicolumn{1}{c|}{0.999973} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{0.999264} & \multicolumn{1}{c|}{0.998528} & \multicolumn{1}{c|}{0.996329} & \multicolumn{1}{c|}{0.997061} & \multicolumn{1}{c|}{0.997794} & \multicolumn{1}{c|}{0.999966} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{0.999215} & \multicolumn{1}{c|}{0.998431} & \multicolumn{1}{c|}{0.996086} & \multicolumn{1}{c|}{0.996867} & \multicolumn{1}{c|}{0.997648} & \multicolumn{1}{c|}{0.999961} \\ 
+\hline
+\multicolumn{1}{|c|}{6} & \multicolumn{1}{c|}{0.999182} & \multicolumn{1}{c|}{0.998366} & \multicolumn{1}{c|}{0.995925} & \multicolumn{1}{c|}{0.996737} & \multicolumn{1}{c|}{0.997551} & \multicolumn{1}{c|}{0.999958} \\ 
+\hline
+\multicolumn{1}{|c|}{7} & \multicolumn{1}{c|}{0.999159} & \multicolumn{1}{c|}{0.99832} & \multicolumn{1}{c|}{0.995810} & \multicolumn{1}{c|}{0.996645} & \multicolumn{1}{c|}{0.997482} & \multicolumn{1}{c|}{0.999955} \\ 
+\hline
+\multicolumn{1}{|c|}{8} & \multicolumn{1}{c|}{0.999142} & \multicolumn{1}{c|}{0.998285} & \multicolumn{1}{c|}{0.995724} & \multicolumn{1}{c|}{0.996576} & \multicolumn{1}{c|}{0.99743} & \multicolumn{1}{c|}{0.999953} \\ 
+\hline
+\multicolumn{1}{|c|}{9} & \multicolumn{1}{c|}{0.999128} & \multicolumn{1}{c|}{0.998258} & \multicolumn{1}{c|}{0.995657} & \multicolumn{1}{c|}{0.996523} & \multicolumn{1}{c|}{0.99739} & \multicolumn{1}{c|}{0.999952} \\ 
+\hline
+\multicolumn{1}{|c|}{10} & \multicolumn{1}{c|}{0.999118} & \multicolumn{1}{c|}{0.998237} & \multicolumn{1}{c|}{0.995604} & \multicolumn{1}{c|}{0.99648} & \multicolumn{1}{c|}{0.997358} & \multicolumn{1}{c|}{0.999951} \\ 
+\hline
+\multicolumn{1}{|c|}{11} & \multicolumn{1}{c|}{0.999109} & \multicolumn{1}{c|}{0.998219} & \multicolumn{1}{c|}{0.995561} & \multicolumn{1}{c|}{0.996445} & \multicolumn{1}{c|}{0.997332} & \multicolumn{1}{c|}{0.99995} \\ 
+\hline
+\multicolumn{1}{|c|}{12} & \multicolumn{1}{c|}{0.999102} & \multicolumn{1}{c|}{0.998205} & \multicolumn{1}{c|}{0.995525} & \multicolumn{1}{c|}{0.996416} & \multicolumn{1}{c|}{0.99731} & \multicolumn{1}{c|}{0.999949} \\ 
+\hline
+\multicolumn{1}{|c|}{13} & \multicolumn{1}{c|}{0.999096} & \multicolumn{1}{c|}{0.998193} & \multicolumn{1}{c|}{0.995494} & \multicolumn{1}{c|}{0.996392} & \multicolumn{1}{c|}{0.997292} & \multicolumn{1}{c|}{0.999948} \\ 
+\hline
+\multicolumn{1}{|c|}{14} & \multicolumn{1}{c|}{0.99909} & \multicolumn{1}{c|}{0.998182} & \multicolumn{1}{c|}{0.995469} & \multicolumn{1}{c|}{0.996372} & \multicolumn{1}{c|}{0.997276} & \multicolumn{1}{c|}{0.999948} \\ 
+\hline
+\multicolumn{1}{|c|}{15} & \multicolumn{1}{c|}{0.999086} & \multicolumn{1}{c|}{0.998174} & \multicolumn{1}{c|}{0.995446} & \multicolumn{1}{c|}{0.996354} & \multicolumn{1}{c|}{0.997263} & \multicolumn{1}{c|}{0.999947} \\ 
+\hline
+\multicolumn{1}{|c|}{16} & \multicolumn{1}{c|}{0.999082} & \multicolumn{1}{c|}{0.998166} & \multicolumn{1}{c|}{0.995427} & \multicolumn{1}{c|}{0.996338} & \multicolumn{1}{c|}{0.997251} & \multicolumn{1}{c|}{0.999947} \\ 
+\hline
+\multicolumn{1}{|c|}{17} & \multicolumn{1}{c|}{0.999079} & \multicolumn{1}{c|}{0.998159} & \multicolumn{1}{c|}{0.995410} & \multicolumn{1}{c|}{0.996325} & \multicolumn{1}{c|}{0.997241} & \multicolumn{1}{c|}{0.999946} \\ 
+\hline
+\multicolumn{1}{|c|}{18} & \multicolumn{1}{c|}{0.999076} & \multicolumn{1}{c|}{0.998153} & \multicolumn{1}{c|}{0.995395} & \multicolumn{1}{c|}{0.996313} & \multicolumn{1}{c|}{0.997232} & \multicolumn{1}{c|}{0.999946} \\ 
+\hline
+\multicolumn{1}{|c|}{19} & \multicolumn{1}{c|}{0.999073} & \multicolumn{1}{c|}{0.998148} & \multicolumn{1}{c|}{0.995382} & \multicolumn{1}{c|}{0.996302} & \multicolumn{1}{c|}{0.997224} & \multicolumn{1}{c|}{0.999945} \\ 
+\hline
+\multicolumn{1}{|c|}{20} & \multicolumn{1}{c|}{0.999071} & \multicolumn{1}{c|}{0.998143} & \multicolumn{1}{c|}{0.99537} & \multicolumn{1}{c|}{0.996293} & \multicolumn{1}{c|}{0.997217} & \multicolumn{1}{c|}{0.999945} \\ 
+\hline
+\multicolumn{1}{|c|}{21} & \multicolumn{1}{c|}{0.999068} & \multicolumn{1}{c|}{0.998139} & \multicolumn{1}{c|}{0.995359} & \multicolumn{1}{c|}{0.996284} & \multicolumn{1}{c|}{0.99721} & \multicolumn{1}{c|}{0.999945} \\ 
+\hline
+\multicolumn{1}{|c|}{22} & \multicolumn{1}{c|}{0.999066} & \multicolumn{1}{c|}{0.998135} & \multicolumn{1}{c|}{0.99535} & \multicolumn{1}{c|}{0.996276} & \multicolumn{1}{c|}{0.997205} & \multicolumn{1}{c|}{0.999945} \\ 
+\hline
+\multicolumn{1}{|c|}{23} & \multicolumn{1}{c|}{0.999065} & \multicolumn{1}{c|}{0.998131} & \multicolumn{1}{c|}{0.995341} & \multicolumn{1}{c|}{0.996269} & \multicolumn{1}{c|}{0.997199} & \multicolumn{1}{c|}{0.999945} \\ 
+\hline
+\multicolumn{1}{|c|}{24} & \multicolumn{1}{c|}{0.999063} & \multicolumn{1}{c|}{0.998128} & \multicolumn{1}{c|}{0.995333} & \multicolumn{1}{c|}{0.996263} & \multicolumn{1}{c|}{0.997195} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{25} & \multicolumn{1}{c|}{0.999062} & \multicolumn{1}{c|}{0.998125} & \multicolumn{1}{c|}{0.995326} & \multicolumn{1}{c|}{0.996257} & \multicolumn{1}{c|}{0.99719} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{26} & \multicolumn{1}{c|}{0.99906} & \multicolumn{1}{c|}{0.998123} & \multicolumn{1}{c|}{0.99532} & \multicolumn{1}{c|}{0.996252} & \multicolumn{1}{c|}{0.997186} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{27} & \multicolumn{1}{c|}{0.999059} & \multicolumn{1}{c|}{0.99812} & \multicolumn{1}{c|}{0.995314} & \multicolumn{1}{c|}{0.996247} & \multicolumn{1}{c|}{0.997183} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{28} & \multicolumn{1}{c|}{0.999058} & \multicolumn{1}{c|}{0.998118} & \multicolumn{1}{c|}{0.995308} & \multicolumn{1}{c|}{0.996243} & \multicolumn{1}{c|}{0.99718} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{29} & \multicolumn{1}{c|}{0.999057} & \multicolumn{1}{c|}{0.998116} & \multicolumn{1}{c|}{0.995303} & \multicolumn{1}{c|}{0.996239} & \multicolumn{1}{c|}{0.997176} & \multicolumn{1}{c|}{0.999944} \\ 
+\hline
+\multicolumn{1}{|c|}{30} & \multicolumn{1}{c|}{0.999056} & \multicolumn{1}{c|}{0.998114} & \multicolumn{1}{c|}{0.995298} & \multicolumn{1}{c|}{0.996235} & \multicolumn{1}{c|}{0.997174} & \multicolumn{1}{c|}{0.999943} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:2}
+\end{table}
+
+The code to compute this example is given in the Appendix \ref{appavai-mai1}
+\section{Trade-offs}
+Indicators of performance are just that, indicators. One can minimize the amount
+of time required to execute interventions on an item, i.e. maximize
+maintainability, by constructing an expensive but easy to repair item. This would
+most likely increase the availability of the item but may have little effect on
+the reliability of the item.
+
+One can maximize the reliability of an item by constructing an expensive but
+difficult to repair item. This would most likely decrease the maintainability of
+the item but may have little effect on the availability of the item.
+
+Once can maximize the availability of an item by constructing an expensive item
+that is fairly reliable and fairly easy to repair.
+
+In each of these cases, however, the most important question for the
+infrastructure manager is whether the improvements in reliability, availability
+or maintainability are worth the money spent. For example, if a road has very
+little traffic it may not be worthwhile to spend a large amount of money to
+shorten the durations of interventions, to increase the reliability of the bridge
+in the road, or to improve the availability of the road.
+\subsection{Example}
+You are the manager of a tunnel that is considering the construction of tunnel
+with five possible configurations. Each configuration is comprised of five
+components, but three of the components can be one of two different types. The
+configurations to be considered, as well as the mean time between failures for
+each component in each configuration, the initial cost of each configuration, and
+the mean intervention duration are given in Table \ref{tblavaimain:3}.
+\begin{table}[h]
+\caption{Tunnel components}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|c|}{Components} & \multicolumn{1}{c|}{Option 1} & \multicolumn{1}{c|}{Option 2} & \multicolumn{1}{c|}{Option 3} & \multicolumn{1}{c|}{Option 4} & \multicolumn{1}{c|}{Option 5} \\ 
+\hline
+\multicolumn{1}{|c|}{No.} & Description & \multicolumn{5}{c|}{mean time between failures (years)} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & a power supply system & \multicolumn{1}{c|}{245} & \multicolumn{1}{c|}{9'612} & \multicolumn{1}{c|}{245} & \multicolumn{1}{c|}{9'612} & \multicolumn{1}{c|}{9'612} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & a ventilation system & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{36'955} & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{36'955} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & a fire services system & \multicolumn{1}{c|}{1.1x106} & \multicolumn{1}{c|}{1.1x106} & \multicolumn{1}{c|}{1.1x106} & \multicolumn{1}{c|}{1.1x106} & \multicolumn{1}{c|}{1.1x106} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & a drainage system & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2'194} & \multicolumn{1}{c|}{2'194} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & a central monitoring and control system & \multicolumn{1}{c|}{2.4x105} & \multicolumn{1}{c|}{2.4x105} & \multicolumn{1}{c|}{2.4x105} & \multicolumn{1}{c|}{2.4x105} & \multicolumn{1}{c|}{2.4x105} \\ 
+\hline
+\multicolumn{1}{|l}{} & Initial cost (mus) & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{12} \\ 
+\hline
+\multicolumn{1}{|l}{} & Mean intervention duration (tu) & \multicolumn{1}{c|}{0.25} & \multicolumn{1}{c|}{0.28} & \multicolumn{1}{c|}{0.3} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:3}
+\end{table}
+\subsubsection{Question}
+Which configuration has the highest reliability? The highest maintainability?
+The highest availability? And which configuration results in the lowest overall
+net costs over a 20 \textit{tu} time period?
+\subsubsection{Answer}
+\paragraph{Reliability}
+In the estimation of the reliability of the tunnel item one first has to
+recognize that the 5 sub-items are conceptually connected in series, i.e. if one
+sub-item fails the item fails. The next step is to calculate the failure rate of
+each component, which if it is assumed that the failures of each component
+follows can be modelled using an exponential distribution, is 1/the mean time
+between failures. These are shown in Table \ref{tblavaimain:4}.
+${\theta _1}$ ${\theta _2}$ ${\theta _3}$ ${\theta _4}$ ${\theta _5}$
+The mean time between failures for the tunnel is then 1 over the sum of the
+failure rates as shown in equation \eqref{avaimaineq:9}:
+\begin{eqnarray}
+&& \frac{1}{{\sum\limits_i^I {{\theta _i}} }}
+\label{avaimaineq:9}
+%(12)
+\end{eqnarray}
+Where i is the index of tunnel components.
+
+And the reliability of the tunnel in one year is given by:
+\begin{eqnarray}
+&& R = \exp \left[ { - \left( {\sum\limits_i^I {{\theta _i}} } \right) \cdot 1}
+\right]
+\label{avaimaineq:10}
+%(13)
+\end{eqnarray}
+These values for each of the options are shown in Table \ref{tblavaimain:4}. It can be
+seen that option 5 is the most reliable, although not significantly more reliable
+than option 4.
+\begin{table}[h]
+\caption{Failure rates of tunnel components, and mean time between failure and reliability of the tunnel}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Option} & \multicolumn{1}{c|}{Item} & \multicolumn{5}{c|}{Components} & \multicolumn{1}{m{1.2cm}|}{MTBF of Tunnel} & \multicolumn{1}{c|}{Reliability} \\ 
+\cline{3-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{m{1.2cm}|}{Power Supply System} & \multicolumn{1}{m{1.2cm}|}{Ventilation System} & \multicolumn{1}{m{1.2cm}|}{Fire Services System} & \multicolumn{1}{m{1.2cm}|}{Drainage System} & \multicolumn{1}{m{1.5cm}|}{Central monitoring and control system} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{MTBF (years)} & \multicolumn{1}{c|}{245} & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{1.10E+06} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.40E+05} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0.3663} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$\theta_1$} & \multicolumn{1}{c|}{4.08E-03} & \multicolumn{1}{c|}{2.08E-04} & \multicolumn{1}{c|}{9.09E-07} & \multicolumn{1}{c|}{1.00E+00} & \multicolumn{1}{c|}{4.17E-06} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{MTBF (years)} & \multicolumn{1}{c|}{9'612} & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{1.10E+06} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.40E+05} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0.3678} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$\theta_2$} & \multicolumn{1}{c|}{1.04E-04} & \multicolumn{1}{c|}{2.08E-04} & \multicolumn{1}{c|}{9.09E-07} & \multicolumn{1}{c|}{1.00E+00} & \multicolumn{1}{c|}{4.17E-06} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{MTBF (years)} & \multicolumn{1}{c|}{245} & \multicolumn{1}{c|}{36'955} & \multicolumn{1}{c|}{1.10E+06} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.40E+05} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0.3664} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$\theta_3$} & \multicolumn{1}{c|}{4.08E-03} & \multicolumn{1}{c|}{2.71E-05} & \multicolumn{1}{c|}{9.09E-07} & \multicolumn{1}{c|}{1.00E+00} & \multicolumn{1}{c|}{4.17E-06} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{MTBF (years)} & \multicolumn{1}{c|}{9'612} & \multicolumn{1}{c|}{4'819} & \multicolumn{1}{c|}{1.10E+06} & \multicolumn{1}{c|}{2'194} & \multicolumn{1}{c|}{2.40E+05} & \multicolumn{1}{c|}{1'295} & \multicolumn{1}{c|}{0.9992} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$\theta_4$} & \multicolumn{1}{c|}{1.04E-04} & \multicolumn{1}{c|}{2.08E-04} & \multicolumn{1}{c|}{9.09E-07} & \multicolumn{1}{c|}{4.56E-04} & \multicolumn{1}{c|}{4.17E-06} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{MTBF (years)} & \multicolumn{1}{c|}{9'612} & \multicolumn{1}{c|}{36'955} & \multicolumn{1}{c|}{1.10E+06} & \multicolumn{1}{c|}{2'194} & \multicolumn{1}{c|}{2.40E+05} & \multicolumn{1}{c|}{1'689} & \multicolumn{1}{c|}{0.9994} \\ 
+\cline{2-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$\theta_5$} & \multicolumn{1}{c|}{1.04E-004} & \multicolumn{1}{c|}{2.71E-005} & \multicolumn{1}{c|}{9.09E-007} & \multicolumn{1}{c|}{4.56E-004} & \multicolumn{1}{c|}{4.17E-006} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:4}
+\end{table}
+\paragraph{Maintainability}
+In order to calculate the maintainability we can look simply at the average
+length of time it will take to restore each configuration when it fails. It is
+here clear that the configuration 1, which has an average down time of 0.25
+months if it fails is the most maintainable. This can be seen in Table
+\ref{tblavaimain:5}.
+\begin{table}[h]
+\caption{Initial cost vs reliability, maintainability, availability and net benefit of the five
+configurations}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Configuration} & \multicolumn{1}{c|}{Initial Cost} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Maintainability} & \multicolumn{1}{c|}{Availability} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{(mus)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{(months)} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.3663} & \multicolumn{1}{c|}{\cellcolor{blue!25} 0.25} & \multicolumn{1}{c|}{0.979506} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.3678} & \multicolumn{1}{c|}{0.28} & \multicolumn{1}{c|}{0.97759} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{0.3664} & \multicolumn{1}{c|}{0.3} & \multicolumn{1}{c|}{0.975512} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{0.9992} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{\cellcolor{blue!25}0.999903} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{\cellcolor{blue!25} 0.9994} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.999901} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:5}
+\end{table}
+\paragraph{Availability}
+The availability of each configuration is given by taking the mean time between
+failures, i.e. the mean time the item works, and dividing it by the average time
+it takes to restore the configuration if it fails plus the mean time it works,
+i.e. the average amount of time from starting to providing an adequate LOS to
+providing an adequate LOS again. One can also refer to this as the renewal
+period. The configuration with the highest availability is configuration 4 (Table
+\ref{tblavaimain:5}).
+
+\paragraph{Costs}
+The net costs are the initial costs plus the costs incurred over the 20 year
+period due to the costs due to lost service when an inadequate LOS is provided,
+which in this case are considered to include the cost of interventions when
+executed. Assuming that these costs are directly and uniformly related to the
+amount of time required to restore service, the annual maintenance costs for each
+configuration are given by:
+\begin{eqnarray}
+&& {C_{am}} = \frac{{E\left[ {t_i^n} \right] \cdot {I_{cr}}/12}}{{E\left[ {t_i^a}
+\right] + E\left[ {t_i^n} \right]}}
+%(13)
+\end{eqnarray}
+Where \textit{I$_{cr}$} represents the cost of executing an intervention
+multiplied by the probability of executing an intervention
+
+The annual maintenance costs as well as the net benefit excluding upfront costs
+and including upfront costs are shown for each configuration in Table
+\ref{tblavaimain:6}. The net benefit of a configuration is the cost of configuration 1
+minus the costs of the configuration being investigated. It can be seen that
+configuration has the highest net benefit over the 20 \textit{tu} period.
+
+\begin{eqnarray}
+&& N{B^i} = NB_c^i + NB_m^i\,\,\,\,\,\,\,\,\,\, = \left( {C_c^r - C_c^i} \right) +
+\left( {C_m^r - C_m^i} \right)
+\label{avaimaineq:11}
+%(15)
+\end{eqnarray}
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$N{B^i}$:] is the net benefit of configuration i,
+\item[$C_m^r$:] is the maintenance costs of the reference configuration
+\item[$C_m^i$:] is the maintenance costs of configuration i
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+
+\begin{table}[h]
+\caption{ Initial cost versus total costs of the five configurations}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Configuration} & \multicolumn{5}{c|}{Cost} & \multicolumn{1}{c|}{Net benefit} & \multicolumn{1}{c|}{Net benefit} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{initial} & \multicolumn{1}{c|}{ Cost} & \multicolumn{1}{c|}{Cost} & \multicolumn{1}{c|}{Cost per tu} & \multicolumn{1}{c|}{Cost for 20 tus} & \multicolumn{1}{c|}{excluding} & \multicolumn{1}{c|}{including} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{(mus)} & \multicolumn{1}{c|}{mus/month} & \multicolumn{1}{c|}{(mus)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{upfront costs} & \multicolumn{1}{c|}{upfront costs} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$C_c$} & \multicolumn{1}{c|}{$I_{cr}$} & \multicolumn{1}{c|}{$E[t_i^n]\cdot I_{cr}$} & \multicolumn{1}{c|}{$C_{am}$} & \multicolumn{1}{c|}{$C_{am}\cdot 20$} & \multicolumn{1}{c|}{$NB_m^i$} & \multicolumn{1}{c|}{$NB^i$} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1.25} & \multicolumn{1}{c|}{$7.79x10^{-1}$} & \multicolumn{1}{c|}{15.5844} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1.38} & \multicolumn{1}{c|}{$8.50x10^{-1}$} & \multicolumn{1}{c|}{17.0023} & \multicolumn{1}{c|}{-1.418} & \multicolumn{1}{c|}{-3.418} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{$9.31x10^{-1}$} & \multicolumn{1}{c|}{18.6197} & \multicolumn{1}{c|}{-3.035} & \multicolumn{1}{c|}{-7.035} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{7.5} & \multicolumn{1}{c|}{$4.47x10^{-6}$} & \multicolumn{1}{c|}{0.0001} & \multicolumn{1}{c|}{15.584} & \multicolumn{1}{c|}{9.584} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{$3.50x10^{-6}$} & \multicolumn{1}{c|}{0.0001} & \multicolumn{1}{c|}{15.584} & \multicolumn{1}{c|}{3.584} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:6}
+\end{table}
+
+\paragraph{Summary}
+As can be seen in Table \ref{tblavaimain:7} that estimating the availability was the
+only performance indicator that allowed the optimal configuration to be
+determined. This will, however, not always be the case. This should be kept in
+mind when selecting performance indicators to evaluate performance.
+\begin{table}[h]
+\caption{Initial cost vs reliability, maintainability, availability and net benefit of the five
+configurations}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Configuration} & \multicolumn{1}{c|}{Initial Cost} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Maintainability} & \multicolumn{1}{c|}{Availability} & \multicolumn{1}{c|}{Net benefit} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{(mus)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{(months)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{including upfront costs} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.3663} & \multicolumn{1}{c|}{\cellcolor{blue!25} 0.25} & \multicolumn{1}{c|}{0.979506} & \multicolumn{1}{c|}{0.000} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.3678} & \multicolumn{1}{c|}{0.28} & \multicolumn{1}{c|}{0.97759} & \multicolumn{1}{c|}{-3.418} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{0.3664} & \multicolumn{1}{c|}{0.3} & \multicolumn{1}{c|}{0.975512} & \multicolumn{1}{c|}{-7.035} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{0.9992} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{\cellcolor{blue!25} 0.999903} & \multicolumn{1}{c|}{\cellcolor{blue!25} 9.584} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{\cellcolor{blue!25} 0.9994} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.999901} & \multicolumn{1}{c|}{3.584} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:7}
+\end{table}
+The R code for this example is given in Appendix \ref{appavai-mai2}
+
+\section{Assignments}
+\subsection{Problem A}
+An infrastructure manager is responsible for maintaining a number of
+facilities over a period of time. The length of time required for past corrective
+interventions are given in Table \ref{tblavaimain:8}
+
+\begin{table}[h]
+\caption{ Corrective maintenance task times}
+\begin{tabular}{|c|c|}
+\hline
+Task time & Frequency \\ 
+\hline
+11 & 2 \\ 
+\hline
+13 & 3 \\ 
+\hline
+15 & 8 \\ 
+\hline
+17 & 12 \\ 
+\hline
+19 & 12 \\ 
+\hline
+21 & 14 \\ 
+\hline
+23 & 13 \\ 
+\hline
+25 & 10 \\ 
+\hline
+27 & 10 \\ 
+\hline
+29 & 8 \\ 
+\hline
+31 & 7 \\ 
+\hline
+33 & 6 \\ 
+\hline
+35 & 5 \\ 
+\hline
+36 & 5 \\ 
+\hline
+37 & 4 \\ 
+\hline
+39 & 3 \\ 
+\hline
+41 & 2 \\ 
+\hline
+47 & 2 \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:8}
+\end{table}
+\subsubsection{Question A1}
+What is the range of observations?
+\subsubsection{Answer A1}
+The range of observations is the difference between the smallest and the
+largest value in the data set. In this respect, the range of the above data set
+is
+\begin{eqnarray}
+&& Range = \max (data) - \min (data)
+\label{eqavaimain:1}
+%(1)
+\end{eqnarray}
+\[
+Range = 14 - 2 = 12
+\]
+\subsubsection{Question A2s}
+Using a class interval of 4, determine the number of class intervals.
+Plot the data and construct a curve. What is the most likely type of distribution
+is indicated by the curve?
+\subsubsection{Answer A2}
+With a class interval of 4, one can construct a range of observations.
+This is equivalent to the class interval of 4.
+
+\begin{table}[h]
+\caption{Range of observation}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{Range} & \multicolumn{1}{c|}{Frequency} \\ 
+\hline
+\multicolumn{1}{|c|}{9-12} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{13-16} & \multicolumn{1}{c|}{11} \\ 
+\hline
+\multicolumn{1}{|c|}{17-20} & \multicolumn{1}{c|}{24} \\ 
+\hline
+\multicolumn{1}{|c|}{21-24} & \multicolumn{1}{c|}{27} \\ 
+\hline
+\multicolumn{1}{|c|}{25-28} & \multicolumn{1}{c|}{20} \\ 
+\hline
+\multicolumn{1}{|c|}{29-32} & \multicolumn{1}{c|}{15} \\ 
+\hline
+\multicolumn{1}{|c|}{33-36} & \multicolumn{1}{c|}{16} \\ 
+\hline
+\multicolumn{1}{|c|}{37-40} & \multicolumn{1}{c|}{7} \\ 
+\hline
+\multicolumn{1}{|c|}{41-44} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{45-48} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:9}
+\end{table}
+
+From this table, a histogram of frequency can be constructed (Figure
+\ref{figavaimain-a:1})
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=376pt]{avaimain-a-9.eps}
+\caption{Histogram of data}\label{figavaimain-a:1}
+% \end{center}
+\end{figure}
+
+By observing the shape of the histogram, one can conclude that the data
+is distributed close to the density of the lognormal distribution function, which
+has a skew tail on the right side of the density function.
+
+The lognormal distribution function has following properties
+
+Probability density function
+\begin{eqnarray}
+&& {f_X}(x,\mu ,\sigma ) = \frac{1}{{x \cdot \sigma \sqrt {2\pi } }}{e^{ -
+\frac{{{{(\ln x - \mu )}^2}}}{{2{\sigma ^2}}}}}{\rm{,   }}x > 0
+\label{eqavaimain:2}
+%(2)
+\end{eqnarray}
+Cumulative distribution function
+\begin{eqnarray}
+&& {F_X}(x,\mu ,\sigma ) = \frac{1}{2} + \frac{1}{2}erf\left[ {\frac{{(\ln x - \mu
+)}}{{\sqrt {2\sigma } }}} \right]
+\label{eqavaimain:3}
+%(3)
+\end{eqnarray}
+where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$x$:] is the random variable of the distribution,
+\item[$\mu$:] is the mean of the variable's natural logarithm,
+\item[$\sigma $:] is the standard deviation of the variable's natural logarithm,
+\item[$erf $:] is the error function.
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+\subsubsection{Question A3}
+What is the mean length of time for a corrective intervention,
+\textit{M$_{ct}$}?
+\subsubsection{Answer A3}
+For estimating the mean corrective intervention duration
+\begin{eqnarray}
+&& {\overline M _{ct}} = \frac{{\sum {\left( {{f_{c{t_i}}}} \right)\left(
+{{M_{c{t_i}}}} \right)} }}{{\sum {{f_{c{t_i}}}} }}
+\label{eqavaimain:4}
+%(4)
+\end{eqnarray}
+where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$f_{cti}$:] is the frequency of the \textit{i$^{th}$} corrective intervention in interventions per system operating time unit,
+\item[$M_{cti}$:] is the elapsed time required for the \textit{i$^{th}$} corrective intervention.
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+The answer is 25.15 days
+\begin{table}[h]
+\caption{Mean time of intervention duration}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Time & Frequency & Mean time & Variance \\ 
+\hline
+(1) & (2) & (3)=(1)*(2) & $(4)=(2)*[(1)- \bar M_{ct}]^²$ \\ 
+\hline
+11 & 2 & 22 & 400.49 \\ 
+\hline
+13 & 3 & 39 & 442.93 \\ 
+\hline
+15 & 8 & 120 & 824.31 \\ 
+\hline
+17 & 12 & 204 & 797.23 \\ 
+\hline
+19 & 12 & 228 & 453.99 \\ 
+\hline
+21 & 14 & 294 & 241.21 \\ 
+\hline
+23 & 13 & 299 & 60.14 \\ 
+\hline
+25 & 10 & 250 & 0.23 \\ 
+\hline
+27 & 10 & 270 & 34.2 \\ 
+\hline
+29 & 8 & 232 & 118.53 \\ 
+\hline
+31 & 7 & 217 & 239.49 \\ 
+\hline
+33 & 6 & 198 & 369.66 \\ 
+\hline
+35 & 5 & 175 & 485.03 \\ 
+\hline
+36 & 5 & 180 & 588.53 \\ 
+\hline
+37 & 4 & 148 & 561.61 \\ 
+\hline
+39 & 3 & 117 & 575.4 \\ 
+\hline
+41 & 2 & 82 & 502.39 \\ 
+\hline
+47 & 2 & 94 & 954.78 \\ 
+\hline
+\textbf{Total} & \textbf{126} & \textbf{3'169} & \textbf{7'650.13} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:10}
+\end{table}
+  \[
+   {\overline M _{ct}} = \frac{{3'169}}{{126}} = 25.15
+  \]
+\subsubsection{Question A4}
+What is the geometric mean of the repair times?
+\subsubsection{Answer A4}
+For calculating geometric mean, refer to general statistical materials
+\begin{eqnarray}
+&& {\bar \mu _{geo}} = {e^\mu }
+\label{eqavaimai:5}
+%(4)
+\end{eqnarray}
+Where $\mu{}$ is the mean that is calculated based on the mean ${\overline M _{ct}}$ in this case)
+\begin{eqnarray}
+&& \mu  = \ln (E\left[ X \right]) - \frac{1}{2}{\sigma ^2} \label{eqavaimai:6}
+\end{eqnarray}
+\begin{eqnarray}
+&& {\sigma ^2} = \ln \left( {1 + \frac{{Var\left[ X \right]}}{{{{(E\left[ X \right])}^2}}}} \right)
+\end{eqnarray}
+from data, we have
+\[
+Var\left[ X \right] = \sqrt {\frac{{7'650.13}}{{126}}}  = 7.79
+\]
+\[
+E\left[ X \right] = {\bar M_{ct}} = 25.15
+\]
+\[
+\mu  = \ln (25.15) - \frac{1}{2}\left[ {\ln \left( {1 +
+\frac{{{{7.79}^2}}}{{{{25.15}^2}}}} \right)} \right] = 3.179
+\]
+The geometric mean is then
+\[
+{\bar \mu _{geo}} = {e^{3.179}} = 24.02
+\]
+\subsubsection{Question A5}
+What is the standard deviation of the sample data?
+\subsubsection{Answer A5}
+The standard deviation is 7.79, which has been calculated in previous
+steps.
+\subsubsection{Question A6}
+Assume 90\% confidence level, what is the \textit{M$_{max}$} value?
+\subsubsection{Answer A6}
+For obtaining the the \textit{M$_{max}$} value with assumption of a 90\%
+confidence level, refer to the formulation of the cumulative density function in
+equation \eqref{eqavaimain:3} of the log-normal distribution and interpolate the data.
+
+The Mmax is 27.
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=396pt]{avaimain-a-10.eps}
+\caption{Cumulative probability}
+% \end{center}
+\end{figure}
+R code is given in Appendix \ref{appavai-mai3} for this assignment
+
+\subsection{Problem B}
+A transportation network connecting city A to city B is shown in Figure
+\ref{figavaimain-a:2}. In order to go from city A to city B and vice versa, vehicles can
+travel in both directions of every link. Links are either a road section, a
+bridge or a tunnels. It is periodically affected by natural hazards such as
+flood, avalanches, and rockfall. The probability of the links not providing an
+adequate LOS due to the natural hazards can be modelled using the exponential or
+the Weibull distributions as shown in Table \ref{tblavaimain:11}. The mean time required
+to restore an adequate LOS following the occurrence of a natural hazard on each
+of the links is also is included in Table \ref{tblavaimain:11}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=392pt]{avaimain-a-1.eps}
+\caption{A transportation network connecting city A to city B}\label{figavaimain-a:2}
+\end{center}
+\end{figure}
+
+\begin{table}[h]
+\caption{Characteristics of links in the network}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Link object} & \multicolumn{1}{c|}{Deterioration distribution} & \multicolumn{2}{c|}{Weibul} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{Mean time of intervention} \\ 
+\cline{3-4}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\alpha$} & \multicolumn{1}{c|}{$m$} & \multicolumn{1}{c|}{$\theta$} & \multicolumn{1}{c|}{(days)} \\ 
+\hline
+\multicolumn{1}{|c|}{Road A-1} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.024} & \multicolumn{1}{c|}{20} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 2-3} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.023} & \multicolumn{1}{c|}{15} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 3-4} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.03} & \multicolumn{1}{c|}{17} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 3-5} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.06} & \multicolumn{1}{c|}{33} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 4-5} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.04} & \multicolumn{1}{c|}{40} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge 1-2} & \multicolumn{1}{c|}{Weibull} & \multicolumn{1}{c|}{0.025} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{30} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge 1-3} & \multicolumn{1}{c|}{Weibull} & \multicolumn{1}{c|}{0.03} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{50} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge A-4} & \multicolumn{1}{c|}{Weibull} & \multicolumn{1}{c|}{0.025} & \multicolumn{1}{c|}{2.3} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{70} \\ 
+\hline
+\multicolumn{1}{|c|}{Tunnel B-2} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.04} & \multicolumn{1}{c|}{60} \\ 
+\hline
+\multicolumn{1}{|c|}{Tunnel B-5} & \multicolumn{1}{c|}{Exponential} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{NA} & \multicolumn{1}{c|}{0.03} & \multicolumn{1}{c|}{45} \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:11}
+\end{table}
+
+The impacts incurred when each link does not provide an adequate LOS,
+and all others do, are given in Table \ref{tblavaimain:12}, in terms of monetary units
+(\textit{mus}) incurred per day of inadequate service
+
+\begin{table}[h]
+\caption{Impacts}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Link} & \multicolumn{4}{c|}{Impacts (mus)} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Owner} & \multicolumn{1}{c|}{Users} & \multicolumn{1}{c|}{DAP} & \multicolumn{1}{c|}{IAP} \\ 
+\hline
+\multicolumn{1}{|c|}{Road A-1} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{3} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 2-3} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 3-4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{3} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 3-5} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{Road 4-5} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge 1-2} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{3} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge 1-3} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{Bridge A-4} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{Tunnel B-2} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{Tunnel B-5} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\end{tabular}\\
+Note: DAP and IAP stand for directly affected public and indirectly
+affected public
+\label{tblavaimain:12}
+\end{table}
+\subsubsection{Question B1}
+
+Estimate the reliability and availability of each link and of the entire
+network for each year in 20 years.
+\subsubsection{Answer B1}
+\underline{Step 1:} Estimate the reliability of each link
+
+The network can be simplified with the circles representing the links
+and the connecting point representing the cities and towns. The reliability of
+each link is given in Table \ref{tblavaimain:13} and illustrated in Figure \ref{figavaimain-a:3}.
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=386pt]{avaimain-a-2.eps}
+\caption{Network simplification}
+% \end{center}
+\end{figure}
+
+\begin{table}[h]
+\caption{Reliability}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Time & \multicolumn{10}{c|}{Links} & Networks \\ 
+\cline{2-11}
+(years) & \multicolumn{5}{c|}{Road sections} & \multicolumn{3}{c|}{Bridge} & \multicolumn{2}{c|}{Tunnels} &  \\ 
+\cline{2-11}
+ & A-1 & 2-3 & 3-4 & 3-5 & 4-5 & 1-2 & 1-3 & A-4 & B-2 & B-5 &  \\ 
+\hline
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline
+2 & 0.98 & 0.98 & 0.97 & 0.94 & 0.96 & 1 & 1 & 1 & 0.96 & 0.97 & 1 \\ 
+\hline
+3 & 0.95 & 0.96 & 0.94 & 0.89 & 0.92 & 0.99 & 1 & 1 & 0.92 & 0.94 & 0.99 \\ 
+\hline
+4 & 0.93 & 0.93 & 0.91 & 0.84 & 0.89 & 0.98 & 0.99 & 1 & 0.89 & 0.91 & 0.98 \\ 
+\hline
+5 & 0.91 & 0.91 & 0.89 & 0.79 & 0.85 & 0.97 & 0.99 & 1 & 0.85 & 0.89 & 0.97 \\ 
+\hline
+6 & 0.89 & 0.89 & 0.86 & 0.74 & 0.82 & 0.96 & 0.98 & 0.99 & 0.82 & 0.86 & 0.95 \\ 
+\hline
+7 & 0.87 & 0.87 & 0.84 & 0.7 & 0.79 & 0.94 & 0.97 & 0.99 & 0.79 & 0.84 & 0.92 \\ 
+\hline
+8 & 0.85 & 0.85 & 0.81 & 0.66 & 0.76 & 0.93 & 0.96 & 0.98 & 0.76 & 0.81 & 0.89 \\ 
+\hline
+9 & 0.83 & 0.83 & 0.79 & 0.62 & 0.73 & 0.91 & 0.94 & 0.98 & 0.73 & 0.79 & 0.86 \\ 
+\hline
+10 & 0.81 & 0.81 & 0.76 & 0.58 & 0.7 & 0.9 & 0.93 & 0.97 & 0.7 & 0.76 & 0.82 \\ 
+\hline
+11 & 0.79 & 0.79 & 0.74 & 0.55 & 0.67 & 0.88 & 0.91 & 0.96 & 0.67 & 0.74 & 0.78 \\ 
+\hline
+12 & 0.77 & 0.78 & 0.72 & 0.52 & 0.64 & 0.87 & 0.9 & 0.95 & 0.64 & 0.72 & 0.74 \\ 
+\hline
+13 & 0.75 & 0.76 & 0.7 & 0.49 & 0.62 & 0.85 & 0.88 & 0.94 & 0.62 & 0.7 & 0.69 \\ 
+\hline
+14 & 0.73 & 0.74 & 0.68 & 0.46 & 0.59 & 0.83 & 0.86 & 0.93 & 0.59 & 0.68 & 0.65 \\ 
+\hline
+15 & 0.71 & 0.72 & 0.66 & 0.43 & 0.57 & 0.81 & 0.84 & 0.91 & 0.57 & 0.66 & 0.6 \\ 
+\hline
+16 & 0.7 & 0.71 & 0.64 & 0.41 & 0.55 & 0.79 & 0.82 & 0.9 & 0.55 & 0.64 & 0.56 \\ 
+\hline
+17 & 0.68 & 0.69 & 0.62 & 0.38 & 0.53 & 0.78 & 0.79 & 0.89 & 0.53 & 0.62 & 0.52 \\ 
+\hline
+18 & 0.66 & 0.68 & 0.6 & 0.36 & 0.51 & 0.76 & 0.77 & 0.87 & 0.51 & 0.6 & 0.47 \\ 
+\hline
+19 & 0.65 & 0.66 & 0.58 & 0.34 & 0.49 & 0.74 & 0.75 & 0.85 & 0.49 & 0.58 & 0.43 \\ 
+\hline
+20 & 0.63 & 0.65 & 0.57 & 0.32 & 0.47 & 0.72 & 0.72 & 0.83 & 0.47 & 0.57 & 0.39 \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:13}
+\end{table}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=429pt]{avaimain-a-11.eps}
+\caption{Reliability of each link and network + network availability over 20
+years}\label{figavaimain-a:3}
+% \end{center}
+\end{figure}
+
+\underline{Step 2:} Estimate the reliability of the network
+
+First, it is necessary to determine the structure function, which can be
+calculated using the pivotal decomposition method.
+
+First, link 1-3 is selected as the pivot. When link 1-3 is perfect, the
+original network can be further simplified as shown in Figure \ref{figavaimain-a:3}, and when link
+1-3 is not perfect, the original network diagram can be further simplified as
+shown in Figure \ref{figavaimain-a:4}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=340pt]{avaimain-a-3.eps}
+\caption{Network simplification - decomposition when when ${x_{1 - 3}} = 1$}\label{figavaimain-a:3}
+% \end{center}
+\end{figure}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=340pt]{avaimain-a-4.eps}
+\caption{Network simplification - decomposition when when ${x_{1 - 3}} = 0$}\label{figavaimain-a:4}
+% \end{center}
+\end{figure}
+The structure function of the network can then be expressed as:
+\begin{eqnarray}
+&& \phi (\vec x) = {x_{1 - 3}} \cdot r({1_{1 - 3}},\vec x) + (1 - {x_{1 - 3}})
+\cdot r({0_{1 - 3}},\vec x)
+\label{eqavaimain:5}
+%(8)
+\end{eqnarray}
+However, even with the newly simplified network, still it is difficult
+to estimate the value of the sub-structure function $r({1_{1 - 3}},\vec x)$ and
+$r({0_{1 - 3}},\vec x)$directly. It is, therefore, necessary to further decompose
+the simplified sub-networks.
+
+With respect to the network $r({1_{1 - 3}},\vec x)$, the link 3-5 is
+selected to be the pivot. When the link 3-5 is 100\% reliable, the network in
+Figure 6 becomes the one shown in Figure \ref{figavaimain-a:5}, and when the link 3-5 is
+0\% reliable, the network in Figure 6 becomes the one shown in Figure
+\ref{figavaimain-a:6}.
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=347pt]{avaimain-a-5.eps}
+\caption{Network simplification - decomposition when $x_{3-5}=1$ and $x_{1-3}=1$}\label{figavaimain-a:5}
+% \end{center}
+\end{figure}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=374pt]{avaimain-a-6.eps}
+\caption{Network simplification - decomposition when $x_{3-5}=0$ and $x_{1-3}=1$}\label{figavaimain-a:6}
+% \end{center}
+\end{figure}
+
+The structure function $r({1_{1 - 3}},\vec x)$ is then:
+\begin{eqnarray}
+&& r({1_{1 - 3}},\vec x) = {x_{3 - 5}} \cdot r_{1 - 3}^1({1_{3 - 5}},\vec x) + (1 -
+{x_{3 - 5}})r_{1 - 3}^1({0_{3 - 5}},\vec x)
+\label{eqavaimain:6}
+%(9)
+\end{eqnarray}
+where $r_{1 - 3}^1({1_{3 - 5}},\vec x)$ and $r_{1 - 3}^1({0_{3 -
+5}},\vec x)$refer to the sub-structure functions after link 1-3 and link 3-5 have
+been decomposed when link 1-3 is perfect.
+
+The value of $r_{1 - 3}^1({1_{3 - 5}},\vec x)$ and $r_{1 - 3}^1({0_{3 -
+5}},\vec x)$can now be directly computed as follows:
+\begin{eqnarray}
+&& \begin{array}{l}
+r_{1 - 3}^1({1_{3 - 5}},\vec x) = \left[ {1 - (1 - {x_{A - 1}})(1 - {x_{A - 4}}
+\cdot \left\{ {1 - (1 - {x_{3 - 4}}) \cdot (1 - {x_{4 - 5}})} \right\})} \right]
+\cdot \\
+\left[ {1 - (1 - {x_{B - 5}}) \cdot (1 - {x_{B - 2}} \cdot \left\{ {1 - (1 -
+{x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right\}} \right]
+\end{array}
+\label{eqavaimain:7}
+%(10)
+\end{eqnarray}
+\begin{eqnarray}
+&& \begin{array}{l}
+r_{1 - 3}^1({0_{3 - 5}},\vec x) = {x_{A - 1}}{x_{3 - 4}} \cdot {x_{B - 2}} \cdot
+\left[ {1 - (1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]\\
+{\rm{                 }} + {x_{A - 1}}{x_{3 - 4}}{x_{4 - 5}}{x_{B - 5}}\\
+{\rm{                 }} + {x_{A - 4}}{x_{3 - 4}}{x_{B - 2}} \cdot \left[ {1 -
+(1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]\\
+{\rm{                 }} + {x_{A - 4}}{x_{3 - 4}}{x_{4 - 5}}{x_{B - 5}}\\
+{\rm{                 }} + {x_{A - 1}}{x_{A - 4}}{x_{4 - 5}}{x_{B - 5}}{x_{B -
+2}} \cdot \left[ {1 - (1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]\\
+{\rm{                 }} - {x_{A - 1}}{x_{A - 4}}{x_{3 - 4}}{x_{B - 2}} \cdot
+\left[ {1 - (1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]\\
+{\rm{                 }} - {x_{A - 1}}{x_{3 - 4}}{x_{B - 2}} \cdot \left[ {1 -
+(1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]{x_{4 - 5}}{x_{B - 5}}\\
+{\rm{                 }} - {x_{A - 1}}{x_{A - 4}}{x_{3 - 4}}{x_{4 - 5}}{x_{B -
+5}}\\
+{\rm{                 }} - {x_{A - 4}}{x_{3 - 4}}{x_{B - 2}} \cdot \left[ {1 -
+(1 - {x_{1 - 2}}) \cdot (1 - {x_{2 - 3}})} \right]{x_{4 - 5}}{x_{B - 5}}
+\end{array}
+\label{eqavaimain:8}
+%(11)
+\end{eqnarray}
+% Equation \eqref{eqavaimain:7} is described based on the results of structure function obtained in section 3.3 of the script of week 9.
+With respect to the network $r({0_{1 - 3}},\vec x)$, the link 3-5 is
+choosen to be the pivot. When link 3-5 is 100\% reliable, the network in Figure
+\ref{figavaimain-a:4} becomes that shown in Figure \ref{figavaimain-a:7} and when the link 3-5 is 0\%
+reliable, the network in Figure \ref{figavaimain-a:4} becomes that in Figure \ref{figavaimain-a:8}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=386pt]{avaimain-a-7.eps}
+\caption{Network simplification - decomposition $x_{3-5}=1$ and $x_{1-3}=0$}\label{figavaimain-a:7}
+% \end{center}
+\end{figure}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=391pt]{avaimain-a-8.eps}
+\caption{Network simplification - decomposition $x_{3-5}=0$ and $x_{1-3}=0$}\label{figavaimain-a:8}
+% \end{center}
+\end{figure}
+The structure function $r({0_{1 - 3}},\vec x)$ is:
+\begin{eqnarray}
+&& r({0_{1 - 3}},\vec x) = {x_{3 - 5}} \cdot r_{1 - 3}^0({1_{3 - 5}},\vec x) + (1 -
+{x_{3 - 5}}) \cdot r_{1 - 3}^0({0_{3 - 5}},\vec x)
+\label{eqavaimain:9}
+%(12)
+\end{eqnarray}
+where $r_{1 - 3}^0({1_{3 - 5}},\vec x)$ and $r_{1 - 3}^0({0_{3 -
+5}},\vec x)$refer to the sub-structure function after link 1-3 and link 3-5 have
+been decomposed when link 1-3 is 0\% reliable.
+
+The values of $r_{1 - 3}^0({1_{3 - 5}},\vec x)$ and $r_{1 - 3}^0({0_{3 -
+5}},\vec x)$ can now be directly computed
+
+\begin{eqnarray}
+&& \begin{array}{l}
+r_{1 - 3}^0({1_{3 - 5}},\vec x) = {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{2 -
+3}} \cdot {x_{B - 2}}\\
+{\rm{                 }} + {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{2 - 3}} \cdot
+{x_{B - 5}}\\
+{\rm{                 }} + {x_{A - 4}} \cdot \left[ {1 - (1 - {x_{3 - 4}}) \cdot
+(1 - {x_{4 - 5}})} \right] \cdot {x_{2 - 3}} \cdot {x_{B - 2}}\\
+{\rm{                 }} + {x_{A - 4}} \cdot \left[ {1 - (1 - {x_{3 - 4}}) \cdot
+(1 - {x_{4 - 5}})} \right] \cdot {x_{2 - 3}} \cdot {x_{B - 5}}\\
+{\rm{                 }} + {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{A - 4}} \cdot
+\left[ {1 - (1 - {x_{3 - 4}}) \cdot (1 - {x_{4 - 5}})} \right] \cdot {x_{B - 5}}
+\cdot {x_{B - 2}}\\
+{\rm{                 }} - {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{A - 4}} \cdot
+\left[ {1 - (1 - {x_{3 - 4}}) \cdot (1 - {x_{4 - 5}})} \right] \cdot {x_{2 - 3}}
+\cdot {x_{B - 2}}\\
+{\rm{                 }} - {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{2 - 3}} \cdot
+{x_{B - 2}} \cdot {x_{B - 5}}\\
+{\rm{                 }} - {x_{A - 1}} \cdot {x_{1 - 2}} \cdot {x_{A - 4}} \cdot
+\left[ {1 - (1 - {x_{3 - 4}}) \cdot (1 - {x_{4 - 5}})} \right] \cdot {x_{2 - 3}}
+\cdot {x_{B - 5}}\\
+{\rm{                 }} - {x_{A - 4}} \cdot \left[ {1 - (1 - {x_{3 - 4}}) \cdot
+(1 - {x_{4 - 5}})} \right] \cdot {x_{2 - 3}} \cdot {x_{B - 5}} \cdot {x_{B - 2}}
+\end{array}
+\label{eqavaimain:10}
+%(13)
+\end{eqnarray}
+The set of equation from equation \eqref{eqavaimain:5} to equation \eqref{eqavaimain:11} can be used
+directly to calculate the reliability of the network given the reliability of the
+individual link every year. The reliability of each link and the network for
+periods of time ranging from 0 to 20 years are given in Table \ref{tblavaimain:13} and
+illustrated in Figure \ref{figavaimain-a:3}. 
+
+R code for this example is given in Appendix B.
+
+\underline{Step 3:} Estimate the availability of the network
+
+Similar to reliability, the set of structure functions above can be used
+to compute the availability of the network based on the reliability of individual
+link. The availability of individual link is calculated based on following
+equation
+\begin{eqnarray}
+&& A(t_i^{}) = \frac{{E\left[ {t_i^a} \right]}}{{E\left[ {t_i^a} \right] + E\left[
+{t_i^n} \right]}} = \frac{{\int\limits_0^{tu} {{R_i}(t)dt} }}{{\int\limits_0^{tu}
+{{R_i}(t)dt}  + {\Delta _i} \cdot \left[ {1 - {R_i}(tu)} \right]}}
+\label{eqavaimain:11}
+%(15)
+\end{eqnarray}
+where ${R_i}(t)$ is the reliability of link i at time t and ${\Delta
+_i}$is the mean time of intervention for link \textit{i}.
+
+The availabilities of each link and the network for periods of time from
+0 to 20 years are given in Table \ref{tblavaimain:14}, and illustrated in Figure
+\ref{figavaimain-a:3}.
+
+\begin{table}[h]
+\caption{Availability}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Time & \multicolumn{10}{c|}{Links} & Networks \\ 
+\cline{2-11}
+(years) & \multicolumn{5}{c|}{Road sections} & \multicolumn{3}{c|}{Bridge} & \multicolumn{2}{c|}{Tunnels} &  \\ 
+\cline{2-11}
+ & A-1 & 2-3 & 3-4 & 3-5 & 4-5 & 1-2 & 1-3 & A-4 & B-2 & B-5 &  \\ 
+\hline
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline
+2 & 0.999335 & 0.999502 & 0.999431 & 0.998864 & 0.99865 & 0.999022 & 0.998376 & 0.99773 & 0.997976 & 0.998496 & 0.999995 \\ 
+\hline
+3 & 0.999114 & 0.999336 & 0.99924 & 0.998459 & 0.998187 & 0.998707 & 0.997859 & 0.997011 & 0.997282 & 0.99799 & 0.999992 \\ 
+\hline
+4 & 0.999003 & 0.999253 & 0.999142 & 0.998237 & 0.997945 & 0.998557 & 0.997615 & 0.996675 & 0.99692 & 0.997733 & 0.99999 \\ 
+\hline
+5 & 0.998937 & 0.999204 & 0.999083 & 0.998088 & 0.997791 & 0.998471 & 0.99748 & 0.996492 & 0.996691 & 0.997575 & 0.999988 \\ 
+\hline
+6 & 0.998892 & 0.999171 & 0.999042 & 0.997975 & 0.997682 & 0.998417 & 0.997397 & 0.996385 & 0.996527 & 0.997467 & 0.999987 \\ 
+\hline
+7 & 0.998861 & 0.999148 & 0.999012 & 0.997883 & 0.997599 & 0.998382 & 0.997344 & 0.996319 & 0.996402 & 0.997388 & 0.999986 \\ 
+\hline
+8 & 0.998837 & 0.999131 & 0.998988 & 0.997804 & 0.997531 & 0.998357 & 0.997308 & 0.996279 & 0.996301 & 0.997327 & 0.999986 \\ 
+\hline
+9 & 0.998819 & 0.999118 & 0.998969 & 0.997734 & 0.997473 & 0.998339 & 0.997284 & 0.996255 & 0.996215 & 0.997277 & 0.999985 \\ 
+\hline
+10 & 0.998804 & 0.999107 & 0.998954 & 0.99767 & 0.997424 & 0.998325 & 0.997266 & 0.996242 & 0.99614 & 0.997235 & 0.999985 \\ 
+\hline
+11 & 0.998792 & 0.999099 & 0.99894 & 0.99761 & 0.997379 & 0.998315 & 0.997254 & 0.996236 & 0.996074 & 0.9972 & 0.999984 \\ 
+\hline
+12 & 0.998782 & 0.999092 & 0.998929 & 0.997554 & 0.997339 & 0.998308 & 0.997244 & 0.996236 & 0.996014 & 0.997169 & 0.999984 \\ 
+\hline
+13 & 0.998774 & 0.999086 & 0.998918 & 0.9975 & 0.997302 & 0.998302 & 0.997236 & 0.996238 & 0.995958 & 0.997142 & 0.999984 \\ 
+\hline
+14 & 0.998766 & 0.999081 & 0.998909 & 0.997448 & 0.997268 & 0.998297 & 0.99723 & 0.996243 & 0.995907 & 0.997118 & 0.999983 \\ 
+\hline
+15 & 0.99876 & 0.999076 & 0.998901 & 0.997398 & 0.997235 & 0.998293 & 0.997225 & 0.99625 & 0.995858 & 0.997096 & 0.999983 \\ 
+\hline
+16 & 0.998755 & 0.999073 & 0.998893 & 0.997349 & 0.997204 & 0.998289 & 0.997219 & 0.996257 & 0.995812 & 0.997075 & 0.999983 \\ 
+\hline
+17 & 0.99875 & 0.99907 & 0.998886 & 0.997302 & 0.997175 & 0.998286 & 0.997214 & 0.996264 & 0.995768 & 0.997057 & 0.999983 \\ 
+\hline
+18 & 0.998746 & 0.999067 & 0.998879 & 0.997256 & 0.997147 & 0.998284 & 0.997208 & 0.996272 & 0.995726 & 0.997039 & 0.999983 \\ 
+\hline
+19 & 0.998742 & 0.999064 & 0.998873 & 0.99721 & 0.99712 & 0.998281 & 0.997202 & 0.996279 & 0.995686 & 0.997023 & 0.999982 \\ 
+\hline
+20 & 0.998738 & 0.999062 & 0.998867 & 0.997165 & 0.997093 & 0.998279 & 0.997196 & 0.996286 & 0.995647 & 0.997007 & 0.999982 \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:14}
+\end{table}
+\subsubsection{Question B2}
+Calculate the total impacts due to links not being able to provide an
+adequate LOS and the network over a 20 year period. (Assume that link failures
+are mutually exclusive.)
+\subsubsection{Answer B2}
+The expected cost is estimated based on following equation 
+\begin{eqnarray}
+&& {C_{am}} = \frac{{E\left[ {t_i^n} \right] \cdot {I_{cr}}/12}}{{E\left[ {t_i^a}
+\right] + E\left[ {t_i^n} \right]}}
+\label{eqavaimain:12}
+%(15)
+\end{eqnarray}
+The mean time between failures can be calculated with following
+equation:
+\begin{eqnarray}
+&& E\left[ {t_i^a} \right] = {\Theta _i} = \int\limits_0^\infty  {{r_i}(t)dt} 
+\label{eqavaimain:13}
+%(15)
+\end{eqnarray}
+where ${r_i}(t)$ is the reliability of link \textit{i}.
+
+Table \ref{tblavaimain:15} shows the summary of total cost for each link and the
+total cost for the network
+
+\begin{table}[h]
+\caption{Cost}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Time & \multicolumn{10}{c|}{Links} & Total \\ 
+\cline{2-11}
+(years) & \multicolumn{5}{c|}{Road sections} & \multicolumn{3}{c|}{Bridge} & \multicolumn{2}{c|}{Tunnels} & costs \\ 
+\cline{2-11}
+ & A-1 & 2-3 & 3-4 & 3-5 & 4-5 & 1-2 & 1-3 & A-4 & B-2 & B-5 &  \\ 
+\hline
+Owner & 18.27 & 18.56 & 18.39 & 44.18 & 42.18 & 29.96 & 57.86 & 43.03 & 94.78 & 38.87 & 406.08 \\ 
+\hline
+User & 21.93 & 13.26 & 25.74 & 66.27 & 42.18 & 25.68 & 36.16 & 43.03 & 63.19 & 29.15 & 366.59 \\ 
+\hline
+DAP & 10.96 & 10.61 & 14.71 & 44.18 & 31.64 & 17.12 & 28.93 & 18.44 & 63.19 & 38.87 & 278.64 \\ 
+\hline
+IAP & 10.96 & 5.3 & 11.03 & 22.09 & 10.55 & 12.84 & 14.46 & 6.15 & 31.59 & 19.43 & 144.42 \\ 
+\hline
+\textbf{Total} & 62.13 & 47.74 & 69.87 & 176.72 & 126.54 & 85.6 & 137.41 & 110.64 & 252.75 & 126.32 & 1195.73 \\ 
+\hline
+\end{tabular}
+\label{tblavaimain:15}
+\end{table}
+
+\bibliographystyle{plainnat}
+\bibliography{reference}
+% \newpage
+\pagebreak
+
+\begin{subappendices}
+% \label{appendix3}
+\section{Example - Reliability \& Availability}\label{appavai-mai1}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-avai-main/IMP-E-availability.R}
+\pagebreak
+\section{Example - HongKong tunnel}\label{appavai-mai2}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-avai-main/IMP-E-tunnel.R}
+\pagebreak
+\section{Assignment - Availability-log-normal distribution}\label{appavai-mai3}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-avai-main/IMP-A-availability.r}
+\pagebreak
+\section{Assignment - availability, reliability, and impact estimation for the network}\label{appavai-mai3}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-avai-main/IMP-A-availability-network.R}
+\end{subappendices}

@@ -1,0 +1,566 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass svmono
+\options graybox,envcountchap,sectrefs,fleqn
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman times
+\font_sans helvet
+\font_typewriter courier
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "urlcolor=magenta,linkcolor=magenta,citecolor=blue,menucolor=magenta]"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 4
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% sample chapter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Use this file as a template for your own input.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+motto{Use the template 
+\backslash
+emph{chapter.tex} to style the various elements of your chapter content.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Infrastructure Maintenance Processes: An Introduction
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "intro"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Always give a unique label
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% use 
+\backslash
+chaptermark{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% to alter or adjust the chapter heading in the running head
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+chapterauthor
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Bryan T. Adey and Nam Lethanh
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+General
+\end_layout
+
+\begin_layout Standard
+Infrastructure consists of the fixed physical objects used to ensure the functioning of a society, e.g. the bridges in a road network, the track in a rail network, the pipes in a water supply network or sewer network, the transformers in an energy distribution network, and the masts in telecommunication networks. Infrastructure management is the process used to ensure that existing infrastructure objects and networks provide adequate levels of service (LOS) for specified periods of time. Good infrastructure management requires taking into consideration the benefits and costs of infrastructure to all members of society, including economic, ecological and social benefits and costs, as well as balancing the need for prediction accuracy with analysis effort. The main tasks in the infrastructure management process are:
+\end_layout
+
+\begin_layout Itemize
+determine the required LOSs, 
+\end_layout
+
+\begin_layout Itemize
+assess the ability of the infrastructure to provide these LOSs, 
+\end_layout
+
+\begin_layout Itemize
+determine the performance indicators to be used to determine that the required LOS are being provided, 
+\end_layout
+
+\begin_layout Itemize
+develop and evaluate both development and maintenance strategies, which include general considerations of the interventions to be executed when certain situations exist. 
+\end_layout
+
+\begin_layout Itemize
+develop and evaluate work programs, which include the specific interventions to be executed taking into consideration the actual situation that exits. 
+\end_layout
+
+\begin_layout Standard
+This process is true for all types of infrastructure. In order for it to be executed effectively in todayâs world it also requires the use of a large amount of modern technology, including the use of advanced inspection techniques, computerized management systems and effective infrastructure management organizations. In this article an overview of the main tasks in the infrastructure management process is given.
+\end_layout
+
+\begin_layout Section
+Levels of service
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1:los"
+
+\end_inset
+
+ In order to manage infrastructure well, it is necessary to determine the LOS required of infrastructure and how it changes over time. The first part of this is the definition of how the future should be with new or modified infrastructure, e.g. the longest shortest drive between any two nodes in the road network is to be under x hours. The second part is the definition of how the future should be during the operation and maintenance of the existing, and the new and modified, infrastructure, e.g. the number of accidents should be less than x per year.
+\end_layout
+
+\begin_layout Standard
+Although the initial definition of the LOS may be expressed in an incomplete fashion, as above, a complete definition in terms of impacts on humans should be made. This is required, in order to objectively evaluate how well infrastructure provides the required LOS when different intervention strategies and intervention programs are followed. The items to be included in the definition of the LOS should be included in an impact hierarchy that is complete, operational, quantifiable and non-redundant. An impact hierarchy needs to be complete to ensure that the value of one impact is not improved to the detriment of another. For example, the reduction of the cost of manual labor on a construction site which results in an inadvertent rise in the number, and therefore the costs, of accidents. An impact hierarchy needs to be operational so that it can be used. For example, there is little need to have an impact hierarchy which includes a breakdown of accidents by the age of the persons in the vehicles if it is considered to be too laborious to collect such information. An impact hierarchy needs to be quantifiable as it is difficult to compare strategies or intervention programs using qualitative measures. In this case it is better to make difficult to quantify impacts such as noise into something quantifiable and accept that there is a substantial variation in the possible values than to simply say that one intervention program would result in less noise than another. The two main possibilities to measure things in proportional units are utility or monetary units. The latter has the advantage that many impacts are already measure in terms of monetary units. An impact hierarchy needs to be non-redundant so that accurate results in analyses are obtained.
+\end_layout
+
+\begin_layout Standard
+The LOS to be provided by infrastructure changes over time. It may change due changes in already defined types of impacts, e.g. last year travel time impacts were not to exceed x CHF and this year they are not to exceed y CHF. It may also change due to changes in not yet defined requirements, e.g. last year there were no limitation on the amount of CO2 emitted, and this year the amount of CO2 emitted is not to exceed x tons.
+\end_layout
+
+\begin_layout Standard
+Changes in the LOS to be provided can be classified as gradual (manifest) or sudden (latent). A gradual change in the LOS is one that happens in a way that there is enough time to execute an intervention so as to ensure that the infrastructure continues to provide an adequate LOS. A sudden change in the LOS is one that happens in a way that there is not enough time to execute an intervention so as to ensure that the infrastructure continues to provide an adequate LOS. For example, a gradual change may be the increases in the amount of travel time due to increasingly congested roads, something that may happen at a rate of 2% per year. A sudden change may be a new law that allows the axle loads to increase by 50%. The classification of a change in LOS as gradual or sudden depends on the state of preparedness and the perception of the infrastructure management operator (IMO).
+\end_layout
+
+\begin_layout Standard
+The evaluation of the LOS provided by infrastructure requires the use of models to measure the values of performance indicators associated with the LOS 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Talvitie1999"
+
+\end_inset
+
+, e.g. analytical models to predict the impacts due to noise produced by vehicles on road networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Fyhri2010"
+
+\end_inset
+
+ or trains on rail network 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "herrmann08"
+
+\end_inset
+
+, neural networks to predict the impacts due to the execution of interventions on water distribution networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Bowden2006"
+
+\end_inset
+
+ or buildings 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Marzouk2013"
+
+\end_inset
+
+, and Bayesian networks to predict the impacts due to accidents 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Wang2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The task to identify the LOS to be provided involves consideration of what the IMO can offer or would like to offer, and consideration of what stakeholders of the infrastructure, e.g. users and persons who are directly affected by the infrastructure but who are not users and persons who are indirectly affected by the infrastructure. The latter can require considerable interaction between multiple parties and often includes dealing with stakeholder representatives such as politicians or lobbies, as well as through consideration of laws.
+\end_layout
+
+\begin_layout Section
+Performance indicators
+\end_layout
+
+\begin_layout Standard
+The determination of whether or not a required LOS is provided by infrastructure if default strategies and intervention programs are being followed requires assessment. This is done through the estimation of performance indicators 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Talvitie1999"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The most complete performance indicators are the values of the total impacts associated with the multiple possible futures that may happen and the probabilities of occurrence of these possible futures. Here the only relevant impacts are those related to the execution of interventions, the occurrence of accidents and the production of noise.
+\end_layout
+
+\begin_layout Standard
+As the evaluation of total impacts is laborious, it is often advantageous to use partial performance indicators. Four common ones are reliability, availability, maintainability and safety. Reliability is the probability that infrastructure provides a specific LOS for a specified period of time. Availability is the amount of time that infrastructure provides a specific LOS over a specified period of time taking into consideration the length of time that the infrastructure is not providing the specific LOS due to the execution of interventions. Maintainability is a measure of the impacts associated with the execution of interventions or the time required to execute interventions over a specified period of time. Safety is determined through the assessment of the number of persons injured.
+\end_layout
+
+\begin_layout Standard
+A significant part of the estimation of the values of performance indicators for infrastructure networks depends on the topology of the networks. For example, the estimation of the reliability of traveling from A to B in a road network depends on whether A and B are connected in a series, parallel, or a more complex network, as well as how each of the objects in each of the network links performs 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Bell2000"
+
+\end_inset
+
+. Similar considerations are applicable to the estimation of availability and maintainability. Reliability is often used when the impacts related to the infrastructure being non-operational are substantially higher than when it is operational, e.g. in the case of sudden deterioration of infrastructure due to floods. Availability is often used when the impacts related to the infrastructure being operational and non-operational are relatively similar, e.g. in the case of gradual deterioration of infrastructure due to chloride induced corrosion. Maintainability is often used when the impacts related to the execution of interventions on the infrastructure is of particular interest. Safety is often used when there is a perception that the number of accidents is too high.
+\end_layout
+
+\begin_layout Standard
+The task of determining the performance indicators to be used involves consideration about how information is collected, i.e. monitoring, and making assumptions about what is important. This includes the generation and assessment of possible monitoring strategies, the estimation of the impacts associated with the performing inspections, the development of data management strategies, and consideration as to how the data will be used.
+\end_layout
+
+\begin_layout Section
+Strategies
+\end_layout
+
+\begin_layout Standard
+Intervention strategies, whether they are development or maintenance strategies, include all interventions to be executed on an object taking into consideration many possible conditions of the object or many possible situations in which the object could be. For example, if there is cracking in the pavement part of a road section a crack filling intervention should be executed and if there is cracking and significant unevenness then a partial depth repair intervention should be executed. Intervention strategies are developed without consideration of externalities, such as the condition of other objects or other types of infrastructure.
+\end_layout
+
+\begin_layout Standard
+A development strategy is one of how to modify existing infrastructure so that it provides a new LOS. It principally deals with possible changes in requirements. For example, if the number of trains traveling on a railway line is over 90% of the design capacity then a new track will be built. A maintenance strategy is one of how to modify existing infrastructure so that it continues to provide the same LOS as initially intended. It principally deals with possible changes in the infrastructure. If more than 50% of the material from track is worn away then the track will be replaced.
+\end_layout
+
+\begin_layout Standard
+The generation of possible development and maintenance strategies requires in-depth infrastructure sector specific knowledge. The generation of such strategies requires good technical persons and organizations with structures that encourage both cooperation and innovation. The evaluation of the possible strategies and the determination of the optimal ones require a good foundation in decision theory and an ability to model how impacts will change over time if each of the strategies are followed. Some models used to evaluate strategies are common, such as block replacement models, age replacement models, and Markov models. Others are custom built to address specific questions, using standard operations research methods. In the evaluation of strategies both the impacts during execution of interventions (construction and maintenance) and between the executions of interventions must be considered.
+\end_layout
+
+\begin_layout Standard
+The task to develop and evaluate both development and maintenance strategies involves consideration about the interventions that are possible in different situations, including those that affect the present and the future, e.g. the addition of a new concrete layer on a reinforced concrete element, and the ones that affect only the future, e.g. the addition of a waterproofing layer on a concrete bridge deck. It also involve the estimation of the impacts associated with the execution of the interventions, their effects on future LOSs, their duration, and the probability of them working as intended, as well as the consequences if they do not work as intended.
+\end_layout
+
+\begin_layout Section
+Infrastructure
+\end_layout
+
+\begin_layout Standard
+In order to manage infrastructure well, it is necessary to determine the LOS provided by infrastructure and how it changes over time. Some, but normally not all, aspects of the LOS to be provided by infrastructure are often defined in building codes. For example, a highway design code may specify that all objects are to be designed to withstand a flood that returns on average every 100 years which indirectly limits the costs of interventions related to rebuilding the highway due to floods, but it may not specify the minimum conditions above which the infrastructure must be kept to ensure that the costs related to the noise produced by vehicles traveling on the highway remain above a specified limit.
+\end_layout
+
+\begin_layout Standard
+The determination of the LOS provided by infrastructure requires understanding the objects that comprise the infrastructure network being managed, as well as how these objects, and therefore the network, perform.
+\end_layout
+
+\begin_layout Standard
+Infrastructure loses its ability to provide LOS due to processes that can be classified as gradual and sudden. A gradual process is one that happens in a way that there is enough time to execute an intervention to ensure that the infrastructure continues to provide an adequate LOS. A sudden process is one that is happens in a way that there is not enough time to execute an intervention to ensure that the infrastructure continues to provide an adequate LOS. An example of a gradual process is chloride-induced corrosion of reinforced concrete in which an expansive rust product is created. An example of a sudden process is earthquake.
+\end_layout
+
+\begin_layout Standard
+Many models can be used to predict how infrastructure performance changes over time. Popular models for gradual processes include mechanistic-empirical models (e.g. 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Newbery1988"
+
+\end_inset
+
+), regression models (e.g. 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Madanat1995"
+
+\end_inset
+
+), and Markov models (e.g. 
+\begin_inset CommandInset citation
+LatexCommand citet
+after ""
+before ""
+key "Lethanh2015"
+
+\end_inset
+
+). Mechanistic-empirical models are used for example to predict the speed of chloride ingress into reinforced concrete bridge decks, the start of corrosion, and the speed with which the cross section area of the reinforcement will be reduced. Regression models are used to predict the number of potholes that will occur on road sections. Markov models are used to model the change in condition over time of bridge elements 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "ASTRA2010"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+ASTRA (the Swiss Federal Road Office) uses KUBA, a bridge management system built on a Markov chain model, to predict deterioration of highway bridges and to determine optimal intervention strategies over a specified planning horizon
+\end_layout
+
+\end_inset
+
+. Popular models for latent processes include event trees, Bayesian networks, and fault tree models. For example, event trees and fault tree models have been used to measure the reliability of dams and nuclear reactors 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Pate-Cornell1984"
+
+\end_inset
+
+. Bayesian networks have been used to quantify the risks associated with road accidents 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Deublein2013,Kohler2007"
+
+\end_inset
+
+ or hazards occurred after an earthquake in a urban city 
+\begin_inset CommandInset citation
+LatexCommand citep
+after ""
+before ""
+key "Bayraktarli2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The task to determine the LOS provided by the infrastructure involves surveying the condition and the performance of all infrastructure, which often includes discussing with the many persons taking care of the infrastructure and developing models of the connectivity of the objects, determining the LOS of the infrastructure is likely to provide, and the probability that it will do so. This requires the definition of the hazards that are likely to affect the infrastructure and having appropriate persons provide the assessments of the condition and performance of the infrastructure. This information then needs to be integrated in a way that provides a cohesive overarching picture.
+\end_layout
+
+\begin_layout Section
+Intervention programs
+\end_layout
+
+\begin_layout Standard
+Intervention programs include the interventions to be executed on objects with consideration of externalities, such as the condition of other objects or other types of infrastructure. They include all interventions to be executed, regardless if they are due to development strategies or maintenance strategies. The consideration of externalities results in deviations from those that would result if optimal intervention strategies were followed without consideration of externalities. For example, if an object is not in a condition state in which the intervention strategy includes the execution of intervention, but part of the network is closed due to the execution of other interventions, than an intervention might also be executed on the object.
+\end_layout
+
+\begin_layout Standard
+The development of optimal intervention programs is dependent on the location of the objects in networks and the timing of the interventions on the objects. The determination of optimal intervention programs requires making trade-offs and deviations from the theoretically optimal intervention strategies.
+\end_layout
+
+\begin_layout Standard
+The generation of possible intervention programs requires good technical persons and organizations with structures that encourage both cooperation and innovation. One of the particular challenges in the generation of intervention programs that give adequate consideration to development and maintenance interventions, is that it requires understanding of
+\end_layout
+
+\begin_layout Itemize
+how the infrastructure needs to be adapted or could be adapted to ensure that it provides adequate LOSs, 
+\end_layout
+
+\begin_layout Itemize
+the impacts related to the execution of maintenance interventions and how they change over time, 
+\end_layout
+
+\begin_layout Itemize
+how the impacts related to the execution of interventions are affected by the execution of other interventions simultaneously. 
+\end_layout
+
+\begin_layout Standard
+The generation of possible intervention programs increases in difficulty with the size of IMOs, as there is an increasing division of labor, i.e. different persons are responsible for the development strategies and maintenance strategies, and different persons are responsible for different types of infrastructure. This difficult can, however, be overcome with clear guidelines of how information is to be aggregated and how decisions are to be made as to which interventions are to be included in the intervention program. Traditionally intervention programs have been developed through negotiations with these different persons. Increasingly, however, computers are being used to help determine the intervention programs to follow. Over time the algorithms used are increasingly more sophisticated.
+\end_layout
+
+\begin_layout Standard
+The task to develop and evaluate intervention programs involves securing the financing to conduct the intervention programs, ensuring that all legal requirements are met and ensuring that there is enough staff available for conducting the intervention program.
+\end_layout
+
+\begin_layout Section
+Projects
+\end_layout
+
+\begin_layout Standard
+Once intervention programs are finalized, planning can progress to a much more detailed level, i.e. the planning and execution of projects. This task involves tendering the interventions, reviewing the applications, selecting the best companies to execute the interventions, planning the interventions, communicating the activities with stakeholders, and all other normal project management related activities. 
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+The management of infrastructure is an important process. Good infrastructure management can result in substantially reduced negative impacts to society when compared to bad infrastructure management. Good infrastructure management requires the exploitation of the latest advances in the field of infrastructure management.
+\end_layout
+
+\begin_layout Standard
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "reference"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

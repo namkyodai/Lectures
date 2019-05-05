@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Chapters/mecha-empi.aux
+The style file: plainnat.bst
+Database file #1: reference.bib
+You've used 4 entries,
+            2773 wiz_defined-function locations,
+            622 strings with 5792 characters,
+and the built_in function-call counts, 1821 in all, are:
+= -- 145
+> -- 125
+< -- 2
++ -- 43
+- -- 39
+* -- 150
+:= -- 306
+add.period$ -- 17
+call.type$ -- 4
+change.case$ -- 22
+chr.to.int$ -- 4
+cite$ -- 8
+duplicate$ -- 82
+empty$ -- 137
+format.name$ -- 43
+if$ -- 366
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 7
+newline$ -- 33
+num.names$ -- 16
+pop$ -- 54
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 59
+stack$ -- 0
+substring$ -- 23
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 29
+warning$ -- 0
+while$ -- 13
+width$ -- 0
+write$ -- 66

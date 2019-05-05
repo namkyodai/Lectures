@@ -1,0 +1,139 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[ASTRA(2010)]{ASTRA2010}
+ASTRA.
+\newblock \emph{KUBA-MS-Ticino-User's manual (Release 4.0)}.
+\newblock Federal Roads Authority (FEDRO), Bern, Switzerland, 4.0 edition,
+  2010.
+
+\bibitem[Bayraktarli and Faber(2011)]{Bayraktarli2011}
+Yahya~Y. Bayraktarli and Michael~H. Faber.
+\newblock Bayesian probabilistic network approach for managing earthquake risks
+  of cities.
+\newblock \emph{Georisk: Assessment and Management of Risk for Engineered
+  Systems and Geohazards}, 5\penalty0 (1):\penalty0 2--24, 2011.
+\newblock \doi{10.1080/17499511003679907}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/17499511003679907}.
+
+\bibitem[Bell and Cassir(2001)]{Bell2000}
+M.G.H. Bell and C.~Cassir.
+\newblock \emph{Reliability of Transport Networks}.
+\newblock Research Studies Press, Baldock, Hertfordshire, England, January 19
+  2001.
+
+\bibitem[Bowden et~al.(2006)Bowden, Nixon, Dandy, Maier, and
+  Holmes]{Bowden2006}
+Gavin~J. Bowden, John~B. Nixon, Graeme~C. Dandy, Holger~R. Maier, and Mike
+  Holmes.
+\newblock Forecasting chlorine residuals in a water distribution system using a
+  general regression neural network.
+\newblock \emph{Mathematical and Computer Modelling}, 44\penalty0
+  (5â€“6):\penalty0 469 -- 484, 2006.
+\newblock ISSN 0895-7177.
+\newblock \doi{http://dx.doi.org/10.1016/j.mcm.2006.01.006}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0895717706000070}.
+\newblock Application of Natural Computing Methods to Water Resources and
+  Environmental Modelling Application of Natural Computing (Computational
+  Intelligence) Methods to Water Resources and Environmental Modelling.
+
+\bibitem[Deublein et~al.(2013)Deublein, Schubert, Adey, Köhler, and
+  Faber]{Deublein2013}
+Markus Deublein, Matthias Schubert, Bryan~T. Adey, Jochen Köhler, and
+  Michael~H. Faber.
+\newblock Prediction of road accidents: A bayesian hierarchical approach.
+\newblock \emph{Accident Analysis \& Prevention}, 51:\penalty0 274 -- 291,
+  2013.
+\newblock ISSN 0001-4575.
+\newblock \doi{http://dx.doi.org/10.1016/j.aap.2012.11.019}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0001457512004101}.
+
+\bibitem[Fyhri and Aasvang(2010)]{Fyhri2010}
+Aslak Fyhri and Gunn~Marit Aasvang.
+\newblock Noise, sleep and poor health: Modeling the relationship between road
+  traffic noise and cardiovascular problems.
+\newblock \emph{Science of The Total Environment}, 408\penalty0 (21):\penalty0
+  4935 -- 4942, 2010.
+\newblock ISSN 0048-9697.
+\newblock \doi{http://dx.doi.org/10.1016/j.scitotenv.2010.06.057}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0048969710006625}.
+
+\bibitem[Herrmann et~al.(2008)Herrmann, Adey, Lu~king, Schindele, and
+  Hajdin]{herrmann08}
+T.~Herrmann, B.T. Adey, J.~Lu~king, N.~Schindele, and R.~Hajdin.
+\newblock Total benefit – benefit-cost ratio of standard interventions for
+  road maintenance.
+\newblock Technical report, VSS 2004/714. Switzerland: Swiss Federal Roads
+  Authority, 2008.
+
+\bibitem[Kohler et~al.(2007)Kohler, Schubert, and Faber]{Kohler2007}
+Jochen Kohler, Matthias Schubert, and Michael~Habro Faber.
+\newblock Analysis of tunnel accidents by using bayesian networks.
+\newblock In Luc Taerwe and Dirk Proske, editors, \emph{Proceedings of the 5th
+  International Probabilistic Workshop}, Belgium, November 2007. ACCO.
+
+\bibitem[Lethanh et~al.(2015)Lethanh, Adey, and Fernando]{Lethanh2015}
+Nam Lethanh, Bryan~T. Adey, and Dilum~N. Fernando.
+\newblock Optimal intervention strategies for multiple objects affected by
+  manifest and latent deterioration processes.
+\newblock \emph{Structure and Infrastructure Engineering}, 11\penalty0
+  (3):\penalty0 389--401, 2015.
+\newblock \doi{10.1080/15732479.2014.889178}.
+\newblock URL \url{http://dx.doi.org/10.1080/15732479.2014.889178}.
+
+\bibitem[Madanat and Ibrahim(1995)]{Madanat1995}
+Samer. Madanat and W.H.W Ibrahim.
+\newblock Poisson regression models of infrastructure transition probabilities.
+\newblock \emph{Journal of Transportation Engineering, ASCE}, 121:\penalty0
+  267--272, 1995.
+
+\bibitem[Marzouk and Amin(2013)]{Marzouk2013}
+M.~Marzouk and A.~Amin.
+\newblock Predicting construction materials prices using fuzzy logic and neural
+  networks.
+\newblock \emph{Journal of Construction Engineering and Management},
+  139\penalty0 (9):\penalty0 1190--1198, 2013.
+\newblock \doi{10.1061/(ASCE)CO.1943-7862.0000707}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)CO.1943-7862.0000707}.
+
+\bibitem[Newbery(1988)]{Newbery1988}
+David~M. Newbery.
+\newblock Road damage externalities and road user charges.
+\newblock \emph{Econometrica}, 56\penalty0 (2):\penalty0 pp. 295--316, 1988.
+\newblock ISSN 00129682.
+\newblock URL \url{http://www.jstor.org/stable/1911073}.
+\newblock ref id=08.
+
+\bibitem[Pate-Cornell(1984)]{Pate-Cornell1984}
+M.~Elisabeth Pate-Cornell.
+\newblock Fault trees vs. event trees in reliability analysis.
+\newblock \emph{Risk Analysis}, 4\penalty0 (3):\penalty0 177--186, 1984.
+\newblock ISSN 1539-6924.
+\newblock \doi{10.1111/j.1539-6924.1984.tb00137.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1539-6924.1984.tb00137.x}.
+
+\bibitem[Talvitie(1999)]{Talvitie1999}
+Antti Talvitie.
+\newblock Performance indicators for the road sector.
+\newblock \emph{Transportation}, 26\penalty0 (1):\penalty0 5--30, 1999.
+
+\bibitem[Wang et~al.(2013)Wang, Xie, Chin, and Fu]{Wang2013}
+Yan~Fu Wang, Min Xie, Kwai-Sang Chin, and Xiu~Ju Fu.
+\newblock Accident analysis model based on bayesian network and evidential
+  reasoning approach.
+\newblock \emph{Journal of Loss Prevention in the Process Industries},
+  26\penalty0 (1):\penalty0 10 -- 21, 2013.
+\newblock ISSN 0950-4230.
+\newblock \doi{http://dx.doi.org/10.1016/j.jlp.2012.08.001}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0950423012001301}.
+
+\end{thebibliography}

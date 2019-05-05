@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adey et~al.(2009)Adey, Hajdin, and Birdsall]{Adey2009}
+B.T. Adey, R.~Hajdin, and J.~Birdsall.
+\newblock Methodology to determine optimal intervention strategies for
+  structures adversely affected by latent processes.
+\newblock In \emph{Proceeding of the Annual Conference of The Transportation
+  Association of Canada}, Vancouver, Canada, October (19-22) 2009.
+
+\bibitem[Andrews(2012)]{Andrews2012}
+John Andrews.
+\newblock Introduction to fault tree analysis.
+\newblock In \emph{Proceeding of the Annual Reliability and Maintainability
+  Symposium (RAMS)}, NV, USA, 23 Jan - 26 Jan 2012.
+
+\bibitem[Beim and Hobbs(1997)]{Beim1997}
+G.~Beim and B.~Hobbs.
+\newblock Event tree analysis of lock closure risks.
+\newblock \emph{Journal of Water Resources Planning and Management},
+  123\penalty0 (3):\penalty0 169--178, 1997.
+\newblock \doi{10.1061/(ASCE)0733-9496(1997)123:3(169)}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)0733-9496(1997)123:3(169)}.
+
+\bibitem[Davis-McDaniel et~al.(2013)Davis-McDaniel, Chowdhury, Pang, and
+  Dey]{Davis-McDaniel2013}
+C.~Davis-McDaniel, M.~Chowdhury, W.~Pang, and K.~Dey.
+\newblock Fault-tree model for risk assessment of bridge failure: Case study
+  for segmental box girder bridges.
+\newblock \emph{Journal of Infrastructure Systems}, 19\penalty0 (3):\penalty0
+  326--334, 2013.
+\newblock \doi{10.1061/(ASCE)IS.1943-555X.0000129}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)IS.1943-555X.0000129}.
+
+\bibitem[Johnson(1999)]{Johnson1999}
+P.~Johnson.
+\newblock Fault tree analysis of bridge failure due to scour and channel
+  instability.
+\newblock \emph{Journal of Infrastructure Systems}, 5\penalty0 (1):\penalty0
+  35--41, 1999.
+\newblock \doi{10.1061/(ASCE)1076-0342(1999)5:1(35)}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)1076-0342(1999)5:1(35)}.
+
+\bibitem[LeBeau and Wadia-Fascetti(2007)]{LeBeau2007}
+K.~LeBeau and S.~Wadia-Fascetti.
+\newblock Fault tree analysis of schoharie creek bridge collapse.
+\newblock \emph{Journal of Performance of Constructed Facilities}, 21\penalty0
+  (4):\penalty0 320--326, 2007.
+\newblock \doi{10.1061/(ASCE)0887-3828(2007)21:4(320)}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)0887-3828(2007)21:4(320)}.
+
+\bibitem[Ma et~al.(2014)Ma, Bai, Shen, and Zhou]{Ma2014}
+J.~Ma, Y.~Bai, J.~Shen, and F.~Zhou.
+\newblock Examining the impact of adverse weather on urban rail transit
+  facilities on the basis of fault tree analysis and fuzzy synthetic
+  evaluation.
+\newblock \emph{Journal of Transportation Engineering}, 140\penalty0
+  (3):\penalty0 04013011, 2014.
+\newblock \doi{10.1061/(ASCE)TE.1943-5436.0000630}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)TE.1943-5436.0000630}.
+
+\bibitem[Sianipar and Adams(1997)]{Sianipar1997}
+P.~Sianipar and T.~Adams.
+\newblock Fault-tree model of bridge element deterioration due to interaction.
+\newblock \emph{Journal of Infrastructure Systems}, 3\penalty0 (3):\penalty0
+  103--110, 1997.
+\newblock \doi{10.1061/(ASCE)1076-0342(1997)3:3(103)}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)1076-0342(1997)3:3(103)}.
+
+\bibitem[Tian et~al.(2012)Tian, Qu, Liu, He, and Huang]{Tian2012}
+Hui Tian, Weidong Qu, Pengfei Liu, Jun He, and Yijin Huang.
+\newblock \emph{Application of Fault Tree Analysis in the Reliability Analysis
+  of Oil-Gas Long Pipeline}, chapter 147, pages 1436--1447.
+\newblock ASCE, 2012.
+\newblock \doi{10.1061/9780784412619.147}.
+\newblock URL \url{http://ascelibrary.org/doi/abs/10.1061/9780784412619.147}.
+
+\bibitem[You and Tonon(2012)]{You2012}
+Xiaomin You and Fulvio Tonon.
+\newblock Event tree and fault tree analysis in tunneling with imprecise
+  probabilities.
+\newblock In \emph{GeoCongress 2012}, pages 2885--2894, 2012.
+\newblock \doi{10.1061/9780784412121.295}.
+\newblock URL \url{http://ascelibrary.org/doi/abs/10.1061/9780784412121.295}.
+
+\end{thebibliography}

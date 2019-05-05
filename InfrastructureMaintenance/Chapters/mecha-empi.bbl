@@ -1,0 +1,42 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bertolini et~al.(2013)Bertolini, Elsener, Pedeferri, Redaelli, and
+  Polder]{Bertolini2013}
+Luca Bertolini, Bernhard Elsener, Pietro Pedeferri, Elena Redaelli, and Rob~B.
+  Polder.
+\newblock \emph{Corrosion of Steel in Concrete: Prevention, Diagnosis, Repair}.
+\newblock Wiley-VCH Verlag GmbH \& Co. KGaA, 2013.
+\newblock ISBN 9783527651696.
+\newblock \doi{10.1002/9783527651696.fmatter}.
+\newblock URL \url{http://dx.doi.org/10.1002/9783527651696.fmatter}.
+
+\bibitem[Brodsky et~al.(2006)Brodsky, Muzykin, Brodskaia, Ponomarev, Yenyutin,
+  and Vlasova]{Brodsky2006}
+G.~Brodsky, R.~Muzykin, E.~S. Brodskaia, Yu.~A. Ponomarev, Yu.~A. Yenyutin, and
+  M.~S. Vlasova.
+\newblock Analysis of parameters of structure deterioration models within the
+  moscow bridge management system.
+\newblock \emph{Structure and Infrastructure Engineering}, 2\penalty0
+  (1):\penalty0 13--21, 2006.
+\newblock \doi{10.1080/15732470500030950}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/15732470500030950}.
+
+\bibitem[DuraCrete(2000)]{DuraCrete2000}
+DuraCrete.
+\newblock \emph{Statistical Quantification of the Variables in the Limit State
+  Functions}.
+\newblock European Union, 2000.
+
+\bibitem[Elsener(2013)]{Elsener2013}
+Bernhard Elsener.
+\newblock \emph{Corrosion of Steel in Concrete: Materials Science and
+  Technology}.
+\newblock Wiley, 2013.
+
+\end{thebibliography}

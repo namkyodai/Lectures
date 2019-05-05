@@ -1,0 +1,98 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adey et~al.(2012)Adey, Lethanh, and Lepert]{Adey2012}
+Bryan~T. Adey, Nam Lethanh, and Philippe Lepert.
+\newblock An impact hierarchy for the evaluation of intervention strategies for
+  public roads.
+\newblock In \emph{4th European Pavement and Asset Management Conference, 5-7
+  September, 2012, Malmo, Sweden}, September 2012.
+
+\bibitem[Brauers(2003)]{Brauers204}
+W.K. Brauers.
+\newblock \emph{Optimization Methods for a Stakeholder Society: A Revolution in
+  Economic Thinking by Multi-objective Optimization}, volume~73 of
+  \emph{Nonconvex Optimization and Its Applications}.
+\newblock Kluwer Academic Publishers, 2003.
+
+\bibitem[CUBRC(2001)]{cubrc2001}
+CUBRC.
+\newblock \emph{Handbook of Economic Development}.
+\newblock CUBRC (Calspan-University of Buffalo Research Center) State
+  University of New York, {New York} State Department of Transportation, 2001.
+
+\bibitem[Davis(2001)]{Davis2001}
+H.~Craig Davis.
+\newblock \emph{Regional economic impact analysis and project evaluation}.
+\newblock UBC Press, 2001.
+
+\bibitem[de~Neufville and Scholtes(2011)]{Neufville2011}
+Richard de~Neufville and Stefan Scholtes.
+\newblock \emph{Flexibility in Engineering Design}.
+\newblock MIT Press, 2011.
+
+\bibitem[Elsener(2013)]{Elsener2013}
+Bernhard Elsener.
+\newblock \emph{Corrosion of Steel in Concrete: Materials Science and
+  Technology}.
+\newblock Wiley, 2013.
+
+\bibitem[Kumares and Samuel(2007)]{Kumares2007}
+C.~S Kumares and L.~Samuel.
+\newblock \emph{Transportation decision making: principles of project
+  evaluation and programming}.
+\newblock John Wiley and Sons, 2007.
+
+\bibitem[Lethanh et~al.(2015)Lethanh, Adey, and Fernando]{Lethanh2015}
+Nam Lethanh, Bryan~T. Adey, and Dilum~N. Fernando.
+\newblock Optimal intervention strategies for multiple objects affected by
+  manifest and latent deterioration processes.
+\newblock \emph{Structure and Infrastructure Engineering}, 11\penalty0
+  (3):\penalty0 389--401, 2015.
+\newblock \doi{10.1080/15732479.2014.889178}.
+\newblock URL \url{http://dx.doi.org/10.1080/15732479.2014.889178}.
+
+\bibitem[Lindberg(1999)]{Lindberg1999}
+Gunnar Lindberg.
+\newblock Calculating transport accident costs.
+\newblock Technical report, VTI, 1999.
+
+\bibitem[Lindenmann(2008)]{Lindenmann2008}
+H.P Lindenmann.
+\newblock Planning and measurement for preservation of road network (german
+  name: Massnahmenplanung im erhaltungsmanagement von fahrbahnen).
+\newblock Technical Report 1259, Institute for Transport Planning and Systems,
+  2008.
+
+\bibitem[OpusCL(1999)]{OpusCL1999}
+OpusCL.
+\newblock \emph{Review of VOC - Pavement Roughness Relationships Contained in
+  Transfunds Project Evaluation Manual}.
+\newblock Opus Central Laboratories, Opus, Lower Hutt, New Zealand, rep.
+  529277.00 edition, 1999.
+
+\bibitem[Ouyang and Madanat(2004)]{Ouyang2004}
+Y.~Ouyang and S.~Madanat.
+\newblock Optimal scheduling of rehabilitation activities for multiple pavement
+  facilities: exact and approximate solutions.
+\newblock \emph{Transportation Research Part A: Policy and Practice},
+  38\penalty0 (5):\penalty0 347 -- 365, 2004.
+\newblock ISSN 0965-8564.
+\newblock \doi{DOI: 10.1016/j.tra.2003.10.007}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/B6VG7-4BSVNB4-1/2/a9f74a65d6101d9b289448f4e9bbe8fa}.
+\newblock ref id=12.
+
+\bibitem[Tarko et~al.(2000)Tarko, Shinha, Eranky, Brwon, Roberts, Scinteie, and
+  Islam]{tarko2000}
+A.~Tarko, K.C. Shinha, S.~Eranky, H.~Brwon, E.~Roberts, R.~Scinteie, and
+  S.~Islam.
+\newblock Crash reduction factors for improvement activities in indiana.
+\newblock Technical report, Joint Transportation Research Program, Purdue
+  University, West Lafayette, IN, 2000.
+
+\end{thebibliography}

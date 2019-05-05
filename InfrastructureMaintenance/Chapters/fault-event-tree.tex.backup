@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Event Tree and Fault Tree Analysis}
+\label{faulteventreechapter} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\chapterauthor{Bryan T. Adey and Nam Lethanh}
+\section{Event tree analysis - Theory}
+\subsection{Definition}
+Event tree analysis (ETA) is a way to analyse and display different discrete
+scenarios, their corresponding probability of occurrence and the resulting
+consequences. ETA uses Boolean logic to analyse a chronological sequence of
+events and estimate the probability of their occurrence. A key component of event
+tree analysis is the event tree. An event tree is built from a starting event and
+branches at each subsequent event based on the values of key parameters these key
+parameters were intensity measures. When the event tree is complete, it is a
+logical and visual representation of the set of scenarios that can occur, i.e.
+multiple possible futures. An example is shown in Figure \ref{figeventfault:1}, the
+initiating event is a 100-year precipitation, which may result in the occurrence
+of a flood with water depths over 30 cm, under 30 cm, or not at all. In this
+example, the flood can lead to different damage states related to an
+infrastructure element, which can result in interruptions to traffic flow on the
+road network. The consequences of the scenarios can then be quantified. Also the
+heavy rain itself can cause an interruption.
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{faulteventtree-1.eps}
+\caption{Simplified event tree for a flood risk analysis}\label{figeventfault:1}
+% \end{center}
+\end{figure}
+ETA is often referred to as having forward logic as it starts from an initiating
+event and ends at a consequence. It is often used to analyze the risks associated
+with systems, and the consequences of functioning or failed systems given that an
+event(s) has (have) occurred. Simply the construction of an event tree can often
+be useful in decision situations as it brings to light many scenarios that
+decision makers otherwise would not have considered.
+
+When conducting an ETA it is necessary to first determine the starting events
+that are to be considered and then to think through each of the next possible
+events to be considered. Each chain of events from initiating events to the end
+event (or consequence) is referred to as a path, and may be thought of as a
+scenario.
+
+At each node in the event tree, the tree branches. There are often only two
+branches that emanate from a node but it is possible that no split occurs or that
+many splits occur. It is, however, of utmost importance to ensure that the split
+represents mutually exclusive possibilities, i.e. if one possibility happens the
+other cannot happen. The end events are often referred to as consequences.
+
+The construction of an event tree requires knowledge about the system.
+\subsection{Steps}
+
+
+The basic steps to conduct an event tree analysis are:
+\begin{itemize}
+\item Define static system: Determine what you would like to model and what is not to
+be considered in the model
+\item Define dynamic system: Determine what you would like to model over time. For
+example, what hazards are of particular concern, e.g. flooding, what physical
+things may happen, e.g. bridge collapse, what consequences might occur, e.g.
+horrendous increases in travel times due to traffic jams
+\item Identify specific initiating events: For example, heavy rain fall.
+\item Identify specific intermediate events: For example, overtopping of a bridge
+\item Construct the event tree
+\item Calculate the probabilities of occurrence of each event: One possibility is
+using fault tree analysis.
+\item Calculate the probability of occurrence of each scenario or path:
+\item Calculate the overall risk:
+\item Evaluate the acceptability of the risk associated with each scenario and
+overall:
+\end{itemize}
+%
+Due to the almost infinite number of ways to represent reality and the almost
+infinite number of events that can occur, an appropriate system representation
+needs to be developed. A good starting point is often the system representation
+used to determine that there was a problem. It needs, however, to be verified
+that this representation is adequate for the evaluation of the candidate
+strategies. The necessary detail to be used depends on the specific question, the
+strategies to be evaluated and the level of detail desired.
+\subsection{Example in literature}
+Please read the research work of Beim \& Hobbs 1997, who constructed a event
+tree analysis for a lock gate system, as part of the script.
+\section{Event tree analysis - Example}
+\subsection{Question A}
+You are the road manager responsible for a particularly risky section of road.
+It consists of a bridge that crosses a river and is just below a steep
+embankment, upon which it is known that avalanches sometimes occur. This is
+illustrated in Figure \ref{figeventfault:2}.
+
+\begin{figure}
+ \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes7.eps}
+				\subcaption{Intercept}\label{figbayes7}
+     \end{minipage}
+\vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes8.eps}
+			\subcaption{Condition state}\label{figbayes8}
+     \end{minipage}
+\vspace{3.00mm} 
+    \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes9.eps}
+				\subcaption{Daily traffic volume}\label{figbayes9}
+     \end{minipage}
+\caption{Illustration of risks}
+\label{figbayesxx}
+\end{figure}
+
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=200pt]{faulteventtree-31.eps}
+\caption{Illustration of risks}\label{figeventfault:2}
+% \end{center}
+\end{figure}
+You suspect that there are substantial infrastructure related risks due to both
+flooding and avalanches but would like to quantify the risks. Develop an event
+tree to allow you to do this.
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{reference}
+% 
+

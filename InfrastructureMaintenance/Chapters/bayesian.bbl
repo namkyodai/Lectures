@@ -1,0 +1,198 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Andrew et~al.(2006)Andrew, John, Hal, and Donald]{Andrew2006}
+G.~Andrew, B.~C. John, S.~S. Hal, and B.~R. Donald.
+\newblock \emph{Bayesian Data Analysis}.
+\newblock Chapman and Hall/CRC, 2006.
+
+\bibitem[Bateni et~al.(2007)Bateni, Jeng, and Melville]{Bateni2007}
+S.~Mohyeddin Bateni, Dong-Sheng Jeng, and Bruce~W. Melville.
+\newblock Bayesian neural networks for prediction of equilibrium and
+  time-dependent scour depth around bridge piers.
+\newblock \emph{Advances in Engineering Software}, 38\penalty0 (2):\penalty0
+  102 -- 111, 2007.
+\newblock ISSN 0965-9978.
+\newblock \doi{http://dx.doi.org/10.1016/j.advengsoft.2006.08.004}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0965997806001177}.
+
+\bibitem[Bayraktarli and Faber(2011)]{Bayraktarli2011}
+Yahya~Y. Bayraktarli and Michael~H. Faber.
+\newblock Bayesian probabilistic network approach for managing earthquake risks
+  of cities.
+\newblock \emph{Georisk: Assessment and Management of Risk for Engineered
+  Systems and Geohazards}, 5\penalty0 (1):\penalty0 2--24, 2011.
+\newblock \doi{10.1080/17499511003679907}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/17499511003679907}.
+
+\bibitem[Bolstad(2007)]{Bolstad2007}
+William~M. Bolstad.
+\newblock \emph{Introduction to Bayesian Statistics}.
+\newblock Wiley, 2007.
+
+\bibitem[Deublein et~al.(2013)Deublein, Schubert, Adey, Köhler, and
+  Faber]{Deublein2013}
+Markus Deublein, Matthias Schubert, Bryan~T. Adey, Jochen Köhler, and
+  Michael~H. Faber.
+\newblock Prediction of road accidents: A bayesian hierarchical approach.
+\newblock \emph{Accident Analysis \& Prevention}, 51:\penalty0 274 -- 291,
+  2013.
+\newblock ISSN 0001-4575.
+\newblock \doi{http://dx.doi.org/10.1016/j.aap.2012.11.019}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0001457512004101}.
+
+\bibitem[Dodson(2006)]{Dodson2006}
+Bryan Dodson.
+\newblock \emph{The Weibull Analysis Handbook}.
+\newblock Quality Press, American Society for Quality, 2006.
+
+\bibitem[Gao et~al.(2012)Gao, Aguiar-Moya, and Zhang]{Gao2012}
+Lu~Gao, Jose~Pablo Aguiar-Moya, and Zhanmin Zhang.
+\newblock Bayesian analysis of heterogeneity in modeling of pavement fatigue
+  cracking.
+\newblock \emph{Journal of Computing in Civil Engineering}, 26\penalty0
+  (1):\penalty0 37--43, 2012.
+\newblock \doi{10.1061/(ASCE)CP.1943-5487.0000114}.
+\newblock URL \url{http://link.aip.org/link/?QCP/26/37/1}.
+
+\bibitem[Geman and Geman(1984)]{Geman1984}
+S.~Geman and D.~Geman.
+\newblock Stochastic relaxation, gibbs distributions and the bayesian
+  restoration of images.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 6\penalty0 (6):\penalty0 721--741, 1984.
+
+\bibitem[Heckerman(1996)]{Heckerm1996}
+David Heckerman.
+\newblock A tutorial on learning with bayesian networks.
+\newblock Technical Report MSR-TR-95-06, Microsoft Research, Advanced
+  Technology Division, Microsoft Corporation, 1996.
+
+\bibitem[Hong and Prozzi(2006)]{Hong2006}
+F.~Hong and J.A. Prozzi.
+\newblock Estimation of pavement performance deterioration using bayesian
+  approach.
+\newblock \emph{Journal of Infrastructure System}, 12\penalty0 (2):\penalty0
+  77--86, June 2006.
+
+\bibitem[Ibrahim et~al.(2001)Ibrahim, Ming-Hui, and Sinha]{ibrahim01bo}
+J.G. Ibrahim, C.~Ming-Hui, and D.~Sinha.
+\newblock \emph{Bayesian Survival Analysis}.
+\newblock Springer Series in Statistics, 2001.
+
+\bibitem[Jeff(2006)]{jeffgill}
+G.~Jeff.
+\newblock \emph{Bayesian Methods: A Social and Behavioral Sciences Approach}.
+\newblock Chapman and Hall/CRC Taylor and Francis Group, 2 edition, 2006.
+
+\bibitem[Kobayashi et~al.(2012)Kobayashi, Kaito, and Lethanh]{Kobayashi2012}
+Kiyoshi Kobayashi, Kiyoyuki Kaito, and Nam Lethanh.
+\newblock A bayesian estimation method to improve deterioration prediction for
+  infrastructure system with markov chain model.
+\newblock \emph{International Journal of Architecture, Engineering and
+  Construction}, 1\penalty0 (1):\penalty0 1--13, April 2012.
+
+\bibitem[Kobayashi et~al.(2014)Kobayashi, Kaito, and Lethanh]{Kobayashi2014}
+Kiyoshi Kobayashi, Kiyoyuki Kaito, and Nam Lethanh.
+\newblock A competing markov model for cracking prediction on civil structures.
+\newblock \emph{Transportation Research Part B: Methodological}, 68\penalty0
+  (0):\penalty0 345 -- 362, 2014.
+\newblock ISSN 0191-2615.
+\newblock \doi{http://dx.doi.org/10.1016/j.trb.2014.06.012}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0191261514001192}.
+
+\bibitem[Kumares and Samuel(2007)]{Kumares2007}
+C.~S Kumares and L.~Samuel.
+\newblock \emph{Transportation decision making: principles of project
+  evaluation and programming}.
+\newblock John Wiley and Sons, 2007.
+
+\bibitem[Lethanh and Adey(2013)]{Lethanh2013b}
+Nam Lethanh and Bryan~T. Adey.
+\newblock Use of exponential hidden markov models for modeling pavement
+  deterioration.
+\newblock \emph{International Journal of Pavement Engineering}, 14\penalty0
+  (7):\penalty0 645--654, 2013.
+\newblock \doi{10.1080/10298436.2012.715647}.
+
+\bibitem[Lethanh et~al.(2015)Lethanh, Kaito, and Kobayashi]{Lethanh2015b}
+Nam Lethanh, Kiyoyuki Kaito, and Kiyoshi Kobayashi.
+\newblock Infrastructure deterioration prediction with a poisson hidden markov
+  model on time series data.
+\newblock \emph{Journal of Infrastructure Systems}, 21\penalty0 (3):\penalty0
+  04014051, September 2015.
+\newblock \doi{10.1061/(ASCE)IS.1943-555X.0000242}.
+\newblock URL \url{http://dx.doi.org/10.1061/(ASCE)IS.1943-555X.0000242}.
+
+\bibitem[Nassar and Eissa(2005)]{Nassar2005}
+M.~M. Nassar and Fathy~H. Eissa.
+\newblock Bayesian estimation for the exponentiated weibull model.
+\newblock \emph{Communications in Statistics - Theory and Methods}, 33\penalty0
+  (10):\penalty0 2343--2362, 2005.
+\newblock \doi{10.1081/STA-200031447}.
+\newblock URL \url{http://dx.doi.org/10.1081/STA-200031447}.
+
+\bibitem[OpusCL(1999)]{OpusCL1999}
+OpusCL.
+\newblock \emph{Review of VOC - Pavement Roughness Relationships Contained in
+  Transfunds Project Evaluation Manual}.
+\newblock Opus Central Laboratories, Opus, Lower Hutt, New Zealand, rep.
+  529277.00 edition, 1999.
+
+\bibitem[Robert(1996)]{robert}
+C.P. Robert.
+\newblock \emph{Mixtures of Distributions: Inference and Estimation, in:
+  Gillks, W.R., Richardson, S. and Spiegelhalter, D.J. (eds.) Markov Chain
+  Monte Carlo in Practice}.
+\newblock Chapman and Hall, 1996.
+
+\bibitem[Schubert et~al.(2012)Schubert, HÃ¸j, RagnÃ¸y, and
+  Buvik]{Schubert2012}
+Matthias Schubert, Niels~Peter HÃ¸j, Arild RagnÃ¸y, and Harald Buvik.
+\newblock Risk assessment of road tunnels using bayesian networks.
+\newblock \emph{Procedia - Social and Behavioral Sciences}, 48\penalty0
+  (0):\penalty0 2697 -- 2706, 2012.
+\newblock ISSN 1877-0428.
+\newblock \doi{http://dx.doi.org/10.1016/j.sbspro.2012.06.1239}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1877042812029825}.
+\newblock Transport Research Arena 2012.
+
+\bibitem[Soliman et~al.(2006)Soliman, Ellah, and Sultan]{Soliman2006}
+Ahmed~A. Soliman, A.H.~Abd Ellah, and K.S. Sultan.
+\newblock Comparison of estimates using record statistics from weibull model:
+  Bayesian and non-bayesian approaches.
+\newblock \emph{Computational Statistics \& Data Analysis}, 51\penalty0
+  (3):\penalty0 2065 -- 2077, 2006.
+\newblock ISSN 0167-9473.
+\newblock \doi{http://dx.doi.org/10.1016/j.csda.2005.12.020}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S016794730600003X}.
+
+\bibitem[Straub and Kiureghian(2010)]{Straub2010}
+Daniel Straub and Armen~Der Kiureghian.
+\newblock Bayesian network enhanced with structural reliability methods:
+  Methodology.
+\newblock \emph{Journal of Engineering Mechanics}, 136\penalty0 (10):\penalty0
+  1248--1258, 2010.
+
+\bibitem[Wang et~al.(2013)Wang, Xie, Chin, and Fu]{Wang2013}
+Yan~Fu Wang, Min Xie, Kwai-Sang Chin, and Xiu~Ju Fu.
+\newblock Accident analysis model based on bayesian network and evidential
+  reasoning approach.
+\newblock \emph{Journal of Loss Prevention in the Process Industries},
+  26\penalty0 (1):\penalty0 10 -- 21, 2013.
+\newblock ISSN 0950-4230.
+\newblock \doi{http://dx.doi.org/10.1016/j.jlp.2012.08.001}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0950423012001301}.
+
+\end{thebibliography}

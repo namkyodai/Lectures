@@ -1,0 +1,1955 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Level of services indicators - reliability }
+\label{reliabilityc} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\chapterauthor{Bryan T. Adey and Nam Lethanh}
+\section{Introduction}
+In order to define an adequate LOS, to determine if an adequate LOS is provided,
+and to determine optimal intervention strategies and work programs, it would be
+best to focus on the maximizing the net benefit from the road infrastructure, as
+defined in an all-inclusive impact hierarchy over a specific time period. Due to
+the significant effort required to determine the values of some impact types, and
+collecting these values over time, proxies are often used. Four commonly used
+proxies are the reliability, availability, maintainability and safety of the
+infrastructure. Of these, reliability is discussed in the remaining part of this
+document. Availability and maintainability are discussed in the subsequent
+document. Safety refers to the likelihood of persons being injured or killed due
+to the infrastructure or use of the infrastructure. It is not discussed here
+further. The definitions of the three performance indicators discussed are:
+
+\begin{itemize}
+	\item Reliability is the probability that an item to provide an adequate LOS.
+	\item Availability is the proportion of time an item provides an adequate LOS.
+	\item Maintainability is the ease with which an item can be maintained
+\end{itemize}
+
+The use of the word item in all definitions is to allow it to be replaced by any
+term that refers to physical infrastructure that is composed of smaller parts.
+For example, a network is comprised of objects, objects are comprised of
+elements, and elements are comprised of segments. In such a case, the word item
+in each of the three definitions could be replaced by either the word
+``network'', the word ``object'', the word ``element'' or the word ``segment''.
+For example, reliability is the ability of a network to provide an adequate level
+of service, or reliability is the ability of an object to provide an adequate
+level of service.
+%
+\section{Reliability of an item}
+\subsection{General}
+When managing infrastructure the reliability of an item is often a useful bit of
+information, i.e. how likely is it that an item is going to provide an adequate
+LOS for a specified period of time. If one speaks of the collapse of a bridge as
+being the first level of inadequate service, one often refers to structural
+reliability.
+
+If the adequate LOS and the specified time period are defined, then one is
+interested in knowing the reliability of the item. If the adequate LOS is defined
+but not the specified time period then one is interested in knowing the amount of
+time required until an item provides an inadequate LOS. This is, often referred
+to as the service life of the item
+
+It is important to realize that there is a tight connection between reliability,
+the definition of adequate LOS, and the service life of an item. For example, two
+identical items could have the same reliability, if one an adequate LOS is
+defined to be high and the service life short, and the other one had an adequate
+LOS defined to be low and the service life long.
+\subsection{Reliability of an item over a specified time period}
+The reliability of an item in the time interval from 0 to \textit{t} is
+equivalent to the probability that the item provides an adequate LOS for a longer
+time than \textit{t}, which can be expressed as:
+\begin{eqnarray}
+&& {R_i}\left( t \right) = P\left( {{\tau _i} > t} \right)
+\label{eqreliability:1}
+%1
+\end{eqnarray}
+Where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$\tau$:] is the amount of time that an item provides an adequate LOS,
+\item[$i$:] is the item identifier
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+When item \textit{i} provides an adequate LOS for $\tau $ \textit{tus,} which is
+a continuous positive random variable with c.d.f, ${\tau _i}$ represents the
+amounts of time that the items provide adequate LOSs.
+
+Mathematically,
+\begin{eqnarray}
+&& \begin{array}{l}
+{X_i}\left( t \right) = 1\;\hspace{2mm}if \hspace{2mm}{\tau _i} > t\\
+{X_i}\left( t \right) = 0\;\hspace{2mm}if\hspace{2mm}{\tau _i} \le t
+\end{array}
+\label{eqreliability:2}
+%(2)
+\end{eqnarray}
+When multiple items are being investigated \textit{\textbf{X}(t) =
+(X$_{1}$(t),\ldots{}X$_{n}$(t)) }is the item state vector at time \textit{t.}
+
+In the estimation of reliability of items over multiple time periods \textit{t},
+it is important to realize that it is the same items that survive each successive
+interval. In other words, it is assumed that the items provide an adequate LOS at
+t = 0, that there are no interventions executed on the items over the time period
+investigated, and that the probability of an item providing an inadequate LOS at
+\textit{t} = 2 depends on it providing an adequate level of service until
+\textit{t} = 2, i.e. it is conditional on the item surviving until \textit{t} =
+2.
+\subsection{Conditional probability of failure and failure rate}
+The probability of failure in the time interval \textit{(t, t+$\Delta{}$],}
+given that the item provides an adequate LOS at \textit{t}, is the conditional
+probability of failure, as shown in Equation \eqref{eqreliability:3}.
+\begin{eqnarray}
+&& P\left( t \le \tau \le t+\Delta \right|\tau > t) = \frac{P\left( \text{failure appears in } (t,t+\Delta) \right)}{P(\tau >t)}
+\label{eqreliability:3}
+%(2)
+\end{eqnarray}
+If the \textit{$\tau{}$} is a positive random variable with d.f. \textit{f(t)}
+and c.d.f \textit{F(t)}, then for small delta the conditional failure probability
+in \textit{(t, t+$\Delta{}$]} given the item is operational at \textit{t} is, for
+small delta, approximately equal to the failure rate \textit{f(t) / (1-F(t)),
+i.e.}
+\begin{eqnarray}
+&& P\left( t \le \tau \le t+\Delta \right|\tau > t) = \frac{f(t)\cdot \Delta}{1-F(t)}
+\label{eqreliability:4}
+%(2)
+\end{eqnarray}
+\begin{eqnarray}
+&& {\rm{Prob}}(t \le \tau  \le t + \Delta t|\tau  \ge t) = \lambda (t)\Delta t =
+\frac{{f(t)\Delta t}}{{\tilde F(t)}}
+\label{eqreliability:5}
+%(4)
+\end{eqnarray}
+Where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[$f(t)$:] is the probability that an item will not provide an adequate LOS at any instance from 0 to $t$,
+\item[$1-F(t)$:] is the probability that an item provides an adequate LOS from 0 to $t$. This is often referred to as the survival function. 
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+The failure rate can then be expressed as:
+\begin{eqnarray}
+&& \lambda (t) = \frac{{f(t)}}{{\tilde F(t)}}
+%(4)
+\end{eqnarray}
+Note that \textit{$\lambda{}$(t)} is defined only for \textit{t} such that
+\textit{F(t) $<$ 1}.
+%
+\subsection{Failure rates}
+As can be seen from equation \eqref{eqreliability:5}, the failure rate is a time dependent, i.e. it
+is not necessarily constant over time. For example, some engineering systems have
+failure rates that exhibit bathtub curve characteristics (Figure \ref{reliability:1}).
+It is common to divide these failure rates over time for these systems in three
+phases. In the first phase is there is a monotonic decrease in the failure rate,
+in the second phase the failure rate is more or less constant, and in the third
+phase the failure rate monotonically increases.
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=326pt]{reliability-1.eps}
+\caption{Bathtub curve}\label{reliability:1}
+% \end{center}
+\end{figure}
+When the failure can be considered to be constant, it can be approximated by
+assuming that the probability of failure can be modeled using an exponential
+distribution function. In this case,
+\begin{eqnarray}
+&& \lambda (t) = \theta 
+%(5)
+\end{eqnarray}
+where the probability density function and the cumulative distribution function
+are:
+\begin{eqnarray}
+&& f(t) = \theta \exp ( - \theta  \cdot t) \\ 
+&& F(t) = 1- \exp ( - \theta  \cdot t)
+\end{eqnarray}
+\subsection{Failure rate and rate of occurrence of failures}
+Failure rate should not be confused with the rate of occurrence of failures.
+Failure rate is defined only for a random variable describing the lifetime of a
+non-renewable item. The rate of occurrence of failures is the derivative of the
+mean number of failures \textit{[0,t]} with respect to \textit{t} of a point
+process N\textit{(t), t $>$= 0,} describes failures of a renewable item, i.e.
+\begin{eqnarray}
+&& v(t)=\frac{E\left( N(t) \right)}{dt} \label{eqreliability:6}
+\end{eqnarray}
+\subsection{Reliability of an item with a time invariant failure rate}
+When an item has a constant failure rate, the reliability of the item, which is
+sometimes referred to as the survival probability of the item, is given as:
+\begin{eqnarray}
+&& R(t) = \tilde F(t) = 1 - F(t) = \exp ( - \theta  \cdot t)
+\label{eqreliability:7}
+%(9)
+\end{eqnarray}
+Example of how the reliability of the item changes over time for three different
+constant failure rates is given in Figure \ref{reliability-2} and the corresponding
+probability density functions are given in Figure \ref{reliability-3}.
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=386pt]{reliability-2.eps}
+\caption{Reliability}\label{reliability-2}
+% \end{center}
+\end{figure}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=394pt]{reliability-3.eps}
+\caption{Probability density function}\label{reliability-3}
+% \end{center}
+\end{figure}
+Interestingly the reliability of items with constant failure rates, regardless
+of their values, is approximately 37\% at the mean life of the item. This can be
+seen easily mathematically, since the length of time that an item provides an
+adequate LOS if it has a constant failure rate can be calculated as:
+\begin{eqnarray}
+&& \Theta  = \int\limits_0^\infty  {\tilde F(t)dt}  = \int\limits_0^\infty  {\exp (
+- \theta  \cdot t)dt}  = \frac{1}{\theta } \label{eqreliability:8}
+%(10)
+\end{eqnarray}
+where $\theta $ is the failure rate and its reliability is then given by:
+\begin{eqnarray}
+&& R(t) = R(\frac{1}{\theta }) = \exp ( - \theta  \cdot \frac{1}{\theta }) = \exp (
+- 1) = 0.3678794 \approx 0.37
+\label{eqreliability:9}
+%(11)
+\end{eqnarray}
+
+No matter what the value of the failure rate, the reliability at the mean
+service life is 0.37, i.e. if the failure rate is 0.5, and, therefore, the mean
+service life is 2 \textit{tus}, then the probability that the item provides an
+adequate LOS for longer than 2 \textit{tus} is 0.37. This is illustrated
+graphically in Figure \ref{reliability-4}, for items with failure rates of 0.5, 1, 1.5,
+where the mean service lives are 2, 1 and 0.67.
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=346pt]{reliability-4.eps}
+\caption{Probable service life and reliability}\label{reliability-4}
+% \end{center}
+\end{figure}
+The codes for generating these graphs are given in Appendix \ref{appen31}.
+\subsection{Estimating the remaining amount of time an item will provide an
+adequate LOS}
+In many cases when it is know that an item has provided an adequate LOS until
+\textit{t} it is desired to know how much longer it might continue to provide an
+adequate LOS. For example, if it known that an item provides an adequate LOS for
+37 years and it has now been in service 37 years, what is the expected amount of
+time that it will continue to provide an adequate LOS. How to calculate this was
+explained in class.
+\subsection{Reliability of an item with time-variant failure rate}
+When an item has a time variant failure rate, the probability of failure cannot
+be modeled using an exponential distribution. If it is modeled with the Weibull
+function, a common selection, the reliability of the item can be estimated as:
+\begin{eqnarray}
+&& R(t) = {e^{ - {{(\alpha  \cdot t)}^m}}}
+\label{eqreliability:10}
+%(12)
+\end{eqnarray}
+where $\alpha $ and m are scale and shape parameters, respectively.
+
+In this case the probability density function is:
+\begin{eqnarray}
+&& f(t) = \alpha  \cdot m \cdot {t^{m - 1}} \cdot {e^{ - {{(\alpha  \cdot t)}^m}}}
+\label{eqreliability:11}
+%(13)
+\end{eqnarray}
+And the failure rate
+\begin{eqnarray}
+&& \lambda (t) = \alpha  \cdot m \cdot {t^{m - 1}}
+\label{eqreliability:12}
+%(14)
+\end{eqnarray}
+Here, it can be see that if the value of $m=1$, this equation is identical to the
+one used to estimate the constant failure rate.
+\section{Estimating reliability when LOS data available}
+The reliability of an item can be estimated in different ways. The way to be
+used depends on the availability of information and the composition or structure
+of the item (e.g. the item can be composed of many sub-items). If data is
+available it can be used as described above to estimate the failure rate of an
+item and then estimate the reliability of an item. An example is shown for a case
+where the failure is time invariant and a case where the failure is time variant.
+\subsection{Example 1: Reliability of an item with time invariant failure rate}
+A railway tests 10 switches, over 4'180 days of use under the same loads. It was
+observed that:
+\begin{itemize}
+	\item Switch 1 failed in 75 days
+	\item Switch 2 failed in 125 days
+	\item Switch 3 failed in 130 days
+	\item Switch 4 failed in 325 days
+	\item Switch 5 failed in 525 days
+\end{itemize}
+The failure rate is estimated as
+\begin{eqnarray}
+\theta  = \frac{5}{{4'180}} = 0.001196
+\nonumber
+%(15)
+\end{eqnarray}
+Assuming that this rate is constant, then the reliability of a switch of this
+type is estimated as:
+\begin{eqnarray}
+R(t) = \exp ( - \theta  \cdot t) = \exp ( - 0.001196 \cdot t)
+\nonumber
+%(16)
+\end{eqnarray}
+Which shows, for example, that the reliability of a switch, i.e. the probability
+that a switch will provide an adequate LOS for 1000 days, is 0.302.
+\subsection{Example 2: Reliability of an item with time-variant failure rate}
+The lights in street lamps frequently burn out. Regular inspections are done to
+see if the lights are function or not. The data shown in Table \ref{tbl-reliability:1} has
+been collected. In the table, the column ``time'' is the units of time that the
+items have been in service. The column ``status'' refers to the state of the
+lighting, 1 is ``burnt out'' and 0 is ``working''.
+\begin{table}[h]
+\caption{Failure data of the lighting system}
+\vspace{3pt} \noindent
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{28} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{161} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{21} & \multicolumn{1}{c|}{33} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{31} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{22} & \multicolumn{1}{c|}{43} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{34} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{23} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{23} & \multicolumn{1}{c|}{45} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{45} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{19} & \multicolumn{1}{c|}{27} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{23} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{48} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\end{tabular}\vspace{2pt}
+\label{tbl-reliability:1}\end{table}
+Using the Weibull distribution as described in equation \eqref{eqreliability:11}, the value of
+$\theta $ and m are 0.027 and 1.097, respectively. These values are estimated
+using the Maximum likelihood estimation approach. The R code is given in Appendix
+\ref{appen32}.
+
+With these values, the failure rate is given by:
+\begin{eqnarray}
+&& \lambda (t) = 0.027 \times 1.097 \cdot {t^{1.097 - 1}}
+\nonumber
+%(17)
+\end{eqnarray}
+And the probability density function and the reliability function are therefore:
+\begin{eqnarray}
+&& f(t) = 0.027 \times 1.097 \cdot {t^{1.097 - 1}} \cdot {e^{ - {{(0.027 \cdot
+t)}^{1.097}}}}
+\nonumber
+%(18)
+\end{eqnarray}
+\begin{eqnarray}
+&& R(t) = {e^{ - {{(0.027 \cdot t)}^{1.097}}}}
+\nonumber
+%(19)
+\end{eqnarray}
+The evolution of reliability and failure rate over time are shown in Figure \ref{reliability-5}\pagebreak{}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=436pt]{reliability-5.eps}
+\caption{Reliability and failure rate - Weibull distribution
+function}\label{reliability-5}
+% \end{center}
+\end{figure}
+\section{Estimating reliability when LOS data not available}
+There are many cases where the LOS data is not available, e.g. the failure of a
+bridge. One way to estimate the reliability of the item in this case is to model
+the uncertainty in the variables of the models used and compare the expected
+resistance to the expected loads.
+%
+\subsection{Based on models and uncertainty of variables}
+%
+In this case a model of the performance of the infrastructure object is selected
+and laboratory tests or simulations are done to determine probabilistic
+distributions to represent the uncertainties in key parameters in the models. For
+example, if one was to estimate the reliability of a bridge with respect to
+landslides, one almost certainly does not have enough data to say with any
+confidence the reliability of a bridge in the future, so one may embark upon
+determining the probability that the bridge would continue to provide an adequate
+LOS if it came in contact with specific volumes of rock. This is done by modeling
+the performance of the bridge if it came in contact with rock falls of different
+intensities, taking into consideration, for example, the strength of the
+concrete, the strength of the reinforcement, the location of the reinforcement,
+and how the elements in the bridge work together as a system. Such information is
+often included in fragility curves. An example is given in  Figure \ref{reliability-6} and more can be found in  \cite{Schultz2010} and \cite{Lethanh2015}
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=418pt]{reliability-6.eps}
+\caption{Example bridge deck fragility curves}\label{reliability-6}
+% \end{center}
+\end{figure}
+The fragility curves shown in  Figure \ref{reliability-6} represent the probability (vertical axis) of
+bridge deck failure, taking into consideration the initial condition of the
+bridge deck, i.e. the manifest deterioration state of the bridge deck (\textit{i
+}= 1, 2, and 3) prior to hazard occurrence given the volume of rock fall that
+comes in contact with the deck. As can be seen from the figure, if 15 m$^{3}$ of
+rock come in contact with a bridge deck in state 1, there is a 0.089 probability
+(point A) that the bridge deck would fail. It can also be seen that the higher
+the initial state the higher the probability of bridge deck failure. e.g. when
+the bridge deck is initially in state 2 and state 3 the probability that the
+bridge deck would fail is 0.372 and 0.716, respectively).
+
+The probability of each failure state, given the intensity of the rock fall,
+which are indicated with different curves in Figure \ref{reliability-6}, are given by
+\begin{eqnarray}
+&& \Omega_{s,i}^l=prob\left[CS>l|s,i\right] \label{eqreliability:13}
+%(18)
+\end{eqnarray}
+where the probability of exceeding condition state is conditional on the intensity of the load effect event and the
+condition state of the object, immediately prior to occurrence of the load effect event.
+
+Of course, to estimate the reliability of the bridge, in general, the probability of occurrence of the load effect event itself has to be estimated, i.e.
+\begin{eqnarray}
+&& H_s(t)=Prob\left[\text{intensity} > s(0,t) \right] \label{eqreliability:14}
+%(18)
+\end{eqnarray}
+\subsection{Based on reliability of sub-items}
+When data does not exist on the LOS of the item itself, but it does on the
+sub-items of which it is composed, the sub-items can be combined in ways to allow
+the estimation of the reliability of the item. Four basic ways to combine things
+are as sub-items in series, sub-items in parallel, parallel sub-items connected
+in series, and series sub-items connected in parallel. These are explained in the
+following four sub-sections.
+\subsubsection{Sub-items in series}
+If the sub-items are in series (e.g. Figure \ref{reliability-17}) and the LOS provided
+by the item is equal to the LOS provided by the worst sub-item, then the LOS
+provided by the item is given by:
+\begin{eqnarray}
+&& \Phi(\overrightarrow{x})=\prod_{i=1}^n x_i= \min\limits_{1 \leq i \leq n} x_i \label{eqreliability:15}
+%(18)
+\end{eqnarray}
+where \textit{x$_{i}$} is the state of sub-item \textit{i}, \textit{i} =
+\textit{1,\ldots{}n}, and it is represented as a binary variable, where 1
+indicates the sub-item provides an adequate LOS and the 0 indicates that it does
+not.
+
+The reliability that the item will provide an adequate LOS is, therefore, given by:
+\begin{eqnarray}
+&& \vec R(t) = \prod\limits_{n = 1}^N {{R_n}(t)}
+\label{eqreliability:17}
+%(22)
+\end{eqnarray}
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=410pt]{reliability-17.eps}
+\caption{Sub-items in series}\label{reliability-17}
+% \end{center}
+\end{figure}
+for example, a bridge can be considered to provide an adequate LOS if and only
+if the abutment 1 and 2, and the deck provide adequate LOSs, and the probabilities
+of each providing an inadequate LOS in one year are 0.01, 0.02 and 0.03,
+respectively, and their failure rates are constant, then the reliabilities of the
+bridge over 5 years are:
+
+\begin{eqnarray}
+&& \begin{array}{l}
+\vec R(t = 5) = \prod\limits_{n = 1}^N {{R_n}(5)}  = {R_{abutment1}}(5) \cdot
+{R_{deck}}(5) \cdot {R_{abutment2}}(5)\\
+\hspace{20mm}= {e^{ - 0.02 \times 5}} \cdot {e^{ - 0.01 \times 5}} \cdot {e^{ - 0.03 \times
+5}} = {e^{ - (0.02 + 0.01 + 0.03) \cdot 5}} \approx 0.74
+\end{array}
+%\label{eqreliability:18}
+%(23)
+\end{eqnarray}
+\subsubsection{Sub-items in parallels}
+If the sub-items are in parallel (e.g. Figure \ref{reliability-19}), and the LOS provided
+by the item is equal to the LOS provided by the best sub-item, then the LOS
+provided by the item is given by:
+\begin{eqnarray}
+&& \Phi(\overrightarrow{x})=1-\prod_{i=1}^n (1-x_i)= \max\limits_{1 \leq i \leq n} x_i \label{eqreliability:18}
+%(18)
+\end{eqnarray}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=399pt]{reliability-19.eps}
+\caption{Sub-items in parallel}\label{reliability-19}
+% \end{center}
+\end{figure}
+The reliability that the item will provide an adequate LOS is, therefore, given by:
+\begin{eqnarray}
+&& \vec R(t) = 1 - \prod\limits_{i = 1}^N {\left( {1 - {R_n}(t)} \right)}
+\label{eqreliability:19}
+%(25)
+\end{eqnarray}
+\subsubsection{Parallel sub-items connected in series}
+In some cases items are comprised of sub-items that can be thought of as being
+groups of sub-items connected in parallel where the groups are then connected in
+series (e.g. Figure \ref{reliability-21}). In this case the LOS provided by the item is
+connected to the LOS provided by the sub-items as follows:
+\begin{eqnarray}
+&& \Phi (\vec x) = \left[ {1 - (1 - {x_1}) \cdot (1 - {x_2})} \right] \cdot \left[ {1 - (1
+- {x_3}) \cdot (1 - {x_4})} \right]
+\label{eqreliability:201}
+%(27)
+\end{eqnarray}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{reliability-21.eps}
+\caption{Parallel sub-items connected in series}\label{reliability-21}
+% \end{center}
+\end{figure}
+The reliability that the item will provide an adequate LOS is, therefore, given by:
+\begin{eqnarray}
+&& \vec R = \left[ {1 - (1 - {R_1}) \cdot (1 - {R_2})} \right] \cdot \left[ {1 - (1
+- {R_3}) \cdot (1 - {R_4})} \right]
+\label{eqreliability:20}
+%(27)
+\end{eqnarray}
+\subsubsection{Series sub-items connected in parallel}
+In some cases items are comprised of sub-items that can be thought of as being
+groups of sub-items connected in series where the groups are then connected in
+parallel (e.g. Figure \ref{reliability-23}). In this case the LOS provided by the item is
+connected to the LOS provided by the sub-items as follows: 
+%
+%(29)
+\begin{eqnarray}
+&& \Phi (\vec x) = 1 - (1 - {x_1} \cdot {x_2}) \cdot (1 - {x_3} \cdot {x_4} \cdot {x_5})
+\label{eqreliability:211}
+\end{eqnarray}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{reliability-23.eps}
+\caption{Series sub-items connected in parallel}\label{reliability-23}
+% \end{center}
+\end{figure}
+The reliability that the item will provide an adequate LOS is, therefore, given by:
+\begin{eqnarray}
+&& \vec R = 1 - (1 - {R_1} \cdot {R_2}) \cdot (1 - {R_3} \cdot {R_4} \cdot {R_5})
+\label{eqreliability:21}
+\end{eqnarray}
+\subsubsection{Complex configurations}
+As not all items can be thought of as neat combinations of series and parallel
+sub-items, it is useful to have a systematic way to determine the structure
+function for the item. Three ways are pivotal decomposition, minimal paths and
+minimal cuts.
+\paragraph{Pivotal decomposition}
+Pivotal decomposition is a method to determine the reliability of an item by
+replacing unreliable sub-items with either 100\% reliable sub-items and/or 0\%
+reliable (i.e. failed) sub-items until a configuration is created for which the
+reliability is easily computable. The reliability of the item is then calculated
+as:
+\begin{eqnarray}
+&& R\left( {\overrightarrow x } \right) = {R_i} \cdot R\left(
+{{1_i},\overrightarrow x } \right) + \left( {1 - {R_i}} \right) \cdot R\left(
+{{0_i},\overrightarrow x } \right)
+\end{eqnarray}
+Where \textit{ }$\left( {{\alpha _i},\overrightarrow x }
+\right)$ represents the vector of sub-items  with $\overrightarrow x $ the sub-item
+\textit{i} replaced by \textit{$\alpha{}$$_{i}$}. , which is either totally
+reliable and has the value of 1 or failed and has the value of 0.
+\paragraph{Minimal path and minimal cuts}
+In the case of minimal cuts, it is necessary to consider
+\begin{itemize}
+	\item the vector of sub-item states a \textit{cut vector} if \textit{$\varphi{}$}(x) =
+0,
+	\item the specific sub-items in the cut vector that are required to not provide an
+adequate LOS to mean that the item does not provide an adequate LOS, form the
+\textit{cut set}, and
+	\item a cut set in which there is no possibility to improve the LOS provided by a
+sub-item without improving the LOS provided by the item is a \textit{minimal cut
+set}.
+\end{itemize}
+In the case of minimal paths, it is necessary to consider
+\begin{itemize}
+	\item the vector of sub-item states a \textit{path vector} if \textit{$\varphi{}$}(x)
+= 1
+	\item the specific sub-items in the path vector that are required to provide an
+adequate LIS to mean that the item provides an adequate LOS, form the
+\textit{path set}, and
+	\item a path set in which there is no possibility to reduce the LOS provided by a
+sub-item without reducing the LOS provided by the item is a \textit{minimal path
+set}.
+\end{itemize}
+\paragraph{Example}
+Question
+
+Define the structure function to be used to estimate the reliability of the item
+composed of 5 sub-items as shown in Figure \ref{reliability-24}.
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{reliability-24.eps}
+\caption{Item with 5 sub-items in a complex structure}\label{reliability-24}
+% \end{center}
+\end{figure}
+
+Answer
+
+Using the pivotal decomposition, the item structure function can be determined
+by substituting sub-item 3 with a sub-item with a reliability of 1 or 0, yielding
+either equation \eqref{eqreliability:22} or \eqref{eqreliability:23},respectively. These are illustrated in Figure \ref{reliability-25} and Figure \ref{reliability-26}, respectively
+\begin{eqnarray}
+R({1_3},x) = \left[ {1 - (1 - {x_1})(1 - {x_2})} \right] \cdot \left[ {1 - (1 -
+{x_4})(1 - {x_5})} \right]
+\label{eqreliability:22}
+%(30)
+\end{eqnarray}
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{reliability-25.eps}
+\caption{Sub-item 3 provides an adequate LOS}\label{reliability-25}
+% \end{center}
+\end{figure}
+%
+\begin{eqnarray}
+&& R({0_3},\vec x) = \left[ {1 - (1 - {x_1} \cdot {x_4})} \right] \cdot \left[ {1 -
+(1 - {x_2} \cdot {x_5})} \right]
+\label{eqreliability:23}
+%(31)
+\end{eqnarray}
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=450pt]{reliability-26.eps}
+\caption{Sub-item 3 does not provide an adequate LOS}\label{reliability-26}
+% \end{center}
+\end{figure}
+This means that the structure function of the item to be used to estimate the
+reliability of the item is:
+\begin{eqnarray}
+&& R(\vec x) = {R_3} \cdot R({1_3},\vec x) + (1 - {R_3}) \cdot R({0_3},\vec x)
+\label{eqreliability:24}
+%(32)
+\end{eqnarray}
+\begin{eqnarray}
+&& \begin{array}{l}
+R(\vec x) = {R_1}{R_3}{R_4} + {R_1}{R_3}{R_5} + {R_2}{R_3}{R_4} +
+{R_2}{R_3}{R_5} + {R_1}{R_2}{R_4}{R_5}\\
+{\rm{          }} - {R_1}{R_2}{R_3}{R_4} - {R_1}{R_3}{R_4}{R_5} -
+{R_1}{R_2}{R_3}{R_5} - {R_2}{R_3}{R_4}{R_5}
+\end{array}
+\label{eqreliability:25}
+%(33)
+\end{eqnarray}
+
+Question
+
+Show that the minimal path method will give the same answer as pivotal
+decomposition.
+
+Answer
+
+The ``minimal path sets'' include
+\begin{eqnarray}
+&& \begin{array}{l}
+{P_1} = (1,4)\\
+{P_2} = (1,3,5)\\
+{P_3} = (2,5)\\
+{P_1} = (2,3,4)
+\end{array} \nonumber
+\end{eqnarray}
+%
+\begin{eqnarray}
+&& \begin{array}{l}
+\phi (\vec x) = 1 - \prod\limits_{s = 1}^S {\left( {1 - \prod\limits_{n \in
+{P_s}} {{x_n}} } \right)} \\
+{\rm{         = }}1 - (1 - {x_1}{x_4})(1 - {x_1}{x_3}{x_5})(1 - {x_2}{x_5})(1 -
+{x_2}{x_3}{x_4})\\
+{\rm{         = }}{x_1}{x_3}{x_4} + {x_1}{x_3}{x_5} + {x_2}{x_3}{x_4} +
+{x_2}{x_3}{x_5} + {x_1}{x_2}{x_4}{x_5}\\
+{\rm{          }} - {x_1}{x_2}{x_3}{x_4} - {x_1}{x_3}{x_4}{x_5} -
+{x_1}{x_2}{x_3}{x_5} - {x_2}{x_3}{x_4}{x_5}
+\end{array}
+\label{eqreliability:26}
+%(34)
+\end{eqnarray}
+\section{Conclusion}
+Once adequate LOSs are defined, one is often interested in estimating the
+likelihood that they will be provided. Without thinking of the specific
+consequences that might occur, reliability can be used as a performance
+indicator. Keep in mind though that the consequences related to the occurrence of
+inadequate services are almost never constant, and, therefore, focusing
+exclusively on reliability as a performance indicator will not allow the
+prioriotization of activities to maximize net benefits related to infrastructure.
+An example is included at the end of the next chapter.
+
+When using reliability as a performance indicator for an item, there are
+multiple ways to estimate the reliability. When using reliability as a
+performance indicator for a sub-item one should not forget that the LOS it
+provides depends on how it is integrated into the item as a whole and the
+reliability of the other sub-items in the item. There are different ways to
+measure this that vary in terms of accuracy and effort.
+%
+\section{Assignments}
+\subsection{Problem A}
+\subsubsection{Question A1}
+Determine the reliability of the road network shown in Figure \ref{reliability-a-1}, when
+the reliability of each object is as given in Table \ref{tbl-reliability-a:1}.
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=406pt]{reliability-a-1.eps}
+\caption{A network of 7 objects}\label{reliability-a-1}
+% \end{center}
+\end{figure}
+\begin{table}[h]
+\caption{Object reliabilities}
+% \vspace{3pt} \noindent
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{Object} & \multicolumn{1}{c|}{Reliability} \\ 
+\hline
+\multicolumn{1}{|c|}{A} & \multicolumn{1}{c|}{0.95} \\ 
+\hline
+\multicolumn{1}{|c|}{B} & \multicolumn{1}{c|}{0.97} \\ 
+\hline
+\multicolumn{1}{|c|}{C} & \multicolumn{1}{c|}{0.92} \\ 
+\hline
+\multicolumn{1}{|c|}{D} & \multicolumn{1}{c|}{0.94} \\ 
+\hline
+\multicolumn{1}{|c|}{E} & \multicolumn{1}{c|}{0.90} \\ 
+\hline
+\multicolumn{1}{|c|}{F} & \multicolumn{1}{c|}{0.88} \\ 
+\hline
+\multicolumn{1}{|c|}{G} & \multicolumn{1}{c|}{0.98} \\ 
+\hline
+\end{tabular}
+% \vspace{2pt}
+\label{tbl-reliability-a:1}\end{table}
+\subsubsection{Answer A1}
+Seeing that the network can be broken down into series and parallel networks and
+remembering that the structure function for series, and parallel objects are as
+given in Equations \eqref{eqreliability:17} and \eqref{eqreliability:19}, respectively.
+\begin{eqnarray}
+&& {\vec R_C} = 1 - \left[ {1 - ({R_A} \cdot {R_B} \cdot {R_{CD}} \cdot {R_{EF}})}
+\right] \cdot \left[ {1 - {R_G}} \right]
+\label{eq-reliability-a3}
+%(3)
+\end{eqnarray}
+where ${R_{CD}},{R_{EF}}$ represents the reliability of the parallel components
+composed of item C, D and E, F, respectively. ${\vec R_{Network}}$ represents
+reliability of the network configuration.
+%
+\begin{eqnarray}
+&& \begin{array}{l}
+{{\vec R}_{Network}} = 1 - \left[ {1 - ({R_A} \cdot {R_B} \cdot {R_{CD}} \cdot
+{R_{EF}})} \right] \cdot \left[ {1 - {R_G}} \right]\\
+{\rm{      =  }}1 - \left[ {1 - ({R_A} \cdot {R_B} \cdot \left\{ {(1 - (1 -
+{R_C}) \cdot (1 - {R_D})} \right\} \cdot \left\{ {(1 - (1 - {R_E}) \cdot (1 -
+{R_F})} \right\})} \right] \cdot \left[ {1 - {R_G}} \right]
+\end{array}
+\label{eq-reliability-a4}
+%(4)
+\end{eqnarray}
+Using the value of reliability for each item shown in Figure \ref{fig:1},
+following result is obtained
+\begin{eqnarray}
+&& {\vec R_{Network}} = 0.998121 \nonumber
+%(3)
+\end{eqnarray}
+%
+\subsection{Problem B}
+Imagine that the infrastructure organization offers bid to external contractors
+for construction and installation of its infrastructure network. The networks
+consist of 17 objects (Table \ref{tbl-reliability-a:2}) and, minimum reliability of the network
+reliability must be 70\%. The A, B and C bid 57'000 CHF, 39'000 CHF, and 42'000
+CHF, respectively and proposed the configuration shown in Figure \ref{reliability-a-2},
+Figure \ref{reliability-a-3}, and Figure \ref{reliability-a-3}.
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=408pt]{reliability-a-2.eps}
+\caption{Configuration A}\label{reliability-a-2}
+% \end{center}
+\end{figure}
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=371pt]{reliability-a-3.eps}
+\caption{Configuration B}\label{reliability-a-3}
+% \end{center}
+\end{figure}
+%
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=415pt]{reliability-a-4.eps}
+\caption{Configuration B}\label{reliability-a-4}
+% \end{center}
+\end{figure}
+%
+\begin{table}[h]
+\caption{Object reliabilities}
+\vspace{3pt} \noindent
+\begin{tabular}{|p{28pt}|p{63pt}|p{28pt}|p{59pt}|p{34pt}|p{55pt}|}
+\hline
+\parbox{28pt}{\centering 
+Object
+} & \parbox{63pt}{\centering 
+Reliability
+} & \parbox{28pt}{\centering 
+Object
+} & \parbox{59pt}{\centering 
+Reliability
+} & \parbox{34pt}{\centering 
+Object
+} & \parbox{55pt}{\centering 
+Reliability
+} \\
+\hline
+\parbox{28pt}{\centering 
+A
+} & \parbox{63pt}{\centering 
+0.840
+} & \parbox{28pt}{\centering 
+G
+} & \parbox{59pt}{\centering 
+0.870
+} & \parbox{34pt}{\centering 
+M
+} & \parbox{55pt}{\centering 
+0.830
+} \\
+\hline
+\parbox{28pt}{\centering 
+B
+} & \parbox{63pt}{\centering 
+0.860
+} & \parbox{28pt}{\centering 
+H
+} & \parbox{59pt}{\centering 
+0.880
+} & \parbox{34pt}{\centering 
+N
+} & \parbox{55pt}{\centering 
+0.850
+} \\
+\hline
+\parbox{28pt}{\centering 
+C
+} & \parbox{63pt}{\centering 
+0.890
+} & \parbox{28pt}{\centering 
+I
+} & \parbox{59pt}{\centering 
+0.890
+} & \parbox{34pt}{\centering 
+O
+} & \parbox{55pt}{\centering 
+0.840
+} \\
+\hline
+\parbox{28pt}{\centering 
+D
+} & \parbox{63pt}{\centering 
+0.860
+} & \parbox{28pt}{\centering 
+J
+} & \parbox{59pt}{\centering 
+0.860
+} & \parbox{34pt}{\centering 
+P
+} & \parbox{55pt}{\centering 
+0.890
+} \\
+\hline
+\parbox{28pt}{\centering 
+E
+} & \parbox{63pt}{\centering 
+0.870
+} & \parbox{28pt}{\centering 
+K
+} & \parbox{59pt}{\centering 
+0.850
+} & \parbox{34pt}{\centering 
+Q
+} & \parbox{55pt}{\centering 
+0.890
+} \\
+\hline
+\parbox{28pt}{\centering 
+F
+} & \parbox{63pt}{\centering 
+0.820
+} & \parbox{28pt}{\centering 
+L
+} & \parbox{59pt}{\centering 
+0.860
+} & \parbox{34pt}{\centering } & \parbox{55pt}{\centering } \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\label{tbl-reliability-a:2}\end{table}
+\subsubsection{Question B1}
+Given this information, determine the system reliability for each of the three
+configurations.
+\subsubsection{Answer B1}
+Configurations A, B, and C are composed of both items connected in series and
+parallel. Equations \eqref{eqreliability:17} and \eqref{eqreliability:19} are used.
+
+One possible formula to be used to determine the reliability of configuration A,
+B and C are:
+
+\underline{Configuration A} 
+
+\begin{itemize}
+	\item B and C are in the same link (Eq. \eqref{eqreliability:17})
+	\item D and E are in the same link (Eq. \eqref{eqreliability:17})
+	\item \{B,C\} and \{D, E\} are in parallel (Eq. \eqref{eqreliability:19})
+	\item G and H are in parallel (Eq. \eqref{eqreliability:19})
+	\item Set 1 = [\{(B,C),(D,E)\}, F, (G,H), and I] are in the same link  (Eq. \eqref{eqreliability:17})
+	\item K and L are in parallel (Eq. \eqref{eqreliability:19})
+	\item O, P, and Q are in parallel (Eq. \eqref{eqreliability:19})
+	\item Set 2 = [J, (K,L), M, N, and (O,P,Q)] are in the same link (Eq. \eqref{eqreliability:17})
+	\item Set 1 and 2 are in parallel (Eq. \eqref{eqreliability:19})
+\end{itemize}
+\begin{eqnarray}
+&& {\vec R_{configuration{\rm{ }}A}} = {R_A} \cdot {R_{B \to Q}}
+\label{eq-reliability-a5}
+%(5)
+\end{eqnarray}
+where  ${R_{B \to Q}}$ represents the the reliability of the sub-system
+%
+\begin{eqnarray}
+&& {R_{B \to Q}} = 1 - (1 - {R_{B \to I}}) \cdot (1 - {R_{J \to Q}})
+\label{eq-reliability-a6}
+%(6)
+\end{eqnarray}
+%
+\begin{eqnarray}
+&& \begin{array}{l}
+{R_{B \to I}} = {R_{B \to E}} \cdot {R_F} \cdot {R_{G \to H}} \cdot {R_I}\\
+{\rm{          = }}\left[ {1 - (1 - {R_B} \cdot {R_C}) \cdot (1 - {R_D} \cdot
+{R_E})} \right] \cdot {R_F} \cdot \left[ {1 - (1 - {R_G}) \cdot (1 - {R_H})}
+\right] \cdot {R_I}
+\end{array}
+\label{eq-reliability-a7}
+%(7)
+\end{eqnarray}
+%%
+\begin{eqnarray}
+&& \begin{array}{l}
+{R_{J \to Q}} = {R_J} \cdot {R_{K \to L}} \cdot {R_M} \cdot {R_N} \cdot {R_{O
+\to Q}}\\
+{\rm{          = }}{R_J} \cdot \left[ {1 - (1 - {R_K}) \cdot (1 - {R_L})}
+\right] \cdot {R_M} \cdot {R_N} \cdot \left[ {1 - (1 - {R_O}) \cdot (1 - {R_P})
+\cdot (1 - {R_Q})} \right]
+\end{array}
+\label{eq-reliability-a8}
+%(8)
+\end{eqnarray}
+Using the reliability values of items in Table \ref{tbl-reliability-a:2}, the reliability of
+the configuration A is
+\begin{eqnarray}
+&& {\vec R_{configuration{\rm{ }}A}} = 0.729 \nonumber
+\end{eqnarray}
+
+\underline{Configuration B}
+
+\begin{eqnarray}
+{\vec R_{configuration{\rm{ }}B}} = {R_A} \cdot {R_B} \cdot {R_{C \to O}}
+\label{eq-reliability-a9}
+%(9)
+\end{eqnarray}
+%
+\begin{eqnarray}
+&& {R_{C \to O}} = 1 - (1 - {R_{C \to J}} \cdot {R_{K \to M}}) \cdot (1 - {R_{N \to
+O}})
+\label{eq-reliability-a10}\\
+&& {R_{C \to J}} = 1 - (1 - {R_C} \cdot {R_F} \cdot {R_G})(1 - {R_E} \cdot {R_{H
+\to J}})
+\label{eq-reliability-a11}\\
+&&{R_{H \to J}} = 1 - (1 - {R_H}) \cdot (1 - {R_I}) \cdot (1 - {R_J})
+\label{eq-reliability-a12}\\
+&& {R_{K \to M}} = 1 - (1 - {R_K}) \cdot (1 - {R_L}) \cdot (1 - {R_M})
+\label{eq-reliability-a13}\\
+%(13)
+&& {R_{N \to O}} = {R_N} \cdot {R_O}
+\label{eq-reliability-a14}
+%(14)
+\end{eqnarray}
+%
+%
+Using the reliability values of items in Table \ref{tbl-reliability-a:2}, the reliability of
+the configuration B is
+%
+\begin{eqnarray}
+&& {\vec R_{configuration{\rm{ }}B}} = 0.714 \nonumber
+\end{eqnarray}
+
+\underline{Configuration C}
+\begin{eqnarray}
+&& {\vec R_{configuration{\rm{ C}}}} = {R_A} \cdot {R_{B \to K}} \cdot {R_L} \cdot
+{R_{M \to N}}
+\label{eq-reliability-a15}
+%(15)
+\end{eqnarray}
+\begin{eqnarray}
+&& {R_{B \to K}} = 1 - (1 - {R_{B \to F}} \cdot {R_{H \to J}}) \cdot (1 - {R_{G \to
+K}})
+\label{eq-reliability-a16}\\
+%(16)
+&& {R_{B \to F}} = 1 - (1 - {R_B} \cdot {R_C}) \cdot (1 - {R_D} \cdot {R_E}) \cdot
+(1 - {R_F})
+\label{eq-reliability-a17}\\
+&& {R_{H \to J}} = 1 - (1 - {R_H}) \cdot (1 - {R_I}) \cdot (1 - {R_J})
+\label{eq-reliability-a18}\\
+%(18)
+&& {R_{G \to K}} = {R_G} \cdot {R_K}
+\label{eq-reliability-a19}
+%(19)
+\end{eqnarray}
+Using the reliability values of items in Table \ref{tbl-reliability-a:2}, the reliability of
+the configuration C is
+\begin{eqnarray}
+&& {\vec R_{configuration{\rm{ }}C}} = 0.702\nonumber
+\end{eqnarray}
+
+\underline{Result}
+
+The reliability of configurations A, B and C are 0.729, 0.714, and 0.702
+respectively. Based on reliability alone configuration A would be chosen.
+%
+\subsubsection{Question B2}
+How high would the failure costs have to be before you would not choose the
+network with the lowest upfront costs? (Use a one year time period and assume
+that the network would not failure more than once).
+%
+\subsubsection{Answer B2}
+If failure costs nothing than network configuration results in the lowest cost
+(Table \ref{tbl-reliability-a:3}).
+
+
+\begin{table}[h]
+\caption{Total cost of networks}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Failure cost} & \multicolumn{1}{c|}{Network} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Construction cost} & \multicolumn{1}{c|}{Total cost in one year} \\ 
+\multicolumn{1}{|c|}{($10^3$ x CHF)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{($10^3$ x CHF)"} & \multicolumn{1}{c|}{($10^3$ x CHF)} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{0.729} & \multicolumn{1}{c|}{57} & \multicolumn{1}{c|}{57} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{0} & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{0.714} & \multicolumn{1}{c|}{39} & \multicolumn{1}{c|}{39} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{0.702} & \multicolumn{1}{c|}{42} & \multicolumn{1}{c|}{42} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{0.729} & \multicolumn{1}{c|}{57} & \multicolumn{1}{c|}{301} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{900} & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{0.714} & \multicolumn{1}{c|}{39} & \multicolumn{1}{c|}{296} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{0.702} & \multicolumn{1}{c|}{42} & \multicolumn{1}{c|}{310} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A} & \multicolumn{1}{c|}{0.729} & \multicolumn{1}{c|}{57} & \multicolumn{1}{c|}{328} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{1000} & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{0.714} & \multicolumn{1}{c|}{39} & \multicolumn{1}{c|}{325} \\ 
+\cline{2-5}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{0.702} & \multicolumn{1}{c|}{42} & \multicolumn{1}{c|}{340} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:3}
+\end{table}
+\subsection{Problem C}
+You have a series network with 5 infrastructure objects, two pavement sections
+and three bridges. The probability of failure in each of the next 5 years of each
+bridge is 0.1 (before and after repair) and the probability of failure for each
+road section is 0.15 (before and after repair). Each bridge failure will take 60
+days to repair and will cost 250'000 mus during which time the road will be
+unusable in which users will incur 300'000 mus.  Each road section failure will
+take 20 days to repair and will cost 75'000 mus during which time the road will
+be unusable in which users will incur 100'000 mus. Failures are considered
+mutually exclusive and that only one failure can occur per year.
+\subsubsection{Question C1}
+Calculate the reliability of the road over the 5 year-period.
+\subsubsection{Answer C1}
+The reliability is defined \eqref{eqreliability:7}. The hazard rate $\theta$ can be estimated.
+%
+\begin{eqnarray}
+&& ln[R(t)] = \ln [\exp ( - \theta  \cdot t)] \Leftrightarrow \ln [R(t)] =  -
+\theta .t
+\label{eq-reliability-a21} \\
+&& \to \theta  =  - \frac{{\ln [R(t)]}}{t}
+\label{eq-reliability-a22}
+%(21)
+\end{eqnarray}
+The reliability in one year of the network $R(t = 1)$is estimated as
+\[
+R(t = 1) = (1-0.1)^3 \cdot  (1-0.15)^2 = 0.5267025
+\]
+The join hazard rate will be 
+\[
+\to \theta  =  - \frac{{\ln [0.5267025]}}{1} = 0.6411194
+%(24)
+\]
+The reliability in 5 year of the network will be
+\[
+R(t = 5) = \exp ( - 0.6411194 \times 5) = 0.0405347
+%(25)
+\]
+\subsubsection{Question C2}
+Calculate the maintainability of the road (in terms of time and money).
+\subsubsection{Answer C2}
+The formulation to estimate the maintainability is
+\begin{eqnarray}
+&& \bar M = \frac{{\sum\limits_{n = 1}^N {{p_n} \cdot N \cdot \mu _n^M}
+}}{{\sum\limits_{n = 1}^N {{p_n} \cdot N} }}
+\label{eq-reliability-a26}
+%(26)
+\end{eqnarray}
+Where:
+\begin{adjustwidth}{1cm}{}
+\begin{description}
+\item[${p_n}$:] is the failure probability of item type $n$,
+\item[$N$:] is the number of item type $n$ 
+\item[$\mu _n^M$:] is the mean time of impacts occur during the maintenance
+\end{description}
+%\end{flushright}
+\end{adjustwidth}
+Thus, in term of time, we have
+\[
+{\bar M^{time}} = \frac{{0.1 \times 3 \times 60}}{{0.1 \times 3 + 0.15 \times
+2}} + \frac{{0.15 \times 2 \times 20}}{{0.1 \times 3 + 0.15 \times 2}} = 40{\rm{
+days}}
+\]
+and in term of money, we have
+\[
+{\bar M^{money}} = \frac{{0.1 \times 3 \times (250'000 + 300'000)}}{{0.15 \times
+2 + 0.1 \times 3}} + \frac{{0.15 \times 2 \times (75'000 + 100'000)}}{{0.15
+\times 2 + 0.1 \times 3}} = 362'500{\rm{ mus}}
+\]
+\subsubsection{Question C3}
+What is the impact on reliability and maintainability of repairing one bridge
+perfectly, i.e failure will not occur?
+\subsubsection{Answer C3}
+When one bridge is perfectly repaired, its reliability is 1 and thus the network
+can be considered to have only two bridges instead of 3. The same way of
+calculation for a new configuration of the network with only 2 bridges and 2 road
+sections is used to compute the reliability and maintainability.
+
+The reliability in one year of the network $R(t = 1)$ is estimated as
+\[
+R(t = 1) = (1-0.1)^2 \times (1-0.15)^2 = 0.585225
+\]
+\[
+\to \theta  =  - \frac{{\ln [0.585225]}}{1} = 0.5357589
+\]
+The reliability in 5 year of the network will be
+\[
+R(t = 5) = \exp ( - 0.5357589 \times 5) = 0.06864586
+%(25)
+\]
+\[
+{\bar M^{time}} = \frac{{0.15 \times 2 \times 60}}{{0.15 \times 2 + 0.1 \times
+2}} + \frac{{0.1 \times 2 \times 20}}{{0.15 \times 2 + 0.1 \times 2}} = 36{\rm{
+days}}
+\]
+and in terms of money, we have
+\[
+{\bar M^{money}} = \frac{{0.15 \times 2 \times (250'000 + 300'000)}}{{0.15
+\times 2 + 0.1 \times 2}} + \frac{{0.1 \times 2 \times (75'000 + 100'000)}}{{0.15
+\times 2 + 0.1 \times 2}} = 325'000{\rm{ mus}}
+\]
+\subsubsection{Question C4}
+How much should we be willing to pay to execute such an intervention?
+\subsubsection{Answer C4}
+The amount of money that we are willing to pay depending on the expected impact
+due to failure that can be generated under the two above options. Following table
+describes the calculation of the amount of money that we are willing to pay. The
+option 1 and 2 are corresponding to the case one bridge is not perfectly repaired
+and another case when a bridge is perfectly repaired, respectively. The
+reliability and the expect cost to repair are calculated from previous steps.
+From the reliability, the failure probability can be straightforward estimated
+and it is used to compute the possible cost (expected cost) if failure happens in
+the future. As can be seen from the amount of possible cost under option 1 and 2,
+option 2 yields less amount of cost than option 1, and the willingness to pay is
+the difference of the twos, which is about 37'500 mus.
+
+\begin{table}[h]
+\caption{Comparison of two options}
+
+\vspace{3pt} \noindent
+\begin{tabular}{|p{38pt}|p{108pt}|p{51pt}|p{60pt}|}
+\hline
+\parbox{38pt}{\centering 
+{\footnotesize Option}
+} & \parbox{108pt}{\centering 
+{\footnotesize Reliability}
+} & \parbox{51pt}{\centering 
+{\footnotesize Cost (mus)}
+} & \parbox{60pt}{\centering 
+{\footnotesize Failure probability}
+} \\
+\hline
+\parbox{38pt}{\centering 
+{\footnotesize 1}
+} & \parbox{108pt}{\centering 
+{\footnotesize 0.0405347}
+} & \parbox{51pt}{\centering 
+{\footnotesize 362'500}
+} & \parbox{60pt}{\centering 
+{\footnotesize 0.9594653}
+} \\
+\hline
+\parbox{38pt}{\centering 
+{\footnotesize 2}
+} & \parbox{108pt}{\centering 
+{\footnotesize 0.06864586}
+} & \parbox{51pt}{\centering 
+{\footnotesize 325'000}
+} & \parbox{60pt}{\centering 
+{\footnotesize 0.93135414}
+}  \\
+\hline
+\parbox{38pt}{\centering } & \multicolumn{3}{|c|}{\parbox{219pt}{\centering 
+{\footnotesize Willingness to pay  = 45.115 mus}
+}} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\end{table}
+\subsubsection{Question C5}
+Discuss the assumptions mutual exclusiveness and that only one failure can occur
+per year.
+\subsubsection{Answer C5}
+The mutual exclusiveness assumed in this example means that only one failure can
+occur per year. This assumption can be used but it also bears a limitation that
+it might not perfectly reflect the increasing failure rate over time as the
+bridges and road sections are aging year by year. In addition, as the bridges and
+road sections are independent, they can actually failure to provide adequate
+level of services simultaneously in the same year. This possibility should be
+taken into consideration of calculating the reliability and maintainability in
+reality.
+\subsection{Problem D}
+A network is connected and represented as shown in the following Figure
+\ref{reliability-a-5}. All 6 objects are identical. In one month, on average it is recorded
+that 1 out of 6 objects fails and is renewed.
+
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=354pt]{reliability-a-5.eps}
+\caption{Network}\label{reliability-a-5}
+% \end{center}
+\end{figure}
+\subsubsection{Question D1}
+Calculate the reliability of the network in 5 months, i.e. that it is possible
+to send one item from the start node (S) to the end note (E)? Note: you can round
+up the values in 2 digits.
+\subsubsection{Answer D1}
+One month failure probability for each object is 1/6. The reliability for the
+network in one month is defined as
+\begin{eqnarray}
+&& \vec R_{network}^1 = R_1^1 \cdot R_{2 \to 5}^1 \cdot R_6^1
+\label{eq-reliability-a30} \\
+&& R_{2 \to 5}^1 = 1 - (1 - R_2^1) \cdot \left[ {\left\{ {1 - (1 - R_3^1) \cdot (1
+- R_4^1)} \right\}} \right] \cdot (1 - R_5^1)
+\label{eq-reliability-a31} \\
+&& \vec R_{network}^1 \approx 0.694 \nonumber
+%(30)
+\end{eqnarray}
+The reliability in 5 months of the network will be estimated based on the
+failure rate of individual item
+\[
+\to \theta  =  - \frac{{\ln [1 - 1/6]}}{1} \approx 0.182
+%(32)
+\]
+The reliability of each item in 5 months is
+\[
+R_{item}^5 = \exp ( - 0.183 \times 5) \approx 0.402
+\]
+Using equations \eqref{eq-reliability-a30} and \eqref{eq-reliability-a31} for a period of 5 months, we have
+\begin{eqnarray}
+&& \vec R_{network}^5 = R_1^5 \cdot R_{2 \to 5}^5 \cdot R_6^5
+\label{eq-reliability-a34} \\
+&& R_{2 \to 5}^5 = 1 - (1 - R_2^5) \cdot \left[ {\left\{ {1 - (1 - R_3^5) \cdot (1
+- R_4^5)} \right\}} \right] \cdot (1 - R_5^5)
+\label{eq-reliability-a35}\\
+&& \vec R_{network}^5 \approx 0.141 \nonumber
+%(34)
+\end{eqnarray}
+\subsubsection{Question D2}
+If the network is not working, a loss of 30 \textit{mus} is expected. In order
+to improve the overall reliability of the network over the next 5 months, manager
+proposes 2 options
+
+\textbf{Option 1:} Replace link 1 and link 6 with links that are 5 \% more
+reliable than the existing ones.
+
+\textbf{Option 2:} Replace links 2, 3, 4, and 5 with the links that are 8\% more
+reliable than the existing ones.
+
+The differences in replacement costs are negligible and thus not considered.
+
+Which option shall be chosen?
+\subsubsection{Answer D2}
+\textbf{Option 1:} Replace link 1 and link 6 with links that are 5 \% more
+reliable than the existing ones.
+
+Under this option, new reliability of link 1 and link 6 become
+\[
+R_1^1 = R_6^1 = (1 - \frac{1}{6}) + (1 - \frac{1}{6}) \cdot \frac{5}{{100}} =
+0.875
+\]
+
+Using the new value of reliability for item 1 and 6 and the values of
+reliability for item 2, 3, 4, and 5 ($R_2^1 = R_3^1 = R_4^1 = R_5^1 = (1 -
+\frac{1}{6})$) for the equations (30) and (31), we have
+
+\[
+ \vec R_{network}^{1,option1} \approx 0.765
+\]
+
+\textbf{Option 2:} Replace links 2, 3, 4, and 5 with the links that are 8\% more
+reliable than the existing ones.
+
+Under this option, new reliability of link 1 and link 6 become
+
+\[
+ R_2^1 = R_3^1 = R_4^1 = R_5^1 = (1 - \frac{1}{6}) + (1 - \frac{1}{6}) \cdot
+\frac{8}{{100}} = 0.9
+\]
+
+Using the new value of reliability for item 2, 3, 4 and 5 and the old values of
+reliability for item 1, and 6 ($R_1^1 = R_6^1 = (1 - \frac{1}{6})$) for the
+equations (30) and (31), we have
+
+\[
+ \vec R_{network}^{1,option1} \approx 0.694
+\]
+
+Similarly, for 5 months, we have
+
+\[
+ R_1^5 = R_6^5 \approx 0.402 + 0.402 \cdot \frac{5}{{100}} = 0.4221
+\]
+
+Using the new value of reliability for item 1 and 6 and the values of
+reliability for item 2, 3, 4, and 5 ($R_2^5 = R_3^5 = R_4^5 = R_5^5 = 0.402$) for
+the equations (30) and (31), we have
+
+\[
+ \vec R_{network}^{5,option1} \approx 0.155
+\]
+
+\textbf{Option 2:} Replace links 2, 3, 4, and 5 with the links that are 8\% more
+reliable than the existing ones.
+
+Under this option, new reliability of link 1 and link 6 become
+
+\[
+ R_2^2 = R_3^3 = R_4^4 = R_5^5 = 0.402 + 0.402 \cdot \frac{8}{{100}} = 0.434
+\]
+
+Using the new value of reliability for item 2, 3, 4 and 5 and the old values of
+reliability for item 1, and 6 ($R_1^5 = R_6^5 = 0.402$) for the equations (30)
+and (31), we have
+
+\[
+ \vec R_{network}^{5,option2} \approx 0.145
+\]
+
+Following table compares the expected impact under the two options
+\begin{table}
+\caption{Comparison of two options}
+\label{tbl-reliability-a:4}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Time} & \multicolumn{1}{c|}{Options} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Failure} & \multicolumn{1}{c|}{Unit impact} & \multicolumn{1}{c|}{Total impact} \\ 
+\multicolumn{1}{|c|}{(months)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{probability} & \multicolumn{1}{c|}{(mus)} & \multicolumn{1}{c|}{(mus)} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0.765} & \multicolumn{1}{c|}{0.235} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{7.05} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.694} & \multicolumn{1}{c|}{0.306} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{9.18} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0.155} & \multicolumn{1}{c|}{0.845} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{25.35} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{0.145} & \multicolumn{1}{c|}{0.855} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{25.65} \\ 
+\hline
+\end{tabular}
+\end{table}
+As can be seen from the table, under both 1 month and 5 months the expected
+total impacts incurred by option 1 is smaller than that of option 2, thus, option
+1 is preferable than option 2.
+% \begin{enumerate}
+\subsection{Problem E}
+% \end{enumerate}
+
+You are evaluating two offers for replacement of an existing bridge on a
+highway. You have determined that the link to which the existing bridge belongs
+has a reliability of 0.9 over the time period of interest, if it is assumed that
+the bridge is perfectly reliable. The consequences of not being able to use the
+link due to failure of the bridge are 100 million CHF, principally due to lost
+travel time and economic impact.
+
+\begin{itemize}
+	\item Offer A, for 15 million CHF, is a wide bridge that can accommodate two lanes of
+traffic in both directions and has reliability over the time period of interest
+of 0.95.
+	\item Offer B, for 19 million CHF, is for two narrow bridges that can accommodate two
+lanes of traffic each, and each have a reliability of 0.95 over the same time
+period.
+\end{itemize}
+% \begin{enumerate}
+\subsubsection{Question E1}
+% \end{enumerate}
+
+
+If it is assumed that the only differences between the two offers in terms of
+costs and benefits are the cost of construction and the cost of not being able to
+use the link if failure occurs,
+
+which offer should be chosen?
+
+Back up your argument with exact numbers. In words explain how your decision
+would be affected if you discovered that you over-estimated the reliability of
+the rest of the link.
+
+% \begin{enumerate}
+\subsubsection{Answer E1}
+% \end{enumerate}
+
+Option B without the link has a higher reliability than the option A without the
+link. Therefore if the reliability of the link is lower than assumed, the failure
+cost of both options will be increasing accordingly. Therefore, option B will
+remain as the best option. The calculations can be seen in Table \ref{tbl-reliability-a:4a}.
+\begin{table}
+\caption{Calculations}
+\label{tbl-reliability-a:4a}
+{\tabcolsep2pt
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|P{90}{2.2cm}|}{Offers} & \multicolumn{1}{P{90}{2.2cm}|}{Cost} & \multicolumn{1}{P{90}{2.2cm}|}{Object reliability} & \multicolumn{1}{P{90}{2.2cm}|}{Link reliability w/o the object} & \multicolumn{1}{P{90}{2.0cm}|}{Link reliability w object} & \multicolumn{1}{P{90}{2.2cm}|}{Link failure probability} & \multicolumn{1}{P{90}{2.2cm}|}{Costs due to not being able to use the link if failure occurs} & \multicolumn{1}{P{90}{2.2cm}|}{Expected costs due to not being able to use the link} & \multicolumn{1}{P{90}{1.6cm}|}{Differential cost} & \multicolumn{1}{P{90}{2.2cm}|}{Differential benefit} & \multicolumn{1}{P{90}{2.2cm}|}{ Net benefit} \\ 
+\hline
+\multicolumn{1}{|c|}{A} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{0.95} & \multicolumn{1}{c|}{0.9} & \multicolumn{1}{c|}{0.855} & \multicolumn{1}{c|}{0.145} & \multicolumn{1}{c|}{100} & \multicolumn{1}{c|}{14.500} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{B} & \multicolumn{1}{c|}{19} & \multicolumn{1}{c|}{0.95} & \multicolumn{1}{c|}{0.9} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{100} & \multicolumn{1}{c|}{10.225} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{4.275} & \multicolumn{1}{c|}{0.275} \\ 
+\cline{3-3}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.95} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\end{tabular}
+}
+\end{table}
+\subsection{Problem F}
+Water is one of the fundamental needs of millions of people living in a
+megacity. Water of sufficient quality and quantity must be provided around the
+clock. In order to fulfill this need, a city depends on its water distribution
+infrastructure, which includes pipes made of different materials and laid at
+different times. These pipes are affected by processes of different types and
+deteriorate at different rates. The consequences related to pipe failure vary
+significantly depending on the type of failure, e.g. a pipe break, or a leaking
+pipe, as does the reaction time required to fix the pipe. For example, if a pipe
+breaks, a corrective intervention must be executed immediately, and if it is
+noticed that there is progressive water loss over time then a preventive
+intervention can be planned before there is an inadequate level of service.
+
+Part of the water distribution network in mega-city Q is shown in Figure
+\ref{reliability-a-6}. The pipe characteristics are given in Table \ref{tbl-reliability-a:5}.
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=292pt]{reliability-a-6.eps}
+\caption{Simplified network of water supply pipes}\label{reliability-a-6}
+% \end{center}
+\end{figure}
+
+
+\begin{table}
+\caption{Pipe and their attributes}
+\label{tbl-reliability-a:5}
+{\tabcolsep2pt
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Pipe} & \multicolumn{1}{c|}{Material} & \multicolumn{1}{c|}{Demand} & \multicolumn{1}{c|}{Length} & \multicolumn{1}{c|}{Year of construction} & \multicolumn{1}{c|}{Usage} & \multicolumn{1}{c|}{Distribution of PS in year 2014} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{($m^3/day$} & \multicolumn{1}{c|}{($m$)} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{M} & \multicolumn{1}{c|}{Concrete} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{5'000} & \multicolumn{1}{c|}{1998} & \multicolumn{1}{c|}{Distribution only} & \multicolumn{1}{c|}{[0.9; 0.1; 0; 0; 0]} \\ 
+\hline
+\multicolumn{1}{|c|}{A.1} & \multicolumn{1}{c|}{PVC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{600} & \multicolumn{1}{c|}{2003} & \multicolumn{1}{c|}{Distribution only} & \multicolumn{1}{c|}{} \\ 
+\cline{1-2}\cline{4-6}
+\multicolumn{1}{|c|}{A.2} & \multicolumn{1}{c|}{PVC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{600} & \multicolumn{1}{c|}{2003} & \multicolumn{1}{c|}{Distribution only} & \multicolumn{1}{c|}{} \\ 
+\cline{1-2}\cline{4-6}
+\multicolumn{1}{|c|}{A.3} & \multicolumn{1}{c|}{PVC} & \multicolumn{1}{c|}{250'000} & \multicolumn{1}{c|}{600} & \multicolumn{1}{c|}{2003} & \multicolumn{1}{c|}{Distribution and connection to buildings} & \multicolumn{1}{c|}{[0.85; 0.1; 0.05; 0; 0]} \\ 
+\cline{1-2}\cline{4-6}
+\multicolumn{1}{|c|}{A.4} & \multicolumn{1}{c|}{PVC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{600} & \multicolumn{1}{c|}{2003} & \multicolumn{1}{c|}{Distribution only} & \multicolumn{1}{c|}{} \\ 
+\cline{1-2}\cline{4-6}
+\multicolumn{1}{|c|}{A.5} & \multicolumn{1}{c|}{PVC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{600} & \multicolumn{1}{c|}{2003} & \multicolumn{1}{c|}{Distribution and connection to buildings} & \multicolumn{1}{c|}{} \\ 
+\hline
+\multicolumn{1}{|c|}{B} & \multicolumn{1}{c|}{Cast iron type 1} & \multicolumn{1}{c|}{200'000} & \multicolumn{1}{c|}{2'500} & \multicolumn{1}{c|}{1993} & \multicolumn{1}{c|}{Distribution and connection to buildings} & \multicolumn{1}{c|}{[0.8; 0.2; 0; 0; 0]} \\ 
+\hline
+\multicolumn{1}{|c|}{C} & \multicolumn{1}{c|}{Cast iron type 2} & \multicolumn{1}{c|}{100'000} & \multicolumn{1}{c|}{1'600} & \multicolumn{1}{c|}{1993} & \multicolumn{1}{c|}{Distribution and connection to buildings} & \multicolumn{1}{c|}{[0.83; 0.1; 0.07; 0; 0]} \\ 
+\hline
+\multicolumn{1}{|c|}{D} & \multicolumn{1}{c|}{Cast iron type 3} & \multicolumn{1}{c|}{350'000} & \multicolumn{1}{c|}{4'000} & \multicolumn{1}{c|}{1983} & \multicolumn{1}{c|}{Distribution and connection to buildings} & \multicolumn{1}{c|}{[0.8; 0.1; 0.1; 0; 0]} \\ 
+\hline
+\end{tabular}
+}
+\end{table}
+
+When newly built the pipes to not leak but over time they do. The amount of
+water lost due to these leaks increases over time. In order to model the increase
+in leakage over time the pipes the performance states in Table \ref{tbl-reliability-a:6} are
+used. The one year transition probabilities for pipe M and A are given in Table
+\ref{tbl-reliability-a:7}.
+
+\begin{table}%[h]
+\caption{Performance states used to model water leakage over time}
+
+\vspace{3pt} \noindent
+\begin{tabular}{|p{95pt}|p{111pt}|}
+\hline
+\parbox{95pt}{\centering 
+Performance
+
+state
+} & \parbox{111pt}{\centering 
+Water loss
+\\
+(\%)
+} \\
+\hline
+\parbox{95pt}{\centering 
+1
+} & \parbox{111pt}{\centering 
+W $<$ 5\%
+} \\
+\hline
+\parbox{95pt}{\centering 
+2
+} & \parbox{111pt}{\centering 
+5\% $<$= W $<$ 10\%
+} \\
+\hline
+\parbox{95pt}{\centering 
+3
+} & \parbox{111pt}{\centering 
+10\% $<$= W $<$ 15\%
+} \\
+\hline
+\parbox{95pt}{\centering 
+4
+} & \parbox{111pt}{\centering 
+15\% $<$= W $<$ 20\%
+} \\
+\hline
+\parbox{95pt}{\centering 
+5
+} & \parbox{111pt}{\centering 
+20\% $<$= W
+} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\label{tbl-reliability-a:6}\end{table}
+
+\begin{table}[h]
+\caption{One year transition probabilities for pipe M and A}
+\label{tbl-reliability-a:7}
+{\tabcolsep2pt
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Pipe} & \multicolumn{5}{c|}{M} & \multicolumn{5}{c|}{A} \\ 
+\cline{2-11}
+\multicolumn{1}{|c|}{PS} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{0.93} & \multicolumn{1}{c|}{0.07} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.91} & \multicolumn{1}{c|}{0.09} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.87} & \multicolumn{1}{c|}{0.13} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.88} & \multicolumn{1}{c|}{0.12} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.85} & \multicolumn{1}{c|}{0.15} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.85} & \multicolumn{1}{c|}{0.15} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.8} & \multicolumn{1}{c|}{0.2} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0.82} & \multicolumn{1}{c|}{0.18} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\end{tabular}
+}
+\end{table}
+
+In addition to the pipes leaking they sometimes break. The processes that lead
+to these breaks are not the same as the ones that cause leakage. The reliability
+of the pipes affected by these processes are modeled with the Weibull function
+ with the values of the parameters given in Table \ref{tbl-reliability-a:8}.
+
+
+\begin{table}%[h]
+\caption{Deterioration parameters and year of construction and intervention information}
+\label{tbl-reliability-a:8}
+{\tabcolsep2pt
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Zone} & \multicolumn{1}{c|}{Section} & \multicolumn{1}{c|}{Scale parameter} & \multicolumn{1}{c|}{Shape parameter} & \multicolumn{1}{c|}{Duration of corrective intervention} & \multicolumn{1}{c|}{Cost of corrective intervention} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\alpha$} & \multicolumn{1}{c|}{$m$} & \multicolumn{1}{c|}{(days)} & \multicolumn{1}{c|}{(mus)} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.1} & \multicolumn{1}{c|}{0.005} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{8'000} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.2} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.4} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{12'000} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{A} & \multicolumn{1}{c|}{A.3} & \multicolumn{1}{c|}{0.003} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{10'000} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.4} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{20'000} \\ 
+\cline{2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.5} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{15'000} \\ 
+\hline
+\multicolumn{1}{|c|}{B} & \multicolumn{1}{c|}{B} & \multicolumn{1}{c|}{0.003} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{45'000} \\ 
+\hline
+\multicolumn{1}{|c|}{C} & \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{0.001} & \multicolumn{1}{c|}{1.7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{60'000} \\ 
+\hline
+\multicolumn{1}{|c|}{D} & \multicolumn{1}{c|}{D} & \multicolumn{1}{c|}{0.002} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{50'000} \\ 
+\hline
+\multicolumn{1}{|c|}{M} & \multicolumn{1}{c|}{M} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.2} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{70'000} \\ 
+\hline
+\end{tabular}
+}
+\end{table}
+
+The types of intervention considered possible for the pipes, as well as their
+unit costs, are given in Table \ref{tbl-reliability-a:9}. If a pipe breaks, it will be replaced
+for a cost of 500'000 CHF/100 m. The types of inspection that can be included in
+monitoring strategies are given in Table \ref{tbl-reliability-a:10}.
+
+\begin{table}[h]
+\caption{Interventions}
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Performance} & \multicolumn{1}{c|}{Intervention} & \multicolumn{1}{c|}{Unit cost} \\ 
+\multicolumn{1}{|c|}{state} & \multicolumn{1}{c|}{type} & \multicolumn{1}{c|}{$10^3$ mus/100m} \\ 
+\hline
+\multicolumn{1}{|c|}{1,2,3,4} & \multicolumn{1}{c|}{Do nothing} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{Rehabilitation} & \multicolumn{1}{c|}{25} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{Rehabilitation} & \multicolumn{1}{c|}{30} \\ 
+\hline
+\multicolumn{1}{|c|}{3,4,5} & \multicolumn{1}{c|}{Replacement} & \multicolumn{1}{c|}{100} \\ 
+\hline
+\multicolumn{1}{|c|}{1,2,3,4,5} & \multicolumn{1}{c|}{Replacement} & \multicolumn{1}{c|}{500} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:9}
+\end{table}
+
+\begin{table}[h]
+\caption{Inspection}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{Intervention} & \multicolumn{1}{c|}{Unit cost} \\ 
+\multicolumn{1}{|c|}{type} & \multicolumn{1}{c|}{$10^3$ mus/100m} \\ 
+\hline
+\multicolumn{1}{|c|}{Ultra-sonic} & \multicolumn{1}{c|}{3} \\ 
+\hline
+\multicolumn{1}{|c|}{Acoustic emission} & \multicolumn{1}{c|}{2} \\ 
+\hline
+\multicolumn{1}{|c|}{Wireless sensor} & \multicolumn{1}{c|}{4} \\ 
+\hline
+\multicolumn{1}{|c|}{Camera} & \multicolumn{1}{c|}{5} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:10}
+\end{table}
+\subsubsection{Question F1}
+% \newpage
+
+Estimate the \textit{failure rate} for performance states 1-4 of pipe M
+
+\subsubsection{Answer F1}
+%
+
+The failure rate for each performance state is estimated from the reliability of
+that state. The reliability of each state equals to the survival probability of
+that state. The value of the reliability of each state is therefore equivalent to
+the transition probability that the pipe will remains in that state. Values of
+transition probability in Table \ref{tbl-reliability-a:7} will be used for computing the
+failure rate of each performance state.
+
+Using equation \eqref{eq-reliability-a22}, following results are shown.
+
+\[
+ {\theta _1} =  - \frac{{\ln [{R_1}(t = 1)]}}{{t = 1}} =  - \frac{{\ln
+[0.93]}}{{t = 1}} \approx 0.073
+\]
+\[
+ {\theta _2} =  - \frac{{\ln [{R_2}(t = 1)]}}{{t = 1}} =  - \frac{{\ln
+[0.87]}}{{t = 1}} \approx 0.139
+\]
+\[
+ {\theta _3} =  - \frac{{\ln [{R_3}(t = 1)]}}{{t = 1}} =  - \frac{{\ln
+[0.85]}}{{t = 1}} \approx 0.162
+\]
+\[
+ {\theta _4} =  - \frac{{\ln [{R_4}(t = 1)]}}{{t = 1}} =  - \frac{{\ln
+[0.8]}}{{t = 1}} \approx 0.223
+\]
+\subsubsection{Question F2}
+Estimate the expected amount of time that pipe M remains in each performance
+state
+\subsubsection{Answer F2}
+The amount of time that pipe M remains in each performance state can be directly
+estimated from the reliability function, that is
+\begin{eqnarray}
+&& {\Theta _i} = \int\limits_0^\infty  {{{\tilde F}_i}(t)dt}  =
+\int\limits_0^\infty  {\exp ( - {\theta _i} \cdot t)dt}  = \frac{1}{{{\theta
+_i}}}
+\label{eq-reliability-a38}
+%(38)
+\end{eqnarray}
+In the case of exponential distribution, the amount of time is the invert value
+of the failure rate
+
+\[
+ \Theta _1 = \frac{1}{{{\theta _1}}} = \frac{1}{{0.073}} = 13.69 {\rm{ 
+years}}
+\]
+\[
+ {\Theta _2} = \frac{1}{{{\theta _2}}} = \frac{1}{{0.139}} = 7.19{\rm{  years}}
+\]
+\[
+ {\Theta _3} = \frac{1}{{{\theta _3}}} = \frac{1}{{0.162}} = 6.17{\rm{  years}}
+\]
+\[
+ {\Theta _4} = \frac{1}{{{\theta _4}}} = \frac{1}{{0.223}} = 4.48{\rm{  years}}
+\]
+
+\subsubsection{Question F3}
+What is the probability that there will be an adequate level of service in Zone
+A in year 2015 (PS4, PS5 = inadequate level of service)? The suspected amount of
+water loss in 2014 is given with the following probabilities (PS1 = 0.85, PS2 =
+0.10, PS3 = 0.05, PS4 = 0.00; PS5 = 0.00).
+
+\subsubsection{Answer F3}
+Using the following equation (in Chapter describing Markov model)
+
+\begin{eqnarray}
+&& \overrightarrow {{x^{t + 1}}}  = \left[ {\begin{array}{*{20}{c}}
+{{x_1}}&{{x_2}}&{{x_3}}&{{x_4}}&{{x_5}}
+\end{array}} \right] \cdot \left[ {\begin{array}{*{20}{c}}
+{{p_{11}}}&{{p_{12}}}&{{p_{13}}}&{{p_{14}}}&{{p_{15}}}\\
+0&{{p_{22}}}&{{p_{23}}}&{{p_{24}}}&{{p_{25}}}\\
+0&0&{{p_{33}}}&{{p_{34}}}&{{p_{35}}}\\
+0&0&0&{{p_{44}}}&{{p_{45}}}\\
+0&0&0&0&{{p_{55}}}
+\end{array}} \right]
+\label{eq-reliability-a39}
+%(39)
+\end{eqnarray}
+to estimate the state probability in year 2015
+%
+\begin{eqnarray}
+\begin{array}{l}
+\overrightarrow {{x^{t + 1}}}  = \left[ {\begin{array}{*{20}{c}}
+{0.85}&{0.1}&{0.05}&0&0
+\end{array}} \right] \cdot \left[ {\begin{array}{*{20}{c}}
+{0.91}&{0.09}&0&0&0\\
+0&{0.88}&{0.12}&0&0\\
+0&0&{0.85}&{0.15}&0\\
+0&0&0&{0.82}&{0.18}\\
+0&0&0&0&1
+\end{array}} \right]\\
+\;\;\;\;\;\\
+\;\;\;\;\; = \left[ {\begin{array}{*{20}{c}}
+{0.7735}&{0.1645}&{0.0545}&{0.0075}&0
+\end{array}} \right]
+\end{array}
+\label{eq-reliability-a40}
+%(40)
+\end{eqnarray}
+The probability that pipe in zone A will be in an adequate level of service is
+the sum of the state probability from CS 1 to CS 3, that is
+\[
+\Pr {o^{2015}}\left[ {{\text{Zone A in adequate level of service}}} \right] =
+\sum\limits_{i = 1}^3 {x_i^{2015} = 0.7735 + 0.1645 + 0.0545 = 0.9925}
+\]
+\subsubsection{Question F4}
+Calculate the probability of there being at least one pipe break in zone A in
+year 2020 (5 points).
+\subsubsection{Answer F4}
+
+\underline{Step 1:} Calculate the reliability for each pipe A1, A2, A3, A4, A5 in Zone A. The failure probability of each pipe is independent from each other.
+
+Example is done for pipe A1
+\[
+{R^{A1}}(t = 22) = {e^{ - {{(0.005 \cdot 22)}^{1.3}}}} = 0.945
+\]
+the failure probability is
+\[
+{F^{A1}}(t = 22) = 1 - {R^{A1}}(t = 22) = 1 - 0.945 = 0.055
+\]
+\underline{Step 2:} Since the break of pipe is not dependent, it is not joint
+probability and thus, it is simple the average failure probability, which equals
+to 0.025.
+
+The calculations are shown in Table \ref{tbl-reliability-a:11}.
+\begin{table}[h]
+\caption{Calculations (2020)}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Zone} & \multicolumn{1}{c|}{Section} & \multicolumn{1}{c|}{Scale parameter} & \multicolumn{1}{c|}{Shape parameter} & \multicolumn{1}{c|}{Elapsed time till 2013} & \multicolumn{1}{c|}{Elapsed time till 2020} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Failure probability} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\alpha$} & \multicolumn{1}{c|}{$m$} & \multicolumn{1}{c|}{(years)} & \multicolumn{1}{c|}{(years)} & \multicolumn{1}{c|}{($R(t)$)} & \multicolumn{1}{c|}{($F(t)$)} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.1} & \multicolumn{1}{c|}{0.005} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{22} & \multicolumn{1}{c|}{0.945} & \multicolumn{1}{c|}{0.055} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.2} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.4} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0.977} & \multicolumn{1}{c|}{0.023} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{A} & \multicolumn{1}{c|}{A.3} & \multicolumn{1}{c|}{0.003} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0.988} & \multicolumn{1}{c|}{0.012} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.4} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0.982} & \multicolumn{1}{c|}{0.018} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.5} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0.982} & \multicolumn{1}{c|}{0.018} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:11}
+\end{table}
+
+\subsubsection{Question F5}
+When is it expected that the annual probability of pipe A1 breaking will exceed
+0.3 given that it did not break earlier?
+
+\subsubsection{Answer F5}
+Value of time t can be estimated from from equation \eqref{eqreliability:10}
+\[
+\begin{array}{l}
+R(t) = {e^{ - {{(\alpha  \cdot t)}^m}}} \Leftrightarrow \ln \left[ {R(t)}
+\right] = \ln \left[ {{e^{ - {{(\alpha  \cdot t)}^m}}}} \right] =  - {(\alpha 
+\cdot t)^m}\\
+\to {t^m} =  - \frac{{\ln \left[ {R(t)} \right]}}{{{\alpha ^m}}} =  -
+\frac{{\ln \left[ {0.945} \right]}}{{{{0.005}^{1.3}}}} = 55.45 \approx 56{\rm{
+years}}
+\end{array}
+\]
+\subsubsection{Question F6}
+Calculate the reliability of being able to provide an adequate level of service
+to zone A in year 2014 (Keep in mind that water can flow in both directions
+through the pipes).
+\subsubsection{Answer F6}
+\underline{Step 1:} Calculate the reliability of each pipe in Zone A using given
+reliability function. This is exactly the same calculation as shown in subsection
+6.8, except the elapsed time till 2014 for each pipe is different. Table
+\ref{tbl-reliability-a:12} shows the results of estimation for reliability and failure in year
+2014.
+
+\begin{table}[h]
+\caption{Calculations (2014)}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Zone} & \multicolumn{1}{c|}{Section} & \multicolumn{1}{c|}{Scale parameter} & \multicolumn{1}{c|}{Shape parameter} & \multicolumn{1}{c|}{Elapsed time till 2013} & \multicolumn{1}{c|}{Elapsed time till 2020} & \multicolumn{1}{c|}{Reliability} & \multicolumn{1}{c|}{Failure probability} \\ 
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\alpha$} & \multicolumn{1}{c|}{$m$} & \multicolumn{1}{c|}{(years)} & \multicolumn{1}{c|}{(years)} & \multicolumn{1}{c|}{($R(t)$)} & \multicolumn{1}{c|}{($F(t)$)} \\ 
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.1} & \multicolumn{1}{c|}{0.005} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{0.963} & \multicolumn{1}{c|}{0.037} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.2} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.4} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0.987} & \multicolumn{1}{c|}{0.013} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{A} & \multicolumn{1}{c|}{A.3} & \multicolumn{1}{c|}{0.003} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0.994} & \multicolumn{1}{c|}{0.006} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.4} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.5} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0.991} & \multicolumn{1}{c|}{0.009} \\ 
+\cline{2-8}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{A.5} & \multicolumn{1}{c|}{0.004} & \multicolumn{1}{c|}{1.3} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0.991} & \multicolumn{1}{c|}{0.009} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:12}
+\end{table}
+\underline{Step 2:} if for example pipe break at A.2 or A.4, the system is still
+functioning because the water can flow into both direction. And even A.3 break,
+it can still provide adequate level of service. In that situation, the system
+turns to be like a series network with independent reliability.
+
+3 scenarios can be seen
+
+\begin{itemize}
+	\item Scenario 1: If A.1 breaks, it affects the entire zone A
+	\item Scenario 2: If A.2 breaks, it does not, because water can flow into A4
+	\item Scenario 3: If A.4 breaks, it does not, because water can flow in to A2
+\end{itemize}
+Following is the calculation for reliability of each scenario
+\[
+ {R^{scenario1}}(2014) = {R^{A1}}(2014) = 0.963
+\]
+\[
+ {R^{scenario2}}(2014) = {R^{A1}}(2014) \cdot {R^{A3}}(2014) \cdot
+{R^{A4}}(2014) \cdot {R^{A5}}(2014) = 0.940
+\]
+\[
+ {R^{scenario3}}(2014) = {R^{A1}}(2014) \cdot {R^{A2}}(2014) \cdot
+{R^{A3}}(2014) \cdot {R^{A5}}(2014) = 0.937
+\]
+As each scenario can occurs independently from other scenarios, the average
+reliability is then evaluated as the average reliability of the three scenario
+\[
+\begin{array}{l}
+{R^{{\rm{Adequate level of service}}}}(2014) = \frac{{{R^{{\rm{scenario
+1}}}}(2014) + {R^{{\rm{scenario 2}}}}(2014) + {R^{{\rm{scenario
+3}}}}(2014)}}{3}\\
+{\rm{                                         =  }}\frac{{0.963 + 0.940 +
+0.937}}{3} = 0.947
+\end{array}
+\]
+\subsection{Problem G}
+The details of the number of fan units used in road tunnels retired at different
+ages are given in Table \ref{tbl-reliability-a:13}.
+\begin{table}[h]
+\caption{Record of fan units failed}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} & \multicolumn{1}{c|}{Item} & \multicolumn{1}{c|}{time} & \multicolumn{1}{c|}{status} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{25} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{26} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{27} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{28} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{29} & \multicolumn{1}{c|}{19} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{6} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{7} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{19} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{31} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{8} & \multicolumn{1}{c|}{19} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{32} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{9} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{21} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{33} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{10} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{22} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{34} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{11} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{23} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{35} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{1} \\ 
+\hline
+\multicolumn{1}{|c|}{12} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{24} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{36} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\end{tabular}
+\label{tbl-reliability-a:13}
+\end{table}
+Value in the column ``status'' has binary value 1 and 0. Value 1 and 0 represent
+the ``fail'' or ``not fail'' of the tunnel fans at the inspection time.
+\subsubsection{Question G1}
+What is the average expected life of the units that have survived until year 4?
+\subsubsection{Answer G1}
+The observed data infers a case that the failure rate is not a constant value.
+The failure rate of the fan is a time-varying variable. The failure rate can be
+followed a Weibull function (Equation \eqref{eqreliability:12}).
+
+The average life of the units that have survived until a certain year will be
+defined as
+\begin{eqnarray}
+&& \Phi \left[ {\tau  \ge t} \right] = \left[ {\int\limits_t^\infty  {R(\tau )d\tau
+} } \right] = \left[ {\int\limits_t^\infty  {{e^{ - {{(\alpha  \cdot \tau
+)}^m}}}d\tau } } \right]
+\label{eq-reliability-a44}
+%(44)
+\end{eqnarray}
+In this example, t=4 years. The unknown parameters are value of $\alpha $ and m.
+Values of these parameters can be estimated with the Maximum likelihood
+estimation approach (MLE) (see the R code in the Appendix).
+
+Using the MLE, value of $\alpha $ and m are 0.0542 and 5.8582, respectively. The
+average life of the units that have survived after 4 years will be
+\[
+\Phi \left[ {\tau  \ge 4} \right] = \left[ {\int\limits_4^\infty  {{e^{ -
+{{(0.0542 \cdot \tau )}^{5.8584}}}}d\tau } } \right] \approx 13{\rm{ years}}
+\]
+\bibliographystyle{plainnat}
+\bibliography{reference}
+
+\pagebreak
+
+\begin{subappendices}
+% \label{appendix3}
+\section{Reliability of an item with time invariant failure rate}\label{appen31}
+% \textbf{Reliability of an item with time invariant failure rate}
+\lstinputlisting{./Programs/IMP-reliability/IMP-example1-time-invarying.r}
+\pagebreak
+\section{Reliability of an item with time-variant failure rate}\label{appen32}
+% \textbf{Reliability of an item with time-variant failure rate}
+\lstinputlisting{./Programs/IMP-reliability/IMP-example2-time-varying.r}
+\pagebreak
+\section{Maximum likelihood estimation for Weibull model}\label{appen33}
+% \textbf{Reliability of an item with time-variant failure rate}
+\lstinputlisting{./Programs/IMP-reliability/IMP-A-time-varying-fan.r}
+\end{subappendices}

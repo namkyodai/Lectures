@@ -1,0 +1,1092 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+\chapter{Bayesian Computation and Bayesian Network Models}
+\label{bayesianchapter} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+\chapterauthor{Nam Lethanh and Bryan T. Adey}
+\section{Introduction}
+% Within the domain of infrastructure asset management (IAM), prediction models play an important role. The prediction models can be used to oversee the evolution of changes on various indicators and impacts affecting the decision on interventions. For instance, the prediction of evolution of discrete condition state representing the physical condition of bridge elements or road sections using mechanistic-empirical models or using Markov models; or the prediction of accident rate at each road section on an entire transportation network.
+% 
+% Prediction is closely dependent on data and data can be in various form and categories. For example, in order to predict the future condition of a bridge element, it is necessary to use data on time series data of cracking, chloride induced corrosion, fatigues, daily traffic volume, ambient temperature, etc.
+% 
+% In many case, mathematically, prediction models are of complex form that require highly computational efforts and development of algorithms. In addition, data under each categories can be linked as they are, in many cases, more or less statistically correlated. For example, accident rate at a road section is attributed to friction coefficient of the road surface, slope, speed limit, and also weather factors such as rain and snow. Also, in many cases, data is insufficient or missing due to measurement errors or limitation of resources.
+% 
+% One of the missions of research in this field is to come up with or apply the best method possible for prediction and analysis given requirements and constraints such as computational efforts, measurement errors, level of accuracy of prediction, missing data, and statistical correlated data.
+Recently, Bayesian statistics has gained its ground in the research domain of the IAM and transportation engineering domain. It is considered as a powerful approach that can be used to solve many problems in the IAM. It is more advantageous than the traditional frequentist statistics \footnote{the terminologies ``frequentist statistics'' and ``Bayesian statistics'' are used commonly in various statistical textbooks} such as least squared estimation or regression analysis with Maximum likelihood estimation (MLE) approach. 
+
+A simple example on estimation of accident rate on a road link herewith to provide readers a basic difference between the traditional frequentist statistics and Bayesian statistics. 
+
+In the past 10 years, it is known that the probability of having an accident on a specific road section is 0.001 in a day. This value is considered as an expected mean probability, which is calculated by simply based on observed data. If someone asks you a question ``what will be the probability of having an accident on that road tomorrow?'', the correct answer is no longer with the value of 0.001, but it is different. The probability of having an accident tomorrow is a conditional probability that is calculated based on its dependency on observation of accident today, weather condition, number of daily traffic volume that are expected to be tomorrow. Frequentist statistics cannot provide answer to this question, but Bayesian statistics can because in the heart of Bayesian statistics, it is Bayes rule that allows to take into consideration of conditional probability and degree of belief based on various observed parameters such as accident today, weather condition, numbers of daily traffic volume, as well as opinions from experts \citep{Andrew2006}.
+
+In briefly, Bayesian statistical approach can be used in replacement of frequentist statistical approaches for all of traditional statistical methods such as regression analysis, least squared estimation, and Maximum likelihood estimation approach. In addition, it can be used to solve complex and hierarchical models that methods used in traditional statistics cannot. 
+
+In the course of parameter estimation of statistical models, traditional statistics use analytical way to derive the solution. This analytical way faces difficulties when models are in complex hierarchical structures. In addition, traditional statistics is largely dependent on data. If data is insufficient or missing, the likelihood of estimation certainly involves greater bias and lower confidence \citep{Andrew2006,jeffgill}. Analytical method itself requires, for example, derivative approach for each model's parameters. For example, when using the MLE approach, it is necessary to obtain the first and second derivatives for each parameters. In mathematically term, it is necessary to derive the Jacobian matrices and Hessian matrices, then use Newton methods to obtain the values of model's parameters given data. However, in many cases, it is impossible to derive the Jacobian or Hessian matrices \footnote{Jacobian and Hessian matrices are matrices of the first and second derivatives of model's parameters}, leaving the problem unsolvable with the MLE approach. In this situation, the Bayesian approach can be used as it does not require the analytical solution, i.e. there is no need to obtain the Jacobian and Hessian matrices.
+
+In this chapter, the basic elements of the Bayesian inferential approach are introduced through examples related to prediction models for the IAM.
+%
+
+\subsection{Bayes's theorem}\label{bayesiantheorem}
+Although literature on Bayesian statistics has been documented in a countless number, we would prefer to briefly present the Bayes's theorem in this section for the convenience of the readers and to serve as connection to the examples presented in this chapter.
+
+In Bayesian statistics, the probability $P(A)$ of an event $A$ is formulated as a degree of belief that $A$ will occur. This degree of belief is subsequently referred as a prior probability which can be assumed relying on a subjective experience (theoretical assumption) or based on data of experiments or observations (frequentistic, empirical). Bayesian inference combines prior information and current information to derive the probability $P(A)$. This approach is considered as a process of fitting a probabilistic model to a set of data and summarizing the result by a probability distribution on the parameters of the model and on unobserved quantities such as predictions for new observations \cite{Geman1984}.
+
+In the Bayesian statistics, the posterior distribution of parameters is estimated by using the likelihood function, which is defined by the prior distribution of parameters and the observed data. Here, the likelihood function is represented by ${\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})$. $\mbox{\boldmath$\beta$}$ and $\mbox{\boldmath$\xi$}$ denote the unknown parameter vector and the observed data, respectively. 
+It is assumed that $\mbox{\boldmath$\beta$}$ is a random variable, and is subjected to the prior probability density function $p($\mbox{\boldmath$\beta$}$)$. Under these conditions and according to Baye's law, when the observed data $\mbox{\boldmath$\xi$}$ is given, the posterior probability density function $p($\mbox{\boldmath$\beta$}$|\mbox{\boldmath$\xi$})$ of the unknown parameters $\mbox{\boldmath$\beta$}$ is defined as:
+ %
+   \begin{eqnarray}
+      && p(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})=
+      \frac{{\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})
+      p(\mbox{\boldmath$\beta$})}
+      {\int_{\Theta}{\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})
+      p(\mbox{\boldmath$\beta$})d\mbox{\boldmath$\beta$}}
+      \label{bayes1}
+   \end{eqnarray}
+ %
+where $\Theta$ represents the parameter space. At this time, $p($\mbox{\boldmath$\beta$}$|\mbox{\boldmath$\xi$})$ can be expressed as follows:
+ %
+   \begin{eqnarray}
+      && p(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})
+      \propto {\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})
+      p(\mbox{\boldmath$\beta$})
+      \label{bayes2}
+   \end{eqnarray}
+ %
+The symbol $\propto$ denotes 'be proportional to'. The denominator of the right-hand side of Eq. (\ref{bayes1}):
+ %
+   \begin{eqnarray}
+      && m(\mbox{\boldmath$\xi$})
+      =\int_{\Theta}{\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})
+      p(\mbox{\boldmath$\beta$})d\mbox{\boldmath$\beta$}
+      \label{bayes3}
+   \end{eqnarray}
+ %
+is called the normalization constant of $p(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})$, or the prior predictive distribution. 
+
+In short, the Bayes's theorem is summarized in following notation
+\begin{center}
+\textbf{\textit{posterior}} \hspace{2mm} $\propto$ \textbf{\textit{prior}} $\times$ \textbf{\textit{likelihood}}
+\end{center}
+In general, the procedures of the Bayesian estimation can be summarized in following steps:
+\begin{itemize}
+	\item Step 1: the prior probability distribution function $p(\mbox{\boldmath$\beta$})$ is specified, based on the prior information;
+	\item Step 2: the likelihood function ${\cal L}(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})$ is defined based on the newly obtained data $\mbox{\boldmath$\xi$}$;
+	\item Step 3: the prior probability density function is modified in accordance with the Bayes' theorem, and the posterior probability density function $p(\mbox{\boldmath$\beta$}|\mbox{\boldmath$\xi$})$ regarding the parameters $\mbox{\boldmath$\beta$}$ is updated.
+\end{itemize}
+
+% These procedure is regarded as 'Bayesian estimation rule' in our study. Theoretically, the Bayesian estimation method differs from the MLE method in that the probability distribution of the unknown parameters $\mbox{\boldmath$\beta$}$ is obtained as a posterior distribution. Moreover, in numerical solution with the MLE approach, to obtain the most likely value of model's parameters, it is required to derive the Jacobian (first derivative) and Hessian (second derivative) matrices for the objective function. Meanwhile, with Bayesian estimation method, Jacobian and Hessian matrices are not of requirement, and this feature is also considered as one of the advantage of Bayesian estimation method over the conventional MLE method.
+\subsection{MCMC Method} \label{sec51}
+In statistic with Bayesian inference, prior and posterior probability are employed with aim to estimate the values of model's parameters. However, in actual analysis, it is hard to define a prior probability distribution \citep{ibrahim01bo}. Methods to overcome the problems in the assumption of prior probability distribution often require numerical analysis with multi-dimensional integration, and thus remaining as a limitation in Bayesian estimation.
+
+In recent years, an appealing solution to the problems in Bayesian estimation has been proposed, with the application of Markov Chain Monte Carlo (MCMC) simulation. The MCMC simulation technique does not require a high level of derivative and multi-dimensional integration of model's objective functions \citep{robert}. As a result, estimation results, in a great number of applied statistic research, have been improved through the combination of Bayesian estimation and MCMC simulation.
+
+In MCMC simulation, Gibbs sampling and Metropolis Hastings (Metropolis-Hastings or MH) techniques have been extensively discussed \citep{robert}. Reference to research on image restoration is a good example of MCMC simulation \citep{Geman1984}. Of that study, the algorithm of Gibbs sampling was used to estimate the posterior distribution in Bayesian estimation. In MH law, the iterative parameter $\mbox{\boldmath$\beta$}$ is defined by repeatedly generating random numbers through the conditional probability density function. 
+
+% Regarding application of Bayesian estimation and MCMC method in infrastructure management, the authors of this paper has developed a hidden Markov model for elimination of selection bias \cite{Kobayashi2012a}. The use of Bayesian estimation and MCMC method has showed a great advantage over the conventional MLE approach in the case of having complete likelihood function with multiple integrations. Following sections detail our numerical solution to overcome the challanges in estimation of the COHA model's parameters.
+
+\subsection{Example into Bayesian thinking}\label{bayesianexample1}
+An infrastructure manager is interested in learning the accident risks on his/her highway network. He/she is given an information from a consultant that the numbers of accident per 100 $km$ of road section in a year should be less than 8 cases. 
+
+What proportion of all road sections in the entire network get at least 8 accidents in a year?
+
+Here, it is thought that the entire road network is composed of hundreds of road sections. Let $p$ represents the proportion of this population which has a maximum level of 8 accidents per year. It is the interest of the infrastructure manager to understand the value of $p$, which is unknown.
+
+As earlier discussed, in Bayesian inference, the belief of the manager on the proportion $p$ can be represented by a probability distribution. This distribution is referred as prior knowledge that the manager believe in about the value of $p$.
+
+Certainly, the infrastructure manager might not have all data for the entire network, therefore, he/she decides to carry out a sample that focuses on only a number of road sections. However, before that, he/she does some initial investigation on this proportion by reading some scientific research papers. This will help him/her in formulating the prior distribution used to compute the value of $p$.
+
+First based on the sample report, he/she comes to know that there are, on average, 6 accidents occurs in a year for that pool of sample. Second, he/she does reading some technical reports in other regions on 100 samples, it is concluded in that technical report that there are approximately 70\% of road sections have a numbers of accident per year falling in between 5 and 6 cases, 28\% of road sections have 7 to 8 accidents, and about 2\% of road section have more than 9 accident cases.
+
+Based on these information, the manager believes that the numbers of accident per year for the entire network generally less than 8 cases per 100 $km$ of road is having a proportion smaller than 0.5. After some reflection, her/his best guess value of $p$ is 0.3. However, this is a very likely that the value of $p$ can fall arbitrarily between 0 and 0.5.
+
+He/she decides to carry out an investigation with 27 samples (e.g. road sections). Among 27 samples, 11 records have at least 8 accidents. 
+
+Following assumptions are used:
+\begin{itemize}
+\item the prior density for p is denoted by $g(p)$
+\item the “good” case is when the number of accident is less than 8 cases and the “not good” is when the number of accident is greater or equal than 8 cases, then we can write down the likelihood function in equation \eqref{bayes4}                                                                                                                                                                                                                          \end{itemize}
+\begin{eqnarray}
+&& L(p) \propto p^n \cdot (1-p)^g\label{bayes4}
+\end{eqnarray}
+where $g$ and $n$ represent “good” and “not good”
+
+The posterior density for $p$, with Bayesian inference, is obtained, up to a proportionality constant, by multiplying the prior density by the likelihood (equation \eqref{bayes1}).
+\begin{eqnarray}
+&& g(p|data) \propto g(p)\cdot L(p) \label{bayes5}
+\end{eqnarray}
+the word ``data'' in equation \eqref{bayes5} infers the notation ``$\mbox{\boldmath$\xi$}$'' in equation \eqref{bayes1}
+
+To obtain the posterior value of $p$, one can use discrete prior distribution as explained below
+
+A simple approach to represent the prior value of $p$ is to write it down as a list of reasonable proportion value and then assigns weights to these values. For example, following vector
+\[
+0.05 \hspace{0.5cm}0.15	\hspace{0.5cm}0.25\hspace{0.5cm}0.35\hspace{0.5cm}0.45\hspace{0.5cm}0.55\hspace{0.5cm}0.65\hspace{0.5cm}0.75\hspace{0.5cm}0.85\hspace{0.5cm}0.95
+\]
+represents possible value of p discretely. Based on her/his belief, following weights to this vector are assigned
+
+\begin{table}
+%	\centering
+% 	\caption{Evolution of erosion (mechanistic-empirical model)} \label{tbl:36}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{Range of $p$} & \multicolumn{1}{m{1cm}|}{\centering 0.05} & \multicolumn{1}{m{1cm}|}{\centering0.15} & \multicolumn{1}{m{1cm}|}{\centering0.25} & \multicolumn{1}{m{1cm}|}{\centering0.35} & \multicolumn{1}{m{1cm}|}{\centering0.45} & \multicolumn{1}{m{1cm}|}{\centering0.55} & \multicolumn{1}{m{1cm}|}{\centering0.65} & \multicolumn{1}{m{1cm}|}{\centering0.75} & \multicolumn{1}{m{1cm}|}{\centering0.85} & \multicolumn{1}{m{1cm}|}{\centering0.95} \\ 
+\hline
+\multicolumn{1}{|c|}{Weight} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{5.2} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{7.2} & \multicolumn{1}{c|}{4.6} & \multicolumn{1}{c|}{2.1} & \multicolumn{1}{c|}{0.7} & \multicolumn{1}{c|}{0.1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\end{tabular}
+\end{table}
+Using this information, the discrete prior distribution can be shown graphically (Fig. \ref{figbayes1})
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=302pt]{figbayes1.eps}
+\caption{Prior distribution for a proportion of $p$}\label{figbayes1}
+% \end{center}
+\end{figure}
+In this example, it is known that there are 11 samples out of 27 samples have numbers of accidents equal or greater than 8, therefore the value of n=11 and g=16, the likelihood function in equation \eqref{bayes4} can be then written as
+The posterior density for $p$, with Bayesian inference, is obtained, up to a proportionality constant, by multiplying the prior density by the likelihood (equation \eqref{bayes1}).
+\begin{eqnarray}
+&& L(p) \propto p^{11} \cdot (1-p)^{16}\label{bayes6}
+\end{eqnarray}
+Using R code for this problem (Appendix \ref{bayesian1}), following posterior probability of $p$ can be estimated
+%
+\begin{table}
+%	\centering
+	\caption{Prior and posterior of $p$} \label{tblbayes1}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{No.} & \multicolumn{1}{m{1.5cm}|}{\centering $p$} & \multicolumn{1}{m{1.5cm}|}{\centering Prior} & \multicolumn{1}{m{1.5cm}|}{\centering Posterior} \\ 
+\hline
+\multicolumn{1}{|c|}{1} & \multicolumn{1}{c|}{0.05} & \multicolumn{1}{c|}{0.03} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{2} & \multicolumn{1}{c|}{0.15} & \multicolumn{1}{c|}{0.18} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{3} & \multicolumn{1}{c|}{0.25} & \multicolumn{1}{c|}{0.28} & \multicolumn{1}{c|}{0.13} \\ 
+\hline
+\multicolumn{1}{|c|}{4} & \multicolumn{1}{c|}{0.35} & \multicolumn{1}{c|}{0.25} & \multicolumn{1}{c|}{0.48} \\ 
+\hline
+\multicolumn{1}{|c|}{5} & \multicolumn{1}{c|}{0.45} & \multicolumn{1}{c|}{0.16} & \multicolumn{1}{c|}{0.33} \\ 
+\hline
+\multicolumn{1}{|c|}{6} & \multicolumn{1}{c|}{0.55} & \multicolumn{1}{c|}{0.07} & \multicolumn{1}{c|}{0.06} \\ 
+\hline
+\multicolumn{1}{|c|}{7} & \multicolumn{1}{c|}{0.65} & \multicolumn{1}{c|}{0.02} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{8} & \multicolumn{1}{c|}{0.75} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{9} & \multicolumn{1}{c|}{0.85} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\multicolumn{1}{|c|}{10} & \multicolumn{1}{c|}{0.95} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} \\ 
+\hline
+\end{tabular}
+\end{table}
+Fig. \ref{figbayes2} shows the distribution of the prior and posterior of $p$
+\begin{figure}[h]
+% \begin{center}
+\includegraphics[width=402pt]{figbayes2.eps}
+\caption{Prior and posterior distribution of $p$}\label{figbayes2}
+% \end{center}
+\end{figure}
+The posterior value of $p$, as can be seen from the table and the figure, is about 95\% concentrating on the range from 0.25 to 0.45 . This infers that the probability that numbers of accidents per year for 100 $km$ road reaches equal or greater than 8 cases will likely to happen only in the range from 0.25 to 0.45.
+
+% \cite{Albert2009}
+
+% \section{Bayesian estimation for linear regression model}
+
+\section{Bayesian inference for simple linear regression model} \label{bayline}
+In section \ref{regressionmodel} of Chapter \ref{meempi}, a simple linear regression model is presented along with the squared root estimation approach. This chapter elaborate the Bayesian inference for solving this simple linear regression to show how it can be applied in a simplest model. A complete description of the approach is referred to \cite{Bolstad2007}.
+
+In a simple regression model (e.g. Eq. \eqref{eq37}), we expect to model a relationship between two variables, $x$ and $y$. Both variables are observed data. $x$ is referred characteristic variables (sometimes also referred as predictor variable or independent variable). Example of $x$ in the context of data in the IAM are traffic volume, thickness of road sections, ambient temperature, etc. These data are observable. $y$ is often referred as outcome (e.g. condition state of road sections, percentage of cracks on a bridge deck), which is also observable. The mission is to model the relationship between $x$ and $y$ in a linear form given a data set of $n$ ordered pairs of sample ($x_i,y_i$) for $i=1,\cdots,n$. 
+
+In order to construct such a relationship, as shown in section \ref{regressionmodel} of Chapter \ref{meempi}, a derivative method is used. The method is referred as \textit{least squares} estimation. 
+
+Using this linear model, in fact, we can solve many problems in practices involving not only linear form but also nonlinear form of models. For example, in following equation describes a growth model in exponential form.
+%
+\begin{eqnarray}
+&& y=e^{\alpha+\beta\cdot x}\label{bayes7}
+\end{eqnarray}
+%
+This equation is used often in practice, also for the deterioration prediction with exponential form \citep{Lethanh2013b,Lethanh2015b}, for estimating impacts such as vehicle operating cost \citep{OpusCL1999} and  accident rate \citep{Kumares2007}.
+
+The equation \eqref{bayes7} can be easily transformed into a linear form if we take logarithm for both sides of it.
+\begin{eqnarray}
+&& log(y)=\alpha+\beta\cdot x\label{bayes8}
+\end{eqnarray}
+Using the linear form in equation \eqref{bayes8}, again, we can use the least squares method to obtain the model's parameters $\alpha$ and $\beta$ given data.
+
+% For convenience of readers, without having to refer to the regression equation in section \ref{regressionmodel} of Chapter \ref{meempi}, we rewrite that equation and name it with a new caption.
+% \begin{eqnarray}
+% && y=e^{\alpha+\beta\cdot x}\label{bayes9}
+% \end{eqnarray}
+In reference to the Bayes' theorem, for this regression model, it is necessary to define the likelihood and select 
+the prior for the model's parameters $\alpha$ and $\beta$.
+\subsection{The joint likelihood for $\alpha$ and $\beta$} \label{joinlik01}
+For a sample $i^th$, the joint probability density function as a joint function of parameters $\alpha$ and $\beta$ for the paired observed data $(x_i,y_i)$ is
+\begin{eqnarray}
+&& likelihood_i(\alpha,\beta) \propto e^{-\frac{1}{2\sigma^2}\left[y_i-(\alpha+\beta(x_i-\bar x))\right]^2}\label{bayes10}
+\end{eqnarray}
+The likelihood of the entire data is the join probability and therefore is expressed as
+\begin{eqnarray}
+&& likelihood_{data}(\alpha,\beta) \propto \prod_{i=1}^{n} e^{-\frac{1}{2\sigma^2}\left[y_i-(\alpha+\beta(x_i-\bar x))\right]^2}\label{bayes11} \\
+&& \hspace{3.5cm}  \propto -\frac{1}{2\sigma^2} \sum_{i=1}^{n}  \left[y_i-(\alpha+\beta(x_i-\bar x))\right]^2\label{bayes12}
+\end{eqnarray}
+The polynomial inside the bracket of equation \eqref{bayes12} equals to
+\begin{eqnarray}
+&& \sum_{i=1}^{n}  \left[y_i-\bar y + \bar y + (\alpha+\beta(x_i-\bar x))\right]^2\label{bayes13}
+\end{eqnarray}
+which equals to
+\begin{eqnarray}
+&& \sum_{i=1}^{n}(y_i-\bar y)^2 +2\sum_{i=1}^{n}(y_i-\bar y)(\bar y-(\alpha+\beta(x_i-\bar x)))+ \sum_{i=1}^{n} (\bar y -(\alpha+\beta(x_i-\bar x)))^2 \label{bayes14}
+\end{eqnarray}
+This is simplified as
+\begin{eqnarray}
+&& \epsilon_y -2\beta\epsilon_{xy}+\beta^2 \epsilon_x+n(\alpha-\bar y)^2 \label{bayes15}
+\end{eqnarray}
+where $\epsilon_y=\sum_{i=1}^{n}(y_i-\bar y)^2$, $\epsilon_{xy}=\sum_{i=1}^{n}(y_i-\bar y)(x_i-\bar x)$, and $\epsilon_x=\sum_{i=1}^{n}(x_i-\bar x)^2$.
+
+Finally, the join likelihood can be described as
+\begin{eqnarray}
+&& likelihood_{data}(\alpha,\beta) \propto e^{-\frac{1}{2\sigma^2}\left[\epsilon_y -2\beta\epsilon_{xy}+\beta^2 \epsilon_x+n(\alpha-\bar y)^2\right]}\label{bayes16}\\
+&& \hspace{30mm} \propto e^{-\frac{1}{2\sigma^2}\left[\epsilon_y -2\beta\epsilon_{xy}+\beta^2 \epsilon_x\right]}\times e^{-\frac{1}{2\sigma^2}\left[n(\alpha-\bar y)^2\right]} \label{bayes17}\\
+&& \hspace{30mm} \propto e^{-\frac{1}{2\sigma^2/{\epsilon_x}}\left[\beta - \frac{\epsilon_{xy}}{\epsilon_x}\right]^2}\times e^{-\frac{1}{2\sigma^2/n}\left[(\alpha-\bar y)^2\right]} \label{bayes18}
+\end{eqnarray}
+In equation \eqref{bayes18}, it is obvious to recognize that the ratio $B=\frac{\epsilon_{xy}}{\epsilon_x}$ is the slop of the least squared line and $\bar y$ is the intercept of the vertical line $A=\bar y$. Evidently, the join likelihood of the two parameter has been factored .
+\begin{eqnarray}
+&& likelihood_{data}(\alpha,\beta) \propto likelihood_{data}(\alpha)\times likelihood_{data}(\beta) \label{bayes19}
+\end{eqnarray}
+where\\
+\begin{eqnarray}
+ && likelihood_{data}(\beta) = e^{-\frac{1}{2\sigma^2/{\epsilon_x}}\left[\beta - B\right]^2}  \label{bayes20}
+\end{eqnarray}
+and
+\begin{eqnarray}
+ && likelihood_{data}(\alpha) = e^{-\frac{1}{2\sigma^2/n}\left[(\alpha-A)^2\right]} \label{bayes21}
+\end{eqnarray}
+It can be seen from equation \eqref{bayes20} and \eqref{bayes21} of $\beta$ and $\alpha$ that the two likelihood functions are normal distributions $\mathcal{N}(B,\frac{\sigma^2}{\epsilon_x})$ and $\mathcal{N}(A,\frac{\sigma^2}{n})$, respectively.
+
+\subsection{The joint prior for $\alpha$ and $\beta$}
+The joint prior for $\alpha$ and $\beta$ is the multiplication of the two priors
+\begin{eqnarray}
+ && g(\alpha,\beta) = g(\alpha)\times g(\beta) \label{bayes22}
+\end{eqnarray}
+The selection for the distribution of $g(\alpha)$ and $g(\beta)$ can be normal distribution, which is a conjugate distribution to the likelihood.
+\subsection{The join posterior for $\alpha$ and $\beta$}
+From the definition of Bayes's theorem ($posterior \propto prior \times likelihood $), we can have the joint posterior as follows
+\begin{eqnarray}
+ && g(\alpha,\beta|data) \propto g(\alpha,\beta)\times likelihood_{data}(\alpha,\beta) \propto g(\alpha|data)\times g(\beta|data) \label{bayes23}
+\end{eqnarray}
+\subsection{Example - Accident data on road}
+Table \ref{tblbayes2} shows the data on numbers of accident occurred on different road sections during the period of 2 year. In order to understand the functional relationship between the numbers of accident and the characteristic variables such as condition state (CS), daily traffic volume (DTV), slope, and speed of vehicle at the time of accident, investigator use a linear model (refer to equation \eqref{eq37}). In Figure \ref{figbayesx}, scatter plots are shown based on the data given in the table.
+
+\begin{table}
+	\centering
+\caption{Accident data on a road link} \label{tblbayes2}
+\begin{tabular}{|c|p{1.5cm}|c|c|c|c|}
+\hline
+Sections & \centering Numbers of accident & CS & DTV & Slope & Speed \\ 
+\hline
+1 & \centering 5 & 2 & 9'746 & 19 & 52 \\ 
+\hline
+2 & \centering 2 & 1 & 6'878 & 1 & 59 \\ 
+\hline
+3 & \centering 4 & 2 & 5'758 & 0 & 50 \\ 
+\hline
+4 & \centering 5 & 1 & 6'903 & 17 & 52 \\ 
+\hline
+5 & \centering 10 & 2 & 9'114 & 20 & 54 \\ 
+\hline
+6 & \centering 8 & 3 & 7'890 & 8 & 80 \\ 
+\hline
+7 & \centering 10 & 4 & 9'539 & 12 & 65 \\ 
+\hline
+8 & \centering 2 & 1 & 7'062 & 3 & 72 \\ 
+\hline
+9 & \centering 3 & 5 & 8'846 & 9 & 54 \\ 
+\hline
+10 & \centering 2 & 5 & 7'383 & 3 & 79 \\ 
+\hline
+11 & \centering 6 & 5 & 9'755 & 18 & 77 \\ 
+\hline
+12 & \centering 10 & 3 & 7'351 & 10 & 51 \\ 
+\hline
+13 & \centering 3 & 3 & 8'376 & 17 & 63 \\ 
+\hline
+14 & \centering 7 & 2 & 7'646 & 15 & 72 \\ 
+\hline
+15 & \centering 1 & 5 & 7'002 & 10 & 74 \\ 
+\hline
+16 & \centering 5 & 1 & 8'644 & 19 & 78 \\ 
+\hline
+17 & \centering 2 & 1 & 9'719 & 7 & 69 \\ 
+\hline
+18 & \centering 5 & 2 & 8'851 & 13 & 54 \\ 
+\hline
+19 & \centering 5 & 3 & 9'353 & 19 & 67 \\ 
+\hline
+20 & \centering 10 & 4 & 7'824 & 18 & 68 \\ 
+\hline
+21 & \centering 0 & 2 & 7'092 & 10 & 50 \\ 
+\hline
+22 & \centering 4 & 1 & 7'383 & 9 & 52 \\ 
+\hline
+23 & \centering 1 & 3 & 7'716 & 8 & 51 \\ 
+\hline
+24 & \centering 10 & 2 & 6'810 & 1 & 63 \\ 
+\hline
+25 & \centering 3 & 1 & 8'506 & 18 & 54 \\ 
+\hline
+26 & \centering 7 & 1 & 5'073 & 0 & 79 \\ 
+\hline
+27 & \centering 7 & 2 & 9'331 & 6 & 63 \\ 
+\hline
+28 & \centering 8 & 2 & 9'516 & 10 & 65 \\ 
+\hline
+29 & \centering 9 & 5 & 6'495 & 7 & 64 \\ 
+\hline
+30 & \centering 1 & 2 & 7'968 & 19 & 74 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}
+ \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes3.eps}
+				\subcaption{Numbers of accident vs CS}\label{figbayes3}
+     \end{minipage}
+\vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes4.eps}
+			\subcaption{Numbers of accident vs DTV}\label{figbayes4}
+     \end{minipage}
+\vspace{3.00mm} 
+    \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes5.eps}
+				\subcaption{Numbers of accident vs Slope}\label{figbayes5}
+     \end{minipage}
+\vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes6.eps}
+			\subcaption{Numbers of accident vs Speed}\label{figbayes6}
+     \end{minipage}
+\caption{Scatter plot of numbers of accident vs observed characteristic variables}
+\label{figbayesx}
+\end{figure}
+
+\subsubsection{Question A}
+Use the least squared method to obtain the model's parameter?
+\subsubsection{Answer to question A}
+The linear model shown in equation \eqref{eq37} can be simplified as follows
+\begin{eqnarray}
+ && No. of accident = 1\cdot \beta_0 + CS \cdot \beta_1 + DTV\cdot \beta_2 + Slope \cdot \beta_3 + Speed \cdot \beta_4 + \epsilon\label{bayes24}
+\end{eqnarray}
+Using the R code provided in the Appendix \ref{bayesian2}, results are obtained and shown in listing \ref{bayesls}.
+
+\lstinputlisting[basicstyle=\ttfamily\scriptsize,float=h,frame=tb,caption=Results of least squared fit method,label=bayesls]{./Programs/IMP-bayesian/IMP-bayesian-linear-leastsquare.tex}
+
+\subsubsection{Question B}
+Use the Bayesian method to obtain the model's parameter? and give a discussion on the values of model's parameters in comparison with that values obtained by using the least squared method.
+\subsubsection{Answer to question B}
+Using the model presented in subsection \ref{bayline} with 10'000 numbers of iterations, values of models parameters can be obtained. As this process involves highly computational efforts, the R code shown in the Appendix \ref{bayesian2} is used. 
+
+\begin{figure}[ht]
+ \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes7.eps}
+				\subcaption{Intercept}\label{figbayes7}
+     \end{minipage}
+\vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes8.eps}
+			\subcaption{Condition state}\label{figbayes8}
+     \end{minipage}
+\vspace{3.00mm} 
+    \begin{minipage}[h]{0.5\linewidth}
+        \centering
+        \includegraphics[scale=0.34]{figbayes9.eps}
+				\subcaption{Daily traffic volume}\label{figbayes9}
+     \end{minipage}
+\vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes10.eps}
+			\subcaption{Slope}\label{figbayes10}
+     \end{minipage}
+     \vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes11.eps}
+			\subcaption{Speed}\label{figbayes11}
+     \end{minipage}
+     \vspace{3.00mm}
+    \begin{minipage}[h]{0.5\linewidth}
+       \centering
+       \includegraphics[scale=0.34]{figbayes12.eps}
+			\subcaption{Error term}\label{figbayes12}
+     \end{minipage}
+\caption{Distribution of models parameters}
+\label{figbayesxx}
+\end{figure}
+
+A summary of the mean values of model's parameters are shown in listing \ref{bayesconfident}. This listing also presents the values of quantiles at the boundaries 5\% and 95\%. 
+
+\lstinputlisting[basicstyle=\ttfamily\scriptsize,float=H,frame=tb,caption=Confident interval,label=bayesconfident]{./Programs/IMP-bayesian/IMP-bayesian-linear-results.tex}
+
+As can be seen in Figure \ref{figbayesxx}, after 10'000 iterations of sampling, the distributions of model's parameters become normal distributed with their mean values almost equal to that values obtained by the least squared method in the previous section. This is exactly the highlight of difference between the traditional frequentist estimation technique and Bayesian technique for a simple example. 
+
+With respect to the statistical inferences on the values of model's parameters, it can be state that all characteristic variables are positively attributed to the occurrence of accident. However, contributions are different among them. It is likely that the condition state exposes to have the highest impact on the occurrence of accident as its value is 0.27, which is far more greater than that of other characteristic variables. The slope is the second important factor contributing to the occurrence of accident (value of 0.0255). Interesting, the DTV seems to have less impacts on the occurrence of accident for this road link. 
+%
+\section{Bayesian inference for a simple Weibull model} \label{bayweil}
+In sub-section \ref{reliaweibl} of Chapter \ref{reliabilityc}, we learn that failure rate can be time-variant, and so does the reliability of an item. This type of time-variant failure and reliability models is commonly observed in reality. To address this time-variant characteristics of failure and reliability, a commonly used model is the Weibull proportional model. 
+
+In Weibull proportional model, the reliability function, density function, and failure rate, are shown in equations \eqref{eqreliability:10}, \eqref{eqreliability:11}, and \eqref{eqreliability:12}, respectively. For convenience of reading, they are rewritten as follows:
+
+Reliability function
+\[
+ R(t) = {e^{ - {\alpha \cdot t^m}}}
+\]
+Probability density function (p.d.f)
+\[
+ f(t) = \alpha  \cdot m \cdot {t^{m - 1}} \cdot {e^{ - {\alpha \cdot {t}^m}}}
+\]
+Failure rate
+\[
+ \lambda (t) = \alpha  \cdot m \cdot {t^{m - 1}}
+\]
+where $\alpha $ and $m$ are scale and shape parameters, respectively. These are parameters that need to be estimated given data.
+%
+\subsection{Maximum likelihood estimation for the Weibull model} \label{mleweil}
+In order to estimate the values of the models parameters $\alpha$ and $m$, the maximum likelihood estimation (MLE) can be used. The MLE is used extensively in frequentist statistic as a de-factor estimation method. 
+
+Let assume that the vector of parameter and data are $\theta$ and $\bar t$, respectively. The likelihood function has the following general form.
+\begin{eqnarray}
+ && L(t_1,t_2,\cdots,t_N,\theta) = \prod_{n=1}^N f(t_n,\theta) \label{mle01}
+\end{eqnarray}
+In this equation, $f$ represents the density function of a random variable $t$ and characterized by $\theta$. $n$ is the sample and $N$ is total numbers of samples.
+
+The likelihood function \eqref{mle01} can be expressed in following form taking into consideration of data.
+\begin{eqnarray}
+ && L(t_1,t_2,\cdots,t_N,\theta) = \prod_{n=1}^N [f(t_n,\theta)]^{\delta_n}\cdot [1-F(t_n,\theta)]^{1-\delta_n} \label{mle02}
+\end{eqnarray}
+In equation \eqref{mle02}, $F(t_n,\theta)$ is the cumulative distribution function (c.d.f). Obviously, the second polynomial inside the product is the reliability function $(R=1-F)$ that we learn in Chapter \ref{reliabilityc}. $\delta_n$ is dummy variable taking its value of 1 when a sample (or item) has been observably failed and 0 otherwise. 
+
+Using the Weibull function for the p.d.f and the c.d.f, we can expressed equation \eqref{mle02} as follows
+\begin{eqnarray}
+ && L(\bar t,\theta) = \prod_{n=1}^N [\alpha\cdot m \cdot t_n^{m-1}\cdot exp(-\alpha\cdot t_n^m)]^{\delta_n}\cdot [exp(-\alpha\cdot t_n^m)]^{1-\delta_n} \label{mleweibull01}
+\end{eqnarray}
+The logarithmic form of the likelihood function will be
+\begin{eqnarray}
+ && ln[L(\bar t,\theta)] = \sum_{n=1}^N \delta_n \cdot \left[ ln(\alpha) + ln(m) + (m-1)ln(t_n)-\alpha\cdot t^m \right] + \sum_{n=1}^N (1-\delta_n)\cdot [-\alpha\cdot t^m]
+   \label{mleweibull02}
+\end{eqnarray}
+In order to obtain models parameters, analytically, following derivative has to be solved for each parameter.
+\begin{eqnarray}
+ && \frac{\partial ln[L(\bar t,\theta)]}{\partial \theta_i} =0  \label{mleweibull03}
+\end{eqnarray}
+where the index $i$ represent the running index of models parameters. It is important to note that the scale parameter $\alpha$ can be further expressed as a function of characteristic variables in a linear form such as
+\begin{eqnarray}
+ && \alpha = \sum_{k=1}^K x_k\cdot \beta_k  \label{mleweibull04}
+\end{eqnarray}
+where, $k$ is the index of characteristic variable such as traffic volume, ambient temperature, etc and $\beta_k$ turns to be the models parameters associated with each characteristic variable $x_k$.
+\subsection{Bayesian inference} \label{bayweil}
+Using the Bayes law as shown in equation \eqref{bayes1}, we can express the posterior p.d.f of the model as follows
+\begin{eqnarray}
+ && p(\alpha,m|data)= \frac{L[\bar t|\alpha,m]\cdot p(\alpha)\cdot p(m)}{\int_0^{\infty}\int_0^{\infty}L[\bar t|\alpha,m]\cdot p(\alpha)\cdot p(m) d\alpha dm}   \label{mleweibull05}
+\end{eqnarray}
+where $p(\alpha)$ and $p(m)$ are prior distributions for $\alpha$ and $m$, respectively. As can be seen from this formula, the prior distributions for for $\alpha$ and $m$ infer that we can make use of knowledge that we might have known for these two parameters. This turns out to be extremely useful when dealing with small set of data. The choice of using which prior distribution to fit with $\alpha$ and $m$ can be varied depending on each modeler and knowledge gained from practice. This section leave out a detailed mathematical formulation of Bayesian inference for the Weibull model as it involves a great number of mathematic ingredients. For curious readers, who expect to fully capture the formulation of the model, research works of \cite{Dodson2006}, \cite{Nassar2005}, and \cite{Soliman2006} are recommended.
+%
+\subsection{Example: Underground pipeline deterioration}
+A water distribution network of a mega urban city encompasses a large numbers of pipelines, which were laid underground. Pipelines were constructed in different time. Overtime, pipelines deteriorate, leakages or cracks might occur that lead to the lost of water in different part of the city. In some cases, pipelines were broken suddenly, resulting in a great amount of negative impacts to stakeholders (e.g. owners, users, directly affected public, and indirectly affected public). As pipelines were laid underground, it is not easy to perform frequent inspections. Moreover, inspection activities are also expensive. Most of data to date that is available for analysis is failure of pipelines over the entire city. The data is described in Table \ref{tblbayes3}.
+
+\begin{table}
+	\centering
+	\caption{Data on pipeline failure $p$} \label{tblbayes3}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Segment & Time & Status & Water lost & Depth \\ 
+ & (tus) &  & (normalized) & (cm) \\ 
+\hline
+1 & 156 & 1 & 0.5283 & 40 \\ 
+\hline
+2 & 1040 & 0 & 0.9542 & 45 \\ 
+\hline
+3 & 59 & 1 & 0.6773 & 47 \\ 
+\hline
+4 & 421 & 0 & 0.7279 & 41 \\ 
+\hline
+5 & 329 & 1 & 0.1481 & 42 \\ 
+\hline
+6 & 769 & 0 & 0.4236 & 47 \\ 
+\hline
+7 & 365 & 1 & 0.4951 & 47 \\ 
+\hline
+8 & 770 & 0 & 0.9857 & 42 \\ 
+\hline
+9 & 1227 & 0 & 0.1728 & 48 \\ 
+\hline
+10 & 268 & 1 & 0.0712 & 42 \\ 
+\hline
+11 & 475 & 1 & 0.5424 & 41 \\ 
+\hline
+12 & 1129 & 0 & 0.1673 & 43 \\ 
+\hline
+13 & 464 & 1 & 0.4240 & 50 \\ 
+\hline
+14 & 1206 & 0 & 0.9539 & 50 \\ 
+\hline
+15 & 638 & 1 & 0.2992 & 48 \\ 
+\hline
+16 & 563 & 1 & 0.0558 & 46 \\ 
+\hline
+17 & 1106 & 0 & 0.3183 & 42 \\ 
+\hline
+18 & 431 & 1 & 0.4762 & 44 \\ 
+\hline
+19 & 855 & 0 & 0.4101 & 42 \\ 
+\hline
+20 & 803 & 0 & 0.9394 & 45 \\ 
+\hline
+21 & 115 & 1 & 0.9573 & 43 \\ 
+\hline
+22 & 744 & 0 & 0.8402 & 46 \\ 
+\hline
+23 & 477 & 0 & 0.3166 & 47 \\ 
+\hline
+24 & 448 & 0 & 0.7257 & 46 \\ 
+\hline
+25 & 353 & 1 & 0.6178 & 41 \\ 
+\hline
+26 & 377 & 0 & 0.9832 & 45 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+As can be seen in the table, there are 26 segments of pipelines in total. The column ``Time'' indicates the time in time units (tus) that each segment has been used since it was constructed. The column ``Status'' indicates the failure status of the pipe segment to date. The status receives value of 1 and 0. If the segment of pipe has failed, it receives value 1 and if not, the value is 0. The column ``Water lost'' indicates a normalized water lost recorded before the failure time for segments have failed and before inspection time for segments that have not failed. The last column indicates the depth in cm of pipe underneath the road surface.
+
+\subsubsection{Question}
+Use the MLE method and Bayesian method to estimate the models parameters assuming that the time to failure is dependent on water lost and depth. Interpret the meaning in the values of models parameters. 
+\subsubsection{Answer}
+Using the MLE method, following results are obtained. The results (listing \ref{mleweibull}) were obtained by using the R code in the Appendix \ref{bayesian4}
+
+\lstinputlisting[basicstyle=\ttfamily\scriptsize,float=h,frame=tb,caption=Confident interval,label=mleweibull]{./Programs/IMP-bayesian/IMP-weibullMLE.tex}
+
+From this result, the scale parameter and shape parameter of the distribution can be obtained \footnote{Scale and shape parameter of R function for Weibull model is described in \\https://stat.ethz.ch/R-manual/R-devel/library/survival/html/survreg.html}
+\[
+ \alpha = 2.7736+0.8820 \times mean(waterlost)+0.0873*mean(depth) 
+ \]
+\[
+ \alpha = 2.7736+0.8820 \times 0.5466+0.0873*44.61538 = 7.1110381 
+\]
+\[
+ m=1/Scale = 1/0.885=1.129402
+\]
+Using these parameters, the reliability function can be drawn 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=300pt]{figbayes13.eps}
+\caption{Reliability over time}\label{figbayes13}
+\end{center}
+\end{figure}
+
+Using Bayesian method, the model's parameters can be summarized in distributions, with their means are the expected values of models parameters (Figure \ref{figbayesxxx}).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=450pt]{figbayesxxx.eps}
+\caption{Distribution of model parameters}\label{figbayesxxx}
+\end{center}
+\end{figure}
+\subsection{Conclusion}
+Using Bayesian statistics, once can solve many models that cannot be solved with traditional frequentist statistics. These models allow us to have better prediction results given incomplete data set. Examples of using Bayesian statistics in the field of infrastructure asset management are not so many. Some of the recent research works in this direction are the works of \cite{Hong2006}, \cite{Gao2012}, \cite{Kobayashi2012}, \cite{Kobayashi2014}, and \cite{Lethanh2015b}.
+\section{Bayesian network model}
+Bayesian network modeling approach has recently gained its popularity in the fields of transportation engineering, structural analysis, and infrastructure asset management. It is a useful approach to quantify and measure risks related to transportation and infrastructure systems. Some examples of using Bayesian network models are with the works of \cite{Bayraktarli2011} for quantifying risks occurred in a mega city after an earthquake; the works of \cite{Bateni2007} for prediction of scour deterioration process of bridge piers; the works of \cite{Schubert2012}, \cite{Wang2013}, and \cite{Deublein2013} for predicting accident rates on a transportation network; and the works of \cite{Straub2010} for analysing structural reliability of an infrastructure object such as concrete beams and columns in a building or piers and decks of a bridge.
+
+The principle concept to formulate a Bayesian network model is with the Bayes law that has been described in section \ref{bayesiantheorem} with equation \eqref{bayes1} and the graphical probabilistic method. There are many types of Bayesian network models, which really depend on the nature of observed data and assumptions of modelers. 
+
+This section aims to give a gentle introduction on Bayesian network modeling through a number of examples.
+\subsection{General concept} \label{baynetconcept}
+A Bayesian network (BN) is a graphical structure used to describe the interdependent of variables and parameters of a probabilistic model. The network with its notation $D=(V,E)$ is referred as a direct acyclic graph (DAG) where $V$ and $E$ representing vectors of finite sets of nodes and edges, respectively. The node $v\in V$ in a BN represent a random variable $X_v$, thus the entire node vector $V$ represents a set of random variables $\mathbf  X=X_1,X_2,\cdots,X_n$. The edge $e$ (sometimes refer to as arcs or links) connects pairs of nodes $X_i$ and $X_j$, i.e. $X_i \to X_j$, which represents the direct dependencies between variables. 
+
+In this context, the numbers of nodes are discrete and finite, thus the set of random variables is also discrete and finite. Each variable is characterized by a probability distribution. As nodes are undirectly or directly connected, they represent the dependencies. Thus, the probability of having one node (e.g. the event of a random variable to receive a value of x or y) is a conditional probability with its value dependent on other nodes. To represent the dependencies in a graphical model, two terminologies are used: ``parent nodes'' and ``child nodes''. Parent nodes are nodes being considered as sources that lead to the occurrence of child nodes. A node, can be either ``parent'' or ``child'' node. For example, in Figure \ref{baynet01}, node B is the parent node of node C but it is the child node of nodes A and D.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.6]{baynet01.eps}
+\caption{An example of a simplified BN model}\label{baynet01}
+\end{center}
+\end{figure}
+
+To understand how a BN model is structured, let go through a simple example
+\subsection{Introductory example - reliability of a bridge}
+It is observed that over the last 15 years a bridge located in a mountainous regions had to close a numbers of times due to its condition that was unable to provide adequate level of services (LOS). The inadequate LOS is defined by manager as the levels of reliability and it is classified into three categories: ``low'' is when the reliability is less than 0.6; ``medium'' is when the reliability is between 0.6 and 0.8; and ``high'' is when the reliability is greater than 0.8. The reliability can be measured by performing stress tests.
+
+Not providing adequate LOS might be due to latent process such as avalanche, rockfall, floods, and its manifest deterioration such as cracking of bridge decks, weakness of its bearing system, and bad quality of joints. The latent deteriorate process can be triggered by an earthquake, amount of snow accumulated in the starting zone of avalanches, and volume of run-off due to rains. 
+
+In each year, discrete values of these six variables were recorded. 
+
+\begin{itemize}
+ \item \textbf{Avalanche}: the avalanche, recorded as ``yes'' if there was at least one occurrence of avalanches in that year and the avalanches came to contact with the bridge, and ``no'' if there was no avalanche occurred. 
+ \item \textbf{Rockfall}: the rockfall, recorded as ``yes'' if there was at least one occurrence of rockfalls in that year and the rockfalls came to contact with the bridge, and ``no'' if there was no rockfall occurred. 
+ \item \textbf{Floods}: the floods, recorded in three categories: ``low'', ``medium'', and ``high'' indicating levels of floods happened.
+ \item \textbf{Cracks of bridge decks}: the cracks appeared on bridge decks indicates serious problems on the deterioration of the decks. The cracks were recorded in three categories: ``small'' is when the percentage of cracks is less than 5\% in the total amount of bridge decks areas; ``moderate'' is when the percentage of cracks is between 5\% and 10\% and ``high'' is when the percentage of cracks is higher than 10\%.
+ \item \textbf{Weakness of the bearing system}: the bearing system is made of rubber pads. The condition of the system is recorded as ``good'' and ``bad''.
+ \item \textbf{Quality of joints}: Quality of joints were recorded as ``good'' and ``bad'', which indicates the condition state of joint. It is good when the joint has no defect. It is bad when either top or bottom layers or both of the two layers are in bad condition.
+ \item \textbf{Earthquake}: the earthquake is recorded as ``yes'' or ``no''.
+ \item \textbf{Snow}: the snow is recorded as ``low'' and ``high'' depending on the amount of snow accumulated on the starting zone of avalanches
+ \item \textbf{Rain}: the rain is recorded as ``low'', ``medium'', and ``high'' depending on the volume of run-off recorded at the weather station nearby the bridge.
+ \item \textbf{Daily traffic volume (DTV)}: the daily traffic volume was recorded in numbers but it can also be categories into 3 discrete scales: ``low'', ``medium'', and ``high''.
+\end{itemize}
+
+The reliability of the bridge is dependent on both latent process and manifest process. Therefore, by study the structure of this system, it might be useful to calculate the reliability of bridge more accurate and eventually beneficial to come up with better management for the bridge.
+
+\subsection{Graphical representation and values of nodes}
+The way the variables were recorded in the inspection data, and more in general in two categories (latent and manifest) that each variable belongs to, infers the interdependency among them. Some of them have direct relationship such as the reliability of the bridge is directly related to a rockfall; and some of them have indirect relationship such as the reliability of the bridge is indirectly related to the volume of run-off. 
+
+Both these kinds of relationship can be graphically modeled using a direct graph as earlier mentioned in section \ref{baynetconcept}. In the graph, nodes ($V$) and edges ($E$) are used to systematically represent the relationship. 
+In a very simple representation, a partial graphical representation of the network looks like the one shown in Figure \ref{baynet02}. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.6]{baynet02.eps}
+\caption{Partial representation of the Bayesian network for the bridge - Latent process}\label{baynet02}
+\end{center}
+\end{figure}
+
+This figure infers that the reliability of the bridge is dependent on two factors: avalanche and rockfall. Those factors are dependent on natural hazard such as earthquake. Also in the figure, there are conditional probabilities table (cpt). Values shown in the tables indicate the probabilities of that variables (or event) receiving value ``yes'' or ``no''. For example, if there is a earthquake, there is 40\% chance that there will be rockfall. Certainly, the probability for the bridge not providing adequate LOS is conditional dependent on the probability of occurring avalanches or rockfall, which, in turn, dependent on the probability of earthquake occurrence. 
+
+With this rule of conditional probability in a chain, the joint probability of all nodes in this BN can be computed by using following formula.
+%
+\begin{eqnarray}
+ && Pr(E,A,R,B)=Pr(E)\times Pr(A|E)\times Pr(R|E)\times Pr(B|E,A,R)   \label{baynetformula1}\\
+ && Pr(E,A,R,B)=Pr(E)\times Pr(A|E)\times Pr(R|E)\times Pr(B|A,R)   \label{baynetformula2}
+\end{eqnarray}
+where, $E,A,R$, and $B$ stand for Earthquake, Avalanche, Rockfall, and Bridge. 
+
+Let say, we are now interested in calculating the likelihood that Avalanche will causes the bridge to be in condition that it will not provide an adequate LOS. Using the Bayes rule as shown in \eqref{bayes1}, we can formulate the posterior probability for the avalanche.
+\begin{eqnarray}
+ && Pr(A=yes|B=yes)= \frac{Pr(A=yes,B=yes)}{Pr(B=yes)} = \frac{\sum_{E,R}Pr(E,A=yes,R,B=yes)}{Pr(B=yes)} \label{baynetformula3}
+\end{eqnarray}
+The nominator $\sum_{E,R} Pr(A=yes,B=yes,E)$ infers that in order to calculate this probability, we have to consider the probability of earthquake occurrence and the probability of rockfall as well. Using equation \eqref{baynetformula2}, the nominator in equation \eqref{baynetformula3} becomes
+\begin{eqnarray}
+ && \sum_{E,R}Pr(E,A=yes,R,B=yes)= \nonumber \\ 
+ && \hspace{1cm}= Pr(E=yes,A=yes,R=yes,B=yes)    \label{baynetformula4} \\
+ && \hspace{1cm}+ Pr(E=no,A=yes,R=yes,B=yes)   \label{baynetformula5} \\
+ && \hspace{1cm}+ Pr(E=yes,A=yes,R=no,B=yes)   \label{baynetformula6} \\
+ && \hspace{1cm}+ Pr(E=no,A=yes,R=no,B=yes)   \label{baynetformula7} \\
+ && \hspace{1cm}= Pr(E=yes)\times Pr(A=yes|E=yes)\times Pr(R=yes|E=yes)\times Pr(B=yes|A=yes,R=yes)   \label{baynetformula8} \\
+ && \hspace{1cm}+ Pr(E=no)\times Pr(A=yes|E=no)\times Pr(R=yes|E=no)\times Pr(B=yes|A=yes,R=yes)   \label{baynetformula9} \\
+ && \hspace{1cm}+ Pr(E=yes)\times Pr(A=yes|E=yes)\times Pr(R=no|E=yes)\times Pr(B=yes|A=yes,R=no)   \label{baynetformula10} \\
+ && \hspace{1cm}+ Pr(E=no)\times Pr(A=yes|E=no)\times Pr(R=no|E=no)\times Pr(B=yes|A=yes,R=no)   \label{baynetformula11} 
+\end{eqnarray}
+%
+\begin{eqnarray}
+ && \sum_{E,R}Pr(E,A=yes,R,B=yes)= \nonumber \\ 
+ && \hspace{1cm}= 0.01\times 0.70 \times 0.40 \times 0.60   \nonumber \\
+ && \hspace{1cm}+ 0.99 \times 0.10 \times 0.05 \times 0.60   \nonumber \\
+ && \hspace{1cm}+ 0.01 \times 0.70 \times 0.60 \times 0.20    \nonumber \\
+ && \hspace{1cm}+ 0.99 \times 0.30 \times 0.95 \times 0.20   \nonumber \\
+ && \hspace{1cm} = 0.06192 \nonumber 
+\end{eqnarray}
+Similarly using the \eqref{baynetformula1} for extending the formulation of the denominator of equation \eqref{baynetformula2}, its value is obtained
+%
+\begin{eqnarray}
+ && Pr(B=yes)= \sum_{E,A,R,B} Pr(E,A,R,B=yes)=0.0804375
+\end{eqnarray}
+thus the likelihood of avalanche to be occurred if the bridge is not providing adequate LOS is
+\begin{eqnarray}
+ && Pr(A=yes|B=yes)= \frac{Pr(A=yes,B=yes)}{Pr(B=yes)} =  \frac{0.06192}{0.0804375}=0.7697902 \nonumber
+\end{eqnarray}
+%
+From this example, it is clear that the joint probability of variables in a BN model can be computed based on the rule of conditional probability. In general mathematical expression, that rule is described as follows
+%
+\begin{eqnarray}
+ && Pr(V)=\prod_{v\in V} Pr(v|pa(v)) \label{baynetformula12} 
+\end{eqnarray}
+The notation $pa$ infers the parent nodes of node $v$ and $Pr(v|pa(v))$ is a function defined on $(v,pa(v)$. This function satisfies the condition that the sum of probability over a space equals to 1, i.e. $\sum_{v*}Pr(v=v*|pa(v))=1$. It can be seen that a set values of $Pr(v|pa(v))$ is actually the conditional probabilities table (the cpt in short). In this view, it can be said that a BN is a complex stochastic model built up by forming together simple components. In other words, it is referred as hierarchical Bayesian model.
+
+The graph and result of this example can be easily drawn and calculated by hand. For convenient of readers, R code is provided in Appendix \ref{bayesian5}
+
+The above example is a simplest assumption possible that we can think of. In the example, only latent deterioration process is considered. However, in practice, latent deterioration is not only the cause of deterioration. Manifest deterioration should also be considered in calculating the reliability of the bridge. In addition, both latent and manifest processes can be further expanded (like the event tree). A more realistic BN for the same example can be visualized in Figure \ref{baynet03}.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.6]{baynet03.eps}
+\caption{Partial representation of the Bayesian network for the bridge - Latent process}\label{baynet03}
+\end{center}
+\end{figure}
+
+Figure \ref{baynet03} shows that conceptually a BN model can be expanded to include many layers of variables possible. Also, values describing each variable can be also continuous and be assumed to follow a parametric distribution (e.g. Poisson, Weibull, Gamma) depending on the behaviors of data. 
+
+The calculation for this BN becomes more difficult than the earlier one as the size of the cpt exponentially growth with numbers of variables. The R code in Appendix \ref{bayesian6} is used to generate the BN shown in Figure \ref{baynet03}. It includes also a random generated cpt for each node of the BN model and perform calculation of marginal probability for each node. Noted that in this extended example, the reliability of the bridge is recorded in three categories ``low'', ``medium'', and ``high'' instead of of only two states in original example.
+\subsection{Estimating the cpt from data}
+In earlier section, the cpt is presented along with the graph of the BN models. Values of the properties in the cpt can be estimated from various source of information such as expert opinions, simulation, or data. Estimation the cpt from data is common in most cases. Typically, data is stored in various extension files (e.g. txt, tex, csv) or in database systems (e.g. MySQL, MsAccess, PostgreSQL). An example of how data looks like for the above example is listed in Table \ref{tblbayes4a} and Table \ref{tblbayes4b}.
+
+\begin{table}
+	\centering
+	\caption{Simplified observed data} \label{tblbayes4a}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Earthquake & Avalanche & Rockfall & Bridge \\ 
+\hline
+yes & yes & no & yes \\ 
+\hline
+yes & no & no & yes \\ 
+\hline
+no & no & no & yes \\ 
+\hline
+no & no & no & no \\ 
+\hline
+no & no & no & no \\ 
+\hline
+no & no & yes & no \\ 
+\hline
+yes & no & no & no \\ 
+\hline
+no & no & no & no \\ 
+\hline
+no & yes & yes & no \\ 
+\hline
+yes & no & yes & no \\ 
+\hline
+no & yes & no & yes \\ 
+\hline
+no & no & no & no \\ 
+\hline
+no & yes & yes & no \\ 
+\hline
+no & yes & no & yes \\ 
+\hline
+no & no & no & yes \\ 
+\hline
+yes & yes & yes & no \\ 
+\hline
+no & yes & no & yes \\ 
+\hline
+no & no & yes & no \\ 
+\hline
+no & yes & yes & no \\ 
+\hline
+yes & no & yes & no \\ 
+\hline
+no & no & no & yes \\ 
+\hline
+no & no & yes & no \\ 
+\hline
+yes & yes & yes & yes \\ 
+\hline
+yes & no & no & yes \\ 
+\hline
+yes & yes & yes & no \\ 
+\hline
+no & no & no & no \\ 
+\hline
+no & no & no & yes \\ 
+\hline
+yes & no & yes & yes \\ 
+\hline
+yes & yes & no & yes \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+	\centering
+	\caption{Extended observed data} \label{tblbayes4b}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Earthquake & Snow & Rain & DTV & Aval & Rockfall & Flood & Cracks & Bearing & Joint & Bridge \\ 
+\hline
+yes & high & high & low & yes & no & no & moderate & good & yes & high \\ 
+\hline
+yes & low & high & high & no & no & yes & moderate & good & no & high \\ 
+\hline
+no & low & medium & high & no & no & no & high & good & no & high \\ 
+\hline
+no & low & low & low & no & no & no & high & good & no & medium \\ 
+\hline
+no & high & low & low & no & no & no & high & bad & yes & low \\ 
+\hline
+no & high & low & high & no & yes & yes & high & bad & yes & low \\ 
+\hline
+yes & high & medium & low & no & no & yes & moderate & good & yes & low \\ 
+\hline
+no & low & low & low & no & no & yes & moderate & good & no & medium \\ 
+\hline
+no & low & low & medium & yes & yes & yes & high & bad & no & medium \\ 
+\hline
+yes & low & high & medium & no & yes & no & moderate & bad & yes & medium \\ 
+\hline
+no & low & low & medium & yes & no & yes & moderate & bad & no & high \\ 
+\hline
+no & high & medium & low & no & no & yes & moderate & good & yes & low \\ 
+\hline
+no & low & high & high & yes & yes & no & small & bad & no & medium \\ 
+\hline
+no & high & medium & low & yes & no & yes & high & good & yes & high \\ 
+\hline
+no & low & low & high & no & no & yes & moderate & bad & yes & high \\ 
+\hline
+yes & high & low & low & yes & yes & no & small & good & yes & low \\ 
+\hline
+no & high & low & low & yes & no & yes & small & good & no & high \\ 
+\hline
+no & low & high & high & no & yes & no & moderate & good & no & low \\ 
+\hline
+no & low & low & low & yes & yes & yes & moderate & bad & yes & medium \\ 
+\hline
+yes & high & low & high & no & yes & yes & small & bad & yes & low \\ 
+\hline
+no & low & medium & low & no & no & yes & small & good & yes & high \\ 
+\hline
+no & high & medium & medium & no & yes & no & small & bad & yes & low \\ 
+\hline
+yes & high & low & medium & yes & yes & no & moderate & bad & no & high \\ 
+\hline
+yes & high & medium & high & no & no & yes & moderate & bad & yes & high \\ 
+\hline
+yes & high & medium & medium & yes & yes & no & high & good & yes & medium \\ 
+\hline
+no & high & high & high & no & no & yes & high & bad & yes & low \\ 
+\hline
+no & high & low & low & no & no & no & small & good & yes & high \\ 
+\hline
+yes & high & high & medium & no & yes & no & high & bad & no & high \\ 
+\hline
+yes & low & high & high & yes & no & no & high & bad & no & high \\ 
+\hline
+\end{tabular}
+\end{table}
+
+Table \ref{tblbayes4a} shows a simplified data that includes only 4 variables (Earthquake, Rockfall, Avalanche, Bridge) and for each variable, there is only two discrete value ``yes'' and ``no''. The conditional probability for each variable can be computed using the data shown in this table. Since values of variables are discrete, one way to do it is to use following equation
+
+\begin{eqnarray}
+ && Pr(B=yes|R=yes)=\frac{Pr(B=yes,R=yes)}{Pr(R=yes)} \label{baynetformula13} \\
+ && \hspace{2cm} \frac{\text{Number of observations for which B=yes and R=yes}}{\text{Number of observations for which R=yes}}
+\end{eqnarray}
+This equation yields exact the conditional probability for this event to occur. This is corresponding to the traditional $frequentist$ and $maximum$ $likelihood$ estimates. 
+
+The R codes for computing the cpt based on these two tables are given in Appendix \ref{bayesian5} and \ref{bayesian6} and the estimated cpt for the data shown in Table \ref{tblbayes4a} and Table \ref{tblbayes4b} are given in Appendix \ref{Bndata1} and \ref{Bndata2}, respectively.
+\subsection{Forming a BN model from data and the curse of dimensionality}
+In the above example, it is given that the structure of the BN model is known. That is we know the relationship between nodes in the graphical model. In many practical situations, data is collected that includes many different types of variables and attributes that we do not precisely know their relationship. Fortunately, given the data, it is possible to learn from the behaviors of data in order to create a set of BN models that suit the data the most. Following example of data on accident risks illustrate the idea of how to form a BN model from data.
+
+A city transportation department wants to understand the accident risks that occurs on the city
+road network when three intervention strategies (IS)\footnote{ Intervention strategies can be the setup of traffic flows or the installation of traffic signals
+} is pilot tested. These pilot tests can be
+executed in different parts of the city network. The effectiveness of these tests are measured
+by observing the outcome as the numbers of accidents occurs in two consecutive weeks. A
+description of the data is given in following table \ref{tblbayes5}.
+
+\begin{table}
+	\centering
+	\caption{Data on pipeline failure $p$} \label{tblbayes5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Time & IS & week 1 & week 2 \\ 
+\hline
+day & 1 & 5 & 6 \\ 
+\hline
+day & 1 & 7 & 6 \\ 
+\hline
+day & 1 & 9 & 9 \\ 
+\hline
+day & 1 & 5 & 4 \\ 
+\hline
+day & 2 & 9 & 12 \\ 
+\hline
+day & 2 & 7 & 7 \\ 
+\hline
+day & 2 & 7 & 6 \\ 
+\hline
+day & 2 & 6 & 8 \\ 
+\hline
+day & 3 & 14 & 11 \\ 
+\hline
+day & 3 & 21 & 15 \\ 
+\hline
+day & 3 & 12 & 10 \\ 
+\hline
+day & 3 & 17 & 12 \\ 
+\hline
+night & 1 & 7 & 10 \\ 
+\hline
+night & 1 & 8 & 10 \\ 
+\hline
+night & 1 & 6 & 6 \\ 
+\hline
+night & 1 & 9 & 7 \\ 
+\hline
+night & 2 & 7 & 6 \\ 
+\hline
+night & 2 & 10 & 13 \\ 
+\hline
+night & 2 & 6 & 9 \\ 
+\hline
+night & 2 & 8 & 7 \\ 
+\hline
+night & 3 & 14 & 9 \\ 
+\hline
+night & 3 & 14 & 8 \\ 
+\hline
+night & 3 & 16 & 12 \\ 
+\hline
+night & 3 & 10 & 5 \\ 
+\hline
+\end{tabular}
+\end{table}
+The network has its primary property as node as graphically represented in Figure \ref{baynet04}. The cell
+in the table represents each entry or node of the network. Each entry contains information
+attached with each node (e.g. day or night, different numbers of accidents).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.6]{baynet04.eps}
+\caption{Graphical representation of the network for accidents}\label{baynet04}
+\end{center}
+\end{figure}
+In this simple network, the input nodes are the time (day or night) and the intervention
+strategies (IS), and the outcome are the numbers of accident occurs in each consecutive
+weeks. The infrastructure manager wants to identify the probability that the accident occurs
+due to time and intervention strategies. In addition, as the week 2 is after week 1, the node
+representing week 1 can also become a parent node of week 2, i.e. the likelihood of accidents
+occurs on week 2 is dependent also on the numbers of accidents that have had occurred in
+week 1.
+
+It is assumed that the joint probability for this problem is Gaussian distribution
+(normal distribution). The Bayesian network allows to compute such joint probability for
+every combination of nodes. For example, the joint probability of combination
+$(Time\to IS \to W1 \to W2)$ or $(Time \to W1)$ or $(IS \to W1 \to W2)$.
+
+Following graphs the outcome of running a Bayesian network for this example (the R code
+used to compute the example is given in Appendix \ref{bayesian7}).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05a.eps}
+\caption{Possible BN networks (1)}\label{baynet05a}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05b.eps}
+\caption{Possible BN networks (2)}\label{baynet05b}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05c.eps}
+\caption{Possible BN networks (3)}\label{baynet05c}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05d.eps}
+\caption{Possible BN networks (4)}\label{baynet05d}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05e.eps}
+\caption{Possible BN networks (5)}\label{baynet05e}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.45]{baynet05f.eps}
+\caption{Possible BN networks (6)}\label{baynet05f}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale =0.6]{baynet06.eps}
+\caption{The optimal network structure}\label{baynet06}
+\end{center}
+\end{figure}
+
+As can be seen from the figure Figure \ref{baynet05a} to Figure \ref{baynet05f}, there are many possible combination of nodes to form a network. The arrow in each of the graph represents the dependency. In total, with only 4 nodes, there are 144 networks being analyzed. 
+
+Table \ref{tblbayes6} lists a possible numbers of networks that can be formed given a certain numbers of nodes with their lower bound and upper bound values \citep{Heckerm1996}.
+
+\begin{table}
+	\centering
+	\caption{Numbers of networks} \label{tblbayes6}
+\begin{tabular}{|c|c|}
+\hline
+$\#Node$ & $\#networks$ \\ 
+\hline
+1 & 1 \\ 
+\hline
+2 & 2-3 \\ 
+\hline
+3 & 12-25 \\ 
+\hline
+4 & 144-543 \\ 
+\hline
+5 & 4'800-29'281 \\ 
+\hline
+6 & 320'000-3'781'503 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+In these graphs, the statistic score $S(D)$ are displayed along with their rescaling score. The score is computed for every combination of nodes based on following equation
+\begin{eqnarray}
+ && S(D)=p(D,data)=p(data|D)\cdot p(D)
+\end{eqnarray}
+
+This score is used to assess the likelihood for that combination to be realized with certain probability. In this example, the network $IS \to W1 \to W2$ (Figure \ref{baynet06}) will be most likely to be realized with highest probability. It means that the numbers of accidents that will occurs in week 2 will have high correlation with the intervention strategies and the numbers of accidents in week 1.
+
+The above example discusses a general Bayesian network frame, in which, data model can be formulated with different combination and interaction. As can be shown, there are many scenarios that are not necessary to be analyzed for the final result. For example, the scenario that the arrow is only connecting between “time” and “week 2”. This scenario is not likely to give a good answer as it is known from engineering background that the “IS” should be involved. By using engineering background, the numbers of combinations between nodes can be reduced significantly. 
+
+\bibliographystyle{plainnat}
+\bibliography{reference}
+
+\pagebreak
+
+\begin{subappendices}
+% % \label{appendix3}
+\section{Example into Bayesian thinking}\label{bayesian1}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-priordistribution.r}
+ \pagebreak
+\section{Bayesian estimation - Linear model}\label{bayesian2}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-bayesian-linear.r}
+  \pagebreak
+  \section{Maximum likelihood estimation estimation - Weibull model}\label{bayesian4}
+  \lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-mle-weibull.r}
+ \pagebreak
+\section{Bayesian estimation - Weibull model}\label{bayesian3}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-bayesian-weibull.r}
+\pagebreak
+\section{Bayesian network - bridge reliability (simplified)}\label{bayesian5}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/bayesiannetwork-bridgereliabilitya.r}
+\pagebreak
+\section{Bayesian network - bridge reliability (Extended)}\label{bayesian6}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/bayesiannetwork-bridgereliabilityb.r}
+\pagebreak
+\section{cpt of the BN simplified example}\label{Bndata1}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-BNsimplifiedexample.tex}
+\pagebreak
+\section{cpt of the BN extended example}\label{Bndata2}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/IMP-BNextendedexample.tex}
+\pagebreak
+\section{Bayesian network - Learning structure of a BN from data}\label{bayesian7}
+\lstinputlisting[basicstyle=\ttfamily\scriptsize]{./Programs/IMP-bayesian/bayesiannetwork-structurelearning.r}
+\end{subappendices}
+% 
+% 
+% 
+% 
+
