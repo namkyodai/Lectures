@@ -1,0 +1,92 @@
+@InProceedings{Cai2016,
+  author    = {Defu Cai and Hongxun Tian and Yi Wang and Honggang Wang and Haifeng Zheng and Kan Cao and Chu Zhou},
+  booktitle = {Proceedings of the 2016 International Conference on Energy, Power and Electrical Engineering},
+  title     = {Electric Power Big Data and Its Applications},
+  year      = {2016},
+  pages     = {181-184},
+  publisher = {Atlantis Press},
+  doi       = {10.2991/epee-16.2016.39},
+  isbn      = {978-94-6252-258-9},
+  issn      = {2352-5401},
+  url       = {https://doi.org/10.2991/epee-16.2016.39},
+}
+
+@InProceedings{Amaro2017,
+  author    = {Amaro, Nuno and Pina, João Murta},
+  booktitle = {2017 International Conference on Engineering, Technology and Innovation (ICE/ITMC)},
+  title     = {Big data in power systems leveraging grid optimization and wave energy integration},
+  year      = {2017},
+  pages     = {1046-1054},
+  doi       = {10.1109/ICE.2017.8279997},
+}
+
+@Article{Kezunovic2020,
+  author   = {Mladen Kezunovic and Pierre Pinson and Zoran Obradovic and Santiago Grijalva and Tao Hong and Ricardo Bessa},
+  journal  = {Electric Power Systems Research},
+  title    = {Big data analytics for future electricity grids},
+  year     = {2020},
+  issn     = {0378-7796},
+  pages    = {106788},
+  volume   = {189},
+  abstract = {This paper provides a survey of big data analytics applications and associated implementation issues. The emphasis is placed on applications that are novel and have demonstrated value to the industry, as illustrated using field data and practical applications. The paper reflects on the lessons learned from initial implementations, as well as ideas that are yet to be explored. The various data science trends treated in the literature are outlined, while experiences from applying them in the electricity grid setting are emphasized to pave the way for future applications. The paper ends with opportunities and challenges, as well as implementation goals and strategies for achieving impactful outcomes.},
+  doi      = {https://doi.org/10.1016/j.epsr.2020.106788},
+  keywords = {Electricity grids, Analytics, Big data, Decision-making},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0378779620305915},
+}
+
+@Article{AghazadehArdebili2021,
+  author  = {{Aghazadeh Ardebili, Ali} and {Longo, Antonella} and {Ficarella, Antonio}},
+  journal = {E3S Web Conf.},
+  title   = {Digital Twin (DT) in Smart Energy Systems - Systematic Literature Review of DT as a growing solution for Energy Internet of the Things (EIoT)},
+  year    = {2021},
+  pages   = {09002},
+  volume  = {312},
+  doi     = {10.1051/e3sconf/202131209002},
+  url     = {https://doi.org/10.1051/e3sconf/202131209002},
+}
+
+@Article{Angadi2020,
+  author  = {{Angadi, Ravi V} and {Venkataramu, P. S} and {Daram, Suresh Babu}},
+  journal = {E3S Web Conf.},
+  title   = {Role of Big Data Analytics in Power System Application},
+  year    = {2020},
+  pages   = {01017},
+  volume  = {184},
+  doi     = {10.1051/e3sconf/202018401017},
+  url     = {https://doi.org/10.1051/e3sconf/202018401017},
+}
+
+@Book{Rahimi2018,
+  author    = {Iman Rahimi and Abdollah Ahmadi and Ahmed F. Zobaa and Ali Emrouznejad and Shady H.E. Abdel Aleem},
+  editor    = {Ahmed F. Zobaa and Trevor J. Bihl},
+  publisher = {CRC Press},
+  title     = {Chapter 4: Big data optimization in electric power systems: A review},
+  year      = {2018},
+}
+
+@Article{Sedighi2018,
+  author  = {Foroogh Sedighi and Mohammadreza Jabbarpour and Sheyda Seyedfarshi},
+  journal = {International Journal of Smart Electrical Engineering},
+  title   = {Application of Big Data Analytics in Power DistributionNetwork},
+  year    = {2018},
+  number  = {3},
+  pages   = {119:125},
+  volume  = {7},
+}
+
+@Article{Zhang2018,
+  author   = {Zhang, Yang and Huang, Tao and Bompard, Ettore Francesco},
+  journal  = {Energy Informatics},
+  title    = {Big data analytics in smart grids: a review},
+  year     = {2018},
+  issn     = {2520-8942},
+  number   = {1},
+  pages    = {8},
+  volume   = {1},
+  abstract = {Data analytics are now playing a more important role in the modern industrial systems. Driven by the development of information and communication technology, an information layer is now added to the conventional electricity transmission and distribution network for data collection, storage and analysis with the help of wide installation of smart meters and sensors. This paper introduces the big data analytics and corresponding applications in smart grids. The characterizations of big data, smart grids as well as huge amount of data collection are firstly discussed as a prelude to illustrating the motivation and potential advantages of implementing advanced data analytics in smart grids. Basic concepts and the procedures of the typical data analytics for general problems are also discussed. The advanced applications of different data analytics in smart grids are addressed as the main part of this paper. By dealing with huge amount of data from electricity network, meteorological information system, geographical information system etc., many benefits can be brought to the existing power system and improve the customer service as well as the social welfare in the era of big data. However, to advance the applications of the big data analytics in real smart grids, many issues such as techniques, awareness, synergies, etc., have to be overcome.},
+  doi      = {10.1186/s42162-018-0007-5},
+  refid    = {Zhang2018},
+  url      = {https://doi.org/10.1186/s42162-018-0007-5},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
