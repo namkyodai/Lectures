@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is just an example/guide for you to refer to when submitting manuscripts to Frontiers, it is not mandatory to use Frontiers .cls files nor frontiers.tex  %
+% This will only generate the Manuscript, the final article will be typeset by Frontiers after acceptance.   
+%                                              %
+%                                                                                                                                                         %
+% When submitting your files, remember to upload this *tex file, the pdf generated with it, the *bib file (if bibliography is not within the *tex) and all the figures.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Version 3.4 Generated 2018/06/15 %%%
+%%% You will need to have the following packages installed: datetime, fmtcount, etoolbox, fcprefix, which are normally inlcuded in WinEdt. %%%
+%%% In http://www.ctan.org/ you can find the packages and how to install them, if necessary. %%%
+%%%  NB logo1.jpg is required in the path in order to correctly compile front page header %%%
+
+\documentclass[utf8]{frontiersSCNS} % for Science, Engineering and Humanities and Social Sciences articles
+%\documentclass[utf8]{frontiersHLTH} % for Health articles
+%\documentclass[utf8]{frontiersFPHY} % for Physics and Applied Mathematics and Statistics articles
+
+%\setcitestyle{square} % for Physics and Applied Mathematics and Statistics articles
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+%\linenumbers
+
+
+% Leave a blank line between paragraphs instead of using \\
+
+
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+\def\firstAuthorLast{22-03-2023} %use et al only if is more than 1 author
+\def\Authors{Lê Thanh Nam\,$^{1,*, 2, 3, 4}$}
+%\def\Authors{Lê Thanh Nam\,$^{1,*}$, Co-Author\,$^{2}$ and Co-Author\,$^{1,2}$}
+% Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
+% If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list.
+\def\Address{$^{1}$Tiến Sĩ, Kĩ Sư Xây Dựng: Viện Đô Thị Thông Minh và Quản Lý (ISCM), Trường Công Nghệ và Thiết Kế, Đại Học UEH, tp. Hồ Chí Minh -  \href{https://www.iscm.ueh.edu.vn/}{www.iscm.ueh.edu.vn} \\
+$^{2}$Giám Đốc Kĩ Thuật, Chuyên Gia Soạn Hợp Đồng (FIDIC): Công Ty Tư Vấn ARCADIS, phụ trách thị trường Đông Nam Á và Ấn Độ -  \href{www.arcadis.com}{www.arcadis.com}\\
+$^{3}$Giám Đốc: Công ty TNHH ASQ Việt Nam - \href{https://www.asq.vn}{www.asq.vn}\\
+$^{4}$Cố Vấn Kĩ Thuật: Công ty EMAPTA - \href{www.emapta.com}{www.emapta.com}}
+% The Corresponding Author should be marked with an asterisk
+% Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author
+\def\corrAuthor{Di Động: +84-9-8378-0100 (Việt Nam) / +91-98-1044-4723 (Ấn Độ) Email: namlt@ueh.edu.vn}
+
+%\def\corrEmail{Email: namlt@ueh.edu.vn}
+
+
+
+
+\begin{document}
+\onecolumn
+\firstpage{1}
+
+\title[Dữ Liệu Lớn/Quản Lý Hạ Tầng - Điện Lực]{Dữ Liệu Lớn và Quản Lý Hạ Tầng Trong Ngành Điện Lực} 
+
+\author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
+\address{} %This field will be automatically populated
+\correspondance{} %This field will be automatically populated
+
+\extraAuth{}% If there are more than 1 corresponding author, comment this line and uncomment the next one.
+%\extraAuth{corresponding Author2 \\ Laboratory X2, Institute X2, Department X2, Organization X2, Street X2, City X2 , State XX2 (only USA, Canada and Australia), Zip Code2, X2 Country X2, email2@uni2.edu}
+
+
+\maketitle
+
+
+\begin{abstract}
+Ngành điện lực là một trong những ngành xương sống cho sự phát triển kinh tế của quốc gia. Trong những năm gần đây, các công ty điện lực đã chứng kiến và trải nghiệm nhiều thử thách và sự đổi mới trong cả kĩ thuật và quản lý, và phần nào đã có những bước tiến đáng kể trong công tác chuyển đổi số (digitization) cùng với khái niệm về hệ thống truyền tải điện thông minh(Smart Grids). Các hệ thống điện thường luôn hoạt động trong tình trạng áp lực, chủ yếu là do sự gia tăng hàng năm trong nhu cầu sử dụng điện, sự thiếu hụt về nguồn cung về nhiên liệu/năng lượng để sản xuất ra điện, và các ràng buộc về môi trường áp đặt lên hệ thống sản xuất điện và sự mở rộng các đường dây tải điện. 
+
+Ở Việt Nam, tổng công ty điện lực Việt Nam (EVN) cùng các bộ ngành liên quan đã soạn thảo và đề xuất "Qui Hoạch Điện VIII" hướng tới sự phát triển ổn định và bền vững chiến lược đến năm 2050. Một trong những nội dung quan trọng của Qui Điện VIII có chú trọng đến việc phát triển và nâng cao khả năng ứng dụng các công nghệ tiên tiến và áp dụng dữ liệu lớn cũng như trí thông minh nhân tạo vào công tác xây dựng, điều hành và quản lý các hệ thống điện.
+
+Bài viết này chú trọng đến vài trò của công tác phân tích dữ liệu lớn và vai trò của công tác quản lý cơ sở hạ tầng trong các lĩnh vực quan trọng của nền kinh tế, đặc biệt chú trọng tới ngành điện. Nội dung bài viết đề cập đến việc sử dụng các nguồn cung cấp dữ liệu lớn mà rất khó có thể truy cập vào các hệ thống cơ sở dữ liệu tiêu chuẩn, việc quản lý và quan trắc trong ngành điện. Đảm bảo sự ổn định của hệ thống thông qua việc sử dụng hiệu quả các nguồn dữ liệu lớn là một trong những mục tiêu quan trọng của các công ty điện lực.
+
+
+\tiny
+ \keyFont{ \section{Từ Khóa:} Dữ Liệu Lớn, Quản Lý Tài Sản, Cơ Sở Hạ Tầng, Độ Tin Cậy, Trí Thông Minh Nhân Tạo} %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
+\end{abstract}
+
+\section{Giới Thiệu}
+%For Original Research Articles \citep{conference}, Clinical Trial Articles \citep{article}, and Technology Reports \citep{patent}, the introduction should be succinct, with no subheadings \citep{book}. For Case Reports the Introduction should include symptoms at presentation \citep{chapter}, physical exams and lab results \citep{dataset}.
+
+
+
+\section{Dữ Liệu Lớn trong Nhiều Lĩnh Vực của Nền Kinh Tế}
+
+
+
+% For Original Research articles, please note that the Material and Methods section can be placed in any of the following ways: before Results, before Discussion or after Discussion.
+
+\section{Dữ Liệu Lớn Trong Ngành Điện Lực}
+
+
+
+
+
+
+\section*{Lời Cám Ơn}
+This is a short text to acknowledge the contributions of specific colleagues, institutions, or agencies that aided the efforts of the authors.
+
+
+
+
+%\section*{Figure captions}
+
+%%% Please be aware that for original research articles we only permit a combined number of 15 figures and tables, one figure with multiple subfigures will count as only one figure.
+%%% Use this if adding the figures directly in the mansucript, if so, please remember to also upload the files when submitting your article
+%%% There is no need for adding the file termination, as long as you indicate where the file is saved. In the examples below the files (logo1.eps and logos.eps) are in the Frontiers LaTeX folder
+%%% If using *.tif files convert them to .jpg or .png
+%%%  NB logo1.eps is required in the path in order to correctly compile front page header %%%
+
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width=10cm]{logo1}% This is a *.eps file
+%\end{center}
+%\caption{ Enter the caption for your figure here.  Repeat as  necessary for each of your figures}\label{fig:1}
+%\end{figure}
+
+
+
+
+\end{document}
