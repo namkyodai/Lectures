@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.3)  3 MAR 2023 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.3)  16 MAR 2023 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,7 +1044,24 @@ Package microtype Warning: I cannot find a protrusion list for font
 
 
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ueh-logo.png>
-] (./paper.aux)
+]
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/ptm/m/n/9'. Switching off
+(microtype)                protrusion for this font on input line 119.
+
+LaTeX Font Info:    Font shape `T5/phv/b/it' in size <9> not available
+(Font)              Font shape `T5/phv/b/sl' tried instead on input line 119.
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/phv/b/sl/9'. Switching off
+(microtype)                protrusion for this font on input line 119.
+
+
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[2] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1053,24 +1070,25 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 02D7DCB7A6EFAB634F58757EF4199715;190.
  ) 
 Here is how much of TeX's memory you used:
- 12801 strings out of 479304
- 194811 string characters out of 5871220
+ 12818 strings out of 479304
+ 194999 string characters out of 5871220
  557212 words of memory out of 5000000
- 29642 multiletter control sequences out of 15000+600000
- 440716 words of font info for 94 fonts, out of 8000000 for 9000
+ 29647 multiletter control sequences out of 15000+600000
+ 445887 words of font info for 101 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 98i,8n,131p,1013b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,8n,131p,1013b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<c:/texlive/2020/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/vntex/urwvn
-/uhvb8v.pfb><c:/texlive/2020/texmf-dist/fonts/type1/vntex/urwvn/uhvr8v.pfb><c:/
-texlive/2020/texmf-dist/fonts/type1/vntex/urwvn/uhvro8v.pfb><c:/texlive/2020/te
-xmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb>
-Output written on paper.pdf (1 page, 105507 bytes).
+/uhvb8v.pfb><c:/texlive/2020/texmf-dist/fonts/type1/vntex/urwvn/uhvbo8v.pfb><c:
+/texlive/2020/texmf-dist/fonts/type1/vntex/urwvn/uhvr8v.pfb><c:/texlive/2020/te
+xmf-dist/fonts/type1/vntex/urwvn/uhvro8v.pfb><c:/texlive/2020/texmf-dist/fonts/
+type1/vntex/urwvn/utmr8v.pfb>
+Output written on paper.pdf (2 pages, 111842 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 30238 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 34334 words of extra memory for PDF output out of 35830 (max. 10000000)
 
