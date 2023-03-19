@@ -63,11 +63,15 @@ $^{4}$Cố Vấn Kĩ Thuật: Công ty EMAPTA - \href{www.emapta.com}{www.emapta
 
 
 \begin{abstract}
+%Bài viết này tổng hợp 
 Ngành điện lực là một trong những ngành xương sống cho sự phát triển kinh tế của quốc gia. Trong những năm gần đây, các công ty điện lực đã chứng kiến và trải nghiệm nhiều thử thách và sự đổi mới trong cả kĩ thuật và quản lý, và phần nào đã có những bước tiến đáng kể trong công tác chuyển đổi số (digitization) cùng với khái niệm về hệ thống truyền tải điện thông minh(Smart Grids). Các hệ thống điện thường luôn hoạt động trong tình trạng áp lực, chủ yếu là do sự gia tăng hàng năm trong nhu cầu sử dụng điện, sự thiếu hụt về nguồn cung về nhiên liệu/năng lượng để sản xuất ra điện, và các ràng buộc về môi trường áp đặt lên hệ thống sản xuất điện và sự mở rộng các đường dây tải điện. 
 
 Ở Việt Nam, tổng công ty điện lực Việt Nam (EVN) cùng các bộ ngành liên quan đã soạn thảo và đề xuất "Qui Hoạch Điện VIII" hướng tới sự phát triển ổn định và bền vững chiến lược đến năm 2050. Một trong những nội dung quan trọng của Qui Điện VIII có chú trọng đến việc phát triển và nâng cao khả năng ứng dụng các công nghệ tiên tiến và áp dụng dữ liệu lớn cũng như trí thông minh nhân tạo vào công tác xây dựng, điều hành và quản lý các hệ thống điện.
 
-Bài viết này chú trọng đến vài trò của công tác phân tích dữ liệu lớn và vai trò của công tác quản lý cơ sở hạ tầng trong các lĩnh vực quan trọng của nền kinh tế, đặc biệt chú trọng tới ngành điện. Nội dung bài viết đề cập đến việc sử dụng các nguồn cung cấp dữ liệu lớn mà rất khó có thể truy cập vào các hệ thống cơ sở dữ liệu tiêu chuẩn, việc quản lý và quan trắc trong ngành điện. Đảm bảo sự ổn định của hệ thống thông qua việc sử dụng hiệu quả các nguồn dữ liệu lớn là một trong những mục tiêu quan trọng của các công ty điện lực.
+Bài viết này cung cấp cho người đọc một cái nhìn tổng quan về các ứng dụng phân tích dữ liệu lớn, công tác quản lý cơ sở hạ tầng trong ngành điện lực, và các vấn đề liên quan đến việc triển khai. Chú trọng của bài viết sẽ là các ứng dụng mới đã mang lại giá trị tích cực trong ngành, một số bài học rút ra từ việc triển khai ứng dụng tại một số tổ chức, và một số ý tưởng và chủ đề cần khám phá. Tổng quan các nghiên cứu khoa học trong ngành khoa học dữ liệu trong ngành điện sẽ được đề cập nhằm tạo ra được cái nhìn tổng quát cho việc ứng dụng và tiếp tục phát triển của ngành trong tương lai. Cuối cùng, bài viết nêu ra các cơ hội và thách thức cũng như các mục tiêu và chiến lược để đạt được các kết quả có ý nghĩa.
+
+
+%Bài viết này chú trọng đến vài trò của công tác phân tích dữ liệu lớn và vai trò của công tác quản lý cơ sở hạ tầng trong các lĩnh vực quan trọng của nền kinh tế, đặc biệt chú trọng tới ngành điện. Nội dung bài viết đề cập đến việc sử dụng các nguồn cung cấp dữ liệu lớn mà rất khó có thể truy cập vào các hệ thống cơ sở dữ liệu tiêu chuẩn, việc quản lý và quan trắc trong ngành điện. Đảm bảo sự ổn định của hệ thống thông qua việc sử dụng hiệu quả các nguồn dữ liệu lớn là một trong những mục tiêu quan trọng của các công ty điện lực.
 
 
 \tiny
@@ -77,12 +81,49 @@ Bài viết này chú trọng đến vài trò của công tác phân tích dữ
 \section{Giới Thiệu}
 %For Original Research Articles \citep{conference}, Clinical Trial Articles \citep{article}, and Technology Reports \citep{patent}, the introduction should be succinct, with no subheadings \citep{book}. For Case Reports the Introduction should include symptoms at presentation \citep{chapter}, physical exams and lab results \citep{dataset}.
 
+Có rất nhiều định nghĩa và cách hiểu khác nhau về phân tích dữ liệu lớn trong các ứng dụng ngành điện, đặc biệt là công tác sản xuất, truyền tải, và phân phối. Điều này chủ yếu là vì lý do có khá nhiều cách tiếp cận trong ngành khoa học dữ liệu và mục đích rộng liên quan (ví dụ như việc sử dụng các công cụ toán xác xác thống kê, trí thông minh nhân tạo (AI), học máy). Tính phức tạp và đa dạng của phân tích dữ liệu lớn trong ngành còn đến từ nhiều cách thức ứng dụng trong các lĩnh vực như quản lý tài sản (Asset Management), điều hành, điều khiển hệ thống, an toàn và an ninh, các quyết định lập kế hoạch và thị trường. Trong đó, có một vấn đề nền tảng làm cho công tác phân tích dữ liệu lớn trong ngành điện lực đặc biệt khó khăn là liên quan đến dung lượng của dữ liệu. Dung lượng của dữ liệu trong ngành thường ở cấp độ Terabyte, lớn hơn rất nhiều cấp độ Petabyte là cấp độ đã được coi là lớn trong các lĩnh vực khác. Cuối cùng, khái niệm "phân tích dữ liệu" còn là khá mơ hồ và đôi khi bị hiểu sai bởi vì hầu hết các ứng dựng cơ bản hay ứng dụng truyền thống trong ngành điện là dựa trên việc xử lý các dữ liệu được đo đạc (measurement data). Công việc xử lý truyền thống này đôi khi không được coi là phân tích dữ liệu lớn trong ngành khoa học dữ liệu. Ví dụ như, các phương pháp truyền thống liên quan đến tính toán ước lượng trạng thái (state estimation) hay vị trí sự cố (outage location) thường không được coi là phân tích dữ liệu lớn nếu công tác phân tích này chỉ đơn thuần dựa vào các phương trình/công thức toán được phát triển trên nền tảng vật lý. Trong khi đó, ở một khía cạnh khác, việc phán đoán sự cố dựa trên các mô hình nền tảng dữ liệu sử dụng các dữ liệu về thời tiết và mất điện có độ phân giải cao thì được coi là phân tích dữ liệu lớn.
+
+Bài viết này không chú trọng đến việc đưa ra một định nghĩa rành mạch về phân tích dữ liệu lớn trong ngành điện mà chỉ chú trọng đến việc tổng quan hóa và nêu ra một số nghiên cứu và ứng dụng gần nhất sử dụng các phương pháp tiên tiến trong ngành khoa học dữ liệu trong ngành điện, đặc biệt chú trọng đến công tác quản lý tài sản cơ sở hạ tầng ngành điện, quản lý sự cố, và tính tích hợp với năng lượng tái tạo.
+
+Có thể nói, một trong những bài báo nghiên cứu đầu tiên liên quan đến việc ứng dụng dữ liệu lớn trong ngành điện là bài báo của tác giả . Tuy nhiên, nghiên cứu này chỉ dừng lại ở dạng mô hình và lý thuyết mà chưa đưa ra ứng dụng cụ thể vào thực tế. Việc ứng dụng vào thực tế mới chỉ được tiến hành trong vài năm gần đây.
+
+Với mục đích hướng tới việc truyền tải kiến thức và đào tạo, ở bài viết này, một số khái niệm cơ bản cấu thành nên công tác phân tích dữ liệu lớn trong ngành điện và các khía cạnh đặc thù của ngành điện sẽ được đề cập. 
+
+\section{Tầm Quan Trọng và Tính Khả Thi của Phân Tích Dữ Liệu Lớn trong Ngành Điện}
+\subsection{Sự Tác Động của Phân Tích Dữ Liệu Lớn}
+
+Sự thay đổi mạnh mẽ trong ngành điện dường như là chưa có tiền lệ, bao gồm sự chuyển dịch trong phân bổ các dạng năng lượng (Energy Mix), yêu cầu và nhu cầu ngành càng cao của khách hàng, sự xuất hiện các kĩ thuật tiên tiến và thiết bị mới, và các mô hình kinh doanh mới. Chính những thay đổi này dẫn đến tính phức tạp (Complexity) và tính không chắc chắn (Uncertainty), cũng như mang tới các thách thức và cơ hội. 
+
+
+\subsection{Các Nguồn Dữ Liệu Mới}
+
+\subsection{Các Cân Nhắc Quan Trọng Khi Tạo Ra Các Gói Dữ Liệu}
+
+\section{Các Thách Thức của Công Việc Phân Tích Dữ Liệu Lớn}
+\subsection{Các Nền Tảng của Khoa Học Dữ Liệu}
+
+\subsection{Các Khía Cạnh Kĩ Thuật}
+
+\subsection{Khung Đưa ra Quyết Định}
+
+
+\section{Ứng Dụng}
+\subsection{Quản Lý tài Sản Cơ Sở Hạ Tầng và Mất Điện}
+
+
+
+\subsubsection{Phân Loại Tài Sản}
+
+\subsubsection{Các Tác Động của Thời Tiết và Việc Mất Điện}
+
+\subsubsection{Cơ Bản về Quản Lý Mất Điện}
+
+
+\subsubsection{Ước Đoán Sự Mất Điện và Mạng Lưới Truyền Tải}
+
 
 
 \section{Dữ Liệu Lớn trong Nhiều Lĩnh Vực của Nền Kinh Tế}
-
-
-
 % For Original Research articles, please note that the Material and Methods section can be placed in any of the following ways: before Results, before Discussion or after Discussion.
 
 \section{Dữ Liệu Lớn Trong Ngành Điện Lực}
