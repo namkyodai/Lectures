@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -12,41 +12,99 @@
   \begin{quotation}\noindent\textsc{Key:} #1\\
   \textsc{Annotation:}\ #2\end{quotation}}
 
-\bibitem[{LastName1 et~al.(2011)LastName1, LastName2, and LastName3}]{dataset}
-[Dataset] LastName1, A., LastName2, A., and LastName3, A. (2011).
-\newblock Data title.
-\newblock \doi{10.000/55555}
-\bibAnnoteFile{dataset}
+\bibitem[{Ahmed et~al.(2016)Ahmed, Yaqoob, Gani, Imran, and
+  Guizani}]{Ahmed2016}
+Ahmed, E., Yaqoob, I., Gani, A., Imran, M., and Guizani, M. (2016).
+\newblock Internet-of-things-based smart environments: state of the art,
+  taxonomy, and open research challenges.
+\newblock \emph{IEEE Wireless Communications} 23, 10--16.
+\newblock \doi{10.1109/MWC.2016.7721736}
+\bibAnnoteFile{Ahmed2016}
 
-\bibitem[{LastName1 et~al.(2013)LastName1, LastName2, and LastName3}]{article}
-LastName1, A., LastName2, A., and LastName3, A. (2013).
-\newblock Article title.
-\newblock \emph{Frontiers in Neuroscience} 30, 10127--10134.
-\newblock \doi{10.3389/fnins.2013.12345}
-\bibAnnoteFile{article}
+\bibitem[{Cavalcante et~al.(2017)Cavalcante, Bessa, Reis, and
+  Browell}]{Cavalcante2017}
+Cavalcante, L., Bessa, R.~J., Reis, M., and Browell, J. (2017).
+\newblock Lasso vector autoregression structures for very short-term wind power
+  forecasting.
+\newblock \emph{Wind Energy} 20, 657--675.
+\newblock \doi{https://doi.org/10.1002/we.2029}
+\bibAnnoteFile{Cavalcante2017}
 
-\bibitem[{Name(1993)}]{book}
-Name, A. (1993).
-\newblock \emph{The title of the work} (The city: The name of the publisher)
-\bibAnnoteFile{book}
+\bibitem[{Kezunovic et~al.(2013)Kezunovic, Xie, and Grijalva}]{Kezunovic2013}
+Kezunovic, M., Xie, L., and Grijalva, S. (2013).
+\newblock The role of big data in improving power system operation and
+  protection.
+\newblock In \emph{2013 IREP Symposium Bulk Power System Dynamics and Control -
+  IX Optimization, Security and Control of the Emerging Power Grid}. 1--9.
+\newblock \doi{10.1109/IREP.2013.6629368}
+\bibAnnoteFile{Kezunovic2013}
 
-\bibitem[{Name et~al.(1996)Name, Surname, and LastName}]{conference}
-Name, C., Surname, D., and LastName, F. (1996).
-\newblock The title of the work.
-\newblock In \emph{The title of the conference proceedings}, eds. E.~Name1 and
-  E.~Name2 (The name of the publisher), 41--50
-\bibAnnoteFile{conference}
+\bibitem[{Leit{\~a}o et~al.(2015)Leit{\~a}o, Carreira, Alves, Gomes, Cordeiro,
+  and Cardoso}]{Leitao2015}
+Leit{\~a}o, A., Carreira, P., Alves, J., Gomes, F., Cordeiro, M., and Cardoso,
+  F. (2015).
+\newblock Using smart sensors in the remote condition monitoring of secondary
+  distribution substations.
+\newblock In \emph{Proc. of the 23rd International Conference on Electricity
+  Distribution (CIRED)}
+\bibAnnoteFile{Leitao2015}
 
-\bibitem[{Surname(2002)}]{chapter}
-Surname, B. (2002).
-\newblock The title of the work.
-\newblock In \emph{The title of the book}, ed. E.~Name (The city: The name of
-  the publisher). 201--213
-\bibAnnoteFile{chapter}
+\bibitem[{Messner and Pinson(2019)}]{Messner2019}
+Messner, J.~W. and Pinson, P. (2019).
+\newblock Online adaptive lasso estimation in vector autoregressive models for
+  high dimensional wind power forecasting.
+\newblock \emph{International Journal of Forecasting} 35, 1485--1498.
+\newblock \doi{https://doi.org/10.1016/j.ijforecast.2018.02.001}
+\bibAnnoteFile{Messner2019}
 
-\bibitem[{Surname1(2010)}]{patent}
-Surname1, H. (2010).
-\newblock \emph{The title of the work} (Patent country: Patent number)
-\bibAnnoteFile{patent}
+\bibitem[{Moreno-Munoz et~al.(2016)Moreno-Munoz, Bellido-Outeirino, Siano, and
+  Gomez-Nieto}]{MorenoMunoz2016}
+Moreno-Munoz, A., Bellido-Outeirino, F., Siano, P., and Gomez-Nieto, M. (2016).
+\newblock Mobile social media for smart grids customer engagement: Emerging
+  trends and challenges.
+\newblock \emph{Renewable and Sustainable Energy Reviews} 53, 1611--1616.
+\newblock \doi{https://doi.org/10.1016/j.rser.2015.09.077}
+\bibAnnoteFile{MorenoMunoz2016}
+
+\bibitem[{Simões~Costa et~al.(2013)Simões~Costa, Albuquerque, and
+  Bez}]{SimoesCosta2013}
+Simões~Costa, A., Albuquerque, A., and Bez, D. (2013).
+\newblock An estimation fusion method for including phasor measurements into
+  power system real-time modeling.
+\newblock \emph{IEEE Transactions on Power Systems} 28, 1910--1920.
+\newblock \doi{10.1109/TPWRS.2012.2232315}
+\bibAnnoteFile{SimoesCosta2013}
+
+\bibitem[{Srivastava and Salakhutdinov(2012)}]{Srivastava2012}
+Srivastava, N. and Salakhutdinov, R.~R. (2012).
+\newblock Multimodal learning with deep boltzmann machines.
+\newblock In \emph{Advances in Neural Information Processing Systems}, eds.
+  F.~Pereira, C.~Burges, L.~Bottou, and K.~Weinberger (Curran Associates,
+  Inc.), vol.~25
+\bibAnnoteFile{Srivastava2012}
+
+\bibitem[{Sun et~al.(2016)Sun, Wang, Wang, Huang, Carrington, and
+  Liao}]{Sun2016}
+Sun, H., Wang, Z., Wang, J., Huang, Z., Carrington, N., and Liao, J. (2016).
+\newblock Data-driven power outage detection by social sensors.
+\newblock \emph{IEEE Transactions on Smart Grid} 7, 2516--2524.
+\newblock \doi{10.1109/TSG.2016.2546181}
+\bibAnnoteFile{Sun2016}
+
+\bibitem[{Sweeney et~al.(2020)Sweeney, Bessa, Browell, and
+  Pinson}]{Sweeney2020}
+Sweeney, C., Bessa, R.~J., Browell, J., and Pinson, P. (2020).
+\newblock The future of forecasting for renewable energy.
+\newblock \emph{Wiley Interdisciplinary Reviews: Energy and Environment} 9,
+  e365
+\bibAnnoteFile{Sweeney2020}
+
+\bibitem[{Zhu et~al.(2020)Zhu, Chen, Shi, Zhu, Bai, Duan et~al.}]{Zhu2020}
+Zhu, Q., Chen, J., Shi, D., Zhu, L., Bai, X., Duan, X., et~al. (2020).
+\newblock Learning temporal and spatial correlations jointly: A unified
+  framework for wind speed prediction.
+\newblock \emph{IEEE Transactions on Sustainable Energy} 11, 509--523.
+\newblock \doi{10.1109/TSTE.2019.2897136}
+\bibAnnoteFile{Zhu2020}
 
 \end{thebibliography}

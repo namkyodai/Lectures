@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  20 MAR 2023 02:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  19 MAR 2023 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paper.tex
-(./paper.tex
+**frontiers.tex
+(./frontiers.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (./frontiersSCNS.cls
 Document Class: frontiersSCNS 2016/11/10 2.6
@@ -540,213 +540,38 @@ File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
 (e:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/vietnam.sty
-Package: vietnam 2009/07/12 v1.3 support for Vietnamese
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+4.
 
-(e:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/t5enc.def
-File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
-Now handling font encoding T5 ...
-... processing UTF-8 mapping file for font encoding T5
-
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/t5enc.dfu
-File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+01A0 (decimal 416)
-   defining Unicode char U+01A1 (decimal 417)
-   defining Unicode char U+01AF (decimal 431)
-   defining Unicode char U+01B0 (decimal 432)
-   defining Unicode char U+1EA0 (decimal 7840)
-   defining Unicode char U+1EA1 (decimal 7841)
-   defining Unicode char U+1EA2 (decimal 7842)
-   defining Unicode char U+1EA3 (decimal 7843)
-   defining Unicode char U+1EA4 (decimal 7844)
-   defining Unicode char U+1EA5 (decimal 7845)
-   defining Unicode char U+1EA6 (decimal 7846)
-   defining Unicode char U+1EA7 (decimal 7847)
-   defining Unicode char U+1EA8 (decimal 7848)
-   defining Unicode char U+1EA9 (decimal 7849)
-   defining Unicode char U+1EAA (decimal 7850)
-   defining Unicode char U+1EAB (decimal 7851)
-   defining Unicode char U+1EAC (decimal 7852)
-   defining Unicode char U+1EAD (decimal 7853)
-   defining Unicode char U+1EAE (decimal 7854)
-   defining Unicode char U+1EAF (decimal 7855)
-   defining Unicode char U+1EB0 (decimal 7856)
-   defining Unicode char U+1EB1 (decimal 7857)
-   defining Unicode char U+1EB2 (decimal 7858)
-   defining Unicode char U+1EB3 (decimal 7859)
-   defining Unicode char U+1EB4 (decimal 7860)
-   defining Unicode char U+1EB5 (decimal 7861)
-   defining Unicode char U+1EB6 (decimal 7862)
-   defining Unicode char U+1EB7 (decimal 7863)
-   defining Unicode char U+1EB8 (decimal 7864)
-   defining Unicode char U+1EB9 (decimal 7865)
-   defining Unicode char U+1EBA (decimal 7866)
-   defining Unicode char U+1EBB (decimal 7867)
-   defining Unicode char U+1EBC (decimal 7868)
-   defining Unicode char U+1EBD (decimal 7869)
-   defining Unicode char U+1EBE (decimal 7870)
-   defining Unicode char U+1EBF (decimal 7871)
-   defining Unicode char U+1EC0 (decimal 7872)
-   defining Unicode char U+1EC1 (decimal 7873)
-   defining Unicode char U+1EC2 (decimal 7874)
-   defining Unicode char U+1EC3 (decimal 7875)
-   defining Unicode char U+1EC4 (decimal 7876)
-   defining Unicode char U+1EC5 (decimal 7877)
-   defining Unicode char U+1EC6 (decimal 7878)
-   defining Unicode char U+1EC7 (decimal 7879)
-   defining Unicode char U+1EC8 (decimal 7880)
-   defining Unicode char U+1EC9 (decimal 7881)
-   defining Unicode char U+1ECA (decimal 7882)
-   defining Unicode char U+1ECB (decimal 7883)
-   defining Unicode char U+1ECC (decimal 7884)
-   defining Unicode char U+1ECD (decimal 7885)
-   defining Unicode char U+1ECE (decimal 7886)
-   defining Unicode char U+1ECF (decimal 7887)
-   defining Unicode char U+1ED0 (decimal 7888)
-   defining Unicode char U+1ED1 (decimal 7889)
-   defining Unicode char U+1ED2 (decimal 7890)
-   defining Unicode char U+1ED3 (decimal 7891)
-   defining Unicode char U+1ED4 (decimal 7892)
-   defining Unicode char U+1ED5 (decimal 7893)
-   defining Unicode char U+1ED6 (decimal 7894)
-   defining Unicode char U+1ED7 (decimal 7895)
-   defining Unicode char U+1ED8 (decimal 7896)
-   defining Unicode char U+1ED9 (decimal 7897)
-   defining Unicode char U+1EDA (decimal 7898)
-   defining Unicode char U+1EDB (decimal 7899)
-   defining Unicode char U+1EDC (decimal 7900)
-   defining Unicode char U+1EDD (decimal 7901)
-   defining Unicode char U+1EDE (decimal 7902)
-   defining Unicode char U+1EDF (decimal 7903)
-   defining Unicode char U+1EE0 (decimal 7904)
-   defining Unicode char U+1EE1 (decimal 7905)
-   defining Unicode char U+1EE2 (decimal 7906)
-   defining Unicode char U+1EE3 (decimal 7907)
-   defining Unicode char U+1EE4 (decimal 7908)
-   defining Unicode char U+1EE5 (decimal 7909)
-   defining Unicode char U+1EE6 (decimal 7910)
-   defining Unicode char U+1EE7 (decimal 7911)
-   defining Unicode char U+1EE8 (decimal 7912)
-   defining Unicode char U+1EE9 (decimal 7913)
-   defining Unicode char U+1EEA (decimal 7914)
-   defining Unicode char U+1EEB (decimal 7915)
-   defining Unicode char U+1EEC (decimal 7916)
-   defining Unicode char U+1EED (decimal 7917)
-   defining Unicode char U+1EEE (decimal 7918)
-   defining Unicode char U+1EEF (decimal 7919)
-   defining Unicode char U+1EF0 (decimal 7920)
-   defining Unicode char U+1EF1 (decimal 7921)
-   defining Unicode char U+1EF2 (decimal 7922)
-   defining Unicode char U+1EF3 (decimal 7923)
-   defining Unicode char U+1EF4 (decimal 7924)
-   defining Unicode char U+1EF5 (decimal 7925)
-   defining Unicode char U+1EF6 (decimal 7926)
-   defining Unicode char U+1EF7 (decimal 7927)
-   defining Unicode char U+1EF8 (decimal 7928)
-   defining Unicode char U+1EF9 (decimal 7929)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-))
-LaTeX Font Info:    Trying to load font information for T5+ptm on input line 11
-2.
-
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/t5ptm.fd
-File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
-))
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/vncaps.tex
-File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
-))
+(e:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
 (e:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count330
 \l__pdf_internal_box=\box66
 )
-(./paper.aux)
-\openout1 = `paper.aux'.
+(./frontiers.aux)
+\openout1 = `frontiers.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 48.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 48
-.
- (e:/texlive/2022/texmf-dist/tex/latex/vntex/t5cmr.fd
-File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 (e:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -762,30 +587,30 @@ LaTeX Font Info:    ... okay on input line 48.
 \makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks41
 )
-Package crop Info: requested driver: `' on input line 48.
-Package crop Info: detected driver: `pdftex' on input line 48.
-Package crop Info: using `pdftex' graphics driver on input line 48.
+Package crop Info: requested driver: `' on input line 44.
+Package crop Info: detected driver: `pdftex' on input line 44.
+Package crop Info: using `pdftex' graphics driver on input line 44.
  (e:/texlive/2022/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 48.
- (./paper.out)
-(./paper.out)
+Package hyperref Info: Link coloring OFF on input line 44.
+
+(./frontiers.out) (./frontiers.out)
 \@outlinefile=\write3
-\openout3 = `paper.out'.
+\openout3 = `frontiers.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 48.
-Package microtype Info: Applying patch `item' on input line 48.
-Package microtype Info: Applying patch `toc' on input line 48.
-Package microtype Info: Applying patch `eqnum' on input line 48.
+LaTeX Info: Redefining \microtypecontext on input line 44.
+Package microtype Info: Applying patch `item' on input line 44.
+Package microtype Info: Applying patch `toc' on input line 44.
+Package microtype Info: Applying patch `eqnum' on input line 44.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 48.
+Package microtype Warning: Unable to apply patch `footnote' on input line 44.
 
-Package microtype Info: Applying patch `verbatim' on input line 48.
+Package microtype Info: Applying patch `verbatim' on input line 44.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1500.
@@ -793,57 +618,37 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 48.
+LaTeX Info: Redefining \showhyphens on input line 44.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (e:/texlive/2022/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 5
+9.
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/ptm/m/n/12'. Switching off
-(microtype)                protrusion for this font on input line 48.
-
-LaTeX Font Info:    Trying to load font information for T5+phv on input line 63
-.
-(e:/texlive/2022/texmf-dist/tex/latex/vntex/t5phv.fd
-File: t5uhv.fd 2005/08/24 Fontinst v1.929 font definitions for T5/phv.
+(e:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/12'. Switching off
-(microtype)                protrusion for this font on input line 63.
-
-<./ueh-logo.png, id=76, 170.7981pt x 99.9735pt>
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<./ueh-logo.png, id=64, 170.7981pt x 99.9735pt>
 File: ./ueh-logo.png Graphic file (type png)
 <use ./ueh-logo.png>
-Package pdftex.def Info: ./ueh-logo.png  used on input line 63.
+Package pdftex.def Info: ./ueh-logo.png  used on input line 59.
 (pdftex.def)             Requested size: 60.0pt x 35.11937pt.
 
-Underfull \hbox (badness 10000) detected at line 63
+Underfull \hbox (badness 10000) detected at line 59
 []
  []
 
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 63--63
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 59--59
 [][] 
  []
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/12'. Switching off
-(microtype)                protrusion for this font on input line 63.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/16'. Switching off
-(microtype)                protrusion for this font on input line 63.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/9'. Switching off
-(microtype)                protrusion for this font on input line 63.
 
 (e:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -851,17 +656,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 63.
+(Font)              size <6> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 63.
+(Font)              size <6> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 63.
+(Font)              size <6> substituted on input line 59.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
 (e:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -869,7 +674,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (e:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 (e:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -879,106 +684,220 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/9'. Switching off
-(microtype)                protrusion for this font on input line 63.
+! LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin
+           {abstract}
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/sl/9'. Switching off
-(microtype)                protrusion for this font on input line 63.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/8'. Switching off
-(microtype)                protrusion for this font on input line 63.
-
-
-Underfull \hbox (badness 10000) detected at line 63
+Underfull \hbox (badness 10000) detected at line 59
 []
  []
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/11'. Switching off
-(microtype)                protrusion for this font on input line 65.
+! LaTeX Error: Unicode character Ắ (U+1EAE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{abstract}
+                     
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/11'. Switching off
-(microtype)                protrusion for this font on input line 65.
+Package natbib Warning: Citation `conference' on page 1 undefined on input line
+ 74.
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/10'. Switching off
-(microtype)                protrusion for this font on input line 77.
+Package natbib Warning: Citation `article' on page 1 undefined on input line 74
+.
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/8'. Switching off
-(microtype)                protrusion for this font on input line 78.
+Package natbib Warning: Citation `patent' on page 1 undefined on input line 74.
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/n/10'. Switching off
-(microtype)                protrusion for this font on input line 81.
+
+Package natbib Warning: Citation `book' on page 1 undefined on input line 74.
 
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/m/n/7'. Switching off
-(microtype)                protrusion for this font on input line 85.
+Package natbib Warning: Citation `chapter' on page 1 undefined on input line 74
+.
 
+
+Package natbib Warning: Citation `dataset' on page 1 undefined on input line 74
+.
+
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 92.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 93.
 [1
 
 
 
 {e:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ueh-logo.png>
 ]
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 131.
 
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/ptm/m/n/9'. Switching off
-(microtype)                protrusion for this font on input line 101.
-
-LaTeX Font Info:    Font shape `T5/phv/b/it' in size <9> not available
-(Font)              Font shape `T5/phv/b/sl' tried instead on input line 101.
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/phv/b/sl/9'. Switching off
-(microtype)                protrusion for this font on input line 101.
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
+! LaTeX Error: Command \DJ unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Command \dj unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ợ (U+1EE3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ỉ (U+1EC9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ấ (U+1EA5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 [2]
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/ptm/m/n/11'. Switching off
-(microtype)                protrusion for this font on input line 107.
-
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 107.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 107.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 107.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 107.
-
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/ptm/b/n/12'. Switching off
-(microtype)                protrusion for this font on input line 107.
-
-
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[3]
+No file frontiers.bbl.
 Package epstopdf Info: Source file: <logo1.eps>
 (epstopdf)                    date: 2023-03-04 23:07:15
 (epstopdf)                    size: 38401 bytes
@@ -987,86 +906,224 @@ Package epstopdf Info: Source file: <logo1.eps>
 (epstopdf)                    size: 24907 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo1-eps-converted-to.pdf
  logo1.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
-<logo1-eps-converted-to.pdf, id=142, 284.06125pt x 80.3pt>
+<logo1-eps-converted-to.pdf, id=109, 284.06125pt x 80.3pt>
 File: logo1-eps-converted-to.pdf Graphic file (type pdf)
 <use logo1-eps-converted-to.pdf>
-Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 123.
+Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 164.
 (pdftex.def)             Requested size: 284.52756pt x 80.43947pt.
+Package epstopdf Info: Source file: <logos.eps>
+(epstopdf)                    date: 2023-03-04 23:07:15
+(epstopdf)                    size: 139299 bytes
+(epstopdf)             Output file: <logos-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-04 23:07:15
+(epstopdf)                    size: 132150 bytes
+(epstopdf)             Command: <repstopdf --outfile=logos-eps-converted-to.pdf
+ logos.eps>
+(epstopdf)             \includegraphics on input line 172.
+Package epstopdf Info: Output file is already uptodate.
+<logos-eps-converted-to.pdf, id=110, 461.725pt x 101.37875pt>
+File: logos-eps-converted-to.pdf Graphic file (type pdf)
+<use logos-eps-converted-to.pdf>
+Package pdftex.def Info: logos-eps-converted-to.pdf  used on input line 172.
+(pdftex.def)             Requested size: 426.79134pt x 93.7089pt.
 
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-[4 <./logo1-eps-converted-to.pdf>]
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[5]
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[6]
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[7]
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[8]
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[9] (./paper.bbl
-
-Package microtype Warning: I cannot find a protrusion list for font
-(microtype)                `T5/ptm/m/it/12'. Switching off
-(microtype)                protrusion for this font on input line 20.
-
-
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
-
-
-[10])
 
 Package caption Warning: Unused \captionsetup[sub] on input line 20.
 See the caption package documentation for explanation.
 
 
-Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[11] (./paper.aux)
+[3 <./logo1-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+
+
+
+! LaTeX Error: Command \DJ unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ế (U+1EBF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Command \dj unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Unicode character ư (U+01B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ợ (U+1EE3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ệ (U+1EC7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ỉ (U+1EC9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ấ (U+1EA5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ả (U+1EA3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{document}
+                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[4 <./logos-eps-converted-to.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+(./frontiers.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 95F37CD0EE946A5412B9B1BAEE8D8765;4699.
+Package rerunfilecheck Info: File `frontiers.out' has not changed.
+(rerunfilecheck)             Checksum: 659AD4365A39FA58D3227D92F9926F78;2014.
  ) 
 Here is how much of TeX's memory you used:
- 17049 strings out of 476024
- 271028 string characters out of 5794016
- 1867382 words of memory out of 5000000
- 36963 multiletter control sequences out of 15000+600000
- 575005 words of font info for 184 fonts, out of 8000000 for 9000
+ 16432 strings out of 476024
+ 262921 string characters out of 5794016
+ 1865382 words of memory out of 5000000
+ 36352 multiletter control sequences out of 15000+600000
+ 555922 words of font info for 206 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 87i,8n,131p,2414b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{e:/texlive/2022/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<e:/texlive/2022/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2022/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><e:/texlive/2022/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><e:/texlive/2022/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/uhvb8v.p
-fb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/uhvbo8v.pfb><e:/texlive/
-2022/texmf-dist/fonts/type1/vntex/urwvn/uhvr8v.pfb><e:/texlive/2022/texmf-dist/
-fonts/type1/vntex/urwvn/uhvro8v.pfb><e:/texlive/2022/texmf-dist/fonts/type1/vnt
-ex/urwvn/utmb8v.pfb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.
-pfb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on paper.pdf (11 pages, 249877 bytes).
+ 87i,8n,131p,1017b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{e:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<e:/texlive/2022/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2022/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><e:/texlive/2022/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2022/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><e:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><e:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+e:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/texlive/2022
+/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><e:/texlive/2022/texmf-dist/fo
+nts/type1/urw/helvetic/uhvr8a.pfb><e:/texlive/2022/texmf-dist/fonts/type1/urw/h
+elvetic/uhvro8a.pfb><e:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pf
+b><e:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on frontiers.pdf (4 pages, 289921 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 42651 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 80520 words of extra memory for PDF output out of 89155 (max. 10000000)
 
