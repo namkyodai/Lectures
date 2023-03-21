@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -181,6 +181,14 @@ Moreno-Munoz, A., Bellido-Outeirino, F., Siano, P., and Gomez-Nieto, M. (2016).
 \newblock \doi{https://doi.org/10.1016/j.rser.2015.09.077}
 \bibAnnoteFile{MorenoMunoz2016}
 
+\bibitem[{Perez et~al.(1994)Perez, Flechsig, Meador, and Obradovic}]{Perez1994}
+Perez, L., Flechsig, A., Meador, J., and Obradovic, Z. (1994).
+\newblock Training an artificial neural network to discriminate between
+  magnetizing inrush and internal faults.
+\newblock \emph{IEEE Transactions on Power Delivery} 9, 434--441.
+\newblock \doi{10.1109/61.277715}
+\bibAnnoteFile{Perez1994}
+
 \bibitem[{Quinlan(1986)}]{Quinlan1986}
 Quinlan, J.~R. (1986).
 \newblock Induction of decision trees.
@@ -243,6 +251,20 @@ Wang, Y., Chen, Q., Hong, T., and Kang, C. (2018).
   and challenges.
 \newblock \emph{IEEE Transactions on Smart Grid} 10, 3125--3148
 \bibAnnoteFile{Wang2018}
+
+\bibitem[{Werbos(1994)}]{Werbos1994}
+Werbos, P.~J. (1994).
+\newblock \emph{The roots of backpropagation: from ordered derivatives to
+  neural networks and political forecasting}, vol.~1 (John Wiley \& Sons)
+\bibAnnoteFile{Werbos1994}
+
+\bibitem[{Zhang(2000)}]{Zhang2000}
+Zhang, G. (2000).
+\newblock Neural networks for classification: a survey.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part C
+  (Applications and Reviews)} 30, 451--462.
+\newblock \doi{10.1109/5326.897072}
+\bibAnnoteFile{Zhang2000}
 
 \bibitem[{Zhu et~al.(2020)Zhu, Chen, Shi, Zhu, Bai, Duan et~al.}]{Zhu2020}
 Zhu, Q., Chen, J., Shi, D., Zhu, L., Bai, X., Duan, X., et~al. (2020).
