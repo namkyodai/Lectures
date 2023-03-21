@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -12,6 +12,11 @@
   \begin{quotation}\noindent\textsc{Key:} #1\\
   \textsc{Annotation:}\ #2\end{quotation}}
 
+\bibitem[{Aggarwal et~al.(2015)}]{Aggarwal2015}
+Aggarwal, C.~C. et~al. (2015).
+\newblock \emph{Data mining: the textbook}, vol.~1 (Springer)
+\bibAnnoteFile{Aggarwal2015}
+
 \bibitem[{Ahmed et~al.(2016)Ahmed, Yaqoob, Gani, Imran, and
   Guizani}]{Ahmed2016}
 Ahmed, E., Yaqoob, I., Gani, A., Imran, M., and Guizani, M. (2016).
@@ -20,6 +25,32 @@ Ahmed, E., Yaqoob, I., Gani, A., Imran, M., and Guizani, M. (2016).
 \newblock \emph{IEEE Wireless Communications} 23, 10--16.
 \newblock \doi{10.1109/MWC.2016.7721736}
 \bibAnnoteFile{Ahmed2016}
+
+\bibitem[{Albarakati and Obradovic(2019)}]{Albarakati2019}
+Albarakati, N. and Obradovic, Z. (2019).
+\newblock Multi-domain and multi-view networks model for clustering hospital
+  admissions from the emergency department.
+\newblock \emph{International Journal of Data Science and Analytics} 8,
+  385--403.
+\newblock \doi{10.1007/s41060-018-0147-5}
+\bibAnnoteFile{Albarakati2019}
+
+\bibitem[{Breiman(1996)}]{Breiman1996}
+Breiman, L. (1996).
+\newblock Bagging predictors.
+\newblock \emph{Machine learning} 24, 123--140
+\bibAnnoteFile{Breiman1996}
+
+\bibitem[{Breiman(2001)}]{Breiman2001}
+Breiman, L. (2001).
+\newblock Random forests.
+\newblock \emph{Machine learning} 45, 5--32
+\bibAnnoteFile{Breiman2001}
+
+\bibitem[{Breiman(2017)}]{Breiman2017}
+Breiman, L. (2017).
+\newblock \emph{Classification and regression trees} (Routledge)
+\bibAnnoteFile{Breiman2017}
 
 \bibitem[{Cavalcante et~al.(2017)Cavalcante, Bessa, Reis, and
   Browell}]{Cavalcante2017}
@@ -30,6 +61,78 @@ Cavalcante, L., Bessa, R.~J., Reis, M., and Browell, J. (2017).
 \newblock \doi{https://doi.org/10.1002/we.2029}
 \bibAnnoteFile{Cavalcante2017}
 
+\bibitem[{Cooper(1990)}]{Cooper1990}
+Cooper, G.~F. (1990).
+\newblock The computational complexity of probabilistic inference using
+  bayesian belief networks.
+\newblock \emph{Artificial Intelligence} 42, 393--405.
+\newblock \doi{https://doi.org/10.1016/0004-3702(90)90060-D}
+\bibAnnoteFile{Cooper1990}
+
+\bibitem[{EU(2013)}]{EU2013}
+EU (2013).
+\newblock \emph{Commission Regulation (EU)}.
+\newblock Tech. Rep. 543, Eurepean Union
+\bibAnnoteFile{EU2013}
+
+\bibitem[{Ghalwash et~al.(2013)Ghalwash, Radosavljevic, and
+  Obradovic}]{Ghalwash2013}
+Ghalwash, M.~F., Radosavljevic, V., and Obradovic, Z. (2013).
+\newblock Extraction of interpretable multivariate patterns for early
+  diagnostics.
+\newblock In \emph{2013 IEEE 13th International Conference on Data Mining}.
+  201--210.
+\newblock \doi{10.1109/ICDM.2013.19}
+\bibAnnoteFile{Ghalwash2013}
+
+\bibitem[{Gligorijevic et~al.(2016{\natexlab{a}})Gligorijevic, Stojanovic,
+  Djuric, Radosavljevic, Grbovic, Kulathinal et~al.}]{Gligorijevic2016a}
+Gligorijevic, D., Stojanovic, J., Djuric, N., Radosavljevic, V., Grbovic, M.,
+  Kulathinal, R.~J., et~al. (2016{\natexlab{a}}).
+\newblock Large-scale discovery of disease-disease and disease-gene
+  associations.
+\newblock \emph{Scientific reports} 6, 1--12
+\bibAnnoteFile{Gligorijevic2016a}
+
+\bibitem[{Gligorijevic et~al.(2016{\natexlab{b}})Gligorijevic, Stojanovic, and
+  Obradovic}]{Gligorijevic2016}
+Gligorijevic, D., Stojanovic, J., and Obradovic, Z. (2016{\natexlab{b}}).
+\newblock Disease types discovery from a large database of inpatient records: A
+  sepsis study.
+\newblock \emph{Methods} 111, 45--55.
+\newblock \doi{https://doi.org/10.1016/j.ymeth.2016.07.021}.
+\newblock Big Data Bioinformatics
+\bibAnnoteFile{Gligorijevic2016}
+
+\bibitem[{Hirth et~al.(2018)Hirth, Mühlenpfordt, and Bulkeley}]{Hirth2018}
+Hirth, L., Mühlenpfordt, J., and Bulkeley, M. (2018).
+\newblock The entso-e transparency platform – a review of europe’s most
+  ambitious electricity data platform.
+\newblock \emph{Applied Energy} 225, 1054--1067.
+\newblock \doi{https://doi.org/10.1016/j.apenergy.2018.04.048}
+\bibAnnoteFile{Hirth2018}
+
+\bibitem[{Hong et~al.(2015)Hong, Wang, and White}]{Hong2015}
+Hong, T., Wang, P., and White, L. (2015).
+\newblock Weather station selection for electric load forecasting.
+\newblock \emph{International Journal of Forecasting} 31, 286--295.
+\newblock \doi{https://doi.org/10.1016/j.ijforecast.2014.07.001}
+\bibAnnoteFile{Hong2015}
+
+\bibitem[{Hong et~al.(2014)Hong, Wilson, and Xie}]{Hong2014}
+Hong, T., Wilson, J., and Xie, J. (2014).
+\newblock Long term probabilistic load forecasting and normalization with
+  hourly information.
+\newblock \emph{IEEE Transactions on Smart Grid} 5, 456--462.
+\newblock \doi{10.1109/TSG.2013.2274373}
+\bibAnnoteFile{Hong2014}
+
+\bibitem[{Hyndman and Fan(2009)}]{Hyndman2009}
+Hyndman, R.~J. and Fan, S. (2009).
+\newblock Density forecasting for long-term peak electricity demand.
+\newblock \emph{IEEE Transactions on Power Systems} 25, 1142--1153
+\bibAnnoteFile{Hyndman2009}
+
 \bibitem[{Kezunovic et~al.(2013)Kezunovic, Xie, and Grijalva}]{Kezunovic2013}
 Kezunovic, M., Xie, L., and Grijalva, S. (2013).
 \newblock The role of big data in improving power system operation and
@@ -38,6 +141,12 @@ Kezunovic, M., Xie, L., and Grijalva, S. (2013).
   IX Optimization, Security and Control of the Emerging Power Grid}. 1--9.
 \newblock \doi{10.1109/IREP.2013.6629368}
 \bibAnnoteFile{Kezunovic2013}
+
+\bibitem[{Kleissl(2013)}]{Kleissl2013}
+Kleissl, J. (2013).
+\newblock \emph{Solar energy forecasting and resource assessment} (Academic
+  Press)
+\bibAnnoteFile{Kleissl2013}
 
 \bibitem[{Leit{\~a}o et~al.(2015)Leit{\~a}o, Carreira, Alves, Gomes, Cordeiro,
   and Cardoso}]{Leitao2015}
@@ -65,6 +174,17 @@ Moreno-Munoz, A., Bellido-Outeirino, F., Siano, P., and Gomez-Nieto, M. (2016).
 \newblock \emph{Renewable and Sustainable Energy Reviews} 53, 1611--1616.
 \newblock \doi{https://doi.org/10.1016/j.rser.2015.09.077}
 \bibAnnoteFile{MorenoMunoz2016}
+
+\bibitem[{Quinlan(1986)}]{Quinlan1986}
+Quinlan, J.~R. (1986).
+\newblock Induction of decision trees.
+\newblock \emph{Machine learning} 1, 81--106
+\bibAnnoteFile{Quinlan1986}
+
+\bibitem[{Quinlan(2014)}]{Quinlan2014}
+Quinlan, J.~R. (2014).
+\newblock \emph{C4. 5: programs for machine learning} (Elsevier)
+\bibAnnoteFile{Quinlan2014}
 
 \bibitem[{Simões~Costa et~al.(2013)Simões~Costa, Albuquerque, and
   Bez}]{SimoesCosta2013}
@@ -99,6 +219,45 @@ Sweeney, C., Bessa, R.~J., Browell, J., and Pinson, P. (2020).
   e365
 \bibAnnoteFile{Sweeney2020}
 
+\bibitem[{Tan et~al.(2016)Tan, Steinbach, and Kumar}]{Tan2016}
+Tan, P.-N., Steinbach, M., and Kumar, V. (2016).
+\newblock \emph{Introduction to data mining} (Pearson Education India)
+\bibAnnoteFile{Tan2016}
+
+\bibitem[{Toussaint(2005)}]{Toussaint2005}
+Toussaint, G. (2005).
+\newblock {\selectlanguage{English (US)}Geometric proximity graphs for
+  improving nearest neighbor methods in instance-based learning and data
+  mining}.
+\newblock \emph{International Journal of Computational Geometry and
+  Applications} 15, 101--150.
+\newblock \doi{10.1142/S0218195905001622}.
+\newblock Funding Information: {"}This research was supported by NSERC and
+  FCAR.
+\bibAnnoteFile{Toussaint2005}
+
+\bibitem[{Triguero et~al.(2015)Triguero, Garc{\'\i}a, and
+  Herrera}]{Triguero2015}
+Triguero, I., Garc{\'\i}a, S., and Herrera, F. (2015).
+\newblock Self-labeled techniques for semi-supervised learning: taxonomy,
+  software and empirical study.
+\newblock \emph{Knowledge and Information systems} 42, 245--284
+\bibAnnoteFile{Triguero2015}
+
+\bibitem[{Wang et~al.(2016)Wang, Liu, and Hong}]{Wang2016}
+Wang, P., Liu, B., and Hong, T. (2016).
+\newblock Electric load forecasting with recency effect: A big data approach.
+\newblock \emph{International Journal of Forecasting} 32, 585--597.
+\newblock \doi{https://doi.org/10.1016/j.ijforecast.2015.09.006}
+\bibAnnoteFile{Wang2016}
+
+\bibitem[{Wang et~al.(2018)Wang, Chen, Hong, and Kang}]{Wang2018}
+Wang, Y., Chen, Q., Hong, T., and Kang, C. (2018).
+\newblock Review of smart meter data analytics: Applications, methodologies,
+  and challenges.
+\newblock \emph{IEEE Transactions on Smart Grid} 10, 3125--3148
+\bibAnnoteFile{Wang2018}
+
 \bibitem[{Zhu et~al.(2020)Zhu, Chen, Shi, Zhu, Bai, Duan et~al.}]{Zhu2020}
 Zhu, Q., Chen, J., Shi, D., Zhu, L., Bai, X., Duan, X., et~al. (2020).
 \newblock Learning temporal and spatial correlations jointly: A unified
@@ -106,5 +265,20 @@ Zhu, Q., Chen, J., Shi, D., Zhu, L., Bai, X., Duan, X., et~al. (2020).
 \newblock \emph{IEEE Transactions on Sustainable Energy} 11, 509--523.
 \newblock \doi{10.1109/TSTE.2019.2897136}
 \bibAnnoteFile{Zhu2020}
+
+\bibitem[{Ziel and Weron(2018)}]{Ziel2018}
+Ziel, F. and Weron, R. (2018).
+\newblock Day-ahead electricity price forecasting with high-dimensional
+  structures: Univariate vs. multivariate modeling frameworks.
+\newblock \emph{Energy Economics} 70, 396--420.
+\newblock \doi{https://doi.org/10.1016/j.eneco.2017.12.016}
+\bibAnnoteFile{Ziel2018}
+
+\bibitem[{Zugno et~al.(2013)Zugno, Pinson, and Madsen}]{Zugno2013}
+Zugno, M., Pinson, P., and Madsen, H. (2013).
+\newblock Impact of wind power generation on european cross-border power flows.
+\newblock \emph{IEEE Transactions on Power Systems} 28, 3566--3575.
+\newblock \doi{10.1109/TPWRS.2013.2259850}
+\bibAnnoteFile{Zugno2013}
 
 \end{thebibliography}
