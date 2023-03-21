@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
 The style file: frontiersinSCNS_ENG_HUMS.bst
@@ -6,45 +6,45 @@ Database file #1: ../ref/UEH-EVN-Data.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty pages in Leitao2015
 Warning--empty pages in Srivastava2012
-You've used 35 entries,
+You've used 34 entries,
             3029 wiz_defined-function locations,
-            867 strings with 11793 characters,
-and the built_in function-call counts, 23176 in all, are:
-= -- 1940
-> -- 1141
+            855 strings with 11287 characters,
+and the built_in function-call counts, 22561 in all, are:
+= -- 1884
+> -- 1120
 < -- 18
-+ -- 551
-- -- 308
-* -- 1698
-:= -- 3447
-add.period$ -- 88
-call.type$ -- 35
-change.case$ -- 280
-chr.to.int$ -- 36
-cite$ -- 72
-duplicate$ -- 1532
-empty$ -- 1667
-format.name$ -- 406
-if$ -- 4726
++ -- 541
+- -- 302
+* -- 1653
+:= -- 3352
+add.period$ -- 84
+call.type$ -- 34
+change.case$ -- 272
+chr.to.int$ -- 35
+cite$ -- 70
+duplicate$ -- 1489
+empty$ -- 1619
+format.name$ -- 401
+if$ -- 4602
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 356
-newline$ -- 240
-num.names$ -- 142
-pop$ -- 739
+missing$ -- 346
+newline$ -- 232
+num.names$ -- 138
+pop$ -- 725
 preamble$ -- 1
-purify$ -- 241
+purify$ -- 235
 quote$ -- 0
-skip$ -- 769
+skip$ -- 755
 stack$ -- 0
-substring$ -- 1006
-swap$ -- 749
+substring$ -- 968
+swap$ -- 729
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 300
+type$ -- 291
 warning$ -- 2
-while$ -- 144
+while$ -- 139
 width$ -- 0
-write$ -- 536
+write$ -- 518
 (There were 2 warnings)

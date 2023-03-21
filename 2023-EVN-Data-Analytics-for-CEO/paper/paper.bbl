@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -68,6 +68,12 @@ Cooper, G.~F. (1990).
 \newblock \emph{Artificial Intelligence} 42, 393--405.
 \newblock \doi{https://doi.org/10.1016/0004-3702(90)90060-D}
 \bibAnnoteFile{Cooper1990}
+
+\bibitem[{Cortes and Vapnik(1995)}]{Cortes1995}
+Cortes, C. and Vapnik, V. (1995).
+\newblock Support-vector networks.
+\newblock \emph{Machine learning} 20, 273--297
+\bibAnnoteFile{Cortes1995}
 
 \bibitem[{EU(2013)}]{EU2013}
 EU (2013).
@@ -223,26 +229,6 @@ Sweeney, C., Bessa, R.~J., Browell, J., and Pinson, P. (2020).
 Tan, P.-N., Steinbach, M., and Kumar, V. (2016).
 \newblock \emph{Introduction to data mining} (Pearson Education India)
 \bibAnnoteFile{Tan2016}
-
-\bibitem[{Toussaint(2005)}]{Toussaint2005}
-Toussaint, G. (2005).
-\newblock {\selectlanguage{English (US)}Geometric proximity graphs for
-  improving nearest neighbor methods in instance-based learning and data
-  mining}.
-\newblock \emph{International Journal of Computational Geometry and
-  Applications} 15, 101--150.
-\newblock \doi{10.1142/S0218195905001622}.
-\newblock Funding Information: {"}This research was supported by NSERC and
-  FCAR.
-\bibAnnoteFile{Toussaint2005}
-
-\bibitem[{Triguero et~al.(2015)Triguero, Garc{\'\i}a, and
-  Herrera}]{Triguero2015}
-Triguero, I., Garc{\'\i}a, S., and Herrera, F. (2015).
-\newblock Self-labeled techniques for semi-supervised learning: taxonomy,
-  software and empirical study.
-\newblock \emph{Knowledge and Information systems} 42, 245--284
-\bibAnnoteFile{Triguero2015}
 
 \bibitem[{Wang et~al.(2016)Wang, Liu, and Hong}]{Wang2016}
 Wang, P., Liu, B., and Hong, T. (2016).

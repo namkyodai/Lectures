@@ -463,23 +463,6 @@
   publisher = {Springer},
 }
 
-@Article{Toussaint2005,
-  author    = {Godfried Toussaint},
-  journal   = {International Journal of Computational Geometry and Applications},
-  title     = {Geometric proximity graphs for improving nearest neighbor methods in instance-based learning and data mining},
-  year      = {2005},
-  issn      = {0218-1959},
-  month     = apr,
-  note      = {Funding Information: {"}This research was supported by NSERC and FCAR.},
-  number    = {2},
-  pages     = {101--150},
-  volume    = {15},
-  doi       = {10.1142/S0218195905001622},
-  keywords  = {Data mining, Instance-based learning, Nearest-neighbor methods, Proximity graphs},
-  language  = {English (US)},
-  publisher = {World Scientific Publishing Co. Pte Ltd},
-}
-
 @Article{Cooper1990,
   author   = {Gregory F. Cooper},
   journal  = {Artificial Intelligence},
@@ -492,6 +475,46 @@
   abstract = {Bayesian belief networks provide a natural, efficient method for representing probabilistic dependencies among a set of variables. For these reasons, numerous researchers are exploring the use of belief networks as a knowledge representation in artificial intelligence. Algorithms have been developed previously for efficient probabilistic inference using special classes of belief networks. More general classes of belief networks, however, have eluded efforts to develop efficient inference algorithms. We show that probabilistic inference using belief networks is NP-hard. Therefore, it seems unlikely that an exact algorithm can be developed to perform probabilistic inference efficiently over all classes of belief networks. This result suggests that research should be directed away from the search for a general, efficient probabilistic inference algorithm, and toward the design of efficient special-case, average-case, and approximation algorithms.},
   doi      = {https://doi.org/10.1016/0004-3702(90)90060-D},
   url      = {https://www.sciencedirect.com/science/article/pii/000437029090060D},
+}
+
+@Article{Cortes1995,
+  author    = {Cortes, Corinna and Vapnik, Vladimir},
+  journal   = {Machine learning},
+  title     = {Support-vector networks},
+  year      = {1995},
+  pages     = {273--297},
+  volume    = {20},
+  publisher = {Springer},
+}
+
+@Article{Perez1994,
+  author  = {Perez, L.G. and Flechsig, A.J. and Meador, J.L. and Obradovic, Z.},
+  journal = {IEEE Transactions on Power Delivery},
+  title   = {Training an artificial neural network to discriminate between magnetizing inrush and internal faults},
+  year    = {1994},
+  number  = {1},
+  pages   = {434-441},
+  volume  = {9},
+  doi     = {10.1109/61.277715},
+}
+
+@Article{Zhang2000,
+  author  = {Zhang, G.P.},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+  title   = {Neural networks for classification: a survey},
+  year    = {2000},
+  number  = {4},
+  pages   = {451-462},
+  volume  = {30},
+  doi     = {10.1109/5326.897072},
+}
+
+@Book{werbos1994roots,
+  author    = {Werbos, Paul John},
+  publisher = {John Wiley \& Sons},
+  title     = {The roots of backpropagation: from ordered derivatives to neural networks and political forecasting},
+  year      = {1994},
+  volume    = {1},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
