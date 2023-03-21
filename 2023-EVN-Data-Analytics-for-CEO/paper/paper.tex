@@ -120,9 +120,9 @@ Các nhà nghiên cứu và chuyên gia hiện nay tập trung vào việc khai 
 \begin{figure}[h!]
 \centering
 	\begin{center}
-		\includegraphics[width=10cm]{logo1}% This is a *.eps file
+		\includegraphics[width=\textwidth]{big-data-properties-VN}% This is a *.eps file
 	\end{center}
-	\caption{ Các thuộc tính cơ bản của dữ liệu lớn trong ngành điện}\label{fig:1}
+	\caption{Các thuộc tính cơ bản của dữ liệu lớn trong ngành điện}\label{fig:1}
 \end{figure}
 
 
@@ -189,47 +189,246 @@ Các yêu cầu bổ sung có thể mang lại một cấp độ phức tạp kh
 \subsection{Khung Đưa ra Quyết Định}
 Việc sử dụng phân tích dữ liệu lớn tất yếu dẫn đến việc nâng cao khả năng ra quyết định. Do đó, trong phương pháp phân tích dữ liệu được đề xuất, chú ý đặc biệt được dành cho việc trực quan hóa kết quả.
 
-Một cách tiếp cận được sử dụng để dự báo các sự cố mất điện là phát triển bản đồ rủi ro như các bản đồ được hiển thị trong Hình 2. Chúng đại diện cho nguy cơ thời tiết, độ dễ tổn thương và rủi ro tính toán dưới dạng tích của hai yếu tố này.
+Một cách tiếp cận được sử dụng để dự báo các sự cố mất điện là phát triển bản đồ rủi ro như các bản đồ được hiển thị trong Hình \ref{fig:2}. Chúng đại diện cho nguy cơ thời tiết, độ dễ tổn thương và rủi ro tính toán dưới dạng tích của hai yếu tố này.
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{center}
+		\includegraphics[width=\textwidth]{ruido}% This is a *.eps file
+	\end{center}
+	\caption{Bản đồ thể hiện nguy cơ, sự tổn thương, và rủi do của mạng lưới}\label{fig:2}
+\end{figure}
+
+
 
 Một khung công việc đánh giá rủi ro được định hình bởi Văn phòng Cứu trợ Khẩn cấp của Liên Hợp Quốc (UNDRO), đã được khám phá gần đây bởi Văn phòng Liên Hợp Quốc về Giảm thiểu Rủi ro Thiên tai (UNISDR) trong báo cáo liên quan đến họ [114], sau đó được Cơ quan Quản lý Khẩn cấp Liên bang (FEMA) của Hoa Kỳ đưa ra, vì trọng tâm chính là ảnh hưởng liên quan đến khí hậu đến cơ sở hạ tầng, xã hội và môi trường. Điều này giới thiệu Trạng thái Rủi ro (SoR) như sau:
 
 trong đó P(T) là Nguy cơ hoặc xác suất của một mức độ mối đe dọa cụ thể (T); u(C) là Tổn thất (xã hội, kinh tế hoặc môi trường) liên quan đến mức độ Hậu quả (C), liên quan đến mức độ mối đe dọa (T); và P(C|T) là Tính dễ tổn thương hoặc xác suất của việc trải qua mức độ hậu quả (C) được xác định dựa trên mức độ mối đe dọa (T). Đơn vị rủi ro được biểu thị trong đơn vị của các tổn thất.
 
-Trong bối cảnh này, quyết định liên quan đến quá trình tối ưu hóa, trong đó hàm mục tiêu và ràng buộc nhằm mục đích hành động giảm thiểu được xác định. Một khung quyết định rộng hơn cho các ví dụ về dự báo mất điện đã được hiển thị trong Hình 3.
+Trong bối cảnh này, quyết định liên quan đến quá trình tối ưu hóa, trong đó hàm mục tiêu và ràng buộc nhằm mục đích hành động giảm thiểu được xác định. Một khung quyết định rộng hơn cho các ví dụ về dự báo mất điện đã được hiển thị trong Hình \ref{fig:3}.
 
-
+\begin{figure}[h!]
+	\centering
+	\begin{center}
+		\includegraphics[width=\textwidth]{decisionmaking-risk}% This is a *.eps file
+	\end{center}
+	\caption{Khung ra quyết định cho việc đánh giá rủi do}\label{fig:3}
+\end{figure}
 
 \section{Ứng Dụng}
-\subsection{Quản Lý tài Sản Cơ Sở Hạ Tầng và Mất Điện}
+\subsection{Quản Lý tài Sản Cơ Sở Hạ Tầng và Sự Cố Mất Điện}
+Các thị trường cạnh tranh về điện, sự tư nhân hóa và các yêu cầu kỹ thuật hoặc quy định bắt buộc các công ty điện phải tối ưu hóa các thực tiễn quản lý vận hành, gián đoạn và tài sản và phát triển các kế hoạch quyết định cần thiết kỹ thuật kinh tế. Trong thực tế hoạt động của công ty điện hôm nay, quản lý tài sản và gián đoạn được xử lý bởi các nhóm khác nhau và được coi là các nỗ lực lập kế hoạch dài hạn và ngắn hạn, tương ứng. Chúng tôi đã giữ cuộc thảo luận về các vấn đề có vẻ không liên quan này cùng với nhau để nhấn mạnh sự tương quan chặt chẽ giữa chúng về việc sử dụng dữ liệu, vì quản lý gián đoạn có thể sử dụng cùng dữ liệu với quản lý tài sản và ngược lại vì tình trạng cơ sở của tài sản điều khiển cả hai ứng dụng:
 
+%\begin{enumerate}
+\subsubsection{Phân Loại Tài Sản} 
 
+“Quản lý tài sản trong các hệ thống điện có thể được phân loại rộng rãi thành bốn loại chính dựa trên các thời gian có thể, tức là, thời gian thực, ngắn hạn, trung hạn và dài hạn [115]”
 
-\subsubsection{Phân Loại Tài Sản}
+Quản lý tài sản thời gian thực chủ yếu bao gồm các nguyên tắc bền vững của hệ thống điện chính và xử lý các sự cố gián đoạn không đáng kể của thiết bị hệ thống điện và sự cố gián đoạn lưới điện. Bằng cách cải thiện nhận thức tình hình, các nhà điều hành lưới điện có thể giám sát và kiểm soát hệ thống một cách hiệu quả. Quản lý tài sản ngắn hạn cố gắng tối đa hóa tỷ lệ lợi nhuận liên quan đến đầu tư tài sản. Giá trị chủ yếu phụ thuộc vào giá thị trường không chắc chắn thông qua các thực hiện thị trường khác nhau. Đánh giá rủi ro thị trường là một yếu tố quan trọng và phân phối doanh thu / lợi nhuận được đạt thông qua phân tích tính lợi nhuận. Lập lịch bảo trì tối ưu thuộc quản lý tài sản trung hạn. Nó hướng dẫn kế hoạch bảo trì đến các mục tiêu mong muốn của toàn hệ thống một cách đầy đủ.
+
+Các nỗ lực được tập trung vào tối ưu hóa phân bổ tài nguyên tài chính hạn chế ở những nơi và thời điểm cần thiết để quản lý gián đoạn tối ưu mà không đánh đổi tính đáng tin cậy của hệ thống. Sử dụng rộng rãi các công nghệ cảm biến thông minh và giám sát để đánh giá sức khỏe và độ tin cậy của thiết bị hệ thống theo thời gian và tối ưu hóa các kế hoạch bảo trì tương ứng [116]. Đầu tư vào kế hoạch mở rộng hệ thống điện, cũng như triển khai rộng rãi các nguồn điện phân tán, thuộc phạm vi của quản lý tài sản dài hạn, trong đó các nhà đầu tư, các đối thủ cạnh tranh và các bên liên quan khác được mời tham gia vào các kế hoạch kinh tế trong tương lai.
+
+%\end{enumerate}
+
 
 \subsubsection{Các Tác Động của Thời Tiết và Việc Mất Điện}
+Tác động của thời tiết đối với gián đoạn trong hệ thống điện có thể được phân loại thành trực tiếp và gián tiếp [117]:
 
+\begin{itemize}
+\item Tác động trực tiếp đối với tài sản của tiện ích: Loại tác động này bao gồm tất cả các tình huống khi điều kiện thời tiết nghiêm trọng trực tiếp gây ra sự cố của thành phần. Ví dụ như sét đánh vào tài sản của tiện ích, tác động của gió khiến cho cây hoặc cành cây chạm vào đường dây, v.v. Những loại gián đoạn này được đánh dấu là gián đoạn do thời tiết gây ra.
+
+\item Tác động gián tiếp đối với tài sản của tiện ích: Loại tác động này xảy ra khi thời tiết tạo ra một tình huống trong mạng lưới mà gián tiếp gây ra sự cố của thành phần. Các ví dụ bao gồm: điều kiện thời tiết nóng làm tăng nhu cầu, gây quá tải cho đường dây dẫn đến giảm độ cao của đường dây, tăng nguy cơ sự cố do tiếp xúc với cây, tài sản tiếp xúc với tác động của thời tiết trong dài hạn dẫn đến suy giảm thành phần, v.v. Những loại gián đoạn này được đánh dấu là lỗi thiết bị.
+
+\end{itemize}
 \subsubsection{Cơ Bản về Quản Lý Mất Điện}
 
+Khả năng theo dõi đồng thời nhiều mối đe dọa thời tiết khi chúng phát triển và đánh giá các tác động kết quả đa dạng đến tài sản ngành điện, cơ sở hạ tầng và các đường đời mà chúng hỗ trợ là rất quan trọng trong ngành điện. Lưới điện được phân bổ trên các vùng rộng lớn với việc phát điện thường đặt ở những vùng xa xôi. Tiêu thụ lớn ở các khu đô thị có nghĩa là lưới truyền tải phải đưa điện từ các trang trại phát điện ở xa đến các trung tâm tiêu thụ và hệ thống phân phối phải cung cấp các đường dẫn tiện ích cho từng khách hàng cá nhân. Để đạt được điều này, lưới phải trải qua các trạng thái hoạt động khác nhau (Hình 4). Các trạng thái thị trường điện tương ứng được hiển thị trong Bảng 3. Bằng cách kết hợp quản lý tài sản và gián đoạn, ta xử lý các tác động một cách hiệu quả nhất.
 
 \subsubsection{Ước Đoán Sự Mất Điện và Mạng Lưới Truyền Tải}
+Kiến thức từ dữ liệu lịch sử có thể được sử dụng để dự đoán những cúp điện truyền tải liên quan đến thời tiết 1-3 giờ trước. Nhúng không gian được thêm vào bộ dữ liệu đầu vào [94] để bắt các phụ thuộc không gian giữa các nút và sự kiện. Xem xét ví dụ với dữ liệu cúp điện lịch sử được thu thập từ Cơ quan Điện lực Bonneville (BPA) [120]. Chương trình Hệ thống Quan sát Bề Mặt Tự Động (ASOS) [26] được sử dụng để thu thập các đo lường thời tiết lịch sử cho các tham số sau: Hướng gió [độ], Tốc độ gió [nút], Cơn gió mạnh [nút], Nhiệt độ [F], Điểm sương [F], Độ ẩm tương đối [\%], Áp suất [mb], Lượng mưa/giờ [inch] và Mã thời tiết hiện tại. Cơ sở Dữ liệu Dự báo Kỹ thuật số Quốc gia (NDFD) [121] được sử dụng để trích xuất dữ liệu dự báo thời tiết lịch sử được sử dụng để kiểm tra hệ thống ánh xạ xác suất cúp điện thời gian thực được sử dụng trong nghiên cứu phối hợp cách điện [41].
+
+Việc đặt chỗ lý tưởng của các thiết bị bảo vệ sét dòng dây nhằm giảm thiểu tổng rủi ro của các sự cố và độ nhiễu liên quan đến sét khi vẫn duy trì trong giới hạn ngân sách yêu cầu [41]. Mạng lưới và tác động của nó được mô hình hóa bằng một đồ thị trọng số đa chế độ sử dụng dữ liệu từ nhiều nguồn khác nhau. Mô hình rủi ro được phát triển xem xét tác động tích lũy của các sự cố sét trước đó để tạo ra một ước tính chính xác hơn về độ cứng của bộ cách điện và dự đoán hiệu suất của bộ cách điện cho tình huống gây ra quá áp do sét trong tương lai, sử dụng Gaussian Conditional Random Fields (GCRF) [122]. Phương pháp quản lý thực vật dựa trên dữ liệu dự đoán trong phân phối được giới thiệu trong [123]. Một mô hình cho mối tương quan không gian thời gian của một loạt dữ liệu được phát triển, cho phép phân tích thời gian thực về tác động của thực vật lên dây cấp điện dựa trên bản đồ rủi ro dự đoán. Thuật toán dự đoán dựa trên GCRF regression predictor. Thuật toán tối ưu được sử dụng để tìm lịch cắt tỉa cây động hiệu quả chi phí nhất để giảm thiểu tổng rủi ro của mạng lưới cho mỗi quý.
+
+\subsubsection{Đánh giá tình trạng hoạt động và sự xuống cấp của trạm biến áp}
+
+Các phương pháp truyền thống để đánh giá sức khỏe của bộ biến áp được phát triển bằng cách sử dụng kiến thức lĩnh vực về các quá trình vật lý và hóa học xảy ra bên trong bồn dầu của bộ biến áp, sau đó được xác nhận bằng các nghiên cứu kinh nghiệm. Một số ví dụ là tam giác Duval [124], tỷ số khí IEC [125] hoặc phân tích khí chính [126]. Việc thu thập dữ liệu ngày càng tăng (ví dụ: phân tích khí và dầu định kỳ, các cảm biến thu thập dữ liệu thời gian thực, v.v.) bởi các công ty điện đã thúc đẩy sự phát triển các phương pháp phân tích dữ liệu dựa trên học có giám sát để phân loại tình trạng bộ biến áp và loại lỗi. Một số ví dụ là mạng nơ-ron nhân tạo đa tầng [127], máy vector hỗ trợ [128] và mạng Bayesian [129]. Những sự cố của bộ biến áp hạ áp (22,9KV-220V) được sử dụng trong các lĩnh vực phân phối ở Hàn Quốc được nghiên cứu trong [130].
+
+Các thuật toán học có giám sát đối mặt với các thách thức sau: (i) đa số các thuật toán chỉ cung cấp khả năng giải thích thấp cho người ra quyết định, điều này là yêu cầu cơ bản trong vấn đề này; (ii) thiếu dữ liệu lỗi có chất lượng cao; và (iii) dữ liệu được gán nhãn về tình trạng biến áp trong hầu hết các trường hợp không có sẵn hoặc được xác định bởi con người (tức là phân loại chủ quan của tình trạng). Sử dụng học không giám sát là một giải pháp thay thế và hấp dẫn, nhưng trong tài liệu vẫn còn hạn chế. Phương pháp không giám sát đầu tiên là chỉ số sức khỏe được mô tả trong tài liệu tham khảo [131] tóm tắt sức khỏe tổng thể của tài sản bằng cách kết hợp kết quả quan sát vận hành, kiểm tra trường và kiểm tra phòng thí nghiệm thành một chỉ số duy nhất. Tuy nhiên, các hạn chế chính của chỉ số này là: (i) định nghĩa kinh nghiệm của trọng số cho mỗi tiêu chí, và (ii) thiếu thông tin về loại lỗi. Các phương pháp thay thế khác là phân cụm [132] và học bán giám sát với Low Dimensional Scaling [133]. Hơn nữa, nghiên cứu về học sâu có thể đóng góp vào việc bổ sung dữ liệu [134] cho dữ liệu biến áp và cung cấp các kỹ thuật mới cho học không giám sát như mạng Siamese [135]. Cần nhấn mạnh rằng chúng ta nên mong đợi hiệu suất thấp hơn từ các kỹ thuật không giám sát so với học có giám sát, nhưng tiềm năng ứng dụng lớn hơn trong tập dữ liệu thực tế.
+
+
+\subsubsection{Những dự đoán về thiệt hại cơ sở hạ tầng thảm khốc gây ra các tình trạng mất điện}
+
+Phân tích dữ liệu lớn có thể được sử dụng để dự đoán các sự cố về tài sản thảm khốc do các sự kiện thời tiết khắc nghiệt như bão, vòng xoáy, lốc xoáy và sóng thần [136,137]. Những nghiên cứu như vậy chủ yếu liên quan đến dự đoán thiệt hại cơ sở hạ tầng, bao gồm số cột bị đổ, trạm biến áp bị phá hủy và các thiệt hại khác đòi hỏi phải tái thiết kế toàn bộ cơ sở hạ tầng lưới điện. Một đánh giá ngầm cũng liên quan đến các tình trạng mất điện vì cần phải tái thiết kế trước khi khôi phục dịch vụ
+
+
+\subsection{Phân tích dữ liệu thu thập từ các công tơ thông minh}
+
+Ứng dụng này có nhiều trường hợp sử dụng khác nhau:
+
+\begin{itemize}
+\item Các ứng dụng của phân tích một đồng hồ thông minh duy nhất
+\item Các ứng dụng của các nhóm đồng hồ thông minh
+\item Các đồng hồ thông minh được kết nối với các mô hình lưới
+\end{itemize}
+
+Sự xâm nhập của các đồng hồ thông minh vào Mỹ đã vượt quá 50\%, và ở một số quốc gia châu Âu vượt quá 50\%, cung cấp cơ hội quan trọng cho phân tích dữ liệu để nâng cao quản lý khách hàng và hoạt động và kế hoạch lưới. Các đồng hồ thông minh cung cấp các đọc số về năng lượng, công suất và điện áp ở độ tinh granularities thường là một giờ hoặc 15 phút. Các công ty điện, nhà cung cấp dịch vụ năng lượng, khách hàng và nhà nghiên cứu đã xác định nhiều trường hợp sử dụng cho phân tích đồng hồ thông minh như dự báo, phân loại và phân loại tải khách hàng, ước tính tải và mô hình lưới nâng cao [40]. Khi kết hợp với các nguồn dữ liệu khác và các hệ thống tiện ích, phân tích đồng hồ thông minh có thể mở rộng thêm lợi ích của nó cho toàn doanh nghiệp hoạt động. Tóm tắt của ứng dụng đồng hồ thông minh được minh họa trong Hình 5.
+
+Dưới đây, chúng tôi cung cấp một tóm tắt các ứng dụng nổi bật của thông minh phân tích dữ liệu đồng hồ với các tham chiếu tương ứng. Một số ứng dụng sẽ được mở rộng trong các phần tiếp theo dưới các tiêu đề riêng biệt.
+
+\subsubsection{Dự báo tải}
+Ngành công nghiệp điện đã sử dụng dự báo tải cho hoạt động và kế hoạch lưới và quản lý khách hàng. Dữ liệu đo đạc thông minh đã thu hút sự chú ý của các nhà nghiên cứu trong thập kỷ qua cho cả dự báo tải điểm và xác suất [138,139]. Một xử lý toàn diện hơn về chủ đề này được đề cập trong phần con.
+
+\subsubsection{Hồ sơ tiêu thụ điện của khách hàng}
+
+Load profiling đề cập đến phân loại các đọc lịch sử về nhu cầu của khách hàng thành các nhóm dựa trên hành vi của họ. Các kỹ thuật phân cụm như k-means, phân cụm phân cấp và bản đồ tự tổ chức đã được sử dụng cho việc phân loại tải [140-142]. Các mô hình biến thời gian kết hợp với phân cụm đã được sử dụng để phát triển mô hình tải điện phức tạp bằng cách sử dụng dữ liệu Cơ sở hạ tầng Đo lường tiên tiến (AMI) [143]
+
+
+\subsubsection{Phân tích DER}
+Một lượng đáng kể các nguồn năng lượng phân tán (DER) đang được kết nối với lưới điện, bao gồm điện mặt trời PV, lưu trữ năng lượng và xe điện. Những nguồn tài nguyên này trong lưới tạo ra những thách thức mới cho các nhà cung cấp tiện ích bao gồm biến động điện áp [144], vi phạm giới hạn nhiệt, dòng ngược và ảnh hưởng đến tuổi thọ dự kiến của cơ sở hạ tầng như máy biến áp và bộ điều chỉnh điện áp. Việc có thông tin chính xác liên quan đến Nguồn năng lượng phân tán (DER) tại mạch phân phối và đằng sau đồng hồ điện (BTM) là rất quan trọng đối với các tiện ích. Các nhà nghiên cứu đã chứng minh khả năng phát hiện điện mặt trời trên mái nhà [145] và xe điện sạc tại đầu tiêu dùng [146] bằng cách sử dụng phân tích không xâm nhập trên dữ liệu đồng hồ thông minh. Các mạng nơ-ron sâu đã được sử dụng để phát hiện kích thước, độ nghiêng và thông số hướng của các cài đặt điện mặt trời dựa trên dữ liệu AMI [147]
+
+
+\subsubsection{Các ứng dụng với mạng lưới điện}
+Dữ liệu đồng hồ thông minh có thể được sử dụng kết hợp với dữ liệu nguồn cấp phân phối để có được các mô hình tinh vi cho kế hoạch phân phối hoặc để có được cái nhìn sâu sắc vào các vấn đề mô hình hóa cụ thể. Ví dụ, dữ liệu đồng hồ thông minh đã được sử dụng để phát hiện bất thường [148] như thay đổi đáng kể về nhu cầu hoặc điện áp. Dữ liệu đồng hồ thông minh bị gián đoạn đã được sử dụng cho phân tích và phục hồi gián đoạn tối ưu [149] và thiết kế tái cấu hình nguồn cấp. Phân tích đồng hồ thông minh cũng đã được sử dụng để sửa chữa kết nối biến áp [149], xác định pha [150], xác định độ phức tạp [151] và ước lượng tham số [152]
+
+\subsubsection{Dự báo tải}
+Trong một cuộc khảo sát phân tích tiện ích được tiến hành vào năm 2017 với 136 tiện ích từ 24 quốc gia, 52\% số người trả lời coi dự báo năng lượng là một ứng dụng ưu tiên cao nhất, tỷ lệ cao nhất trong tất cả các ứng dụng trong cuộc khảo sát [153]. Cải thiện dự báo có thể dẫn đến các quyết định vận hành và kế hoạch tốt hơn và do đó dẫn đến tiết kiệm tiền tệ hoặc nâng cao độ tin cậy của hệ thống. Tùy thuộc vào các yếu tố như kích thước của công ty và mức giảm lỗi, việc giảm lỗi dự báo có thể dẫn đến tiết kiệm hàng triệu đô la mỗi năm [154]. Trong thời đại dữ liệu lớn, sự tăng trưởng của dữ liệu, sự tiến bộ của các công nghệ tính toán và các đột phá trong phân tích tiên tiến tiếp tục kích thích cải tiến các kỹ thuật và phương pháp dự báo năng lượng. Nhiều trong số những phát triển gần đây này đã được công nhận là các giải thưởng trong các Cuộc thi Dự báo Năng lượng Toàn cầu (GEFCom) [42-44].
+
+Các tiện ích đã thực hành dự báo tải trong hơn một thế kỷ [155]. Theo sự phát triển của lưới điện và ngành công nghiệp điện, dự báo tải dài hạn, hoặc dự báo tải không gian, đặc biệt là đã được coi là một thành phần quan trọng trong kế hoạch hệ thống điện vào cuối thế kỷ 20 đến đầu thế kỷ 21 [156-158], khi dữ liệu tải được thu thập từ các biến áp phân phối và ở độ phân giải thấp, chẳng hạn như hàng tháng hoặc hàng năm. Tuy nhiên, nhu cầu vận hành phức tạp ngày càng đòi hỏi dự báo tải ngắn hạn chính xác [159]. Các kỹ thuật trí tuệ nhân tạo, chẳng hạn như mạng nơ-ron nhân tạo, đã chiếm đa số các tài liệu vào những năm 1990 [160]. Mặc dù nhiều mô hình được phát triển cho Luồng Tải Ngắn Hạn (STLF), nhưng hầu hết đều không có giá trị thực tiễn. Một thành công đáng chú ý phát triển từ giới học thuật vào những năm 1990 là một mô hình mạng nơ-ron, sau đó được thương mại hóa và vẫn được sử dụng trong ngành công nghiệp ngày nay [161]. Một khám phá nghiên cứu học thuật gần đây khác đã được thương mại hóa và triển khai trên toàn cầu trong những năm 2010 là một khung mô hình dựa trên hồi quy [39,162].
+
+Khi các công nghệ tự động hóa phân phối và lưới điện thông minh cung cấp dữ liệu độ phân giải không gian thời gian cao cho các nhà dự báo tải, nghiên cứu về dự báo tải cũng phát triển mạnh. Ví dụ, các nhà cung cấp điện bán lẻ bắt đầu sử dụng dữ liệu hàng giờ cho dự báo tải dài hạn. Một số nhà khai thác thị trường và tiện ích cũng dựa vào dữ liệu hàng giờ hoặc hàng phút để dự báo tải ở mức điện áp cao [38,39,164]. Những dữ liệu tải có độ phân giải cao này cho phép các nhà dự báo xây dựng mô hình với hàng trăm thông số có thể bắt được nhiều đặc trưng quan trọng trong tải [37]. Chúng cũng cho phép các nhà dự báo tải cải thiện dự báo tổng thể bằng cách tận dụng thông tin tải cấp đồng hồ. [138].
+
+Trong khi khai thác việc sử dụng dữ liệu tải có độ phân giải cao, các nhà nghiên cứu và chuyên gia cũng đầu tư một số nỗ lực vào các cách sáng tạo để khai thác dữ liệu thời tiết. Truyền thống, chỉ có một số lượng nhỏ các trạm thời tiết được sử dụng để dự báo tải trên một khu vực cụ thể. Tại GEFCom2012, chuỗi nhiệt độ từ 11 trạm thời tiết đã được công bố cho cộng đồng nghiên cứu [42]. Một phương pháp lựa chọn trạm thời tiết sau đó được đề xuất và cho thấy giá trị trong việc cải thiện dự báo tải tiên tiến nhất. Phương pháp này sau đó đã được sử dụng bởi một đội chiến thắng tại GEFCom2014 [165]. Gần đây, nó đã được cải thiện thêm bởi các nhà nghiên cứu khác [166,167]. Vì dữ liệu thời tiết có thể được sử dụng cho nhiều mô hình dự báo tải, các phương pháp lựa chọn trạm thời tiết này có lợi cho cả dự báo tải dài hạn và ngắn hạn.
+
+Trong khi xu hướng nghiên cứu dự báo tải chính là tận dụng dữ liệu lớn, một xu hướng khác là nhúng thông tin toàn diện về tương lai vào dự báo tải. Dự báo tải xác suất, cung cấp dự báo theo phân vị, khoảng xác suất hoặc hàm mật độ, là chủ đề nóng trong thập kỷ qua [168]. Những dự báo tải xác suất này có thể được tạo ra thông qua mô phỏng phần dư [169,170], tạo ra các kịch bản đầu vào [171] hoặc kết hợp dự báo điểm [172]. Hồi quy phân vị cũng đã được áp dụng để tạo ra dự báo tải xác suất [139,172,173]. Một số khía cạnh phương pháp của dự báo cũng đã được nghiên cứu đặc biệt cho dự báo tải xác suất, chẳng hạn như lựa chọn đặc trưng [174,175] và kết hợp dự báo [176].
+
+Ngoài việc cải thiện dự báo tải ở mức điện áp cao, các nhà nghiên cứu và chuyên gia cũng đã dành nhiều nỗ lực cho dự báo tải ở mức điện áp trung bình và thấp. Một số dự báo tại mức điểm cung cấp [42, 44], trong khi những người khác là ở các đồng hồ đo riêng lẻ [40, 139, 177]. Chủ đề phổ biến khác là dự báo tải cho tòa nhà, từ các tòa nhà học thuật [178, 179] đến các tòa nhà dân cư [180, 181]. Trong khi thời tiết vẫn đóng vai trò chính trong nhiều mô hình dự báo tải ở mức tòa nhà, tác động của thời tiết đối với tải công nghiệp là khá nhỏ. Dự báo tải cho nhà máy và các cơ sở công nghiệp là một chủ đề mới nổi trong loại này [182-184], và bao gồm dự báo tải công suất phản kháng.
+
+
+\subsection{Dự báo và phân tích năng lượng tái tạo}
+Việc triển khai năng lượng tái tạo đã tiếp tục được duy trì với tốc độ ổn định trong thập kỷ qua. Do tính không đồng nhất của việc tạo điện từ các nguồn năng lượng tái tạo, cũng như do sự khó lường hạn chế, sự chú trọng đã được đặt vào việc phát triển các phương pháp tích hợp những nguồn tái tạo đó. Ngoài các khía cạnh liên quan đến mã lưới điện và một số phương pháp quản lý năng lượng phân tích mới được đề cập trong các phần khác, một phần lớn nỗ lực đã tập trung vào cách tận dụng tối đa các dữ liệu có sẵn để cải thiện kiến thức về việc tạo điện từ nguồn năng lượng tái tạo, thường là với mục đích dự báo. Một trong những bài báo đầu tiên đề xuất mô hình động để dự đoán tốc độ gió và sản lượng điện tương ứng là [185]. Mặc dù tập trung vào các mô hình đơn giản và một bố cục ảo, bản thảo đó đã đặt nền tảng cho một số phát triển tiếp theo. Rõ ràng, vào thời điểm đó, các khía cạnh dữ liệu lớn chưa được thảo luận, và số chiều của các mô hình liên quan cũng nhỏ.
+
+Hôm nay cho các trang trại gió, đặc biệt là các trang trại ngoài khơi, việc thu thập dữ liệu ở mức độ động cơ gió được thực hiện với độ phân giải một giây. Tương tự, đối với các nhà máy năng lượng mặt trời, dữ liệu có thể được thu thập ở mức độ biến tần và với độ phân giải cùng cấp độ giây. Những dữ liệu ở mức độ rất tinh vi này được sử dụng để cải thiện phân tích và dự báo tại mức độ trang trại gió (hoặc nhà máy năng lượng mặt trời) [186]. Ngoài ra, vì khả năng sinh năng lượng từ các nguồn tái tạo bắt đầu trở nên đa dạng và phân tán địa lý một cách dày đặc, ta cũng có thể sử dụng tất cả dữ liệu được thu thập tại các trang trại để cải thiện dự báo [14,18,187].
+
+Ngoài ra, còn có rất nhiều nguồn dữ liệu khác có liên quan, chủ yếu là liên quan đến quan sát và dự báo khí tượng, mô tả các quy trình phức tạp và mang lại khối lượng dữ liệu rất lớn. Về phía quan sát khí tượng:
+
+\begin{itemize}
+\item Sky imagers có tiềm năng lớn cho mô hình hóa và dự báo năng lượng mặt trời với độ phân giải cao vì chúng theo dõi các đám mây di chuyển và tác động của chúng đến các tấm pin mặt trời [188]. Chúng có thể cung cấp hình ảnh của bầu trời trên các nhà máy điện mặt trời mỗi 30 giây;
+
+\item Radar thời tiết cũng đã chứng minh sự quan tâm của họ trong đánh giá và mô hình các chế độ động để ứng dụng vào dự báo năng lượng gió độ phân giải cao [189]. Tùy thuộc vào công nghệ, hình ảnh radar có thể có sẵn giữa mỗi phút và mỗi 10 phút, với bán kính hình ảnh từ 60 đến 250 km;
+
+\item LIDAR ngày càng được coi là rất liên quan đến các đo lường gió ở phía trước của các tuabin gió và tích hợp vào các phương pháp dự báo [190], hoặc nói chung là các quan sát tiềm năng mới của các hồ sơ gió được sử dụng trong dự báo thời tiết và năng lượng tái tạo [191]. LIDAR cung cấp các đo lường gió cho hình nón mà chúng quét (theo chiều dọc hoặc chiều ngang, tùy thuộc vào cách chúng được thiết lập) mỗi vài giây.
+\end{itemize}
+
+Ngoài ra, có thể đề cập đến hình ảnh vệ tinh, có tiềm năng quan trọng cho năng lượng gió, mặt trời và sóng. Tuy nhiên, tần suất cập nhật thấp hơn khiến chúng ít quan trọng hơn ở thời điểm hiện tại. Thông tin từ các loại thiết bị này được gọi là thông tin được cảm biến từ xa.
+
+Một thách thức đầu tiên và phức tạp khi xử lý thông tin cảm biến từ xa là giảm chiều. Điều này có thể được thực hiện: (i) dựa trên các kỹ thuật xử lý tín hiệu và thống kê, ví dụ như Phân tích thành phần độc lập-ICA, cho các trường chuyển động trong hình ảnh radar thời tiết; (ii) bằng cách trích xuất các đặc trưng vật lý như mây trong hình ảnh bầu trời [188] hoặc hệ thống mưa và đặc điểm của chúng trong hình ảnh radar [192]; hoặc cuối cùng (iii) thông qua các mô hình chức năng như các hồ sơ gió cho các đo đạc dọc theo chiều dọc của LiDAR.
+
+Ngoài các quan sát khí tượng, dữ liệu đầu vào chiều cao mới có thể có dạng dự báo thời tiết. Trước hết, thông tin liên quan trong dự báo thời tiết không chỉ có thể dành cho điểm gần nhất với một điểm quan tâm mà còn có thể được cung cấp trên toàn khu vực của điểm đó [59]. Thứ hai, để diễn đạt dự báo theo cách xác suất, các dự báo thời tiết tập hợp bao gồm một tập hợp các quỹ đạo thay thế và có khả năng như nhau (thông thường, giữa 10 và 100) cho các biến thời tiết liên quan. Chúng có thể được hiểu là các thực hiện mẫu từ các dự báo xác suất đa biến để cung cấp cho các phương pháp dự báo năng lượng tái tạo. Chúng có sẵn trên các khu vực lớn. ví dụ, toàn bộ châu Âu, cung cấp thông tin về phụ thuộc không gian-thời gian đa biến trong việc tạo điện năng tái tạo [193,194]. Cuối cùng, dự báo thời tiết độ phân giải rất cao (độ phân giải không gian trong khoảng vài mươi đến vài trăm mét và độ phân giải thời gian trong khoảng vài giây đến vài phút) đang mang lại cơ hội mới cho dự báo năng lượng tái tạo, như trong ví dụ gần đây trong [186] và các ứng dụng tại các trang trại gió ngoài khơi.
+
+Hiện nay, sự sẵn có của số lượng lớn dữ liệu này yêu cầu những thay đổi cơ bản trong phân tích và dự báo năng lượng tái tạo, không chỉ về phương pháp mà còn về các mô hình kinh doanh. Chúng ta mong đợi sẽ có nhiều công trình đổi mới xuất hiện trong tương lai, đề xuất các phương pháp dựa trên phương trình vi phân ngẫu nhiên, học sâu, học phân tán và liên kết, cũng như thị trường dữ liệu.
+
+
+\subsection{Hiệu quả và tối ưu hóa năng lượng}
+Các công nghệ lưới thông minh cung cấp tiềm năng lớn để tăng cường hiệu quả sử dụng năng lượng trong các lĩnh vực khác nhau. Tuy nhiên, hiện tại, các hoạt động tăng cường hiệu quả năng lượng chủ yếu bị hạn chế trong việc thực thi chứng nhận ISO 50001 như sau: (i) lắp đặt thiết bị bổ sung (đồng hồ đo, cảm biến, v.v.) để đo lường tiêu thụ năng lượng; (ii) lắp đặt phần cứng mới và thay thế thiết bị; và (iii) trực quan hóa dữ liệu trong giao diện người dùng liền mạch, tìm các mô hình bất thường; và xác định các quy trình tiêu thụ năng lượng cao. Thực tiễn tiêu chuẩn này cung cấp việc giám sát và nhận thức về tiêu thụ năng lượng cho các quyết định của con người, nhưng nó không cho phép phân tích theo chỉ đạo và kiểm soát quy trình tự động.
+
+Các tác phẩm khác nhau trong văn học khai thác các kỹ thuật tối ưu hóa năng lượng dựa trên mô hình, chẳng hạn như lập trình số nguyên cho việc giảm tải đỉnh trong các nhà máy thép [195] và lập trình tuyến tính số hỗn hợp cho các thiết bị gia dụng nhiệt [196]. Các phương pháp dựa trên mô hình có nhược điểm là yêu cầu một mô hình (toán học) về quá trình vật lý và các ràng buộc, có thể phức tạp trong một số trường hợp. Chúng không cho phép cải tiến liên tục các chính sách kiểm soát.
+
+Sự xuất hiện của công nghệ internet-of-things cung cấp điều kiện kỹ thuật cho mô hình hóa động lực dữ liệu trong tối ưu hóa năng lượng. Một số ví dụ là việc sử dụng học tăng cường dạng batch (fitted Q-iteration) để điều khiển một nhóm máy sưởi nước điện gia đình cho dịch vụ đáp ứng nhu cầu [197]; fitted Q-iteration kết hợp với auto-encoders để tối ưu hóa năng lượng trong máy sưởi nước điện [198]; học tăng cường sâu cho tối ưu hóa năng lượng dự đoán các trạm bơm nước thải [199]; và mô hình cây cho tiêu thụ năng lượng của tòa nhà để lên lịch hệ thống sưởi ấm tối ưu [200]. Phương pháp này không yêu cầu việc mô hình hoá đầy đủ các phương trình quá trình vì sự hiểu biết của nó được thực hiện theo thời gian thực thông qua dữ liệu. Tuy nhiên, sẵn có dữ liệu và thời gian (ví dụ: số lần tương tác với hệ thống vật lý) cần thiết để "huấn luyện" các phương pháp tối ưu dữ liệu vẫn là thách thức thực tế cho sự áp dụng trong ngành công nghiệp.
+
+Ngoài tối ưu hóa năng lượng dữ liệu, các dịch vụ năng lượng dựa trên dữ liệu khác có thể được cung cấp bởi các công ty dịch vụ năng lượng (ESCO), nhà tập đoàn và nhà bán lẻ nhằm tối đa hóa nhận thức của người sử dụng cuối đối với các hành động tăng hiệu quả sử dụng năng lượng và rút ra giá trị kinh doanh từ dữ liệu.
+
+Một đóng góp quan trọng để tăng sự nhận thức của người sử dụng cuối là giám sát tải không xâm phạm từ dữ liệu của các công tơ thông minh, có thể được áp dụng để phát hiện và ước tính các cài đặt điện PV dân dụng [145], tiêu thụ bơm nhiệt [201] và các hồ sơ tải cá nhân từ các đường cong tải nguồn [202]. Phân đoạn khách hàng với các hồ sơ tải có thể được áp dụng bởi các nhà tập đoàn và nhà bán lẻ để xác định khách hàng mục tiêu, thiết kế một loại giá động hoặc thời gian thực tùy chỉnh [203], mô hình hóa hành vi động của các tải/công tắc có thể kiểm soát được [204], hoặc thông báo cho người tiêu dùng nếu họ đang đối mặt với một sự thay đổi không bình thường của hồ sơ tải. Các kỹ thuật tiêu chuẩn là phân cụm chuỗi thời gian lô, nhưng phân cụm trực tuyến là một yêu cầu cơ bản do tính động của hành vi tiêu thụ [205].
+
+Dữ liệu từ đồng hồ đo thông minh kết hợp với các biến môi trường bên ngoài (ví dụ: nhiệt độ ngoài trời) có thể hỗ trợ cho các nhà bán lẻ và nhà tổng hợp ước tính khả năng phản ứng yêu cầu của khách hàng. Trong [206], một vấn đề bao lưu ngẫu nhiên được đặt ra để lựa chọn khách hàng trong các chương trình phản ứng yêu cầu sử dụng dữ liệu tiêu thụ, cũng như để ước tính xác suất đạt được mục tiêu giảm tải. Các phương pháp suy luận nhân quả giữa các chương trình tính tiền Nguồn Phân tán (DR) và tiêu thụ được sử dụng trong [207] để ước tính độ đàn hồi của người tiêu dùng và xác định liệu các chương trình tính tiền động có ảnh hưởng đến sơ đồ tiêu thụ thông thường của người tiêu dùng hay không; mục tiêu tương tự cũng được đạt được với phương pháp dựa trên tương quan [208]. Hơn nữa, học trực tuyến có thể được sử dụng để điều chỉnh tín hiệu giá động để đạt được hành vi sử dụng mong muốn, ví dụ, bằng cách đặt ra một vấn đề tối ưu lồi trực tuyến [209] hoặc thông qua một mô hình tiện ích tham số hóa [210].
+
+
+Dữ liệu được thu thập từ đánh giá và chứng nhận hiệu quả năng lượng rất có giá trị cho các bên liên quan và dịch vụ khác nhau [211]. Ví dụ, Cơ quan Năng lượng (DOE) cơ sở dữ liệu hiệu suất tòa nhà có thể được sử dụng cho các mục đích khác nhau [212]: so sánh hiệu suất tiết kiệm năng lượng của các loại tòa nhà khác nhau và địa điểm địa lý; ước tính tiềm năng tiết kiệm năng lượng liên quan đến các hành động cải tiến cụ thể; và đánh giá tác động của các công nghệ tiết kiệm năng lượng ở mức độ danh mục. Trên thực tế, các kỹ thuật dựa trên dữ liệu có thể được sử dụng để đánh giá trước các biện pháp cải tiến năng lượng về mặt tiết kiệm năng lượng và "giảm rủi ro" đầu tư vào công nghệ tiết kiệm năng lượng. Ví dụ, hồi quy đa tuyến có thể sản xuất một ước tính xác suất về lợi nhuận liên quan đến các biện pháp cải tiến khác nhau, xem xét các đặc điểm và hệ thống của tòa nhà [213].
+
+
+\subsection{Phân tích dữ liệu synchrophasor và sự kiện}
+Để đánh giá tầm quan trọng của dữ liệu Đơn vị Đo Pha (PMU), ta phải trở về các báo cáo về nguyên nhân của sự cố mất điện lớn tại đông bắc Hoa Kỳ vào ngày 13 tháng 8 năm 2003 [214]. Ban Nghiên cứu Sự cố Hệ thống Điện quốc tế Hoa Kỳ-Canada đã kết luận rằng một trong những lý do chính dẫn đến sự cố mất điện là thiếu nhận thức về tình hình thực tế. Điều này, lần lượt, được cho là do tầm nhìn hạn chế của nhà điều hành về các sự kiện và động lực liên quan đến hệ thống điện được cung cấp bởi Hệ thống Quản lý Năng lượng (EMS) thông qua các thiết bị đo trường như hệ thống Giám sát và Thu thập Dữ liệu (SCADA) và các thiết bị ghi lại tại trạm biến áp như máy ghi sự cố kỹ thuật số, máy bộ định hướng kỹ thuật số và máy ghi sự kiện trình tự. Thiếu sót chính là tốc độ báo cáo đo đạc (Đơn vị Trung tâm Tầm xa SCADA), thiếu dấu thời gian khác biệt (cơ sở dữ liệu SCADA) và không thể cập nhật mô hình hệ thống điện kịp thời để phản ánh các sự kiện chuyển mạch liên tiếp (bộ ước lượng trạng thái). Ngoài ra, các thiết bị ghi sự cố không được đồng bộ thời gian và đánh dấu thời gian đầy đủ. Để khắc phục những thiếu sót đó, các PMU và hạ tầng đo đạc phụ thuộc vào synchrophasor được xác định là cơ sở đo lường phù hợp. Với sự tăng cường nguồn kinh phí từ Đạo luật Phục hồi và Tái đầu tư Hoa Kỳ năm 2009, nhiều PMU đã được lắp đặt trên khắp Hoa Kỳ và hiện đang có hơn 2.500 đơn vị. Một số lượng PMU ngay cả lớn hơn đã được lắp đặt tại Trung Quốc và đang tiến hành kế hoạch lắp đặt một số lượng lớn tại Ấn Độ.
+
+Một trong những điểm mạnh chính của PMU là cung cấp các phép đo đồng bộ thời gian của phasor điện áp và dòng điện thời gian thực với tốc độ báo cáo cao hơn đáng kể so với các Đơn vị Điều khiển Từ xa SCADA (RTU). Có thể hiểu được cách thức thực hiện này thông qua Hình 6, trong đó hiển thị kiến trúc tổng quát của PMU. Các đặc tính chính của PMU là xung một lần mỗi giây (1PPS) và mã thời gian được cung cấp bởi bộ đếm thời gian toàn cầu GPS. Tín hiệu đồng hồ chính xác với tốc độ 1PPS cung cấp cho mạch lấy mẫu và giữ (S/H) ở tất cả các PMU, cho phép đồng bộ lấy mẫu của các dạng sóng đầu vào trên không chỉ các đầu vào của một PMU mà là đầu vào của tất cả các PMU được lắp đặt trong một hệ thống điện cụ thể. Mã thời gian đại diện cho thời gian tuyệt đối cung cấp khả năng đánh dấu thời gian tham chiếu cho tất cả các giá trị phasor được tính toán. Các giá trị phasor tính toán như vậy được báo cáo với tốc độ mỗi giây là 30, 60, 120 hoặc thậm chí cao hơn, cung cấp hai lợi thế chính: a) cung cấp dữ liệu chất lượng cao với tốc độ dữ liệu cao, và b) đảm bảo tính toán độ chênh lệch pha chính xác cao giữa bất kỳ vị trí nào trong hệ thống và phasor tham chiếu.
+
+Điều này cung cấp một cơ hội độc đáo cho phân tích sau sự kiện, đặc biệt là trong trường hợp các sự kiện phức tạp (ví dụ: lỗi lan truyền do sự cố thiết bị dẫn đến mất điện). Ngoài ra, việc bắt và phân tích các dao động trong hệ thống điện quan trọng vì nó báo hiệu về khả năng sụp đổ của hệ thống [216]. PMU đóng vai trò quan trọng trong việc ghi nhận các sự cố [217] với sự phát triển gần đây của các công nghệ xác định và phân loại sự cố [217-220]. Trong những năm gần đây, khả năng của hệ thống điện đã được mở rộng để bao gồm các nguồn năng lượng tái tạo, nhu cầu năng lượng tăng, tích hợp xe điện, vv. Tất cả các công nghệ này đều đặt ra những thách thức mới cho hoạt động hệ thống. Dữ liệu PMU cung cấp một nguồn thông tin có giá trị có thể giúp đáp ứng các thách thức và tăng cường sự phù hợp của lưới kết hợp.
+
+Do đó, dữ liệu được thu thập từ PMU đóng một vai trò quan trọng trong các ứng dụng như giám sát, điều khiển, bảo vệ, ước lượng trạng thái, đánh giá sự ổn định và phát hiện sự cố [221]. Tuy nhiên, phân tích sau sự kiện vẫn được thực hiện bằng tay trong nhiều trường hợp với khả năng dự đoán hạn chế hoặc không có. Các kỹ thuật được đề xuất trong các giải pháp phần mềm được nhắc đến nhằm mục đích phân tích tự động có khả năng không chỉ phân loại các sự kiện quá khứ mà còn dự đoán những trường hợp sự cố trong tương lai sử dụng các bản ghi dữ liệu trực tiếp.
+
+Phần lớn các phương pháp dự đoán cho phân tích dữ liệu PMU trong văn bản tập trung vào việc cho phép nhận thức tình huống có ý nghĩa hơn so với những gì được bao phủ bởi EMS SCADA, từ đó đảm bảo sự ổn định động của hệ thống [222-229]. Các phương pháp dự đoán có thể mở rộng khả năng phân biệt các loại sự kiện của các nhà điều hành, từ hoạt động bình thường đến hoạt động trong điều kiện cực đoan bằng cách bắt giữ các đặc trưng dạng sóng PMU và tự động xác định các sự kiện trong quá trình phân loại. Điều này cho phép ứng dụng của dữ liệu lớn, trí tuệ nhân tạo và học máy giúp đoán trước nhiều loại cảnh báo và sự cố khẩn cấp trong hệ thống điện, ngoài việc theo dõi hoạt động bình thường và cực đại ổn định động lực. Kiến thức ban đầu có thể được sử dụng như hướng dẫn cho nghiên cứu tương lai trong lĩnh vực này và có thể mở cánh cửa cho khám phá sâu hơn của các thuật toán dự đoán dựa trên PMU cho các ứng dụng khác, chẳng hạn như quản lý và giám sát tài sản hoặc dự đoán và quản lý sự cố.
+
+Một thách thức mà tất cả các đơn vị liên quan đến phát triển các ứng dụng trực tuyến và ngoại tuyến đều đang đối mặt là sự gia tăng của một lượng dữ liệu rất lớn đến từ PMUs. Để cải thiện tính tin cậy, bảo mật và hiệu quả của hệ thống, cần phát triển các công cụ tự động có khả năng phân tích các sự kiện quá khứ và thông báo quyết định trong thời gian thực. Điều này có nghĩa là các phương pháp đề xuất cần phân biệt giữa các kỹ thuật phù hợp để truy cập và xử lý một lượng lớn dữ liệu lịch sử, trong đó thời gian xử lý không quan trọng bằng các kỹ thuật nhằm vào xử lý dữ liệu luồng trong thời gian thực, trong đó tính hiệu quả tính toán là rất quan trọng.
+
+Khi tài nguyên tính toán tiến bộ, việc học và trích xuất các mẫu hữu ích từ dữ liệu lớn tạo ra cơ hội mới. Học sâu [88,92,93] cho phép tìm thấy các mẫu trừu tượng hơn từ dữ liệu phức tạp lớn, thậm chí là không đồng nhất [230]. Một mô hình sâu học một cách đa tầng. Mỗi khi dữ liệu mới hoặc tập các đặc trưng được truyền qua một tầng, một cấp độ trừu tượng dữ liệu mới được giới thiệu. Do đó, thông qua nhiều tầng liên tiếp, các mô hình sâu học được học các biểu diễn giàu, cấp cao của dữ liệu thô cấp thấp như hình ảnh, âm thanh và văn bản. Nói cách khác, các mô hình sâu cung cấp một khung việc toàn diện cho việc trích xuất đặc trưng tự động, phức tạp ở một cấp độ trừu tượng cao. Các mô hình sâu không trích xuất các biểu diễn được xác định trước - ngược lại, chúng có xu hướng tìm ra các mẫu không thay đổi bằng cách loại bỏ sự biến động trong dữ liệu [231]. Giả thuyết cuối cùng trong vấn đề này cho rằng càng nhiều dữ liệu, càng trích xuất được nhiều kiến thức [232], và do đó khả năng tổng quát hóa càng lớn hơn có thể đạt được. Các biểu diễn được học là rất gọn nhẹ, giúp giảm thiểu tính toán và từ đó làm cho việc học tiếp theo rất hiệu quả.
+
+Kiến trúc tổng quan của quá trình phân tích dữ liệu PMU tự động được trình bày trong Hình 6.
+
+
+\subsection{Các ứng dụng cho lưới điện}
+Sự đầu tư vào các công nghệ Lưới điện Thông minh (ví dụ như đồng hồ thông minh, PMU và các thiết bị điện tử thông minh [IED]) cho lưới điện phân phối và truyền tải đang cải thiện khả năng giám sát và điều khiển của chúng [233]. Đồng thời, các khung pháp lý và thị trường mới đang được thử nghiệm (ở cấp độ thử nghiệm) và triển khai ở các quốc gia khác nhau để hỗ trợ tích hợp các nguồn điện phân tán linh hoạt.
+
+\subsubsection{Tính quan sát}
+Mặc dù có tất cả những tiến bộ công nghệ, khả năng quan sát lưới điện áp thấp (LV) vẫn là một trở ngại chính để khai thác tối đa tiềm năng từ những công nghệ này và tích hợp các nguồn điện phân tán linh hoạt vào thị trường điện và quản lý hệ thống điện. Điều này có thể được chia thành hai thách thức chính: (i) đặc trưng của tôpô và các thông số lưới điện; và (ii) giám sát thời gian thực.
+
+Thông tin từ các đồng hồ thông minh được lắp đặt tại khách hàng áp thấp và trạm phân phối cấp hai có thể được sử dụng để xây dựng tôpô lưới sử dụng nhiều phương pháp khác nhau, chẳng hạn như: mô hình đồ thị xác suất và hồi quy tuyến tính LASSO [234, 235]; và luồng điện kết hợp với thông tin chung [151]. Trong một số trường hợp, thông tin về tôpô lưới có sẵn, nhưng các thông số điện có sai số lớn hoặc không biết (tức là sử dụng các thông số từ các danh mục dây cáp), và do đó, cần thực hiện một ước lượng chắc chắn (và dựa trên dữ liệu) của các thông số lưới [236, 237]. Vấn đề này cũng yêu cầu phát triển các phương pháp để lập kế hoạch vị trí cảm biến và giảm thiểu chi phí giám sát [238]. Một nguồn không chắc chắn khác là giai đoạn kết nối của mỗi khách hàng. Gom nhóm các phép đo độ lớn điện áp 15 phút từ các đồng hồ thông minh có thể xác định các nhóm khách hàng được kết nối với cùng một giai đoạn và giảm chi phí nhân công cho việc xác định giai đoạn trên thực địa [239]. Dữ liệu của đồng hồ thông minh cũng có thể được sử dụng để ước tính công suất định mức của các tấm pin năng lượng mặt trời cài đặt sau đồng hồ [240] và phát hiện xe điện đang sạc [241].
+
+Về mặt giám sát thời gian thực, thông tin về hồ sơ điện áp là rất quan trọng để tạo ra các cảnh báo cho các nhân viên vận hành tại các trung tâm phân phối điện áp thấp. Tuy nhiên, ngay cả với các giao thức truyền thông như Power Line Communication (PLC) PRIME hoặc General Packet Radio Service (GRPS), việc thu thập thông tin 15 phút một lần từ hàng trăm khách hàng là không khả thi hoặc chi phí truyền thông rất cao. Các chức năng ước tính trạng thái dựa trên dữ liệu giúp ước tính độ lớn điện áp tại mỗi nút điện áp thấp trong thời gian thực chỉ bằng cách sử dụng thông tin từ một tập hợp con các đồng hồ thông minh (tức là 10-20\%) có khả năng truyền thông thời gian thực [242]. Dự báo tải và sản xuất có thể được sử dụng như đầu vào trong thuật toán ước tính trạng thái tiêu chuẩn và tạo ra một ước tính xác suất của điện áp nút [243].
+
+
+Các mức điện áp khác cũng được hưởng lợi từ các chức năng ước tính trạng thái dựa trên dữ liệu để giám sát thời gian thực. Một số ví dụ bao gồm: một chức năng ước tính trạng thái dựa trên dữ liệu mạnh mẽ được đề xuất trong [244] để khai thác dữ liệu lịch sử được thu thập bởi các đồng hồ đo phân phối và PMU, bằng cách tìm các đặc trưng tương đồng trong một khung làm việc học có giám sát với hồi quy kernel ridge; một bộ ước tính trạng thái động có khả năng dự báo được mô tả trong [245]; kết hợp dữ liệu SCADA từ các trạm phân phối chính (thông thường có sẵn trong cơ sở dữ liệu trung tâm với độ trễ vài giây/phút) và trạm phân phối phụ (thông thường có sẵn trong cơ sở dữ liệu trung tâm với độ trễ một vài giờ) có thể suy ra điều kiện vận hành gần thời gian thực của lưới điện áp trung bình (MV) [246,247]; và một khối ghép của các bộ tự mã hóa cạnh tranh địa phương ước tính trạng thái của các công tắc lưới dựa trên một tập hợp các đo lường điện cục bộ [248]. Hơn nữa, các chức năng truyền thống, chẳng hạn như phát hiện cục bộ, cũng có thể được hưởng lợi từ các chức năng phân tích dữ liệu tích hợp thông tin văn bản, thời gian và không gian từ các phương tiện truyền thông xã hội [21] và dữ liệu PMU [218].
 
 
 
-\section{Dữ Liệu Lớn trong Nhiều Lĩnh Vực của Nền Kinh Tế}
-% For Original Research articles, please note that the Material and Methods section can be placed in any of the following ways: before Results, before Discussion or after Discussion.
-
-\section{Dữ Liệu Lớn Trong Ngành Điện Lực}
 
 
-
-\section{Quản Lý Tài Sản Hạ Tầng}
-
-
+\subsubsection{Hộ trợ ra quyết định và điều khiển}
+Các chức năng dựa trên dữ liệu cũng đang được tích hợp vào các hệ thống quản lý năng lượng truyền thống (EMS) và quản lý phân phối (DMS) để bổ sung hoặc thay thế các chức năng phân tích lưới điện cổ điển như lưu lượng điện, cấu hình mạng, lưu lượng điện tối ưu, vv. Trong một số trường hợp, một mô hình học máy được sử dụng như là một proxy cho các chức năng truyền thống, ví dụ như ước tính lưu lượng điện của ma trận Jacobian với dữ liệu PMU [249] và tính toán cam kết đơn vị [250]. Một điểm bất lợi tiềm tàng của phương pháp này là cần thu thập hoặc mô phỏng một bộ dữ liệu lớn để vừa với các mô hình. Tuy nhiên, sau khi được vừa, nó có thể được tích hợp vào các ứng dụng khác nhau và cung cấp các ước tính nhanh chóng.
 
 
+Trong những trường hợp khác, học máy được sử dụng để học từ dữ liệu lịch sử về các hành động điều khiển của các nhà điều hành và hỗ trợ ra quyết định [251] hoặc để khám phá các giải pháp mới (và tốt hơn) bằng cách sử dụng các hệ thống chuyên gia [252]. Một lợi thế quan trọng của hai phương pháp này, được phát triển cho Chủ sở hữu Hệ thống Truyền tải (TSOs), là tính giải thích cao đối với những người ra quyết định và khả năng khai thác kiến thức chuyên gia (tức là quyết định quá khứ và các heuristics điều khiển). Tuy nhiên, cả hai đều thuộc mô hình học bằng mô phỏng, tức là học có giám sát được áp dụng cho các quyết định từ chuyên gia, và không khám phá (hoặc tìm kiếm) các giải pháp mới. Một lựa chọn khác là học tăng cường, cung cấp một sự đánh đổi giữa khai thác và khám phá và trong một số trường hợp, như trường hợp được mô tả trong [253], có thể kết hợp với học bằng mô phỏng.
+
+Một số trường hợp sử dụng cho phương pháp điều khiển dữ liệu này là: xếp hạng nhanh các trường hợp dự phòng cấp cao hơn (theo nguy cơ của chúng) để ưu tiên mô phỏng hệ thống điện năng [254]; và phân tích nhân quả trên dữ liệu đo lường để thực hiện các chiến lược tấn công node tối ưu [255].
+
+Cuối cùng, việc tích hợp các hệ thống năng lượng tái tạo và sự áp dụng rộng rãi của IEC 61850 đang tăng thêm khối lượng dữ liệu cảnh báo và số lượng cảnh báo đòi hỏi sự chú ý và hành động điều khiển trong phòng điều khiển [256]. Các phương pháp truyền thống dựa trên hệ thống chuyên gia dựa trên quy tắc [257], nhưng thiếu khả năng cung cấp những thông tin bổ ích về các thông tin chứa trong chuỗi cảnh báo và giảm tải trí nhớ của nhân viên điều khiển. Trong [258], một kỹ thuật phân loại thô không giám sát được đề xuất để giảm khối lượng dữ liệu và thông báo nhận được tại các trạm biến áp trong các tình huống khẩn cấp và cải thiện quyết định, nhưng không cung cấp đề xuất về hành động điều khiển. Bước quyết định cuối cùng này (tức là xác định một chuỗi các thao tác thủ công bởi người điều khiển) thiếu trong hầu hết các phương pháp xử lý dữ liệu từ các hệ thống bảo vệ và là một yếu tố cốt lõi để tạo ra tác động thực sự từ các chức năng phân tích dữ liệu, chẳng hạn như giảm thời gian để đưa ra quyết định đầu tiên và chỉ số thời gian gián đoạn trung bình của hệ thống (SAIDI).
+
+\section{Cơ hội và thách thức trong tương lai}
+
+Cuộc khảo sát cho thấy có nhiều ứng dụng đang ở các giai đoạn thực hiện thực tế khác nhau. 
+
+Trong khi số lượng tài liệu tham khảo về chủ đề tổng quan về dữ liệu lớn đã rất lớn, dự kiến công việc sẽ tiến triển với tốc độ chưa từng có, và số lượng tài liệu tham khảo sẽ tiếp tục tăng trong tương lai gần.
+
+Tuy nhiên, trong một số cuộc khảo sát đã công bố, không rõ ứng dụng cuối cùng của một số kỹ thuật được khảo sát là gì, và lợi ích và động lực kinh doanh liên quan là gì. Chúng tôi nhận thấy lợi ích của nghiên cứu tương lai là tập trung vào các ứng dụng cuối cùng trong khi đồng thời giải quyết các vấn đề cơ bản để thúc đẩy những cơ hội sau đây cuối cùng:
+
+\begin{itemize}
+\item Dự đoán các sự kiện trước thời gian và cho phép triển khai các chiến lược giảm thiểu rủi ro và tính toán rủi ro với dự báo không chắc chắn.
+
+\item Tối ưu hóa dữ liệu lịch sử cho lợi ích của chủ sở hữu và người sử dụng. Kết hợp mô hình vật lý và dữ liệu để cải thiện phân tích nguyên nhân gốc rễ. Ngăn chặn các sự cố và hạn chế vận hành hệ thống điện hiện tại gây tổn thất hàng tỷ đô la.
+
+\item Thông báo cho người dùng về những hạn chế cung cấp điện sắp tới và sử dụng các nguồn lực phân tán hiệu quả hơn để giảm thiểu sự cố và những tình huống khẩn cấp khác.
+
+\item Thúc đẩy sự đổi mới bằng cách sử dụng kinh nghiệm đa ngành từ các lĩnh vực khác nhau nhưng có mối liên hệ mạnh về thuộc tính dữ liệu và yêu cầu phân tích.
+
+\item Sử dụng dữ liệu từ nhiều nguồn phổ biến khác nhau như máy tính bảng, điện thoại thông minh và các thiết bị điện tử cá nhân khác, khiến chủ sở hữu và các bên liên quan của doanh nghiệp phân tích dữ liệu trở thành các nhân vật tham gia.
+
+\item Thay thế một số nhiệm vụ được thực hiện bởi các nhà điều hành và chuyên gia ngày nay bằng các thuật toán và quy trình tự động hóa.
+\end{itemize}
 
 
 
+
+\section{Kết luận}
+
+Bản khảo sát này đã cố gắng đạt được một số mục tiêu sau:
+\begin{itemize}
+\item Nó đã giải quyết được sự đa dạng và chiều sâu của các ứng dụng thực tiễn về phân tích dữ liệu lớn trong lưới điện.
+\item Nó đã đánh giá lại các vấn đề chính trong việc triển khai phân tích dữ liệu lớn trong các lĩnh vực lưới được chọn.
+\item Nó cung cấp nhiều ví dụ về các xu hướng mới nhất trong khung quyết định và phân tích dự đoán.
+\item Nó liệt kê một số tài liệu tham khảo có thể được sử dụng bởi các nhà nghiên cứu để nghiên cứu của họ tiếp tục phát triển.
+\item Nó đưa ra một số hướng đi của nghiên cứu tương lai và phác thảo các thách thức và cơ hội.
+
+\end{itemize}
+
+Bài báo này không phải là một tài liệu toàn diện về tất cả các tác phẩm hoặc xu hướng đã được xuất bản. Nếu quan tâm đến chủ đề, người đọc của cuộc khảo sát này nên khám phá các khía cạnh bổ sung không được đề cập ở đây.
 
 
 %\section*{Lời Cám Ơn}

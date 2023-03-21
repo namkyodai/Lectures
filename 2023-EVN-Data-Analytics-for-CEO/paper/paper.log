@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  20 MAR 2023 02:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  21 MAR 2023 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -815,7 +815,7 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T5/phv/m/n/12'. Switching off
 (microtype)                protrusion for this font on input line 63.
 
-<./ueh-logo.png, id=76, 170.7981pt x 99.9735pt>
+<./ueh-logo.png, id=128, 170.7981pt x 99.9735pt>
 File: ./ueh-logo.png Graphic file (type png)
 <use ./ueh-logo.png>
 Package pdftex.def Info: ./ueh-logo.png  used on input line 63.
@@ -979,30 +979,24 @@ Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
 [3]
-Package epstopdf Info: Source file: <logo1.eps>
-(epstopdf)                    date: 2023-03-04 23:07:15
-(epstopdf)                    size: 38401 bytes
-(epstopdf)             Output file: <logo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-03-04 23:07:15
-(epstopdf)                    size: 24907 bytes
-(epstopdf)             Command: <repstopdf --outfile=logo1-eps-converted-to.pdf
- logo1.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-<logo1-eps-converted-to.pdf, id=142, 284.06125pt x 80.3pt>
-File: logo1-eps-converted-to.pdf Graphic file (type pdf)
-<use logo1-eps-converted-to.pdf>
-Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 123.
-(pdftex.def)             Requested size: 284.52756pt x 80.43947pt.
+<big-data-properties-VN.png, id=195, 645.16031pt x 319.1925pt>
+File: big-data-properties-VN.png Graphic file (type png)
+<use big-data-properties-VN.png>
+Package pdftex.def Info: big-data-properties-VN.png  used on input line 123.
+(pdftex.def)             Requested size: 504.0pt x 249.35391pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
-[4 <./logo1-eps-converted-to.pdf>]
+[4]
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
-[5]
+[5 <./big-data-properties-VN.png>]
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
@@ -1018,7 +1012,71 @@ Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
-[9] (./paper.bbl
+[9]
+<ruido.png, id=224, 1145.78062pt x 519.44063pt>
+File: ruido.png Graphic file (type png)
+<use ruido.png>
+Package pdftex.def Info: ruido.png  used on input line 198.
+(pdftex.def)             Requested size: 504.0pt x 228.49117pt.
+
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[10 <./ruido.png>]
+<decisionmaking-risk.png, id=232, 655.69969pt x 374.90062pt>
+File: decisionmaking-risk.png Graphic file (type png)
+<use decisionmaking-risk.png>
+Package pdftex.def Info: decisionmaking-risk.png  used on input line 214.
+(pdftex.def)             Requested size: 504.0pt x 288.16524pt.
+
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[11 <./decisionmaking-risk.png>]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[12]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[13]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[14]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[15]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[16]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[17]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[18]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[19]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[20]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[21]
+Overfull \vbox (3.61502pt too high) has occurred while \output is active []
+
+
+[22] (./paper.bbl
 
 Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `T5/ptm/m/it/12'. Switching off
@@ -1028,7 +1086,7 @@ Package microtype Warning: I cannot find a protrusion list for font
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
-[10])
+[23])
 
 Package caption Warning: Unused \captionsetup[sub] on input line 20.
 See the caption package documentation for explanation.
@@ -1037,22 +1095,22 @@ See the caption package documentation for explanation.
 Overfull \vbox (3.61502pt too high) has occurred while \output is active []
 
 
-[11] (./paper.aux)
+[24] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 95F37CD0EE946A5412B9B1BAEE8D8765;4699.
+(rerunfilecheck)             Checksum: 9314D5FF98C304AC1B20C10903BD4615;8260.
  ) 
 Here is how much of TeX's memory you used:
- 17049 strings out of 476024
- 271028 string characters out of 5794016
+ 17076 strings out of 476024
+ 271729 string characters out of 5794016
  1867382 words of memory out of 5000000
- 36963 multiletter control sequences out of 15000+600000
+ 36974 multiletter control sequences out of 15000+600000
  575005 words of font info for 184 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 87i,8n,131p,2414b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,9n,131p,2414b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {e:/texlive/2022/texmf-dist/fonts/enc/dvips/vntex/t5.enc}<e:/texlive/2022/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/texlive/2022/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr6.pfb><e:/texlive/2022/texmf-dist/fonts/type1/p
@@ -1063,10 +1121,10 @@ fb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/uhvbo8v.pfb><e:/texlive/
 fonts/type1/vntex/urwvn/uhvro8v.pfb><e:/texlive/2022/texmf-dist/fonts/type1/vnt
 ex/urwvn/utmb8v.pfb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.
 pfb><e:/texlive/2022/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on paper.pdf (11 pages, 249877 bytes).
+Output written on paper.pdf (24 pages, 1583131 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 42651 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 42765 words of extra memory for PDF output out of 42996 (max. 10000000)
 
