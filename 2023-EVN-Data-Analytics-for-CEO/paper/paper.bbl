@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -35,6 +35,26 @@ Albarakati, N. and Obradovic, Z. (2019).
 \newblock \doi{10.1007/s41060-018-0147-5}
 \bibAnnoteFile{Albarakati2019}
 
+\bibitem[{{Angadi, Ravi V} et~al.(2020){Angadi, Ravi V}, {Venkataramu, P. S},
+  and {Daram, Suresh Babu}}]{Angadi2020}
+{Angadi, Ravi V}, {Venkataramu, P. S}, and {Daram, Suresh Babu} (2020).
+\newblock Role of big data analytics in power system application.
+\newblock \emph{E3S Web Conf.} 184, 01017.
+\newblock \doi{10.1051/e3sconf/202018401017}
+\bibAnnoteFile{Angadi2020}
+
+\bibitem[{Arghandeh and Zhou(2017)}]{Arghandeh2017}
+Arghandeh, R. and Zhou, Y. (2017).
+\newblock \emph{Big data application in power systems} (Elsevier)
+\bibAnnoteFile{Arghandeh2017}
+
+\bibitem[{Batini et~al.(2009)Batini, Cappiello, Francalanci, and
+  Maurino}]{Batini2009}
+Batini, C., Cappiello, C., Francalanci, C., and Maurino, A. (2009).
+\newblock Methodologies for data quality assessment and improvement.
+\newblock \emph{ACM computing surveys (CSUR)} 41, 1--52
+\bibAnnoteFile{Batini2009}
+
 \bibitem[{Breiman(1996)}]{Breiman1996}
 Breiman, L. (1996).
 \newblock Bagging predictors.
@@ -52,6 +72,13 @@ Breiman, L. (2017).
 \newblock \emph{Classification and regression trees} (Routledge)
 \bibAnnoteFile{Breiman2017}
 
+\bibitem[{Cai and Zhu(2015)}]{Cai2015}
+Cai, L. and Zhu, Y. (2015).
+\newblock The challenges of data quality and data quality assessment in the big
+  data era.
+\newblock \emph{Data Science Journal}
+\bibAnnoteFile{Cai2015}
+
 \bibitem[{Cavalcante et~al.(2017)Cavalcante, Bessa, Reis, and
   Browell}]{Cavalcante2017}
 Cavalcante, L., Bessa, R.~J., Reis, M., and Browell, J. (2017).
@@ -60,6 +87,16 @@ Cavalcante, L., Bessa, R.~J., Reis, M., and Browell, J. (2017).
 \newblock \emph{Wind Energy} 20, 657--675.
 \newblock \doi{https://doi.org/10.1002/we.2029}
 \bibAnnoteFile{Cavalcante2017}
+
+\bibitem[{Chow et~al.(2011)Chow, Urquhart, Lave, Dominguez, Kleissl, Shields
+  et~al.}]{Chow2011}
+Chow, C.~W., Urquhart, B., Lave, M., Dominguez, A., Kleissl, J., Shields, J.,
+  et~al. (2011).
+\newblock Intra-hour forecasting with a total sky imager at the uc san diego
+  solar energy testbed.
+\newblock \emph{Solar Energy} 85, 2881--2893.
+\newblock \doi{https://doi.org/10.1016/j.solener.2011.08.025}
+\bibAnnoteFile{Chow2011}
 
 \bibitem[{Cooper(1990)}]{Cooper1990}
 Cooper, G.~F. (1990).
@@ -75,11 +112,26 @@ Cortes, C. and Vapnik, V. (1995).
 \newblock \emph{Machine learning} 20, 273--297
 \bibAnnoteFile{Cortes1995}
 
+\bibitem[{De~Mauro et~al.(2016)De~Mauro, Greco, and Grimaldi}]{DeMauro2016}
+De~Mauro, A., Greco, M., and Grimaldi, M. (2016).
+\newblock A formal definition of big data based on its essential features.
+\newblock \emph{Library review} 65, 122--135
+\bibAnnoteFile{DeMauro2016}
+
 \bibitem[{EU(2013)}]{EU2013}
 EU (2013).
 \newblock \emph{Commission Regulation (EU)}.
 \newblock Tech. Rep. 543, Eurepean Union
 \bibAnnoteFile{EU2013}
+
+\bibitem[{Filipe et~al.(2019)Filipe, Bessa, Reis, Alves, and
+  Póvoa}]{Filipe2019}
+Filipe, J., Bessa, R.~J., Reis, M., Alves, R., and Póvoa, P. (2019).
+\newblock Data-driven predictive energy optimization in a wastewater pumping
+  station.
+\newblock \emph{Applied Energy} 252, 113423.
+\newblock \doi{https://doi.org/10.1016/j.apenergy.2019.113423}
+\bibAnnoteFile{Filipe2019}
 
 \bibitem[{Ghalwash et~al.(2013)Ghalwash, Radosavljevic, and
   Obradovic}]{Ghalwash2013}
@@ -90,6 +142,16 @@ Ghalwash, M.~F., Radosavljevic, V., and Obradovic, Z. (2013).
   201--210.
 \newblock \doi{10.1109/ICDM.2013.19}
 \bibAnnoteFile{Ghalwash2013}
+
+\bibitem[{Gilbert et~al.(2020)Gilbert, Messner, Pinson, Trombe, Verzijlbergh,
+  van Dorp et~al.}]{Gilbert2020}
+Gilbert, C., Messner, J.~W., Pinson, P., Trombe, P.-J., Verzijlbergh, R., van
+  Dorp, P., et~al. (2020).
+\newblock Statistical post-processing of turbulence-resolving weather forecasts
+  for offshore wind power forecasting.
+\newblock \emph{Wind Energy} 23, 884--897.
+\newblock \doi{https://doi.org/10.1002/we.2456}
+\bibAnnoteFile{Gilbert2020}
 
 \bibitem[{Gligorijevic et~al.(2016{\natexlab{a}})Gligorijevic, Stojanovic,
   Djuric, Radosavljevic, Grbovic, Kulathinal et~al.}]{Gligorijevic2016a}
@@ -139,6 +201,30 @@ Hyndman, R.~J. and Fan, S. (2009).
 \newblock \emph{IEEE Transactions on Power Systems} 25, 1142--1153
 \bibAnnoteFile{Hyndman2009}
 
+\bibitem[{Islam et~al.(2016)Islam, Lee, and Hettiwatte}]{Islam2016}
+Islam, M.~M., Lee, G., and Hettiwatte, S.~N. (2016).
+\newblock Incipient fault diagnosis in power transformers by clustering and
+  adapted knn.
+\newblock In \emph{2016 Australasian Universities power engineering conference
+  (AUPEC)} (IEEE), 1--5
+\bibAnnoteFile{Islam2016}
+
+\bibitem[{Jahromi et~al.(2009)Jahromi, Piercy, Cress, Service, and
+  Fan}]{Jahromi2009}
+Jahromi, A.~N., Piercy, R. C.~M., Cress, S., Service, J., and Fan, W. (2009).
+\newblock An approach to power transformer asset management using health index.
+\newblock \emph{IEEE Electrical Insulation Magazine} 25, 20--34
+\bibAnnoteFile{Jahromi2009}
+
+\bibitem[{Kezunovic et~al.(2020)Kezunovic, Pinson, Obradovic, Grijalva, Hong,
+  and Bessa}]{Kezunovic2020}
+Kezunovic, M., Pinson, P., Obradovic, Z., Grijalva, S., Hong, T., and Bessa, R.
+  (2020).
+\newblock Big data analytics for future electricity grids.
+\newblock \emph{Electric Power Systems Research} 189, 106788.
+\newblock \doi{https://doi.org/10.1016/j.epsr.2020.106788}
+\bibAnnoteFile{Kezunovic2020}
+
 \bibitem[{Kezunovic et~al.(2013)Kezunovic, Xie, and Grijalva}]{Kezunovic2013}
 Kezunovic, M., Xie, L., and Grijalva, S. (2013).
 \newblock The role of big data in improving power system operation and
@@ -148,11 +234,40 @@ Kezunovic, M., Xie, L., and Grijalva, S. (2013).
 \newblock \doi{10.1109/IREP.2013.6629368}
 \bibAnnoteFile{Kezunovic2013}
 
+\bibitem[{Khaitan and Gupta(2012)}]{Khaitan2012}
+Khaitan, S.~K. and Gupta, A. (2012).
+\newblock \emph{High performance computing in power and energy systems}
+  (Springer)
+\bibAnnoteFile{Khaitan2012}
+
+\bibitem[{Kielhauser et~al.(2017)Kielhauser, Adey, and
+  Lethanh}]{Kielhauser2017}
+Kielhauser, C., Adey, B.~T., and Lethanh, N. (2017).
+\newblock Investigation of a static and a dynamic spatial methodology to
+  develop work programs for multiple close municipal infrastructure networks.
+\newblock \emph{Structure and Infrastructure Engineering, Maintenance,
+  Management, Life-Cycle Design and Performance} (Accepted December 2015)
+\bibAnnoteFile{Kielhauser2017}
+
 \bibitem[{Kleissl(2013)}]{Kleissl2013}
 Kleissl, J. (2013).
 \newblock \emph{Solar energy forecasting and resource assessment} (Academic
   Press)
 \bibAnnoteFile{Kleissl2013}
+
+\bibitem[{Kouzelis et~al.(2015)Kouzelis, Tan, Bak‐Jensen, Pillai, and
+  Ritchie}]{Kouzelis2015}
+Kouzelis, K., Tan, Z., Bak‐Jensen, B., Pillai, J.~R., and Ritchie, E. (2015).
+\newblock Estimation of residential heat pump consumption for flexibility
+  market applications.
+\newblock \emph{IEEE Transactions on Smart Grid} 6, 1852--1864
+\bibAnnoteFile{Kouzelis2015}
+
+\bibitem[{LeCun et~al.(2015)LeCun, Bengio, and Hinton}]{LeCun2015}
+LeCun, Y., Bengio, Y., and Hinton, G. (2015).
+\newblock Deep learning.
+\newblock \emph{nature} 521, 436--444
+\bibAnnoteFile{LeCun2015}
 
 \bibitem[{Leit{\~a}o et~al.(2015)Leit{\~a}o, Carreira, Alves, Gomes, Cordeiro,
   and Cardoso}]{Leitao2015}
@@ -164,6 +279,12 @@ Leit{\~a}o, A., Carreira, P., Alves, J., Gomes, F., Cordeiro, M., and Cardoso,
   Distribution (CIRED)}
 \bibAnnoteFile{Leitao2015}
 
+\bibitem[{Li et~al.(2017)Li, Shahidehpour, and Aminifar}]{Li2017}
+Li, Z., Shahidehpour, M., and Aminifar, F. (2017).
+\newblock Cybersecurity in distributed power systems.
+\newblock \emph{Proceedings of the IEEE} 105, 1367--1388
+\bibAnnoteFile{Li2017}
+
 \bibitem[{Messner and Pinson(2019)}]{Messner2019}
 Messner, J.~W. and Pinson, P. (2019).
 \newblock Online adaptive lasso estimation in vector autoregressive models for
@@ -171,6 +292,13 @@ Messner, J.~W. and Pinson, P. (2019).
 \newblock \emph{International Journal of Forecasting} 35, 1485--1498.
 \newblock \doi{https://doi.org/10.1016/j.ijforecast.2018.02.001}
 \bibAnnoteFile{Messner2019}
+
+\bibitem[{Mirowski and LeCun(2012)}]{Mirowski2012}
+Mirowski, P. and LeCun, Y. (2012).
+\newblock Statistical machine learning and dissolved gas analysis: A review.
+\newblock \emph{IEEE Transactions on Power Delivery} 27, 1791--1799.
+\newblock \doi{10.1109/TPWRD.2012.2197868}
+\bibAnnoteFile{Mirowski2012}
 
 \bibitem[{Moreno-Munoz et~al.(2016)Moreno-Munoz, Bellido-Outeirino, Siano, and
   Gomez-Nieto}]{MorenoMunoz2016}
@@ -199,6 +327,34 @@ Quinlan, J.~R. (1986).
 Quinlan, J.~R. (2014).
 \newblock \emph{C4. 5: programs for machine learning} (Elsevier)
 \bibAnnoteFile{Quinlan2014}
+
+\bibitem[{Radosavljevic et~al.(2013)Radosavljevic, Ristovski, and
+  Obradovic}]{Radosavljevic2013}
+Radosavljevic, V., Ristovski, K., and Obradovic, Z. (2013).
+\newblock Gaussian conditional random fields for modeling patients response to
+  acute inflammation treatment.
+\newblock In \emph{ICML 2013 workshop on Machine Learning for System
+  Identification}
+\bibAnnoteFile{Radosavljevic2013}
+
+\bibitem[{Ruelens et~al.(2018)Ruelens, Claessens, Quaiyum, De~Schutter,
+  Babuška, and Belmans}]{Ruelens2018}
+Ruelens, F., Claessens, B.~J., Quaiyum, S., De~Schutter, B., Babuška, R., and
+  Belmans, R. (2018).
+\newblock Reinforcement learning applied to an electric water heater: From
+  theory to practice.
+\newblock \emph{IEEE Transactions on Smart Grid} 9, 3792--3800.
+\newblock \doi{10.1109/TSG.2016.2640184}
+\bibAnnoteFile{Ruelens2018}
+
+\bibitem[{Ruelens et~al.(2014)Ruelens, Claessens, Vandael, Iacovella,
+  Vingerhoets, and Belmans}]{Ruelens2014}
+Ruelens, F., Claessens, B.~J., Vandael, S., Iacovella, S., Vingerhoets, P., and
+  Belmans, R. (2014).
+\newblock Demand response of a heterogeneous cluster of electric water heaters
+  using batch reinforcement learning.
+\newblock In \emph{2014 power systems computation conference} (IEEE), 1--7
+\bibAnnoteFile{Ruelens2014}
 
 \bibitem[{Simões~Costa et~al.(2013)Simões~Costa, Albuquerque, and
   Bez}]{SimoesCosta2013}
@@ -257,6 +413,13 @@ Werbos, P.~J. (1994).
 \newblock \emph{The roots of backpropagation: from ordered derivatives to
   neural networks and political forecasting}, vol.~1 (John Wiley \& Sons)
 \bibAnnoteFile{Werbos1994}
+
+\bibitem[{Wickham and Grolemund(2023)}]{Wickham2023}
+Wickham, H. and Grolemund, G. (2023).
+\newblock R for data science: Visualize, model, transform, tidy and import data
+  (2nd edition).
+\newblock \emph{O'REILLY}
+\bibAnnoteFile{Wickham2023}
 
 \bibitem[{Zhang(2000)}]{Zhang2000}
 Zhang, G. (2000).
