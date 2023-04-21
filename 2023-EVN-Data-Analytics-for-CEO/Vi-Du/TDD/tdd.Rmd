@@ -1,0 +1,309 @@
+---
+title: "Technical Due Diligence"
+author: "Nam Le"
+date: "February 7, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Rationale
+
+Technical Due Diligence (TDD) is an engineering management process for evaluation and assessment on operation and condition of assets of engineering systems (e.g. buildings, industrial plants, factories). TDD can be considered as a simple application of the Asset Management Framework.
+
+TDD is often executed by an engineering firm for Clients who aim to
+
+* Buy/Acquire the property
+* Execute an intervention strategy/program for the targeted engineering systems at a set of points in time
+
+TDD is usually done in a quick fashion by a team of a few senior engineers and specialists who understand the targeted engineering systems. The team will normally visit the site/office to perform visual inspection and desktop study on historical records (e.g. as-building drawings, O&M manual, corrective and intervention intervention logbooks). In some case, the work might also involve physical testings for a certain level of audit.
+
+## Methodology
+### Condition State
+
+```{r echo=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+# library(ggplot2)
+data=read_excel("tdd.xlsx",sheet="CS")
+library(knitr)
+kable(data, caption = "Condition State definition")
+```
+
+Aside from CS, it might be of usefulness to use a range of RISK
+
+1 - <span style="color: green;">Green</span>
+
+2 - <span style="color: #FF5733;">Amber</span>
+
+3 - <span style="color: red;">Red</span>
+
+These codes are sometimes attrative to managers but not for engineers :) as it is too much of high level of abstraction and not really accurate and very difficult to quantify.
+
+### Intervention Strategy
+
+```{r echo=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+# library(ggplot2)
+data=read_excel("tdd.xlsx",sheet="IS")
+library(knitr)
+kable(data, caption = "Intervention Strategy")
+```
+
+
+### The Model
+
+The model is a simple one below
+
+$$\Omega = \sum_{t=0}^{T} \sum_{n=1}^{N} \pi_{i,j,t}^{n} C_{i,j,t}^{n}  Q_{t}^{n}   \delta_{i,j,t}^{n}  e^{-\rho  t} \label{omega}$$
+
+the objective is to minimize this objective function by allocating possible intervention types along time axis.
+
+In the equation, $C_{i,j,t}^{n}$ is the unit cost to execute an intervention $j$ on asset $n$ when the asset is at CS $i$ at time $t$. $\pi$, $\rho$ are probability and discount factor, respectively. $Q$ is the quantity.
+
+It is important to note that $\rho$, the discount factor, is often not used in business context, though it is taught in the school :). I work with many investment capital firms and they simply want to set $\rho = 0$ so they are at a conservative position to make/negociate the deal. 
+
+## Example
+This section describes a fictive example of TDD with inputs and outputs all generated using R code.
+
+### Asset Hierarachy
+
+Assets should belong to Area, Zone, Disciplines, and Facilities. In addition, Assets should also belong to Tenant, User, Owner, and Operator. They are stakeholders involved in owning, managing, and using the assets.
+
+An example of the hierarachy is
+
+```{r echo=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+# library(ggplot2)
+data=read_excel("tdd.xlsx",sheet="Levels")
+library(knitr)
+options(knitr.kable.NA = '')
+kable(data, caption = "Asset Hierarachy")
+```
+
+### The data
+Now time to generate random data for fun. It is easier to use excel worksheet to generate random data than using R. Another reason to use excel in this case is that it is most convenient for members of a team to share using Cloud services such as SharePoint or Dropbox. They can basically work simultanenously on one file. Another benefits of using excel file for recording this type of data is to present to Clients and get them agree and appreciate your work. Moreover, it is also easy to plug the excel file to any Business Analytics software such as Power BI and Tableau.
+
+
+```{r echo=TRUE, message=FALSE}
+# this is the code saved in tdd.R file
+library(readxl) 
+library(dplyr)
+library(DT)
+library(ggplot2)
+library(gridExtra)
+library(grid)
+library(png)
+library(downloader)
+library(grDevices)
+library(cowplot)
+library(reshape)
+library(lubridate)
+library(tidyverse)
+library(janitor)
+Capex=read_excel("tdd.xlsx",sheet="Capex")
+epsilon=1000
+#--------------------------------------------------------
+#--------------------------------------------------------
+#--------------------------------------------------------
+
+cs1 = aggregate(list(CS = Capex$States), list(Disciplines = factor(Capex$Disciplines)), mean,na.rm = TRUE) %>%
+ drop_na(CS) 
+
+plotcs1=ggplot(cs1, aes(x=reorder(Disciplines,-CS),y = CS)) +
+  ylim(0, 5.2)+
+  geom_bar(stat = "identity",fill = "#FF6666")+
+  labs(title = "", x = "Disciplines",y = "States")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
+  geom_text(aes(Disciplines, CS+0.1, label = format(CS,digits=3), fill = NULL), data = cs1,cex=3)
+
+
+plotcs1
+#ggsave("picture/plotcs1.png",width = 8, height = 6)
+
+risk1 = aggregate(list(Risk = Capex$Risk), list(Disciplines = factor(Capex$Disciplines)), mean,na.rm = TRUE) %>%
+  drop_na(Risk)
+plotrisk1=ggplot(risk1, aes(x=reorder(Disciplines,-Risk),y = Risk)) +
+  geom_bar(stat = "identity",fill = "#0000FF")+
+  ylim(0, 3.2)+
+  labs(title = "", x = "Disciplines",y = "Risk")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
+  geom_text(aes(Disciplines, Risk+0.1, label = format(Risk,digits=3), fill = NULL), data = risk1,cex=3)
+plotrisk1
+#ggsave("picture/plotrisk1.png",width = 8, height = 6) This is optional
+
+#--------------------------------------------------------
+#--------------------------------------------------------
+#--------------------------------------------------------
+
+
+#Estimate the total values of CAPEX for each year with percentage of distribution
+
+#Transform table by year
+
+
+
+
+df<-Capex%>%
+  select(InterYear,Disciplines,NPVCapex)%>%
+  group_by(Disciplines)
+df1<-melt(df,id=c("InterYear","Disciplines"))
+df2<-cast(df1,Disciplines~InterYear,sum)
+df3<-df2%>%
+  mutate(immediate=df2[,2],shortterm=rowSums(df2[,c(3:4)]),mediumterm=rowSums(df2[,c(5:7)]),longterm=rowSums(df2[,c(8:12)]),CAPEX=rowSums(df2[,c(2:12)]))%>%
+  mutate(freq = 100*CAPEX / sum(CAPEX))%>%
+  arrange(desc(CAPEX))%>%
+   adorn_totals()
+
+
+x01 <- Capex %>%
+  group_by(InterYear) %>%
+  summarize(total = sum(NPVCapex/epsilon)) %>%
+  arrange(desc(total))
+x01=mutate(x01,weight_pct=100*total/sum(total))
+
+#plot the graph for yearly CApex distribution per level 4
+plot01 <- ggplot(Capex)+
+  geom_bar(aes(x = InterYear, y = NPVCapex/epsilon,fill=Disciplines),
+           stat='identity')+
+  labs(title = "", x = "Year",y = "USD (1000)")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+ 
+  geom_text(aes(InterYear, total+3, label = round(total,2), fill = NULL), data = x01,cex=3,angle=90)
+plot01
+#ggsave("picture/plot01.png",width = 10, height = 6)
+#Estimate the total values of CAPEX for each generic with percentage of distribution
+x11 <- Capex %>%
+  group_by(Zone) %>%
+  summarize(total = sum(NPVCapex/epsilon)) %>%
+  arrange(desc(total))
+x11=mutate(x11,weight_pct=100*total/sum(total))
+
+#plot the graph for yearly CApex distribution per level 1
+plot11<- ggplot(Capex)+
+  geom_bar(aes(x = reorder(Zone, -NPVCapex/epsilon, sum), y = NPVCapex/epsilon,fill=Disciplines),
+           stat='identity')+
+  labs(title = "", x = "Year",y = "USD (1000)")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
+  geom_text(aes(Zone, total+3, label = round(total,2), fill = NULL), data = x11,cex=3,angle=0)
+
+plot11
+#ggsave("picture/plot11.png",width = 10, height = 6)
+
+#Estimate the total values of CAPEX for each generic with percentage of distribution
+x21 <- Capex %>%
+  group_by(Facilities) %>%
+  summarize(total = sum(NPVCapex/epsilon)) %>%
+  arrange(desc(total))
+x21=mutate(x21,weight_pct=100*total/sum(total))
+
+#plot the graph for yearly CApex distribution per level 1
+plot21<- ggplot(Capex)+
+  geom_bar(aes(x = reorder(Facilities, -NPVCapex/epsilon, sum), y = NPVCapex/epsilon,fill=Disciplines),
+           stat='identity')+
+  labs(title = "", x = "Year",y = "USD (1000)")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
+  geom_text(aes(Facilities, total+3, label = round(total,2), fill = NULL), data = x21,cex=3,angle=90)
+
+plot21
+#ggsave("picture/plot21.png",width = 10, height = 6)
+
+#Estimate the total values of CAPEX for each generic with percentage of distribution
+x31 <- Capex %>%
+  group_by(Facilities) %>%
+  summarize(total = sum(NPVCapex/epsilon)) %>%
+  arrange(desc(total))
+x31=mutate(x31,weight_pct=100*total/sum(total))
+
+#plot the graph for yearly CApex distribution per level 1
+plot31<- ggplot(Capex)+
+  geom_bar(aes(x = reorder(Facilities, -NPVCapex/epsilon, sum), y = NPVCapex/epsilon,fill=Tenant),
+           stat='identity')+
+  labs(title = "", x = "Year",y = "USD (1000)")+
+  theme(axis.text.x=element_text(angle=45, hjust=1))+
+  geom_text(aes(Facilities, total+3, label = round(total,2), fill = NULL), data = x31,cex=3,angle=90)
+
+plot31
+#ggsave("picture/plot31.png",width = 10, height = 6)
+
+```
+
+
+
+```{r echo=TRUE, message=FALSE}
+source("tdd.R")
+library(knitr)
+library(kableExtra)
+datatable(Capex,filter = 'top') %>%
+  formatRound(columns=c('Quantity','UnitCost','NPVCapex'),digits=0)%>%
+  formatStyle('NPVCapex',  color = 'red', backgroundColor = 'orange', fontWeight = 'bold')
+cat("Total Value =",format(sum(Capex$NPVCapex),digits=5, big.mark=",", small.mark = ".",small.interval=3),"$")
+```
+
+
+
+
+### Results
+ 
+We can summary the results by use of pivot tables and graphs using ggplot2 packages.
+
+#### Condition States and Risks
+
+
+```{r dodge-st, fig.show = "hold", out.width = "50%",echo=TRUE, message=FALSE}
+source("tdd.R")
+plotcs1
+plotrisk1
+```
+
+
+#### Cost Distribution
+
+
+```{r echo=TRUE, message=FALSE}
+source("tdd.R")
+library(knitr)
+library(kableExtra)
+datatable(df3,filter = 'top',options = list(pageLength = 25)) %>%
+  formatRound(columns=c(2:17),digits=0)%>%
+  formatRound(columns=c(18),digits=2)%>%
+  formatStyle('CAPEX',  color = 'red', backgroundColor = 'orange', fontWeight = 'bold')%>%      formatStyle('Disciplines', target = 'row',  backgroundColor = styleEqual('Total', 'yellow'))
+```
+
+
+```{r fig.width=14, fig.height=8, echo=TRUE, message=FALSE}
+source("tdd.R")
+plot01
+```
+
+
+```{r fig.width=14, fig.height=8, echo=TRUE, message=FALSE}
+source("tdd.R")
+plot11
+```
+
+
+```{r fig.width=14, fig.height=8, echo=TRUE, message=FALSE}
+source("tdd.R")
+plot21
+```
+
+```{r fig.width=14, fig.height=8, echo=TRUE, message=FALSE}
+source("tdd.R")
+plot31
+```
+
+## Conclusion
+This process can be automated for any TDD job. 
+
+
+
+# Thank you for reading the article ^_+
+
+
+
+
+
