@@ -47,7 +47,9 @@ ggplot(missing, aes(x = reorder(Variable, -value),y = value)) +
 ###
 # 
 df1 <- aggregate(df$NPV, by=list(Discipline = df$Discipline), FUN=sum)%>%filter(x>0)
+
 df2 <- aggregate(df$NPV_HighRisk, by=list(Discipline = df$Discipline), FUN=sum)%>%filter(x>0)
+
 df3 <- aggregate(df$NPV_Option, by=list(Discipline = df$Discipline), FUN=sum)%>%filter(x>0)
 write.csv(df1, file = "df1.csv")
 

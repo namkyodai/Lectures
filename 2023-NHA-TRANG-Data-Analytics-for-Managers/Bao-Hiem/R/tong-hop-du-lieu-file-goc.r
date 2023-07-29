@@ -27,6 +27,16 @@ rm004=read_excel("../raw/4-RM-Phuong.xlsx",sheet="Sale",skip = 2)
 #nối các dữ liệu có cùng định dạng với nhau thành 1 dữ liệu tổng hợp, đồng thời biến dữ liệu đó thành dataframe để có thể sử dụng dplyr và ggplot2.
 df <-data.frame(rbind(rm001,rm002,rm003,rm004))
 
+
+
+
+
+
+
+
+
+
+
 #Kiểm tra các trường dữ liệu để xem có phải sửa gì không.
 glimpse(df)
 
@@ -47,8 +57,6 @@ df3<-df2 %>%
 
 df4<-df2 %>%
   bind_rows(summarise_all(., ~if(is.numeric(.)) sum(.) else "Tổng Cột"))
-
-
 
 
 p1<-df%>%
