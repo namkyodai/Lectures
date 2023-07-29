@@ -1,0 +1,160 @@
+Gói dữ liệu cho bài tập về nhà tuần này liên quan đến công tác điều tra hộ dân ở thành phố HCMC trong những năm trước đây (Không rõ năm vì đây là dữ liệu không công bố nên để đảm bảo tính bảo mật, chúng tôi chỉ đưa ra dữ liệu thô mà không chú tính năm nào và nguồn ở đâu).
+
+Trong gói dữ liệu này, có rất nhiều cột và khoảng 20 ngàn dòng. Mỗi một cột được mã hóa, để hiểu được ý nghĩa từng cột, các bạn đọc file word đính kèm.
+
+
+Các bạn sử dụng thư viện dplyr và ggplot hay các thư viện và hàm khác nếu các bạn biết để trả lời các câu hỏi sau.
+
+
+----NHÓM 1
+
+
+Câu 1: Sử dụng dplyr để chọn ra cột Q3,Q4,Q7,Q8a,Q8b,Q8c,Q8d,Q8e,Q9,Q10,Q11 và đặt tên cho nhóm dữ liệu mới này.
+
+Câu 2: Trong nhóm dữ liệu mới này thì có bao nhiêu dữ liệu trống liên quan đến từng biến
+
+Câu 3: Tính toán tổng số hộ ứng với từng nhóm trong bảng của câu hỏi liên quan đến tình trạng nhà ở (Câu hỏi 8), yêu cầu sử dụng dplyr để cho ra bảng mới và sau đó dùng ggplot để vẽ đồ thị dạng thanh cho từng nhóm.
+
+Khi vẽ đồ thị, các bạn trang trí cho đồ thị của mình với các lớp sau
+
+- Lớp về tên các trục và tiêu đề của đồ thị
+- Lớp màu sắc --> thay đổi màu sắc và độ nổi và chìm (transparency) của đồ thị
+- Đặt lại tên các nhóm ở trục hoành thay vì các con số (Code), liệu có cách nào làm nhanh hơn không?
+
+
+Câu 4: Các bạn có nhận xét gì sau khi làm xong câu hỏi 3??
+
+
+Câu 5: Liên quan đến câu hỏi Q9 của bảng dữ liệu.
+
+- Có bao nhiêu giá trị rỗng? tính phần trăm lượng giá trị đó trên tổng số mẫu.Yêu cầu tính và in ra trực tiếp trên màn hình R.
+- Vẽ đồ thị dạng Boxplot (đồ thị hộp) cho giá trị này? sau khi vẽ thì có nhận xét gì không?
+- Vẽ đồ thị mật độ (density) và đồ thị tần suất (histogram) cho dữ liệu thuộc câu hỏi này --> sau khi vẽ thì có nhận xét gì không?
+- yêu cầu loại bỏ các dữ liệu không cần thiết? loại bỏ nó bằng cách nào?
+- Vẽ lại đồ thì boxplot, density plot, và histogram plot sau khi loại bỏ các giá trị ở bước trên.
+
+Câu 6: Lọc ra số liệu với chủ sở hữu là chính chủ, nhà có kết cấu kiên cố và bán kiên cố, và mục đích sử dụng là để ở và kinh doanh.
+
+Câu 7: (Câu hỏi phụ) ngoài 3 biểu đồ boxplot, density, và histogram, các bạn có thể sử dụng dạng biểu đồ nào cho gói dữ liệu gốc (gói dữ liệu bao gồm hơn 200 cột)
+
+Câu 8: Các bạn có ý kiến gì liên quan đến việc sử dụng hồi qui tuyến tính cho gói dữ liệu này không? biến nào có liên quan đến biến nào?
+
+Câu 9: Các bạn có thể sử dụng Rmarkdown để xuất ra 2 biểu đồ ở dạng tĩnh và dạng động (Sử dụng thư viện plotly) không? cho ví dụ.
+
+----NHÓM 2
+
+Câu 1: Sử dụng dplyr để chọn ra cột Q3 và toàn bộ cột liên quan đến Q18 và Q19 và đặt tên cho nhóm dữ liệu mới này.
+
+Câu 2: Trong nhóm dữ liệu mới này thì có bao nhiêu dữ liệu trống liên quan đến từng biến
+
+Câu 3: Tính toán tổng số hộ ứng với từng nhóm của biến Q18a1, Q18a2,Q18a3,Q18a4,Q18a5,Q18a6,Q18a7,Q18a8,Q18a9,Q18a10 yêu cầu sử dụng dplyr để cho ra bảng mới và sau đó dùng ggplot để vẽ đồ thị dạng thanh cho từng nhóm.
+
+Khi vẽ đồ thị, các bạn trang trí cho đồ thị của mình với các lớp sau
+
+- Lớp về tên các trục và tiêu đề của đồ thị
+- Lớp màu sắc --> thay đổi màu sắc và độ nổi và chìm (transparency) của đồ thị
+- Đặt lại tên các nhóm ở trục hoành thay vì các con số (Code), liệu có cách nào làm nhanh hơn không?
+
+
+Câu 4: Các bạn có nhận xét gì sau khi làm xong câu hỏi 3??
+
+
+Câu 5: Liên quan đến câu hỏi Q19 của bảng dữ liệu.
+
+- Có bao nhiêu giá trị rỗng? tính phần trăm lượng giá trị đó trên tổng số mẫu.Yêu cầu tính và in ra trực tiếp trên màn hình R.
+- Vẽ đồ thị dạng Boxplot (đồ thị hộp) cho giá trị này? sau khi vẽ thì có nhận xét gì không?
+- Vẽ đồ thị mật độ (density) và đồ thị tần suất (histogram) cho dữ liệu thuộc câu hỏi này --> sau khi vẽ thì có nhận xét gì không?
+- yêu cầu loại bỏ các dữ liệu không cần thiết? loại bỏ nó bằng cách nào?
+- Vẽ lại đồ thì boxplot, density plot, và histogram plot sau khi loại bỏ các giá trị ở bước trên.
+
+
+Câu 6: Sử dụng select và filter để lọc ra
+- Dữ liệu với phương tiện giao thông là xe máy có dung tích lớn hay nhỏ hơn 50cc, loại hình sở hữu là chủ sở hữu, và có đăng kí bảo hiểm.
+- Trong gói dữ liệu trên thì vẽ biểu đồ phân bổ và biểu đồ tần suất cho năm xe đã qua sử dụng.
+
+Câu 7: (Câu hỏi phụ) ngoài 3 biểu đồ boxplot, density, và histogram, các bạn có thể sử dụng dạng biểu đồ nào cho gói dữ liệu gốc (gói dữ liệu bao gồm hơn 200 cột)
+
+Câu 8: Các bạn có ý kiến gì liên quan đến việc sử dụng hồi qui tuyến tính cho gói dữ liệu này không? biến nào có liên quan đến biến nào?
+
+
+Câu 9: Các bạn có thể sử dụng Rmarkdown để xuất ra 2 biểu đồ ở dạng tĩnh và dạng động (Sử dụng thư viện plotly) không? cho ví dụ.
+
+
+
+----NHÓM 3
+
+
+Câu 1: Sử dụng dplyr để chọn ra cột Q43 đến cột Q61 và đặt tên cho nhóm dữ liệu mới này.
+
+Câu 2: Trong nhóm dữ liệu mới này thì có bao nhiêu dữ liệu trống liên quan đến từng biến
+
+Câu 3: Tính toán tổng số hộ ứng với từng nhóm của biến Q43, Q45, Q46, Q53, Q54, Q56, Q57, Q58, Q59, Q60 yêu cầu sử dụng dplyr để cho ra bảng mới và sau đó dùng ggplot để vẽ đồ thị dạng thanh cho từng nhóm.
+
+Khi vẽ đồ thị, các bạn trang trí cho đồ thị của mình với các lớp sau
+
+- Lớp về tên các trục và tiêu đề của đồ thị
+- Lớp màu sắc --> thay đổi màu sắc và độ nổi và chìm (transparency) của đồ thị
+- Đặt lại tên các nhóm ở trục hoành thay vì các con số (Code), liệu có cách nào làm nhanh hơn không?
+
+
+Câu 4: Các bạn có nhận xét gì sau khi làm xong câu hỏi 3??
+
+
+Câu 5: Liên quan đến câu hỏi Q19 của bảng dữ liệu.
+
+- Có bao nhiêu giá trị rỗng? tính phần trăm lượng giá trị đó trên tổng số mẫu.Yêu cầu tính và in ra trực tiếp trên màn hình R.
+- Vẽ đồ thị dạng Boxplot (đồ thị hộp) cho giá trị này? sau khi vẽ thì có nhận xét gì không?
+- Vẽ đồ thị mật độ (density) và đồ thị tần suất (histogram) cho dữ liệu thuộc câu hỏi này --> sau khi vẽ thì có nhận xét gì không?
+- yêu cầu loại bỏ các dữ liệu không cần thiết? loại bỏ nó bằng cách nào?
+- Vẽ lại đồ thì boxplot, density plot, và histogram plot sau khi loại bỏ các giá trị ở bước trên.
+
+
+Câu 6: Sử dụng select và filter để lọc ra
+- Dữ liệu với mà người dân mong muốn sống ở thành thị và gần trung tâm thương mại và trung tâm văn hóa và gần trường học.
+- Sắp xếp theo giá trị giảm gần cho từng nhóm.
+
+Câu 7: (Câu hỏi phụ) ngoài 3 biểu đồ boxplot, density, và histogram, các bạn có thể sử dụng dạng biểu đồ nào cho gói dữ liệu gốc (gói dữ liệu bao gồm hơn 200 cột)
+
+Câu 8: Các bạn có ý kiến gì liên quan đến việc sử dụng hồi qui tuyến tính cho gói dữ liệu này không? biến nào có liên quan đến biến nào?
+
+Câu 9: Các bạn có thể sử dụng Rmarkdown để xuất ra 2 biểu đồ ở dạng tĩnh và dạng động (Sử dụng thư viện plotly) không? cho ví dụ.
+
+
+
+
+----NHÓM 4
+
+
+Câu 1: Sử dụng dplyr để chọn ra cột Q61 đến cột cuối cùng của và đặt tên cho nhóm dữ liệu mới này.
+
+Câu 2: Trong nhóm dữ liệu mới này thì có bao nhiêu dữ liệu trống liên quan đến từng biến
+
+Câu 3: Tính toán tổng số hộ ứng với từng nhóm của biến Q62 và Q63 yêu cầu sử dụng dplyr để cho ra bảng mới và sau đó dùng ggplot để vẽ đồ thị dạng thanh cho từng nhóm.
+
+Khi vẽ đồ thị, các bạn trang trí cho đồ thị của mình với các lớp sau
+
+- Lớp về tên các trục và tiêu đề của đồ thị
+- Lớp màu sắc --> thay đổi màu sắc và độ nổi và chìm (transparency) của đồ thị
+- Đặt lại tên các nhóm ở trục hoành thay vì các con số (Code), liệu có cách nào làm nhanh hơn không?
+
+
+Câu 4: Các bạn có nhận xét gì sau khi làm xong câu hỏi 3??
+
+
+Câu 5: Liên quan đến câu hỏi Q9 của bảng dữ liệu.
+
+- Có bao nhiêu giá trị rỗng? tính phần trăm lượng giá trị đó trên tổng số mẫu.Yêu cầu tính và in ra trực tiếp trên màn hình R.
+- Vẽ đồ thị dạng Boxplot (đồ thị hộp) cho giá trị này? sau khi vẽ thì có nhận xét gì không?
+- Vẽ đồ thị mật độ (density) và đồ thị tần suất (histogram) cho dữ liệu thuộc câu hỏi này --> sau khi vẽ thì có nhận xét gì không?
+- yêu cầu loại bỏ các dữ liệu không cần thiết? loại bỏ nó bằng cách nào?
+- Vẽ lại đồ thì boxplot, density plot, và histogram plot sau khi loại bỏ các giá trị ở bước trên.
+
+
+Câu 6: Sử dụng select và filter để lọc ra
+- Lấy ít nhất 3 ví dụ sử dụng select, filter và arrange cho nhóm dữ liệu này và giải thích kết quả.
+
+Câu 7: (Câu hỏi phụ) ngoài 3 biểu đồ boxplot, density, và histogram, các bạn có thể sử dụng dạng biểu đồ nào cho gói dữ liệu gốc (gói dữ liệu bao gồm hơn 200 cột)
+
+Câu 8: Các bạn có ý kiến gì liên quan đến việc sử dụng hồi qui tuyến tính cho gói dữ liệu này không? biến nào có liên quan đến biến nào?
+
+Câu 9: Các bạn có thể sử dụng Rmarkdown để xuất ra 2 biểu đồ ở dạng tĩnh và dạng động (Sử dụng thư viện plotly) không? cho ví dụ.

@@ -1,0 +1,26 @@
+/* example style rule */
+.knime-title {
+	font-size: 16px;
+
+}
+
+.knime-subtitle {
+	font-size: 12px;
+
+}
+
+.main-knime-title {
+	font-size: 18px;
+	font-family: Calibri;
+
+}
+
+.main-knime-subtitle {
+	font-size: 16px;
+	font-family: Calibri;
+
+}
+
+.knime-table-control-text {
+    display: none;
+}

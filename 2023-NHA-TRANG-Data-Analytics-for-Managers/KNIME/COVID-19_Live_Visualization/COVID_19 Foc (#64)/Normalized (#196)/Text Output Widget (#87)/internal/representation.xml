@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
+    <entry key="label" type="xstring" value=""/>
+    <entry key="description" type="xstring" value=""/>
+    <entry key="format" type="xstring" value="Html"/>
+    <entry key="text" type="xstring" value="&lt;span class = &quot;knime-title&quot; style = &quot;font-size: 16px;&quot;&gt;World (All) Normalized Map for Cases by Country&lt;/span&gt;%%00010&lt;br&gt;%%00010&lt;span class = &quot;knime-subtitle&quot; style = &quot;font-size: 12px;&quot;&gt;The darker the color in a map region the more the number of cases. White color is for country with no available data.&lt;/span&gt;&lt;/p&gt;%%00010"/>
+</config>

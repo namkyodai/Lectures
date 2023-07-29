@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="selected_column" type="xstring" value="geo"/>
+        <config key="filter config">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="2"/>
+                <entry key="0" type="xstring" value="British Columbia"/>
+                <entry key="1" type="xstring" value="Canada"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="38"/>
+                <entry key="0" type="xstring" value="St. John's, Newfoundland and Labrador"/>
+                <entry key="1" type="xstring" value="New Brunswick"/>
+                <entry key="2" type="xstring" value="Trois-RiviÃ¨res, Quebec"/>
+                <entry key="3" type="xstring" value="Manitoba"/>
+                <entry key="4" type="xstring" value="Alberta"/>
+                <entry key="5" type="xstring" value="Kelowna, British Columbia"/>
+                <entry key="6" type="xstring" value="MontrÃ©al, Quebec"/>
+                <entry key="7" type="xstring" value="QuÃ©bec, Quebec"/>
+                <entry key="8" type="xstring" value="Regina, Saskatchewan"/>
+                <entry key="9" type="xstring" value="Ottawa-Gatineau, Ontario part, Ontario/Quebec"/>
+                <entry key="10" type="xstring" value="Edmonton, Alberta"/>
+                <entry key="11" type="xstring" value="Charlottetown, Prince Edward Island"/>
+                <entry key="12" type="xstring" value="Saint John, Fredericton, and Moncton, New Brunswick"/>
+                <entry key="13" type="xstring" value="Greater Sudbury, Ontario"/>
+                <entry key="14" type="xstring" value="Guelph, Ontario"/>
+                <entry key="15" type="xstring" value="Halifax, Nova Scotia"/>
+                <entry key="16" type="xstring" value="Sherbrooke, Quebec"/>
+                <entry key="17" type="xstring" value="Calgary, Alberta"/>
+                <entry key="18" type="xstring" value="Toronto, Ontario"/>
+                <entry key="19" type="xstring" value="Vancouver, British Columbia"/>
+                <entry key="20" type="xstring" value="Newfoundland and Labrador"/>
+                <entry key="21" type="xstring" value="Victoria, British Columbia"/>
+                <entry key="22" type="xstring" value="Prince Edward Island"/>
+                <entry key="23" type="xstring" value="Prairie Region"/>
+                <entry key="24" type="xstring" value="Kitchener-Cambridge-Waterloo, Ontario"/>
+                <entry key="25" type="xstring" value="Quebec"/>
+                <entry key="26" type="xstring" value="St. Catharines-Niagara, Ontario"/>
+                <entry key="27" type="xstring" value="Winnipeg, Manitoba"/>
+                <entry key="28" type="xstring" value="Saskatchewan"/>
+                <entry key="29" type="xstring" value="Ottawa-Gatineau, Quebec part, Ontario/Quebec"/>
+                <entry key="30" type="xstring" value="Oshawa, Ontario"/>
+                <entry key="31" type="xstring" value="Saskatoon, Saskatchewan"/>
+                <entry key="32" type="xstring" value="London, Ontario"/>
+                <entry key="33" type="xstring" value="Nova Scotia"/>
+                <entry key="34" type="xstring" value="Hamilton, Ontario"/>
+                <entry key="35" type="xstring" value="Windsor, Ontario"/>
+                <entry key="36" type="xstring" value="Ontario"/>
+                <entry key="37" type="xstring" value="Atlantic Region"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="includeMissing" type="xboolean" value="false"/>
+            </config>
+            <entry key="include_missing" type="xboolean" value="false"/>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Chọn 2 Vùng %%00013%%00010B.C %%00013%%00010và Canada "/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="627"/>
+        <entry key="y-coordinate" type="xint" value="880"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="45"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="9"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.nominal.NominalValueRowFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Nominal Value Row Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202301251625"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.2.v202303231026"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Nominal Value Row Filter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1182, Cols: 5"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="3c91389b-5298-45cf-a9ff-9c982b0916eb"/>
+    </config>
+</config>

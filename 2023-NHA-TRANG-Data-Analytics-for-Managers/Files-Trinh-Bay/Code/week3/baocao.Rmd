@@ -1,0 +1,62 @@
+---
+title: "Report"
+author: "Nam Le"
+date: "1/22/2022"
+#output: word_document
+#output: html_document
+output: slidy_presentation
+
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chương 1
+
+Đây là nội dung của chương 1, tóm tắt số liệu tổng hợp của gói dữ liệu có tên là cars. 
+
+```{r cars}
+summary(cars)
+```
+
+## Chương 2
+
+Vẽ biểu đồ liên quan đến biến áp suất
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Ví dụ
+
+## Chương 3
+
+Tổng hợp dữ liệu của phần đã học và vẽ biểu đồ liên quan.
+
+
+```{r ECHO = FALSE, message= FALSE}
+library(ggplot2)
+library(dplyr)
+
+# Load dataset from github
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv", header=TRUE)
+data <- data.frame(data)
+summary(data)
+```
+
+
+```{r ECHO = FALSE, message= FALSE}
+source("ggplot-density.r")
+a1
+```
+
+
+
+
+
+
+
+
+

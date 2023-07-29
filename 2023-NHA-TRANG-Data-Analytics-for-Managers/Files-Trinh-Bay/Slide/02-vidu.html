@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="TS. Lê Thanh Nam" />
+  <meta name="copyright" content="Bản Quyền của Cty TNHH ASQ Việt Nam - Chuẩn Bị cho Khóa Học tại Đại Học UEH"/>
+  <title>Phân Tích và Tính Toán với Dữ Liệu Đô Thị   Urban Computation</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <slide class="" id="">
+  <article>
+  <header class = 'logo'>
+  <div style="position: fixed; top:10px; right:10px; z-index:100">
+  <img src = "assets/img/logo-ueh.png" height="60" width="110">
+  </div>
+  </header>
+
+  <!-- <footer class = 'logo'>
+  <div style="position: fixed; top:10px; left:10px; z-index:100">
+  <img src = "assets/img/logo-asq.png" height="80" width="80">
+  </div>
+  </footer> -->
+
+  </article>
+  </slide>
+  <script src="02-vidu_files/header-attrs-2.23/header-attrs.js"></script>
+  <link href="02-vidu_files/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="02-vidu_files/slidy-2/scripts/slidy.js"></script>
+  <script src="02-vidu_files/slidy_shiny-1/slidy_shiny.js"></script>
+  <meta name="duration" content="45" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Phân Tích và Tính Toán với Dữ Liệu Đô Thị <br> Urban
+Computation</h1>
+  <h1 class="subtitle">Ví Dụ</h1>
+  <p class="author">
+<a href="https://namkyodai.github.io">TS. Lê Thanh Nam</a>
+  </p>
+  <p class="date">4-tháng 8-2023</p>
+</div>
+<div id="các-bước-trong-phân-tích-dữ-liệu" class="slide section level2">
+<h1>Các Bước Trong Phân Tích Dữ Liệu</h1>
+<p><img src="assets/img/data-science-explore.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ví-dụ-1-biến-động-giá-nhà-theo-thời-gian"
+class="slide section level2">
+<h1>Ví Dụ 1: Biến Động Giá Nhà Theo Thời Gian</h1>
+<blockquote>
+<p>“Chỉ Số Giá các loại nhà được tổng hợp cho từng khu vực và theo từng
+năm. Giá nhà biến động theo thời gian do ảnh hưởng của các yêu tố như
+chính sách, di chuyển dân cư, và tình hình phát triển kinh tế xã hội.
+Việc thiết lập cơ sở dữ liệu để lưu trữ lại chỉ số biến động giá nhà và
+các biến đi kèm với nó cần được thực hiện có hệ thống. Ở các nước phát
+triển, hệ thống cơ sở dữ liệu này được chỉa sẻ trực tiếp từ trang web
+của các tổ chức chính phủ.”</p>
+</blockquote>
+<p><img src="assets/img/NHPI_plot.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><a href="https://tradingeconomics.com/canada/housing-index"
+class="uri">https://tradingeconomics.com/canada/housing-index</a></p>
+<p><a
+href="https://www150.statcan.gc.ca/n1/pub/62f0014m/62f0014m2022003-eng.htm"
+class="uri">https://www150.statcan.gc.ca/n1/pub/62f0014m/62f0014m2022003-eng.htm</a></p>
+</div>
+<div id="ví-dụ-2-vệ-sinh-và-an-toàn-trong-cộng-đồng-dân-cư-wash"
+class="slide section level2">
+<h1>Ví Dụ 2: Vệ Sinh và An Toàn trong Cộng Đồng Dân Cư (WASH)</h1>
+<blockquote>
+<p>“Các tổ chức tài chính như Ngân Hàng Thế Giới, Ngân Hàng Châu Á, Quĩ
+IFC, trước khi ra các quyết định liên quan đến đầu tư cơ sở hạ tầng để
+phục vụ phát triển an sinh xã hội. Họ thường yêu cầu lập các báo cáo
+nghiên cứu tiền khả thi và khả thi. Các báo cáo này gồm nhiều cấu phần
+và một trong những cấu phần là liên quan đến thực trạng của môi trường
+sống. Ví dụ để xây dựng một nhà máy sản xuất nước ở một số xã ở vùng ven
+đô thị và vùng nông thôn của Việt Nam, IFC và các tổ chức tài chính nước
+ngoài thường yêu cầu thực hiện WASH, tức là điều tra và đánh giá về vệ
+sinh và an toàn của các hộ dân sinh sống trong khu vực ảnh hưởng của dự
+án.”</p>
+</blockquote>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/graph_a8_yes_perc.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="right" style="float:right;width:48%">
+<p><img src="assets/img/graph_a7q5.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="ví-dụ-3-đánh-giá-và-kiểm-định-công-trình-ở-qui-mô-chiến-lược"
+class="slide section level2">
+<h1>Ví Dụ 3: Đánh Giá và Kiểm Định Công Trình ở Qui Mô Chiến Lược</h1>
+<blockquote>
+<p>“Trước khi ra quyết định đầu tư liên quan đến mua bán và xát nhập
+công ty hay các công trình và hệ thống kĩ thuật. Chủ đầu tư thường thuê
+đơn vị tư vấn độc lập tiến hành khảo sát để đánh giá và kiểm định công
+trình ở mức độ chiến lược, việc đánh giá này thường được thực hiện trong
+một thời gian từ 2 đến 4 tuần, tùy vào mức độ qui mô của công trình. Để
+thực hiện được công việc này một cách bài bản, cần phát triển hệ thống
+ghi chép dữ liệu chặt chẽ ngay từ đầu.”</p>
+</blockquote>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/cooling.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="right" style="float:right;width:48%">
+<p><img src="assets/img/tdd01.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="ví-dụ-4-bảo-hiểm-nhân-thọ" class="slide section level2">
+<h1>Ví Dụ 4: Bảo Hiểm Nhân Thọ</h1>
+<blockquote>
+<p>“Khi bạn là một nhà quản lý và có một số đội ở dưới thì lúc đó bạn
+cần nắm bắt nhanh nhất có thể thông tin và báo cáo của các tổ trưởng các
+đội, và thậm chí là thông tin và báo cáo của từng người trong các tổ đội
+đó. Đây là một ví dụ cụ thể về việc tổng hợp thông tin liên quan đến bán
+bảo hiểm nhân thọ của một Công Ty Bảo Hiểm quốc tế, có trụ sở tại Việt
+Nam.”</p>
+</blockquote>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/knime-bao-hiem.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="right" style="float:right;width:48%">
+<p><img src="assets/img/knime-bao-hiem01.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="ví-dụ-5-quản-lý-dự-án." class="slide section level2">
+<h1>Ví Dụ 5: Quản Lý Dự Án.</h1>
+<blockquote>
+<p>“Khi tham gia vào một dự án, các nhà quản lý thường quan tâm đến tiến
+độ thực hiện dự án, tiến độ dự án không những về thời gian mà còn về
+khối lượng, hay đơn giản gọi là <strong>tiến độ Giải Ngân</strong>. Tiến
+độ này liên quan chặt chẽ tới thời gian và khối lượng công việc hoàn
+thành. Để nắm bắt được tiến độ này chính xác, bạn cần phải sử dụng các
+kiến thức liên quan đến EVM (Earned Value Management), mà để làm được
+việc này theo từng tuần, thậm chí là từng ngày thì bạn lại cần đến số
+liệu thu thập được từ từng cấu phần của dự án cho đến thời điểm hiện
+tại.”</p>
+</blockquote>
+<p><img src="assets/img/evm.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<div
+id="ví-dụ-6-thiết-kế-biển-bản-cuộc-họp-như-thế-nào-cho-tối-ưu-nhất."
+class="slide section level2">
+<h1>Ví Dụ 6: Thiết Kế Biển Bản Cuộc Họp Như Thế Nào Cho Tối Ưu
+Nhất.</h1>
+<blockquote>
+<p>“Việc viết biên bản cuộc họp là rất mất thời gian và đôi khi là mang
+nhiều tính rủi do liên quan đến câu chữ. Trong một tổ chức hay 1 dự án,
+có rất nhiều cuộc họp diễn ra và đôi khi bạn sẽ nhận thấy là các điểm
+nội dung của rất nhiều cuộc họp là giống nhau, và lặp đi lặp lại. Vậy
+chẳng nhẽ, mỗi lần như vậy, bạn cứ phải viết đi viết lại??? Bạn có muốn
+các biển bản cuộc họp được ghi chép một cách hệ thống để tiện cho công
+tác truy cứu và quản lý không?.”</p>
+</blockquote>
+<p><img src="assets/img/mom.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ví-dụ-7-bản-đồ-hóa-tình-hình-dịch-bệnh-covid-19."
+class="slide section level2">
+<h1>Ví Dụ 7: Bản Đồ Hóa Tình Hình Dịch Bệnh Covid-19.</h1>
+<p><img src="assets/img/covid-19.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="các-bước-trong-phân-tích-dữ-liệu-1"
+class="slide section level2">
+<h1>Các Bước Trong Phân Tích Dữ Liệu</h1>
+<p><img src="assets/img/data-science-explore.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "02-vidu_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

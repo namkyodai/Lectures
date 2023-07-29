@@ -1,0 +1,66 @@
+Yêu cầu
+
+--> nhóm trưởng liên hệ với thành viên của nhóm để tổ chức họp online trong tuần, trước khi buổi học tiếp theo. Ít nhất 1 lần trong 1 tuần tùy theo khối lượng công việc
+
+
+--> các thành viên trong nhóm thảo luận trong các buổi họp để trả lời các câu hỏi liên quan đến môn học. Các câu hỏi sẽ được giảng viên gửi qua email đến nhóm muộn nhất là vào thứ 2 của tuần tiếp theo. Trả lời cần được tải lên google drive của nhóm hoặc gửi qua email tới địa chỉ
+
+giảng viên: Lê Thanh Nam  namlt@ueh.edu.vn
+và trợ giảng: Lê Phan Trường An anlpt@ueh.edu.vn
+
+--> Nhóm sẽ trình bày trong 10 phút về kết quả thảo luận, sử dụng Rstudio để chạy các đoạn mã, hoặc sử dụng các phần mềm phân tích dữ liệu khác nếu nhóm và thành viên nhóm thấy phù hợp. Ví dụ, nhóm có thể sử dụng Python, KNIME, PowerBI.
+
+
+DỮ LIỆU LIÊN QUAN ĐẾN CÂU HỎI CHO TUẦN NÀY
+
+1. Dữ liệu về trẻ sơ sinh: Births2006 --> Tải về từ google drive MS-DS001\code\week2\Births\births2006.xlsx
+2. Dữ liệu về công tác đánh giá kiểm định công trình: MS-DS001\data\tdd\hanjinshipyard.xlsx
+
+
+CÂU HỎI/BÀI TẬP NHÓM
+
+A. Sử dụng thư viện dplyr của R để trả lời các câu hỏi sau liên quan đến gói dữ liệu Births2006
+
+1. Có bao nhiêu trẻ sơ sinh là Nam, bao nhiêu là Nữ?
+2. Có bao nhiêu phụ sản mà chúng ta không biết trình độ học vấn?
+3. Có bao nhiêu phụ sản sinh ít hơn 3 bé sơ sinh và sử dụng phương pháp đẻ tự nhiên?
+4. Có bao nhiêu trẻ sinh ra có chỉ số APGAR5 nhỏ hơn 3 và có cân nặng lớn hơn 2.5 kg? Trong số trẻ này thì có bao nhiêu trẻ sinh bằng phương pháp tự nhiên, bao nhiêu sinh ra bằng phương pháp cắt.
+
+
+5. Tháng nào trong năm có số lượng trẻ sơn sinh nhiều nhất?
+
+
+6. Câu hỏi phụ (không nhất thiết phải trả lời), các bạn có thẻ vẽ biểu đồ để thể hiện dữ liệu cho 5 câu hỏi trên không? --> sử dụng biểu đồ barchart, histogram sử dụng phụ kiện ggplot2
+
+
+
+7. Tìm mối tương quan giữa cân nặng của trẻ sơ sinh với các biến còn lại? Các biến nào các bạn sẽ chọn để dùng phân tích? Các bạn có kết luận gì không sau khi chạy phân tích với hồi qui tuyến tính chuẩn?
+
+
+B. Sử dụng thư viện dplyr của R để trả lời các câu hỏi sau liên quan đến gói dữ liệu hanjinshipyard
+
+1. Có bao nhiêu hạng mục cần sửa chữa và nâng cấp trong vòng 5 năm tới?
+
+
+2. Hiện tại biến UnitCost có giá trị tiền tệ là Peso --> thêm cột mới vào bảng sử dụng lệnh mutate() để tính giá đơn vị theo tiền VND, tỉ giá Peso/VND là 444 VND.
+3. Thêm một cột mới tính tổng chi phí theo VND cho từng hạng mục? Sử dụng công thức
+
+    Net Present Value (npv) = (giá đơn vị x khối lượng) x exp(-rho x t)
+
+    Trong đó exp() là hàm exponential
+
+    rho là lãi xuất ngân hàng, lấy trung bình là 6% cho 1 năm.
+
+    t là năm tiến hành công việc liên quan đến từng hạng mục.
+4. Sau khi làm xong câu hỏi 3, các bạn cho biết tổng số tiền VND cần bỏ ra để thực hiện công tác duy tuy và bảo dưỡng nhà máy đóng tàu Hanjin?
+
+5. Có bao nhiêu hạng mục có sự xuống cấp lớn hơn 2 và có rủi do nhỏ hơn 3? tổng chi phí cho các hạng mục này là bao nhiêu?
+
+6. Các bạn có thể vẽ biểu đồ (sử dụng ggplot2) cho các câu hỏi trên không?--> đây là câu hỏi phụ
+
+C. Câu hỏi lý thuyết
+
+1. Vì sao chúng ta cần phải sử dụng dữ liệu sạch (gọn gàng) để phân tích?
+2. Trong công việc hàng ngày của các bạn, nếu các bạn dùng excel thì có nên trộn nhiều bảng vào 1 sheet của excel không? nếu không thì giải thích tại sao?
+3. Các bạn có nên sử dụng merge hàng cột trong excel không? tại sao? Có biện pháp gì để sử lý vấn đề này khi dùng excel
+4. Các bạn có nên sử dụng subtotal trong bảng tính excel không? Giải thích tại sao.

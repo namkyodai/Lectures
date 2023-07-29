@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="TS Lê Thanh Nam" />
+  <meta name="copyright" content="Copyright of ASQ Vietnam Co. Ltd - Prepared for course at ISCM, UEH"/>
+  <title>Cơ Bản về Xữ Lý và Phân Tích Dữ Liệu</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <slide class="" id="">
+  <article>
+  <header class = 'logo'>
+  <div style="position: fixed; top:10px; right:10px; z-index:100">
+  <img src = "assets/img/logo-ueh.png" height="60" width="110">
+  </div>
+  </header>
+
+  <!-- <footer class = 'logo'>
+  <div style="position: fixed; top:10px; left:10px; z-index:100">
+  <img src = "assets/img/logo-asq.png" height="80" width="80">
+  </div>
+  </footer> -->
+
+  </article>
+  </slide>
+  <script src="week4-01-modeling-methods_files/header-attrs-2.11/header-attrs.js"></script>
+  <link href="week4-01-modeling-methods_files/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="week4-01-modeling-methods_files/slidy-2/scripts/slidy.js"></script>
+  <script src="week4-01-modeling-methods_files/slidy_shiny-1/slidy_shiny.js"></script>
+  <script src="week4-01-modeling-methods_files/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <link href="week4-01-modeling-methods_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="week4-01-modeling-methods_files/datatables-binding-0.19/datatables.js"></script>
+  <script src="week4-01-modeling-methods_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="week4-01-modeling-methods_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="week4-01-modeling-methods_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="week4-01-modeling-methods_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+  <link href="week4-01-modeling-methods_files/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="week4-01-modeling-methods_files/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+  <meta name="duration" content="45" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Cơ Bản về Xữ Lý và Phân Tích Dữ Liệu</h1>
+  <h1 class="subtitle">Các Phương Pháp Lập Mô Hình</h1>
+  <p class="author">
+<a href="https://namkyodai.github.io/vi">TS Lê Thanh Nam</a>
+  </p>
+  <p class="date">5-Tháng 2-2022</p>
+</div>
+<div id="giới-thiệu-về-cách-nhiệm-vụ-của-công-tác-mô-hình-hóa" class="slide section level2">
+<h1>Giới Thiệu về cách nhiệm vụ của công tác mô hình hóa</h1>
+<ul>
+<li>Phân loại (Classification): Quyết định nếu thông tin thuộc một nhóm này hay nhóm khác</li>
+<li>Ghi điểm (Scoring): Tiên lượng/tính toán một giá trị số (ví dụ như giá cả, lượng mưa, hay đơn giản là xác xuất)</li>
+<li>Xếp hạng (ranking): Học để xắp xếp thứ tự các đối tượng theo sở thích</li>
+<li>Xếp nhóm (Clustering): Nhóm các đối tượng theo tính chất giống nhau</li>
+<li>Tìm mối liên hệ (finding relations): Tìm mối tương quan hay nguyên nhân gây ảnh hưởng thấy trong dữ liệu</li>
+<li>Mô tả đặc điểm (Characterization): Vẽ biểu đồ và tạo ra báo cáo từ dữ liệu.</li>
+</ul>
+</div>
+<div id="lựa-chọn-và-đánh-giá-các-mô-hình" class="slide section level2">
+<h1>Lựa Chọn và Đánh Giá các Mô Hình</h1>
+<p>Làm thế nào để lựa chọn một mô hình phù hợp để giải quyết một bài toán kinh doanh/kĩ thuật cụ thể</p>
+<p>Làm thế nào để đánh giá chất lượng và tính hiệu quả của các mô hình</p>
+<ul>
+<li>Bản đồ hóa các vấn đề liên quan đến công việc tới các nhiệm vụ của học máy</li>
+<li>Đánh giá chất lượng mô hình</li>
+<li>Kiểm định lại mô hình</li>
+</ul>
+<h3 id="bản-đồ-hóa">Bản đồ hóa</h3>
+<p><img src="assets/img/modelschema.png" width="60%" style="display: block; margin: auto;" /></p>
+<h4 id="phân-loại-classification">Phân loại (Classification)</h4>
+<div id="htmlwidget-c5815db318714c2f9b0a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c5815db318714c2f9b0a">{"x":{"filter":"none","vertical":false,"data":[["Naïve Bayes","Cây quyết định (decision trees)","Hồi qui nhị thức (logistic regression)","Support vector machines"],["Đặc biệt hữu dụng với nhiều biến đầu vào, các biến đầu vào thường có giá trị rất lớn hoặc là là các giá trị chữ.","Được sử dụng phổ biến, đặc biệt với người không có nền tảng kĩ thuật vì nó rất dễ hiểu và dễ sử dụng. Phương pháp này được sử dụng khi chúng ta liên tưởng đến sự tương tác giữa các biến theo dạng IF-THEN hay theo dạng AND.","Phù hợp cho việc tính toán xác xuất trong bài toán phân loại.","Hay còn gọi tắt là SVMs, là phương pháp được được dùng cho các trường hợp mà các biến đầu vào đầu ra tương tác và liên hệ với nhau theo các hàm phi tuyến tính."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Phương Pháp<\/th>\n      <th>Chú Giải<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>Các ví dụ</p>
+<ul>
+<li>Phân tích và tiên đoán hành vi của khách hàng</li>
+<li>Phân loại tài liệu</li>
+<li>Lọc thư rác</li>
+<li>Phân loại ảnh</li>
+<li>Phân loại thông tin trang web</li>
+<li>Tiên đoán tỷ lệ bấm vào quảng cáo</li>
+<li>Phân loại sản phẩm</li>
+<li>Phân loại Malware</li>
+<li>Phân tích tính nhạy cảm của hình ảnh</li>
+<li>Phỏng đoán lỗi</li>
+<li>ETC</li>
+</ul>
+<h4 id="ghi-điểm-scoring">Ghi điểm (Scoring)</h4>
+<ul>
+<li>Phương pháp hồi qui tuyến tính</li>
+<li>Phương pháp hồi qui nhị thức</li>
+</ul>
+<h4 id="làm-việc-khi-không-biết-đến-các-đích-cụ-thể">Làm việc khi không biết đến các đích cụ thể</h4>
+<p>Các phương pháp đã được đề cập đòi hỏi chúng ta phải có một bộ dữ liệu học về các tình huống mà chúng ta đã biết trước kết quả. Nhưng trong thực tế thì chúng ta chưa chắc đã biết chắc chắn các biến đầu ra. Thay vào đó, chúng ta muốn quan tâm tới các hình thái học (patterns) và các mối quan hệ trong dữ liệu để từ đó chúng ta có thể hiểu được phần nào các đối tượng cần quan tâm (khách hàng hay một vấn đề nào đó trong kinh doanh).</p>
+<p>Các tính huống này thì liên quan đến một dạng tiếp cận trong phân tích dữ liệu gọi là “Học mà không có hướng dẫn/giám sát”. Với trường hợp này, chúng ta thường dùng các phương pháp nhóm (clustering).</p>
+<ul>
+<li>Phân nhóm K-means (K-means clustering)</li>
+<li>Thuật toán Apriori để tìm ra các qui luật liên kết</li>
+<li>Hàng xóm gần nhất</li>
+</ul>
+</div>
+<div id="các-phương-pháp-ghi-nhớ-memorization-methods" class="slide section level2">
+<h1>Các Phương Pháp Ghi Nhớ (Memorization Methods)</h1>
+<p>Tiên đoán/ước lượng dựa chủ yếu vào thông số thống kê cơ bản:</p>
+<ul>
+<li>Các bảng tra cứu (lookup tables)</li>
+<li>Các phương pháp hàng xóm gần nhất (nearest neighbors)</li>
+<li>Phương pháp phân loại Naive Bayes</li>
+<li>Phương pháp cây quyết định (decision trees)</li>
+</ul>
+</div>
+<div id="các-phương-pháp-hàng-xóm-gần-nhất-nearest-neighbors" class="slide section level2">
+<h1>Các phương pháp hàng xóm gần nhất (nearest neighbors)</h1>
+</div>
+<div id="phương-pháp-cây-quyết-định-decision-trees" class="slide section level2">
+<h1>Phương pháp cây quyết định (decision trees)</h1>
+<p>Cây quyết định là một loại mô hình đơn giản dùng để tiên đoán theo từng mẩu (hay còn gọi là cành của cây). Dù đơn giản nhưng nó khá thú vị bởi vì <a href="https://vi.wikipedia.org/wiki/Gi%E1%BA%A3_thuy%E1%BA%BFt_kh%C3%B4ng%5D"><strong>GIẢ THUYẾT KHÔNG</strong></a> (Null Hypothesis) mà chúng ta cố gắng để làm tốt hơn thì thường là một hằng số cho cả gói dữ liệu, do đó chúng ta có thể xem cây quyết định như là một quá trình chia gói dữ liệu học thành những gói nhỏ và dùng hằng số đã được ghi nhớ cho từng gói dữ liệu nhỏ đó.</p>
+<p>Phương pháp này thường được gọi là CART (Classification and Regression Trees) và được dùng để tiên lượng nhanh chóng cho cả các biến định lượng và biến định tính.</p>
+</div>
+<div id="mô-hình-hồi-qui-tuyến-tính-và-hồi-qui-nhị-thức" class="slide section level2">
+<h1>Mô Hình Hồi Qui Tuyến Tính và Hồi Qui Nhị Thức</h1>
+<p>Các phương pháp lựa chọn các hàm đơn giản với cấu trúc cộng dồn (addictive structure) - Hồi qui tuyến tính - Hồi qui nhị thức</p>
+<p>Các phương pháp này không những chỉ dùng để tiên lượng mà còn dùng để cung cấp thêm các thông tin liên quan đến mối quan hệ giữa các biến đầu vào và biến đầu ra.</p>
+</div>
+<div id="các-phương-pháp-không-giám-sát-unsupervized" class="slide section level2">
+<h1>Các Phương Pháp không Giám Sát (unsupervized)</h1>
+<p>Các phương pháp trong học máy liên quan đến việc xếp nhóm (cluster) và liên quan đến tính liên kết (association).</p>
+<p>Các phương pháp này không nhằm tiên đoán chính xác kết quả, mà chúng thường để dùng để tìm ra/phát hiện các mối quan hệ và cấu trúc ẩn trong dữ liệu.</p>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "week4-01-modeling-methods_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

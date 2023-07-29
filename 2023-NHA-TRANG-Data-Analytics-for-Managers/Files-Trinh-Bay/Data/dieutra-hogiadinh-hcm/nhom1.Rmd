@@ -1,0 +1,171 @@
+---
+title: "Phân Tích Dữ Liệu"
+subtitle: "Bài Tập Nhóm - Tuần 3"
+author: "Nhom 1"
+date: "2/11/2022"
+output: html_document
+---
+
+
+## Giới Thiệu
+
+Đây là gói dữ liệu khảo sát hơn 20000 hộ dân thành phố HCMC. Dữ liệu được khảo sát trong giai đoạn lập dự án khả thi xây dựng hệ thống Metro cho thành phố hồ chí minh.
+
+Xem phần đầu của dữ liệu
+
+```{r echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+library(readxl)# gói phụ kiện để đọc dữ liệu từ bảng tính excel
+library(DT)
+df=data.frame(read_excel("dieutra-hogiadinh-hcm.xlsx",sheet="ketquadieutra",skip = 0)) # 
+p<-datatable(head(df),rownames = FALSE,extensions = c('FixedColumns'),
+             options = list(pageLength = 10,
+            columnDefs = list(list(className = 'dt-left'))
+            ,autoWidth = TRUE,scrollX = TRUE,fixedColumns = TRUE)
+             )
+p
+```
+
+Xem phần đuôi của dữ liệu
+
+```{r echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+datatable(tail(df),rownames = FALSE,extensions = c('FixedColumns'),
+             options = list(pageLength = 10,
+            columnDefs = list(list(className = 'dt-left'))
+            ,autoWidth = TRUE,scrollX = TRUE,fixedColumns = TRUE)
+             )
+```
+
+Xem cấu trúc của dữ liệu
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+str(head(df))
+```
+
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+library(dplyr)
+glimpse(head(df))
+```
+
+File gốc
+
+```{r, echo=TRUE, include = TRUE,results = 'hide',message=FALSE,warning=FALSE}
+source("dieutra-hogiadinh-hcm.r")
+```
+
+Tả phải chuyển đổi dạng dữ liệu của từng biến
+
+```{r, echo=TRUE, include = FALSE,results = 'hide',message=FALSE,warning=FALSE}
+df$Q1a <- as.integer(df$Q1a) #chọn ra một số biến và định nghĩa lại
+library(purrr) #
+df <- df %>%
+  purrr::modify_at(c(2:10, 13:14, 16:21,25:30,44,46,50:51,54:55,58:59,62:63,66:67,70:71,74:75,78,79,82:83,86:87,89:90,92:229), factor)
+df$Q4<- as.character(df$Q4)
+df$Q6b <- as.character(df$Q6b)
+#df$Q9 <- as.integer(df$Q9) #chọn ra một số biến và định nghĩa lại
+df$Q11<- as.character(df$Q11)
+df$Q18a8<- as.numeric(df$Q18a8)
+df$Q18b8<- as.numeric(df$Q18b8)
+df$Q18a9<- as.numeric(df$Q18a9)
+df$Q18b9<- as.numeric(df$Q18b9)
+df$Q18a10<- as.numeric(df$Q18a10)
+df$Q18b10<- as.numeric(df$Q18b10)
+df$Q44b <- as.character(df$Q44b)
+```
+
+
+
+
+Xem lại dữ liệu xem có sự thay đổi gì không?
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+glimpse(head(df))
+```
+
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+df01 <- df%>%
+  select(Q3,Q4,Q7,Q8a,Q8b,Q8c,Q8d,Q8e,Q9,Q10,Q11)
+head(df01)
+summary(df01)
+```
+
+
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+table(df01$Q8a) # Cách tính thứ 1 sử dụng trực tiếp hàm table trong R
+df01 %>%
+count("Q8a")   # cách tính thứ 2 sử dụng dplyr với count
+count(df01, "Q8a")
+```
+
+Vẽ đồ thị thanh
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+ggplot(df01 %>%
+         count("Q8a"), aes(x=Q8a, y=freq))+
+  geom_bar(stat="identity") 
+```
+
+Trang điểm thêm cho đồ thị
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+df01 %>%
+  count("Q8a") %>%
+  ggplot(aes(x=Q8a, y=freq))+ #khai bao trục hoành x và trục tung
+  geom_bar(stat="identity", fill="red", alpha =0.5) + # khai báo biểu đồ dạng barchart, loại biểu đồ frequenty, tô đỏ và làm mờ vùng tô đỏ
+  labs(title ="Trình trạng nhà ở", # khai báo tên của biểu đồ
+       subtitle = "Chủ sở hữu", # khai báo tên phụ của biểu đồ
+       x = "Loại chủ sở hữu", # khai báo tên trục hoành
+       y = "Số lượng") # khai báo tên trục tung
+```
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+df01 %>%
+  count("Q8a") %>%
+  ggplot(aes(x=as.factor(Q8a), y=freq))+ # cách vẽ thứ 2 trong đó biến các giá trị 1, 2, 3, 4 thành dạng factor (category) thay vì là số, vì bản chất giá trị này không phải là số.
+  geom_bar(stat="identity", fill="red", alpha =0.5) +
+  labs(title ="Trình trạng nhà ở",
+       subtitle = "Chủ sở hữu",
+       x = "Loại chủ sở hữu",
+       y = "Số lượng")+
+  scale_x_discrete(labels = xticks) + # điền tên các giá trị tương ứng ở trục hoành
+  geom_text(aes(label=freq), position=position_dodge(width=0.9), vjust=-0.25, color ="blue") # thêm trên đầu mỗi thanh các giá trị tương ứng với nhóm
+
+```
+
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+tyle <- 1000000
+df01%>%
+  filter(!is.na(Q9), Q9 != 0, Q9 <10000000)%>%
+  select(Q9)%>%
+  ggplot(aes(x=Q9/tyle))+
+  geom_density()+
+  geom_histogram(aes(y = ..density..),colour = 1, fill = "white", alpha=0.2)
+
+```
+
+Vẽ đồ thị động
+
+```{r, echo=TRUE, include = TRUE,message=FALSE,warning=FALSE}
+tyle <- 1000000
+p<-df01%>%
+  filter(!is.na(Q9), Q9 != 0, Q9 <10000000)%>%
+  select(Q9)%>%
+  ggplot(aes(x=Q9/tyle))+
+  geom_density()+
+  geom_histogram(aes(y = ..density..),colour = 1, fill = "white", alpha=0.2)
+library(plotly)
+
+ggplotly(p)
+```
+
+
+
+

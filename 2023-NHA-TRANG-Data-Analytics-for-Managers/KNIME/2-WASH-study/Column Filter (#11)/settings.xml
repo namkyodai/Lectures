@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="Trình độ học vấn"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="241"/>
+                <entry key="0" type="xstring" value="Số Khảo Sát"/>
+                <entry key="1" type="xstring" value="Điều Tra Viên"/>
+                <entry key="2" type="xstring" value="Ngày-Tháng-Năm"/>
+                <entry key="3" type="xstring" value="Huyện"/>
+                <entry key="4" type="xstring" value="Thị Trấn"/>
+                <entry key="5" type="xstring" value="Tổ/Khu Phố"/>
+                <entry key="6" type="xstring" value="Số Nhà"/>
+                <entry key="7" type="xstring" value="Vị trí GPS%%00010N"/>
+                <entry key="8" type="xstring" value="Vị trí GPS, E"/>
+                <entry key="9" type="xstring" value="Họ Tên Người được phỏng vấn"/>
+                <entry key="10" type="xstring" value="Tuổi"/>
+                <entry key="11" type="xstring" value="Giới tính"/>
+                <entry key="12" type="xstring" value="Nghề nghiệp"/>
+                <entry key="13" type="xstring" value="Quan hệ với chủ hộ"/>
+                <entry key="14" type="xstring" value="Tổng số người hiện sống trong gia đình"/>
+                <entry key="15" type="xstring" value="Tổng số Nam giới trong gia đình"/>
+                <entry key="16" type="xstring" value="Tổng số nữ giới trong gia đình"/>
+                <entry key="17" type="xstring" value="Xe máy"/>
+                <entry key="18" type="xstring" value="Số lượng xe máy"/>
+                <entry key="19" type="xstring" value="Xe hơi"/>
+                <entry key="20" type="xstring" value="Số lượng xe hơi"/>
+                <entry key="21" type="xstring" value="Ti vi"/>
+                <entry key="22" type="xstring" value="Số lượng tivi"/>
+                <entry key="23" type="xstring" value="Tủ lạnh"/>
+                <entry key="24" type="xstring" value="Số lượng tủ lạnh"/>
+                <entry key="25" type="xstring" value="Máy điều hòa"/>
+                <entry key="26" type="xstring" value="Số lượng máy điều hòa"/>
+                <entry key="27" type="xstring" value="Máy giặt"/>
+                <entry key="28" type="xstring" value="Số lượng máy giặt"/>
+                <entry key="29" type="xstring" value="Máy nóng lạnh để tắm"/>
+                <entry key="30" type="xstring" value="Số lượng máy nóng lạnh để tắm"/>
+                <entry key="31" type="xstring" value="Máy vi tính/ laptop"/>
+                <entry key="32" type="xstring" value="Số lượng máy vi tính/laptop"/>
+                <entry key="33" type="xstring" value="Điện thoại di động/ cố định"/>
+                <entry key="34" type="xstring" value="Số lượng điện thoại"/>
+                <entry key="35" type="xstring" value="Sử dụng mạng internet"/>
+                <entry key="36" type="xstring" value="Đồ nội thất đắt tiền"/>
+                <entry key="37" type="xstring" value="Số lượng đồ nội thất đắt tiền"/>
+                <entry key="38" type="xstring" value="Máy bơm nước"/>
+                <entry key="39" type="xstring" value="Số lượng máy bơm nước"/>
+                <entry key="40" type="xstring" value="Loại nhà"/>
+                <entry key="41" type="xstring" value="Tình trạng nhà"/>
+                <entry key="42" type="xstring" value="Quyền Sở hữu nhà"/>
+                <entry key="43" type="xstring" value="Tổng chi phí hàng tháng (triệu VND)"/>
+                <entry key="44" type="xstring" value="Thuê nhà"/>
+                <entry key="45" type="xstring" value="Thực phẩm/ tạp hóa"/>
+                <entry key="46" type="xstring" value="Giáo dục"/>
+                <entry key="47" type="xstring" value="Chăm sóc sức khỏe"/>
+                <entry key="48" type="xstring" value="Tiền Ga, than"/>
+                <entry key="49" type="xstring" value="Tiền điện"/>
+                <entry key="50" type="xstring" value="Điện thoại/ di động"/>
+                <entry key="51" type="xstring" value="Nước đóng chai"/>
+                <entry key="52" type="xstring" value="Nước sạch không bao gồm nước đóng chai"/>
+                <entry key="53" type="xstring" value="Dịch vụ vệ sinh"/>
+                <entry key="54" type="xstring" value="Sửa chữa/ bảo trì nhà cửa"/>
+                <entry key="55" type="xstring" value="Đầu tư vào sản xuất nông nghiệp"/>
+                <entry key="56" type="xstring" value="Đầu tư cho kinh doanh"/>
+                <entry key="57" type="xstring" value="Chi phí đi lại"/>
+                <entry key="58" type="xstring" value="Giải trí (uống rượu, bia, thuốc là, tiệc tùng)"/>
+                <entry key="59" type="xstring" value="Khác"/>
+                <entry key="60" type="xstring" value="Kiểm tra lại kết quả tổng"/>
+                <entry key="61" type="xstring" value="Tổng thu nhập"/>
+                <entry key="62" type="xstring" value="Thu nhập từ nông nghiệp do gia đình sở hữu"/>
+                <entry key="63" type="xstring" value="Thu nhập từ lương cố định do người sử dụng lao động trả"/>
+                <entry key="64" type="xstring" value="Thu nhập từ lương hưu"/>
+                <entry key="65" type="xstring" value="Thu nhập từ tự kinh doanh (buôn bán, dịch vụ)"/>
+                <entry key="66" type="xstring" value="Tiền tiết kiệm"/>
+                <entry key="67" type="xstring" value="Tiền do con cái, người thân cho"/>
+                <entry key="68" type="xstring" value="Công việc bán thời gian ngoài mùa vụ"/>
+                <entry key="69" type="xstring" value="Thu nhập từ các nguồn khác"/>
+                <entry key="70" type="xstring" value="Kiểm tra tổng thu nhập"/>
+                <entry key="71" type="xstring" value="Tự đánh giá kinh tế gia đình so với hàng xóm"/>
+                <entry key="72" type="xstring" value="Điều tra viên đánh giá kinh tế gia đình so với hàng xóm"/>
+                <entry key="73" type="xstring" value="Khả năng chi trả chi phí so với thu nhập"/>
+                <entry key="74" type="xstring" value="Nếu không, vui lòng cho biết mức tổng thu nhập đủ để chi tiêu (triệu VNĐ/tháng)"/>
+                <entry key="75" type="xstring" value="Nước đóng chai (#1)"/>
+                <entry key="76" type="xstring" value="Có sử dụng thêm bộ lọc"/>
+                <entry key="77" type="xstring" value="Nước máy được cung cấp qua đường ống nước"/>
+                <entry key="78" type="xstring" value="Có sử dụng thêm bộ lọc (#1)"/>
+                <entry key="79" type="xstring" value="Nước mưa"/>
+                <entry key="80" type="xstring" value="Có sử dụng thêm bộ lọc (#2)"/>
+                <entry key="81" type="xstring" value="Giếng khoan"/>
+                <entry key="82" type="xstring" value="Có sử dụng thêm bộ lọc (#3)"/>
+                <entry key="83" type="xstring" value="Giếng đào"/>
+                <entry key="84" type="xstring" value="Có sử dụng thêm bộ lọc (#4)"/>
+                <entry key="85" type="xstring" value="Nước mặt (ao, hồ, sông)"/>
+                <entry key="86" type="xstring" value="Có sử dụng thêm bộ lọc (#5)"/>
+                <entry key="87" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời"/>
+                <entry key="88" type="xstring" value="Có sử dụng thêm bộ lọc (#6)"/>
+                <entry key="89" type="xstring" value="Nước từ các nguồn khác"/>
+                <entry key="90" type="xstring" value="Có sử dụng thêm bộ lọc (#7)"/>
+                <entry key="91" type="xstring" value="Nước đóng chai (#2)"/>
+                <entry key="92" type="xstring" value="chất lượng nước"/>
+                <entry key="93" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#1)"/>
+                <entry key="94" type="xstring" value="chất lượng nước (#1)"/>
+                <entry key="95" type="xstring" value="Nước mưa (#1)"/>
+                <entry key="96" type="xstring" value="chất lượng nước (#2)"/>
+                <entry key="97" type="xstring" value="Giếng khoan (#1)"/>
+                <entry key="98" type="xstring" value="chất lượng nước (#3)"/>
+                <entry key="99" type="xstring" value="Giếng đào (#1)"/>
+                <entry key="100" type="xstring" value="chất lượng nước (#4)"/>
+                <entry key="101" type="xstring" value="Nước mặt (ao, hồ, sông) (#1)"/>
+                <entry key="102" type="xstring" value="chất lượng nước (#5)"/>
+                <entry key="103" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#1)"/>
+                <entry key="104" type="xstring" value="chất lượng nước (#6)"/>
+                <entry key="105" type="xstring" value="Nước từ các nguồn khác (#1)"/>
+                <entry key="106" type="xstring" value="chất lượng nước (#7)"/>
+                <entry key="107" type="xstring" value="Lượng nước sinh hoạt dùng cho 1 tháng (m3/tháng)"/>
+                <entry key="108" type="xstring" value="Tính đáp ứng nhu cầu sử dụng"/>
+                <entry key="109" type="xstring" value="Nếu không đủ thì bao nhiêu là đủ (m3/tháng)"/>
+                <entry key="110" type="xstring" value="Phương tiện lưu trữ nước của gia đình"/>
+                <entry key="111" type="xstring" value="Ước tính thể tích bồn/bể chứa nước nếu có trong tương lai (m3)"/>
+                <entry key="112" type="xstring" value="Nước đóng chai (#3)"/>
+                <entry key="113" type="xstring" value="Nhận xét nếu có"/>
+                <entry key="114" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#2)"/>
+                <entry key="115" type="xstring" value="Nhận xét nếu có (#1)"/>
+                <entry key="116" type="xstring" value="Nước mưa (#2)"/>
+                <entry key="117" type="xstring" value="Nhận xét nếu có (#2)"/>
+                <entry key="118" type="xstring" value="Giếng khoan (#2)"/>
+                <entry key="119" type="xstring" value="Nhận xét nếu có (#3)"/>
+                <entry key="120" type="xstring" value="Giếng đào (#2)"/>
+                <entry key="121" type="xstring" value="Nhận xét nếu có (#4)"/>
+                <entry key="122" type="xstring" value="Nước mặt (ao, hồ, sông) (#2)"/>
+                <entry key="123" type="xstring" value="Nhận xét nếu có (#5)"/>
+                <entry key="124" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#2)"/>
+                <entry key="125" type="xstring" value="Nhận xét nếu có (#6)"/>
+                <entry key="126" type="xstring" value="Nước từ các nguồn khác (#2)"/>
+                <entry key="127" type="xstring" value="Nhận xét nếu có (#7)"/>
+                <entry key="128" type="xstring" value="Rủi ro tiềm tàng đối với nguồn nước trong khu vực"/>
+                <entry key="129" type="xstring" value="Mô tả rủi ro"/>
+                <entry key="130" type="xstring" value="Số tiền đầu tư trong 10 năm qua cho xây dựng và lắp đặt nguồn, thiết bị nước (triệu VNĐ)"/>
+                <entry key="131" type="xstring" value="Nước đóng chai (#4)"/>
+                <entry key="132" type="xstring" value="Nhận xét nếu có (#8)"/>
+                <entry key="133" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#3)"/>
+                <entry key="134" type="xstring" value="Nhận xét nếu có (#9)"/>
+                <entry key="135" type="xstring" value="Nước mưa (#3)"/>
+                <entry key="136" type="xstring" value="Nhận xét nếu có (#10)"/>
+                <entry key="137" type="xstring" value="Giếng khoan (#3)"/>
+                <entry key="138" type="xstring" value="Nhận xét nếu có (#11)"/>
+                <entry key="139" type="xstring" value="Giếng đào (#3)"/>
+                <entry key="140" type="xstring" value="Nhận xét nếu có (#12)"/>
+                <entry key="141" type="xstring" value="Nước mặt (ao, hồ, sông) (#3)"/>
+                <entry key="142" type="xstring" value="Nhận xét nếu có (#13)"/>
+                <entry key="143" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#3)"/>
+                <entry key="144" type="xstring" value="Nhận xét nếu có (#14)"/>
+                <entry key="145" type="xstring" value="Nước từ các nguồn khác (#3)"/>
+                <entry key="146" type="xstring" value="Nhận xét nếu có (#15)"/>
+                <entry key="147" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#4)"/>
+                <entry key="148" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#4)"/>
+                <entry key="149" type="xstring" value="Nước từ các nguồn khác (#4)"/>
+                <entry key="150" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#5)"/>
+                <entry key="151" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#5)"/>
+                <entry key="152" type="xstring" value="Nước từ các nguồn khác (#5)"/>
+                <entry key="153" type="xstring" value="Nước đóng chai (#5)"/>
+                <entry key="154" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm"/>
+                <entry key="155" type="xstring" value="Nước máy được cung cấp qua đường ống nước (#6)"/>
+                <entry key="156" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#1)"/>
+                <entry key="157" type="xstring" value="Nước mưa (#4)"/>
+                <entry key="158" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#2)"/>
+                <entry key="159" type="xstring" value="Giếng khoan (#4)"/>
+                <entry key="160" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#3)"/>
+                <entry key="161" type="xstring" value="Giếng đào (#4)"/>
+                <entry key="162" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#4)"/>
+                <entry key="163" type="xstring" value="Nước mặt (ao, hồ, sông) (#4)"/>
+                <entry key="164" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#5)"/>
+                <entry key="165" type="xstring" value="Nước sạch được cung cấp bằng bồn chứa rời (#6)"/>
+                <entry key="166" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#6)"/>
+                <entry key="167" type="xstring" value="Nước từ các nguồn khác (#6)"/>
+                <entry key="168" type="xstring" value="Nếu không đủ thì thiếu vào nhứng tháng nào trong năm (#7)"/>
+                <entry key="169" type="xstring" value="Ông bà có biết nước thải được thoát đi đâu không?"/>
+                <entry key="170" type="xstring" value="Nước thải được thoát đi qua"/>
+                <entry key="171" type="xstring" value="Có tình trạng úng ngập không?"/>
+                <entry key="172" type="xstring" value="Nếu tình trạng úng ngập xảy ra, thì tần suất là gì trong năm"/>
+                <entry key="173" type="xstring" value="Mất bao lâu thì nước úng/ngập mới thoát hết"/>
+                <entry key="174" type="xstring" value="Nguyên nhân gây ra úng ngập"/>
+                <entry key="175" type="xstring" value="Phương án đầu tư tốt nhất để loại bỏ tình trạng úng ngập"/>
+                <entry key="176" type="xstring" value="Gia đình có nhà vệ sinh riêng không?"/>
+                <entry key="177" type="xstring" value="Lý do gia đình chưa có nhà vệ sinh riêng"/>
+                <entry key="178" type="xstring" value="Loại hình nhà vệ sinh ông/bà đang sử dụng hiện nay là loại nhà vệ sinh nào?"/>
+                <entry key="179" type="xstring" value="Nhà vệ sinh của gia đình đã được xây dựng bao nhiêu năm"/>
+                <entry key="180" type="xstring" value="Gia đình ông/bà có ủ phân làm phân bón cho cây trồng không?"/>
+                <entry key="181" type="xstring" value="Nếu có, ông/bà thường ủ phân trong bao lâu trước khi mang ra bón cây? (ngày)"/>
+                <entry key="182" type="xstring" value="ông/bà có bao giờ bón trực tiếp phân tươi (chưa qua ủ) cho cây trồng không? (Chọn 1 phương án)"/>
+                <entry key="183" type="xstring" value="Điều tra viên đánh giá mức độ vệ sinh khi quan sát ngôi nhà."/>
+                <entry key="184" type="xstring" value="Đốt/ chôn trong vườn nhà"/>
+                <entry key="185" type="xstring" value="Gia đình tự mang ra bãi rác công cộng"/>
+                <entry key="186" type="xstring" value="Đổ vào chuồng gia súc"/>
+                <entry key="187" type="xstring" value="Vứt ra cánh đồng/ bụi cây/ ruộng/ ao/ kênh"/>
+                <entry key="188" type="xstring" value="Tổ vệ sinh đi thu gom rác"/>
+                <entry key="189" type="xstring" value="Gia đình ông/bà có phân loại rác thải rắn và rác thải thông thường trước khi mang đi đổ/đốt/chôn hay không? (Chọn 1 phương án)"/>
+                <entry key="190" type="xstring" value="Gia đình ông/bà có phải trả tiền thu gom rác hay không?"/>
+                <entry key="191" type="xstring" value="Nếu có thì Số tiền khoảng bao nhiêu cho 1 tháng"/>
+                <entry key="192" type="xstring" value="Bao lâu thì rác thải được thu gom 1 lần?"/>
+                <entry key="193" type="xstring" value="Khoảng cách từ gia đình Ông/Bà đến điểm tập kết rác là bao xa ____km?"/>
+                <entry key="194" type="xstring" value="Theo Ông/Bà, địa điểm tập kết rác có đảm bảo tiêu chuẩn vệ sinh trong cộng đồng không?"/>
+                <entry key="195" type="xstring" value="Theo ông/bà, trong cộng đồng có vấn đề môi trường nổi cộm nào không?"/>
+                <entry key="196" type="xstring" value="Ngập úng về mùa mưa"/>
+                <entry key="197" type="xstring" value="Rác không được thu gom, vứt bừa bãi"/>
+                <entry key="198" type="xstring" value="Không được cung cấp nước máy"/>
+                <entry key="199" type="xstring" value="Ô nhiễm nước sinh hoạt từ giếng ngầm/ nước sông rạch"/>
+                <entry key="200" type="xstring" value="Không có nhà tiêu đúng qui cách, hợp vệ sinh"/>
+                <entry key="201" type="xstring" value="Ô nhiễm từ nước thải"/>
+                <entry key="202" type="xstring" value="Thiếu hệ thống cống thoát nước"/>
+                <entry key="203" type="xstring" value="Ô nhiễm không khí/ khói bụi"/>
+                <entry key="204" type="xstring" value="Ô nhiễm tiếng ồn"/>
+                <entry key="205" type="xstring" value="Rau bị nhiễm thuốc"/>
+                <entry key="206" type="xstring" value="Khác (#1)"/>
+                <entry key="207" type="xstring" value="Cảm cúm"/>
+                <entry key="208" type="xstring" value="Nhức đầu"/>
+                <entry key="209" type="xstring" value="Tiêu chảy"/>
+                <entry key="210" type="xstring" value="Kiết lỵ"/>
+                <entry key="211" type="xstring" value="Sốt rét"/>
+                <entry key="212" type="xstring" value="Sốt xuất huyết"/>
+                <entry key="213" type="xstring" value="Tả"/>
+                <entry key="214" type="xstring" value="Những bệnh về mắt"/>
+                <entry key="215" type="xstring" value="Bệnh đường hô hấp"/>
+                <entry key="216" type="xstring" value="Phụ khoa"/>
+                <entry key="217" type="xstring" value="Giun sán"/>
+                <entry key="218" type="xstring" value="Viêm gan A"/>
+                <entry key="219" type="xstring" value="Da liễu"/>
+                <entry key="220" type="xstring" value="Bệnh dạ dày"/>
+                <entry key="221" type="xstring" value="Ung thư"/>
+                <entry key="222" type="xstring" value="Ngộ độc thực phẩm"/>
+                <entry key="223" type="xstring" value="Amip"/>
+                <entry key="224" type="xstring" value="khác"/>
+                <entry key="225" type="xstring" value="Trong 3 tháng qua gia đình ông/bà có ai bị mắc các bệnh đã đề cập ở trên không?"/>
+                <entry key="226" type="xstring" value="Theo ông/bà, nguồn nước sinh hoạt của gia đình sử dụng có bị ô nhiễm / nhiễm độc không?"/>
+                <entry key="227" type="xstring" value="Theo ông/bà, nước như thế nào được gọi là nước tốt / sạch / an toàn, hãy kể tên các tiêu chuẩn đó?"/>
+                <entry key="228" type="xstring" value="Ông/bà có nghĩ đến lợi ích nếu địa phương được đầu tư xây dựng nhà máy cấp nước và hệ thống phân phối?"/>
+                <entry key="229" type="xstring" value="Ông/Bà có sẵn sàng kết nối mạng lưới cấp nước nếu cước phí phải chăng?  Hay ông/bà vẫn thích sử dụng nguồn nước hiện có."/>
+                <entry key="230" type="xstring" value="Để có nguồn cung cấp nước đáng tin cậy hơn và chất lượng nước tốt hơn, ông/bà có sẵn sàng trả thêm chi phí trên chi phí tiêu thụ nước hiện có không?"/>
+                <entry key="231" type="xstring" value="Nếu Không, lý do dẫn đến quyết định của ông/bà là gì?"/>
+                <entry key="232" type="xstring" value="Nếu Có, bao nhiêu phần trăm gia tăng mà ông/bà có thể chi trả và sẵn sàng chi trả?"/>
+                <entry key="233" type="xstring" value="Cụ thể, phí dịch vụ hợp lý mà ông/bà phải trả cho 1 khối nước đã qua xử lý sẽ là bao nhiêu?"/>
+                <entry key="234" type="xstring" value="Cụ thể số tiền:…………….VNĐ/m3"/>
+                <entry key="235" type="xstring" value="Cụ thể, phí dịch vụ hợp lý mà ông/bà phải trả  Hoặc mỗi tháng hộ gia đình có thể chi trả/hộ/tháng"/>
+                <entry key="236" type="xstring" value="Cụ thể số tiền:…………….nghìn/hộ/tháng"/>
+                <entry key="237" type="xstring" value="Ngoài việc trả tiền nước hàng tháng, ông/bà có sẵn sàng trả chi phí đầu tư ban đầu cho đường ống đấu nối, máy bơm và bể chứa mới (nếu cần) đến đường ống phân phối nước mới gần nhất, có khả năng sẽ nằm ở đường hoặc lối đi gần đó không?"/>
+                <entry key="238" type="xstring" value="Nếu Có, số tiền đầu tư tối đa mà bạn cho rằng mình có thể đầu tư là bao nhiêu?"/>
+                <entry key="239" type="xstring" value="Cụ thể số tiền là? Triệu VNĐ/đầu tư 1 lần"/>
+                <entry key="240" type="xstring" value="Nếu nhà máy nước được chọn để đặt tại trang trại / đất nông nghiệp của ông/bà, ông/bà có sẵn sàng hợp tác với nhà đầu tư và chính quyền địa phương để đền bù và giải phóng mặt bằng không?"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Trọn cột Trình%%00013%%00010độ học vấn"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="187"/>
+        <entry key="y-coordinate" type="xint" value="299"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="30"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="9"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202301251625"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.2.v202303231026"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 308, Cols: 1"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

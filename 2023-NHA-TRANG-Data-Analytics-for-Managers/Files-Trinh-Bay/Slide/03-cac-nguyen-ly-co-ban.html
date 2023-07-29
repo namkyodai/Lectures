@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Nam LE" />
+  <meta name="copyright" content="Bản Quyền của Cty TNHH ASQ Việt Nam - Chuẩn Bị cho Khóa Học tại Đại Học UEH."/>
+  <title>Các Nguyên Lý Cơ Bản Trong Phân Tích Dữ Liệu</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+              </style>
+  <slide class="" id="">
+  <article>
+  <header class = 'logo'>
+  <div style="position: fixed; top:10px; right:10px; z-index:100">
+  <img src = "assets/img/logo-ueh.png" height="60" width="110">
+  </div>
+  </header>
+
+  <!-- <footer class = 'logo'>
+  <div style="position: fixed; top:10px; left:10px; z-index:100">
+  <img src = "assets/img/logo-asq.png" height="80" width="80">
+  </div>
+  </footer> -->
+
+  </article>
+  </slide>
+  <script src="03-cac-nguyen-ly-co-ban_files/header-attrs-2.23/header-attrs.js"></script>
+  <link href="03-cac-nguyen-ly-co-ban_files/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="03-cac-nguyen-ly-co-ban_files/slidy-2/scripts/slidy.js"></script>
+  <script src="03-cac-nguyen-ly-co-ban_files/slidy_shiny-1/slidy_shiny.js"></script>
+  <script src="03-cac-nguyen-ly-co-ban_files/kePrint-0.0.1/kePrint.js"></script>
+  <link href="03-cac-nguyen-ly-co-ban_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
+  <meta name="duration" content="45" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Các Nguyên Lý Cơ Bản Trong Phân Tích Dữ Liệu</h1>
+  <h1 class="subtitle">Lý Thuyết Về Dữ Liệu</h1>
+  <p class="author">
+<a href="https://namkyodai.github.io">Nam LE</a>
+  </p>
+  <p class="date">5 - Tháng 8- 2023</p>
+</div>
+<div id="giới-thiệu" class="slide section level2">
+<h1>Giới Thiệu</h1>
+<blockquote>
+<p>Khoa học dữ liệu là khoa học và việc thiết kế của (1) liên tục tạo ra
+một câu hỏi để điều tra một giả định với dữ liệu, (2) thiết lập và kết
+nối câu hỏi đó với việc thu thập các dữ liệu liên quan và ứng dụng các
+phương pháp phù hợp, và (3) liên kết và ra quyết định dựa vào các kiến
+thức đã có hoặc kiến thức mới có được từ việc phân tích dữ liệu.</p>
+</blockquote>
+<blockquote>
+<footer>
+— Stephanie C. Hicks and Roger D. Peng, 2019
+</footer>
+</blockquote>
+<blockquote>
+<p>Phân tích dữ liệu là một quá trình điều tra tìm hiểm để lấy ra các
+kiến thức, thông tin, và các nội dung của hiện thực.</p>
+</blockquote>
+<blockquote>
+<footer>
+— Grolemund and Wickham, 2014
+</footer>
+</blockquote>
+<ul>
+<li><p><a
+href="http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf">50
+năm ngành khoa học dữ liệu</a></p></li>
+<li><p><a
+href="https://arxiv.org/ftp/arxiv/papers/1712/1712.07349.pdf">Khoa học
+dữ liệu: Một rạp xiếc có 3 vòng hay là một cái lều lớn?</a></p></li>
+<li><p><a href="https://arxiv.org/pdf/1903.07639v1.pdf">Các Yếu Tố Cơ
+Bản và Nguyên Lý của Phân Tích Dữ Liệu</a></p></li>
+<li><p><a
+href="http://veekaybee.github.io/2019/02/13/data-science-is-different/">Khoa
+Học Dữ Liệu Giờ Đây Đã Khác Biệt</a></p></li>
+</ul>
+</div>
+<div id="giới-thiệu---các-yếu-tố-của-phân-tích-dữ-liệu"
+class="slide section level2">
+<h1>Giới Thiệu - Các Yếu Tố của Phân Tích Dữ Liệu</h1>
+<blockquote>
+<p>Các Yếu Tố của phân tích dữ liệu là các Thành Phần cơ bản được nhà
+phân tích dùng như: Đoạn mã, ghi chú cho đoạn mã, trực quan hóa dữ liệu,
+các dòng viết diễn tả, các bản thống kê, các mô hình thống kê hay các
+thuật toán dùng để tính toán.</p>
+</blockquote>
+<blockquote>
+<footer>
+— Breiman, 2001
+</footer>
+</blockquote>
+<table class=" lightable-paper" style="font-size: 22px; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Yếu Tố
+</th>
+<th style="text-align:left;">
+Giải Thích
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Văn bản giải thích
+</td>
+<td style="text-align:left;">
+Nhóm từ mô tả hay đoạn văn bản nằm diễn tả cái đang diễn ra trong việc
+phân tích dữ liệu ở định dạng đọc được
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Đoạn mã
+</td>
+<td style="text-align:left;">
+Một chuỗi các hướng hướng dẫn logic để thực hiện một chương trình máy
+tính
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ghi chú cho đoạn mã
+</td>
+<td style="text-align:left;">
+Các đoạn mã không được máy tính thực hiện, hoặc các đoạn văn bản (chữ)
+viết bên cạnh Đoạn Mã để giải thích kết quả khi đoạn mã đó được thực
+hiện
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Trực quan hóa dữ liệu
+</td>
+<td style="text-align:left;">
+Một biểu đồ, hình ảnh, hay đồ họa để biểu diễn dữ liệu
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biểu đồ diễn giải
+</td>
+<td style="text-align:left;">
+Một sơ đồ hay biểu đồ trình tự thao tác mà không có dữ liệu trong đó
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Tổng hợp thống kê
+</td>
+<td style="text-align:left;">
+Các con số thống kê được tính toán từ dữ liệu như số Trung Bình, Phương
+Sai…
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bảng
+</td>
+<td style="text-align:left;">
+Một sự bố trí của dữ liệu theo hàng và cột
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mô hình xác xuất thống kê và thuật toán
+</td>
+<td style="text-align:left;">
+Mô hình toán hay thuật toán kết nối dữ liệu nền/gốc, hay quá trình tạo
+ra dữ liệu, khả năng tiên đoán, và thuật toán máy tính.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---công-việc-khớp-dữ-liệu"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Công Việc Khớp Dữ Liệu</h1>
+<div class="left" style="float:left;width:48%">
+<ul>
+<li><p>Các dữ liệu có tính kết nối và tính khớp nhau cao sẽ giúp nhà
+phân tích xem xét các giả định và các vấn đề tốt hơn là việc xem xét các
+dữ liệu dời dạc và không khớp.</p></li>
+<li><p>Công việc khớp dữ liệu (đôi khi được biết đến là việc ghi hay
+liên kết dữ liệu, định danh…) là một tác vụ liên quan đến xác định, khớp
+nhau, kết nối các bảng ghi có cùng chung các thuộc tính từ các bảng dữ
+liệu khác nhau trong một hệ thống cơ sở dữ liệu.</p></li>
+</ul>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/datamatching.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---tính-toàn-diện"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Tính Toàn Diện</h1>
+<div class="left" style="float:left;width:48%">
+<ul>
+<li><p>Một phân tích được cho là toàn diện nếu các câu hỏi cụ thể hay
+các giả định được đề cập sử dụng nhiều thành phần bổ sung.</p></li>
+<li><p>Việc kết hợp nhiều thành phần có thể đưa ra một bức tranh toàn
+diện liên quan đến chứng cứ trong dữ liệu hơn là việc sử dụng chỉ một
+thành phần.</p></li>
+</ul>
+<p><img src="assets/img/dataexhausive.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/dataexhausive02.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---tính-hoài-nghi"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Tính Hoài Nghi</h1>
+<ul>
+<li>Một phân tích có tính hoài nghi nếu nhiều giả định hoặc nhiều giải
+thích của một hiện tượng được quan sát là được xem xét khi sử dụng cùng
+nguồn dữ liệu và đưa ra được tính kiên định trong dữ liệu với các giải
+thích khác. Trái ngược lại, các phân tích mà không tính đến lời giải
+thích khác thì được coi là không có tính hoài nghi.</li>
+</ul>
+<p><img src="assets/img/data-skeptical01.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---bậc-2"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Bậc 2</h1>
+<ul>
+<li>Một phân tích được coi có tính chất bậc 2 nếu nó bao gồm các thành
+phần khác mà không trực tiếp đề cập đến giải định/câu hỏi ban đầu, nhưng
+lại có thể đưa/chỉ ra được bối cảnh quan trọng của việc phân tích.</li>
+</ul>
+<p><img src="assets/img/data-2ndorder.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---sự-minh-bạch"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Sự Minh Bạch</h1>
+<div class="left" style="float:left;width:48%">
+<ul>
+<li><p>Các phân tích có tính minh bạch thể hiện một yếu cố hay nhiều yêu
+tố thống kê lại/ hoặc trực quan hóa các dữ liệu có tính ảnh hưởng đến
+việc giải thích như thế nào mà các hiện tượng hay quá trình tạo ra dữ
+liệu kết nối với kết quả đầu ra hay các kết luận.</p></li>
+<li><p>Trong khi toàn bộ việc phân tích có thể là phức tạp và liên quan
+đến nhiều bước tính toán rất dài, các phân tích có tính minh bạch lấy ra
+một hoặc vài thành tố có thể giải thích được tính biến đổi nhiều nhất
+hay ảnh hưởng nhất tới việc hiểu biết các kết quả hay các kết
+luận.</p></li>
+</ul>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/data-transparency.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="các-nguyên-lý-của-phân-tích-dữ-liệu---có-tính-sao-chép-lại"
+class="slide section level2">
+<h1>Các Nguyên Lý của Phân Tích Dữ Liệu - Có Tính Sao Chép Lại</h1>
+<div class="left" style="float:left;width:48%">
+<ul>
+<li><p>Một phân tích là có tính sao chép nếu một người nào đó không phải
+là người phân tích ban đầu có thể sử dụng phân tích đó dễ dàng và tạo ra
+kết quả như nhau, giống với kết quả mà người phân tích ban đầu tạo
+ra.</p></li>
+<li><p>Vấn đề quan trọng của việc sao chép là khả năng có thể dùng được
+của cầu phần phân tích đối với người khác.</p></li>
+<li><p>Tính sao chép là quan trọng trong ngữ cảnh cùng làm việc theo
+Luồng công việc (Workflow).</p></li>
+</ul>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="assets/img/data-reproducible.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<!-- ## Các Nguyên Lý của Phân Tích Dữ Liệu - Tính Nguyên Tử -->
+<!-- <div class='left' style='float:left;width:48%'> -->
+<!-- - the data analyst first chooses a principle to investigate a hypothes is -->
+<!-- or scientific question (Stage A).  -->
+<!-- - the analyst alternates between Stages B and C until the analyst exits the atomic unit, either by choosing to end the line of investigation or choosing to invoke a new principle. -->
+<!-- </div> -->
+<!-- <div class='left' style='float:left;width:48%'> -->
+<!-- ```{r, echo=FALSE, out.width="100%", fig.cap="", fig.align = 'center'} -->
+<!-- knitr::include_graphics("assets/img/data-atomic.png") -->
+<!-- ``` -->
+<!-- </div> -->
+<!-- ## Hiểu Rõ Dữ Liệu của Bạn (1) -->
+<!-- **[Nền Tảng về Phân Tích Dữ Liệu: Hiểu Dữ Liệu Của Bạn. Phải Thật Sự, Thật Sự Hiểu Nó](https://towardsdatascience.com/data-science-foundations-know-your-data-really-really-know-it-a6bb97eb991c).** -->
+<!-- > Bạn đồng nghiệp trong công ty, mặc dù họ không có chuyên môn về dữ liệu, nhưng họ là chuyên gia về lĩnh vực chuyên môn của họ. Nên nếu bạn là một nhà phân tích dữ liệu còn non trẻ, bạn không nên  -->
+<!-- Your colleagues in business, despite not being data people, aren’t idiots of any sort (hopefully). They’re domain experts that know tons about the business. Don’t be the junior analyst presenting a brilliant new finding to the CEO that gets asked "so did you take out the 3 special high volume contract accounts we have?”, doesn’t end well. -->
+<!-- ```{r, echo=FALSE, out.width="80%", fig.cap="", fig.align = 'center'} -->
+<!-- url <- "https://miro.medium.com/max/875/1*MmmBLiC7GACdZWwZFykoqQ.png" -->
+<!-- knitr::include_graphics(url) -->
+<!-- #knitr::include_graphics("../Visual/data-atomic.png") -->
+<!-- ``` -->
+</div>
+<div id="hiểu-dữ-liệu-của-bạn" class="slide section level2">
+<h1>Hiểu Dữ Liệu của Bạn</h1>
+<div class="left" style="float:left;width:48%">
+<ul>
+<li>Hiểu về cấu trúc dữ liệu</li>
+<li>Hiểu về việc ghi dữ liệu</li>
+<li>Hiểu về các thói quen trong kinh doanh</li>
+<li>Hiểu dữ liệu từ đâu tới, nó được hình thành như thế nào</li>
+<li>Hiểu về các quyết định liên quan đến thu thập</li>
+</ul>
+<p><span style="color: red;"> Bạn không bao giờ có được bộ dữ liệu hoàn
+hảo hay hiểu được rõ ràng về toàn bộ dữ liệu bạn hiện có. Bởi vì, chỉ
+khi bạn đã nắm bắt và hiểu rõ về một điều gì đó, thì sẽ có những thuộc
+tính mới được thêm vào, thay đổi về tiêu chuẩn, hay hệ thông bị lỗi
+thời. Do đó, bạn nên <strong>Tiếp Tục Học</strong>, ghi lại nhưng điều
+cần thiết, để lại dấu tích để bạn có thể quay lại với công việc mà không
+mất thêm quá nhiều thời gian.</span></p>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="https://miro.medium.com/max/865/1*X1n4WeN_cWohvxRkeVCPMQ.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="khuynh-hướng-sai-của-dữ-liệu" class="slide section level2">
+<h1>Khuynh Hướng Sai của Dữ Liệu</h1>
+<div class="left" style="float:left;width:48%">
+<p><a
+href="https://www.npr.org/2019/03/17/704209639/caroline-criado-perez-on-data-bias-and-invisible-women">Caroline
+Criado-Perez On Data Bias And ‘Invisible Women’</a></p>
+<iframe src="https://www.npr.org/player/embed/704209639/704209640" width="90%" height="180" frameborder="0" scrolling="no" title="NPR embedded audio player">
+</iframe>
+<div class="left" style="float:left;width:48%">
+<p><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617113740i/41104077._UY473_SS473_.jpg" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="https://api.time.com/wp-content/uploads/2016/08/weapons-of-math-destruction.jpeg" width="68%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div class="left" style="float:left;width:48%">
+<p><img src="https://productiveclub.com/wp-content/uploads/2020/07/sampling-bias.jpeg" width="90%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "03-cac-nguyen-ly-co-ban_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>

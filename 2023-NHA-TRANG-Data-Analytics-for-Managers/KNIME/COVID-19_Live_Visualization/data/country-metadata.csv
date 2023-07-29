@@ -1,0 +1,263 @@
+"Continent_Name","Continent_Code","Country_Name","Two_Letter_Country_Code","Three_Letter_Country_Code","Country_Number","Population"
+"Asia","AS","Afghanistan, Islamic Republic of","AF","AFG",4,37172386
+"Europe","EU","Albania, Republic of","AL","ALB",8,2866376
+"Africa","AF","Algeria, People's Democratic Republic of","DZ","DZA",12,42228429
+"Oceania","OC","American Samoa","AS","ASM",16,55465
+"Europe","EU","Andorra, Principality of","AD","AND",20,77006
+"Africa","AF","Angola, Republic of","AO","AGO",24,30809762
+"North America","NA","Antigua and Barbuda","AG","ATG",28,96286
+"Europe","EU","Azerbaijan, Republic of","AZ","AZE",31,9942334
+"Asia","AS","Azerbaijan, Republic of","AZ","AZE",31,9942334
+"South America","SA","Argentina, Argentine Republic","AR","ARG",32,44494502
+"Oceania","OC","Australia, Commonwealth of","AU","AUS",36,24992369
+"Europe","EU","Austria, Republic of","AT","AUT",40,8847037
+"North America","NA","Bahamas, Commonwealth of the","BS","BHS",44,385640
+"Asia","AS","Bahrain, Kingdom of","BH","BHR",48,1569439
+"Asia","AS","Bangladesh, People's Republic of","BD","BGD",50,161356039
+"Europe","EU","Armenia, Republic of","AM","ARM",51,2951776
+"Asia","AS","Armenia, Republic of","AM","ARM",51,2951776
+"North America","NA","Barbados","BB","BRB",52,286641
+"Europe","EU","Belgium, Kingdom of","BE","BEL",56,11422068
+"North America","NA","Bermuda","BM","BMU",60,63968
+"Asia","AS","Bhutan, Kingdom of","BT","BTN",64,754394
+"South America","SA","Bolivia, Republic of","BO","BOL",68,11353142
+"Europe","EU","Bosnia and Herzegovina","BA","BIH",70,3323929
+"Africa","AF","Botswana, Republic of","BW","BWA",72,2254126
+"South America","SA","Brazil, Federative Republic of","BR","BRA",76,209469333
+"Central America","NA","Belize","BZ","BLZ",84,383071
+"Oceania","OC","Solomon Islands","SB","SLB",90,652858
+"North America","NA","British Virgin Islands","VG","VGB",92,29802
+"Asia","AS","Brunei Darussalam","BN","BRN",96,428962
+"Europe","EU","Bulgaria, Republic of","BG","BGR",100,7024216
+"Asia","AS","Myanmar, Union of","MM","MMR",104,53708395
+"Africa","AF","Burundi, Republic of","BI","BDI",108,11175378
+"Europe","EU","Belarus, Republic of","BY","BLR",112,9485386
+"Asia","AS","Cambodia, Kingdom of","KH","KHM",116,16249798
+"Africa","AF","Cameroon, Republic of","CM","CMR",120,25216237
+"North America","NA","Canada","CA","CAN",124,37058856
+"Africa","AF","Cape Verde, Republic of","CV","CPV",132,543767
+"North America","NA","Cayman Islands","KY","CYM",136,64174
+"Africa","AF","Central African Republic","CF","CAF",140,4666377
+"Asia","AS","Sri Lanka, Democratic Socialist Republic of","LK","LKA",144,21670000
+"Africa","AF","Chad, Republic of","TD","TCD",148,15477751
+"South America","SA","Chile, Republic of","CL","CHL",152,18729160
+"Asia","AS","China, People's Republic of","CN","CHN",156,1392730000
+"South America","SA","Colombia, Republic of","CO","COL",170,49648685
+"Africa","AF","Comoros, Union of the","KM","COM",174,832322
+"Africa","AF","Congo, Republic of the","CG","COG",178,5244363
+"Africa","AF","Congo, Democratic Republic of the","CD","COD",180,84068091
+"Central America","NA","Costa Rica, Republic of","CR","CRI",188,4999441
+"Europe","EU","Croatia, Republic of","HR","HRV",191,4089400
+"North America","NA","Cuba, Republic of","CU","CUB",192,11338138
+"Europe","EU","Cyprus, Republic of","CY","CYP",196,1189265
+"Asia","AS","Cyprus, Republic of","CY","CYP",196,1189265
+"Europe","EU","Czech Republic","CZ","CZE",203,10625695
+"Africa","AF","Benin, Republic of","BJ","BEN",204,11485048
+"Europe","EU","Denmark, Kingdom of","DK","DNK",208,5797446
+"North America","NA","Dominica, Commonwealth of","DM","DMA",212,71625
+"North America","NA","Dominican Republic","DO","DOM",214,10627165
+"South America","SA","Ecuador, Republic of","EC","ECU",218,17084357
+"Central America","NA","El Salvador, Republic of","SV","SLV",222,6420744
+"Africa","AF","Equatorial Guinea, Republic of","GQ","GNQ",226,1308974
+"Africa","AF","Ethiopia, Federal Democratic Republic of","ET","ETH",231,109224559
+"Africa","AF","Eritrea, State of","ER","ERI",232,
+"Europe","EU","Estonia, Republic of","EE","EST",233,1320884
+"Europe","EU","Faroe Islands","FO","FRO",234,48497
+"Oceania","OC","Fiji, Republic of the Fiji Islands","FJ","FJI",242,883483
+"Europe","EU","Finland, Republic of","FI","FIN",246,5518050
+"Europe","EU","France, French Republic","FR","FRA",250,66987244
+"Oceania","OC","French Polynesia","PF","PYF",258,277679
+"Africa","AF","Djibouti, Republic of","DJ","DJI",262,958920
+"Africa","AF","Gabon, Gabonese Republic","GA","GAB",266,2119275
+"Europe","EU","Georgia","GE","GEO",268,3731000
+"Asia","AS","Georgia","GE","GEO",268,3731000
+"Africa","AF","Gambia, Republic of the","GM","GMB",270,2280102
+"Asia","AS","Palestinian Territory, Occupied","PS","PSE",275,4569087
+"Europe","EU","Germany, Federal Republic of","DE","DEU",276,82927922
+"Africa","AF","Ghana, Republic of","GH","GHA",288,29767108
+"Europe","EU","Gibraltar","GI","GIB",292,33718
+"Oceania","OC","Kiribati, Republic of","KI","KIR",296,115847
+"Europe","EU","Greece, Hellenic Republic","GR","GRC",300,10727668
+"North America","NA","Greenland","GL","GRL",304,56025
+"North America","NA","Grenada","GD","GRD",308,111454
+"Oceania","OC","Guam","GU","GUM",316,165768
+"Central America","NA","Guatemala, Republic of","GT","GTM",320,17247807
+"Africa","AF","Guinea, Republic of","GN","GIN",324,12414318
+"South America","SA","Guyana, Co-operative Republic of","GY","GUY",328,779004
+"North America","NA","Haiti, Republic of","HT","HTI",332,11123176
+"Central America","NA","Honduras, Republic of","HN","HND",340,9587522
+"Asia","AS","Hong Kong, Special Administrative Region of China","HK","HKG",344,7451000
+"Europe","EU","Hungary, Republic of","HU","HUN",348,9768785
+"Europe","EU","Iceland, Republic of","IS","ISL",352,353574
+"Asia","AS","India, Republic of","IN","IND",356,1352617328
+"Asia","AS","Indonesia, Republic of","ID","IDN",360,267663435
+"Asia","AS","Iran, Islamic Republic of","IR","IRN",364,81800269
+"Asia","AS","Iraq, Republic of","IQ","IRQ",368,38433600
+"Europe","EU","Ireland","IE","IRL",372,4853506
+"Asia","AS","Israel, State of","IL","ISR",376,8883800
+"Europe","EU","Italy, Italian Republic","IT","ITA",380,60431283
+"Africa","AF","Cote d'Ivoire, Republic of","CI","CIV",384,25069229
+"North America","NA","Jamaica","JM","JAM",388,2934855
+"Asia","AS","Japan","JP","JPN",392,126529100
+"Europe","EU","Kazakhstan, Republic of","KZ","KAZ",398,18276499
+"Asia","AS","Kazakhstan, Republic of","KZ","KAZ",398,18276499
+"Asia","AS","Jordan, Hashemite Kingdom of","JO","JOR",400,9956011
+"Africa","AF","Kenya, Republic of","KE","KEN",404,51393010
+"Asia","AS","Korea, Democratic People's Republic of","KP","PRK",408,25549819
+"Asia","AS","Korea, Republic of","KR","KOR",410,51635256
+"Asia","AS","Kuwait, State of","KW","KWT",414,4137309
+"Asia","AS","Kyrgyz Republic","KG","KGZ",417,6315800
+"Asia","AS","Lao People's Democratic Republic","LA","LAO",418,7061507
+"Asia","AS","Lebanon, Lebanese Republic","LB","LBN",422,6848925
+"Africa","AF","Lesotho, Kingdom of","LS","LSO",426,2108132
+"Europe","EU","Latvia, Republic of","LV","LVA",428,1926542
+"Africa","AF","Liberia, Republic of","LR","LBR",430,4818977
+"Africa","AF","Libyan Arab Jamahiriya","LY","LBY",434,6678567
+"Europe","EU","Liechtenstein, Principality of","LI","LIE",438,37910
+"Europe","EU","Lithuania, Republic of","LT","LTU",440,2789533
+"Europe","EU","Luxembourg, Grand Duchy of","LU","LUX",442,607728
+"Asia","AS","Macao, Special Administrative Region of China","MO","MAC",446,631636
+"Africa","AF","Madagascar, Republic of","MG","MDG",450,26262368
+"Africa","AF","Malawi, Republic of","MW","MWI",454,18143315
+"Asia","AS","Malaysia","MY","MYS",458,31528585
+"Asia","AS","Maldives, Republic of","MV","MDV",462,515696
+"Africa","AF","Mali, Republic of","ML","MLI",466,19077690
+"Europe","EU","Malta, Republic of","MT","MLT",470,483530
+"Africa","AF","Mauritania, Islamic Republic of","MR","MRT",478,4403319
+"Africa","AF","Mauritius, Republic of","MU","MUS",480,1265303
+"Central America","NA","Mexico, United Mexican States","MX","MEX",484,126190788
+"Europe","EU","Monaco, Principality of","MC","MCO",492,38682
+"Asia","AS","Mongolia","MN","MNG",496,3170208
+"Europe","EU","Moldova, Republic of","MD","MDA",498,3545883
+"Europe","EU","Montenegro, Republic of","ME","MNE",499,622345
+"Africa","AF","Morocco, Kingdom of","MA","MAR",504,36029138
+"Africa","AF","Mozambique, Republic of","MZ","MOZ",508,29495962
+"Asia","AS","Oman, Sultanate of","OM","OMN",512,4829483
+"Africa","AF","Namibia, Republic of","NA","NAM",516,2448255
+"Oceania","OC","Nauru, Republic of","NR","NRU",520,12704
+"Asia","AS","Nepal, State of","NP","NPL",524,28087871
+"Europe","EU","Netherlands, Kingdom of the","NL","NLD",528,17231017
+"North America","NA","Curaçao","CW","CUW",531,159849
+"North America","NA","Aruba","AW","ABW",533,105845
+"North America","NA","Sint Maarten (Netherlands)","SX","SXM",534,40654
+"Oceania","OC","New Caledonia","NC","NCL",540,284060
+"Oceania","OC","Vanuatu, Republic of","VU","VUT",548,292680
+"Oceania","OC","New Zealand","NZ","NZL",554,4885500
+"Central America","NA","Nicaragua, Republic of","NI","NIC",558,6465513
+"Africa","AF","Niger, Republic of","NE","NER",562,22442948
+"Africa","AF","Nigeria, Federal Republic of","NG","NGA",566,195874740
+"Europe","EU","Norway, Kingdom of","NO","NOR",578,5314336
+"Oceania","OC","Northern Mariana Islands, Commonwealth of the","MP","MNP",580,56882
+"Oceania","OC","Micronesia, Federated States of","FM","FSM",583,112640
+"Oceania","OC","Marshall Islands, Republic of the","MH","MHL",584,58413
+"Oceania","OC","Palau, Republic of","PW","PLW",585,17907
+"Asia","AS","Pakistan, Islamic Republic of","PK","PAK",586,212215030
+"Central America","NA","Panama, Republic of","PA","PAN",591,4176873
+"Oceania","OC","Papua New Guinea, Independent State of","PG","PNG",598,8606316
+"South America","SA","Paraguay, Republic of","PY","PRY",600,6956071
+"South America","SA","Peru, Republic of","PE","PER",604,31989256
+"Asia","AS","Philippines, Republic of the","PH","PHL",608,106651922
+"Europe","EU","Poland, Republic of","PL","POL",616,37978548
+"Europe","EU","Portugal, Portuguese Republic","PT","PRT",620,10281762
+"Africa","AF","Guinea-Bissau, Republic of","GW","GNB",624,1874309
+"Asia","AS","Timor-Leste, Democratic Republic of","TL","TLS",626,1267972
+"North America","NA","Puerto Rico, Commonwealth of","PR","PRI",630,3195153
+"Asia","AS","Qatar, State of","QA","QAT",634,2781677
+"Europe","EU","Romania","RO","ROU",642,19473936
+"Europe","EU","Russian Federation","RU","RUS",643,144478050
+"Asia","AS","Russian Federation","RU","RUS",643,144478050
+"Africa","AF","Rwanda, Republic of","RW","RWA",646,12301939
+"North America","NA","Saint Kitts and Nevis, Federation of","KN","KNA",659,52441
+"North America","NA","Saint Lucia","LC","LCA",662,181889
+"North America","NA","Saint Martin","MF","MAF",663,37264
+"North America","NA","Saint Vincent and the Grenadines","VC","VCT",670,110210
+"Europe","EU","San Marino, Republic of","SM","SMR",674,33785
+"Africa","AF","Sao Tome and Principe, Democratic Republic of","ST","STP",678,211028
+"Asia","AS","Saudi Arabia, Kingdom of","SA","SAU",682,33699947
+"Africa","AF","Senegal, Republic of","SN","SEN",686,15854360
+"Europe","EU","Serbia, Republic of","RS","SRB",688,6982084
+"Africa","AF","Seychelles, Republic of","SC","SYC",690,96762
+"Africa","AF","Sierra Leone, Republic of","SL","SLE",694,7650154
+"Asia","AS","Singapore, Republic of","SG","SGP",702,5638676
+"Europe","EU","Slovakia (Slovak Republic)","SK","SVK",703,5447011
+"Asia","AS","Vietnam, Socialist Republic of","VN","VNM",704,95540395
+"Europe","EU","Slovenia, Republic of","SI","SVN",705,2067372
+"Africa","AF","Somalia, Somali Republic","SO","SOM",706,15008154
+"Africa","AF","South Africa, Republic of","ZA","ZAF",710,57779622
+"Africa","AF","Zimbabwe, Republic of","ZW","ZWE",716,14439018
+"Europe","EU","Spain, Kingdom of","ES","ESP",724,46723749
+"Africa","AF","South Sudan","SS","SSD",728,10975920
+"Africa","AF","Sudan, Republic of","SD","SDN",736,41801533
+"South America","SA","Suriname, Republic of","SR","SUR",740,575991
+"Africa","AF","Swaziland, Kingdom of","SZ","SWZ",748,1136191
+"Europe","EU","Sweden, Kingdom of","SE","SWE",752,10183175
+"Europe","EU","Switzerland, Swiss Confederation","CH","CHE",756,8516543
+"Asia","AS","Syrian Arab Republic","SY","SYR",760,16906283
+"Asia","AS","Tajikistan, Republic of","TJ","TJK",762,9100837
+"Asia","AS","Thailand, Kingdom of","TH","THA",764,69428524
+"Africa","AF","Togo, Togolese Republic","TG","TGO",768,7889094
+"Oceania","OC","Tonga, Kingdom of","TO","TON",776,103197
+"North America","NA","Trinidad and Tobago, Republic of","TT","TTO",780,1389858
+"Asia","AS","United Arab Emirates","AE","ARE",784,9630959
+"Africa","AF","Tunisia, Tunisian Republic","TN","TUN",788,11565204
+"Europe","EU","Turkey, Republic of","TR","TUR",792,82319724
+"Asia","AS","Turkey, Republic of","TR","TUR",792,82319724
+"Asia","AS","Turkmenistan","TM","TKM",795,5850908
+"North America","NA","Turks and Caicos Islands","TC","TCA",796,37665
+"Oceania","OC","Tuvalu","TV","TUV",798,11508
+"Africa","AF","Uganda, Republic of","UG","UGA",800,42723139
+"Europe","EU","Ukraine","UA","UKR",804,44622516
+"Europe","EU","Macedonia, The Former Yugoslav Republic of","MK","MKD",807,2082958
+"Africa","AF","Egypt, Arab Republic of","EG","EGY",818,98423595
+"Europe","EU","United Kingdom of Great Britain & Northern Ireland","GB","GBR",826,66488991
+"Europe","EU","Isle of Man","IM","IMN",833,84077
+"Africa","AF","Tanzania, United Republic of","TZ","TZA",834,56318348
+"North America","NA","United States of America","US","USA",840,327167434
+"North America","NA","United States Virgin Islands","VI","VIR",850,106977
+"Africa","AF","Burkina Faso","BF","BFA",854,19751535
+"South America","SA","Uruguay, Eastern Republic of","UY","URY",858,3449299
+"Asia","AS","Uzbekistan, Republic of","UZ","UZB",860,32955400
+"South America","SA","Venezuela, Bolivarian Republic of","VE","VEN",862,28870195
+"Oceania","OC","Samoa, Independent State of","WS","WSM",882,196130
+"Asia","AS","Yemen","YE","YEM",887,28498687
+"Africa","AF","Zambia, Republic of","ZM","ZMB",894,17351822
+"Antarctica","AN","Antarctica (the territory South of 60 deg S)","AQ","ATA",10,
+"Antarctica","AN","Bouvet Island (Bouvetoya)","BV","BVT",74,
+"Asia","AS","British Indian Ocean Territory (Chagos Archipelago)","IO","IOT",86,
+"Asia","AS","Taiwan","TW","TWN",158,
+"Asia","AS","Christmas Island","CX","CXR",162,
+"Asia","AS","Cocos (Keeling) Islands","CC","CCK",166,
+"Africa","AF","Mayotte","YT","MYT",175,
+"Oceania","OC","Cook Islands","CK","COK",184,
+"South America","SA","Falkland Islands (Malvinas)","FK","FLK",238,
+"Antarctica","AN","South Georgia and the South Sandwich Islands","GS","SGS",239,
+"Europe","EU","Åland Islands","AX","ALA",248,
+"South America","SA","French Guiana","GF","GUF",254,
+"Antarctica","AN","French Southern Territories","TF","ATF",260,
+"North America","NA","Guadeloupe","GP","GLP",312,
+"Antarctica","AN","Heard Island and McDonald Islands","HM","HMD",334,
+"Europe","EU","Holy See (Vatican City State)","VA","VAT",336,
+"North America","NA","Martinique","MQ","MTQ",474,
+"North America","NA","Montserrat","MS","MSR",500,
+"North America","NA","Netherlands Antilles","AN","ANT",530,
+"North America","NA","Bonaire, Sint Eustatius and Saba","BQ","BES",535,
+"Oceania","OC","Niue","NU","NIU",570,
+"Oceania","OC","Norfolk Island","NF","NFK",574,
+"Oceania","OC","United States Minor Outlying Islands","UM","UMI",581,
+"North America","NA","United States Minor Outlying Islands","UM","UMI",581,
+"Oceania","OC","Pitcairn Islands","PN","PCN",612,
+"Africa","AF","Reunion","RE","REU",638,
+"North America","NA","Saint Barthelemy","BL","BLM",652,
+"Africa","AF","Saint Helena","SH","SHN",654,
+"North America","NA","Anguilla","AI","AIA",660,
+"North America","NA","Saint Pierre and Miquelon","PM","SPM",666,
+"Africa","AF","Western Sahara","EH","ESH",732,
+"Europe","EU","Svalbard & Jan Mayen Islands","SJ","SJM",744,
+"Oceania","OC","Tokelau","TK","TKL",772,
+"Europe","EU","Guernsey, Bailiwick of","GG","GGY",831,
+"Europe","EU","Jersey, Bailiwick of","JE","JEY",832,
+"Oceania","OC","Wallis and Futuna","WF","WLF",876,
+"Oceania","OC","Disputed Territory","XX",,,
+"Asia","AS","Iraq-Saudi Arabia Neutral Zone","XE",,,
+"Asia","AS","United Nations Neutral Zone","XD",,,
+"Asia","AS","Spratly Islands","XS",,,

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="Filter Column Settings">
+            <entry key="filter-type" type="xstring" value="name_pattern"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="697"/>
+                <entry key="0" type="xstring" value="date"/>
+                <entry key="1" type="xstring" value="Afghanistan_confirmed+Sum(cases)"/>
+                <entry key="2" type="xstring" value="Afghanistan_confirmed+Sum(cases_normalized)"/>
+                <entry key="3" type="xstring" value="Albania_confirmed+Sum(cases)"/>
+                <entry key="4" type="xstring" value="Albania_confirmed+Sum(cases_normalized)"/>
+                <entry key="5" type="xstring" value="Algeria_confirmed+Sum(cases)"/>
+                <entry key="6" type="xstring" value="Algeria_confirmed+Sum(cases_normalized)"/>
+                <entry key="7" type="xstring" value="Andorra_confirmed+Sum(cases)"/>
+                <entry key="8" type="xstring" value="Andorra_confirmed+Sum(cases_normalized)"/>
+                <entry key="9" type="xstring" value="Angola_confirmed+Sum(cases)"/>
+                <entry key="10" type="xstring" value="Angola_confirmed+Sum(cases_normalized)"/>
+                <entry key="11" type="xstring" value="Antigua and Barbuda_confirmed+Sum(cases)"/>
+                <entry key="12" type="xstring" value="Antigua and Barbuda_confirmed+Sum(cases_normalized)"/>
+                <entry key="13" type="xstring" value="Argentina_confirmed+Sum(cases)"/>
+                <entry key="14" type="xstring" value="Argentina_confirmed+Sum(cases_normalized)"/>
+                <entry key="15" type="xstring" value="Armenia_confirmed+Sum(cases)"/>
+                <entry key="16" type="xstring" value="Armenia_confirmed+Sum(cases_normalized)"/>
+                <entry key="17" type="xstring" value="Australia_confirmed+Sum(cases)"/>
+                <entry key="18" type="xstring" value="Australia_confirmed+Sum(cases_normalized)"/>
+                <entry key="19" type="xstring" value="Austria_confirmed+Sum(cases)"/>
+                <entry key="20" type="xstring" value="Austria_confirmed+Sum(cases_normalized)"/>
+                <entry key="21" type="xstring" value="Azerbaijan_confirmed+Sum(cases)"/>
+                <entry key="22" type="xstring" value="Azerbaijan_confirmed+Sum(cases_normalized)"/>
+                <entry key="23" type="xstring" value="Bahamas_confirmed+Sum(cases)"/>
+                <entry key="24" type="xstring" value="Bahamas_confirmed+Sum(cases_normalized)"/>
+                <entry key="25" type="xstring" value="Bahrain_confirmed+Sum(cases)"/>
+                <entry key="26" type="xstring" value="Bahrain_confirmed+Sum(cases_normalized)"/>
+                <entry key="27" type="xstring" value="Bangladesh_confirmed+Sum(cases)"/>
+                <entry key="28" type="xstring" value="Bangladesh_confirmed+Sum(cases_normalized)"/>
+                <entry key="29" type="xstring" value="Barbados_confirmed+Sum(cases)"/>
+                <entry key="30" type="xstring" value="Barbados_confirmed+Sum(cases_normalized)"/>
+                <entry key="31" type="xstring" value="Belarus_confirmed+Sum(cases)"/>
+                <entry key="32" type="xstring" value="Belarus_confirmed+Sum(cases_normalized)"/>
+                <entry key="33" type="xstring" value="Belgium_confirmed+Sum(cases)"/>
+                <entry key="34" type="xstring" value="Belgium_confirmed+Sum(cases_normalized)"/>
+                <entry key="35" type="xstring" value="Belize_confirmed+Sum(cases)"/>
+                <entry key="36" type="xstring" value="Belize_confirmed+Sum(cases_normalized)"/>
+                <entry key="37" type="xstring" value="Benin_confirmed+Sum(cases)"/>
+                <entry key="38" type="xstring" value="Benin_confirmed+Sum(cases_normalized)"/>
+                <entry key="39" type="xstring" value="Bhutan_confirmed+Sum(cases)"/>
+                <entry key="40" type="xstring" value="Bhutan_confirmed+Sum(cases_normalized)"/>
+                <entry key="41" type="xstring" value="Bolivia_confirmed+Sum(cases)"/>
+                <entry key="42" type="xstring" value="Bolivia_confirmed+Sum(cases_normalized)"/>
+                <entry key="43" type="xstring" value="Bosnia and Herzegovina_confirmed+Sum(cases)"/>
+                <entry key="44" type="xstring" value="Bosnia and Herzegovina_confirmed+Sum(cases_normalized)"/>
+                <entry key="45" type="xstring" value="Brazil_confirmed+Sum(cases)"/>
+                <entry key="46" type="xstring" value="Brazil_confirmed+Sum(cases_normalized)"/>
+                <entry key="47" type="xstring" value="Brunei_confirmed+Sum(cases)"/>
+                <entry key="48" type="xstring" value="Brunei_confirmed+Sum(cases_normalized)"/>
+                <entry key="49" type="xstring" value="Bulgaria_confirmed+Sum(cases)"/>
+                <entry key="50" type="xstring" value="Bulgaria_confirmed+Sum(cases_normalized)"/>
+                <entry key="51" type="xstring" value="Burkina Faso_confirmed+Sum(cases)"/>
+                <entry key="52" type="xstring" value="Burkina Faso_confirmed+Sum(cases_normalized)"/>
+                <entry key="53" type="xstring" value="Cabo Verde_confirmed+Sum(cases)"/>
+                <entry key="54" type="xstring" value="Cabo Verde_confirmed+Sum(cases_normalized)"/>
+                <entry key="55" type="xstring" value="Cambodia_confirmed+Sum(cases)"/>
+                <entry key="56" type="xstring" value="Cambodia_confirmed+Sum(cases_normalized)"/>
+                <entry key="57" type="xstring" value="Cameroon_confirmed+Sum(cases)"/>
+                <entry key="58" type="xstring" value="Cameroon_confirmed+Sum(cases_normalized)"/>
+                <entry key="59" type="xstring" value="Canada_confirmed+Sum(cases)"/>
+                <entry key="60" type="xstring" value="Canada_confirmed+Sum(cases_normalized)"/>
+                <entry key="61" type="xstring" value="Central African Republic_confirmed+Sum(cases)"/>
+                <entry key="62" type="xstring" value="Central African Republic_confirmed+Sum(cases_normalized)"/>
+                <entry key="63" type="xstring" value="Chad_confirmed+Sum(cases)"/>
+                <entry key="64" type="xstring" value="Chad_confirmed+Sum(cases_normalized)"/>
+                <entry key="65" type="xstring" value="Chile_confirmed+Sum(cases)"/>
+                <entry key="66" type="xstring" value="Chile_confirmed+Sum(cases_normalized)"/>
+                <entry key="67" type="xstring" value="China_confirmed+Sum(cases)"/>
+                <entry key="68" type="xstring" value="China_confirmed+Sum(cases_normalized)"/>
+                <entry key="69" type="xstring" value="Colombia_confirmed+Sum(cases)"/>
+                <entry key="70" type="xstring" value="Colombia_confirmed+Sum(cases_normalized)"/>
+                <entry key="71" type="xstring" value="Congo (Brazzaville)_confirmed+Sum(cases)"/>
+                <entry key="72" type="xstring" value="Congo (Brazzaville)_confirmed+Sum(cases_normalized)"/>
+                <entry key="73" type="xstring" value="Congo (Kinshasa)_confirmed+Sum(cases)"/>
+                <entry key="74" type="xstring" value="Congo (Kinshasa)_confirmed+Sum(cases_normalized)"/>
+                <entry key="75" type="xstring" value="Costa Rica_confirmed+Sum(cases)"/>
+                <entry key="76" type="xstring" value="Costa Rica_confirmed+Sum(cases_normalized)"/>
+                <entry key="77" type="xstring" value="Cote d'Ivoire_confirmed+Sum(cases)"/>
+                <entry key="78" type="xstring" value="Cote d'Ivoire_confirmed+Sum(cases_normalized)"/>
+                <entry key="79" type="xstring" value="Croatia_confirmed+Sum(cases)"/>
+                <entry key="80" type="xstring" value="Croatia_confirmed+Sum(cases_normalized)"/>
+                <entry key="81" type="xstring" value="Cuba_confirmed+Sum(cases)"/>
+                <entry key="82" type="xstring" value="Cuba_confirmed+Sum(cases_normalized)"/>
+                <entry key="83" type="xstring" value="Cyprus_confirmed+Sum(cases)"/>
+                <entry key="84" type="xstring" value="Cyprus_confirmed+Sum(cases_normalized)"/>
+                <entry key="85" type="xstring" value="Czech Republic_confirmed+Sum(cases)"/>
+                <entry key="86" type="xstring" value="Czech Republic_confirmed+Sum(cases_normalized)"/>
+                <entry key="87" type="xstring" value="Denmark_confirmed+Sum(cases)"/>
+                <entry key="88" type="xstring" value="Denmark_confirmed+Sum(cases_normalized)"/>
+                <entry key="89" type="xstring" value="Diamond Princess_confirmed+Sum(cases)"/>
+                <entry key="90" type="xstring" value="Diamond Princess_confirmed+Sum(cases_normalized)"/>
+                <entry key="91" type="xstring" value="Djibouti_confirmed+Sum(cases)"/>
+                <entry key="92" type="xstring" value="Djibouti_confirmed+Sum(cases_normalized)"/>
+                <entry key="93" type="xstring" value="Dominica_confirmed+Sum(cases)"/>
+                <entry key="94" type="xstring" value="Dominica_confirmed+Sum(cases_normalized)"/>
+                <entry key="95" type="xstring" value="Dominican Republic_confirmed+Sum(cases)"/>
+                <entry key="96" type="xstring" value="Dominican Republic_confirmed+Sum(cases_normalized)"/>
+                <entry key="97" type="xstring" value="Ecuador_confirmed+Sum(cases)"/>
+                <entry key="98" type="xstring" value="Ecuador_confirmed+Sum(cases_normalized)"/>
+                <entry key="99" type="xstring" value="Egypt_confirmed+Sum(cases)"/>
+                <entry key="100" type="xstring" value="Egypt_confirmed+Sum(cases_normalized)"/>
+                <entry key="101" type="xstring" value="El Salvador_confirmed+Sum(cases)"/>
+                <entry key="102" type="xstring" value="El Salvador_confirmed+Sum(cases_normalized)"/>
+                <entry key="103" type="xstring" value="Equatorial Guinea_confirmed+Sum(cases)"/>
+                <entry key="104" type="xstring" value="Equatorial Guinea_confirmed+Sum(cases_normalized)"/>
+                <entry key="105" type="xstring" value="Eritrea_confirmed+Sum(cases)"/>
+                <entry key="106" type="xstring" value="Eritrea_confirmed+Sum(cases_normalized)"/>
+                <entry key="107" type="xstring" value="Estonia_confirmed+Sum(cases)"/>
+                <entry key="108" type="xstring" value="Estonia_confirmed+Sum(cases_normalized)"/>
+                <entry key="109" type="xstring" value="Eswatini_confirmed+Sum(cases)"/>
+                <entry key="110" type="xstring" value="Eswatini_confirmed+Sum(cases_normalized)"/>
+                <entry key="111" type="xstring" value="Ethiopia_confirmed+Sum(cases)"/>
+                <entry key="112" type="xstring" value="Ethiopia_confirmed+Sum(cases_normalized)"/>
+                <entry key="113" type="xstring" value="Fiji_confirmed+Sum(cases)"/>
+                <entry key="114" type="xstring" value="Fiji_confirmed+Sum(cases_normalized)"/>
+                <entry key="115" type="xstring" value="Finland_confirmed+Sum(cases)"/>
+                <entry key="116" type="xstring" value="Finland_confirmed+Sum(cases_normalized)"/>
+                <entry key="117" type="xstring" value="France_confirmed+Sum(cases)"/>
+                <entry key="118" type="xstring" value="France_confirmed+Sum(cases_normalized)"/>
+                <entry key="119" type="xstring" value="Gabon_confirmed+Sum(cases)"/>
+                <entry key="120" type="xstring" value="Gabon_confirmed+Sum(cases_normalized)"/>
+                <entry key="121" type="xstring" value="Gambia_confirmed+Sum(cases)"/>
+                <entry key="122" type="xstring" value="Gambia_confirmed+Sum(cases_normalized)"/>
+                <entry key="123" type="xstring" value="Georgia_confirmed+Sum(cases)"/>
+                <entry key="124" type="xstring" value="Georgia_confirmed+Sum(cases_normalized)"/>
+                <entry key="125" type="xstring" value="Germany_confirmed+Sum(cases)"/>
+                <entry key="126" type="xstring" value="Germany_confirmed+Sum(cases_normalized)"/>
+                <entry key="127" type="xstring" value="Ghana_confirmed+Sum(cases)"/>
+                <entry key="128" type="xstring" value="Ghana_confirmed+Sum(cases_normalized)"/>
+                <entry key="129" type="xstring" value="Greece_confirmed+Sum(cases)"/>
+                <entry key="130" type="xstring" value="Greece_confirmed+Sum(cases_normalized)"/>
+                <entry key="131" type="xstring" value="Grenada_confirmed+Sum(cases)"/>
+                <entry key="132" type="xstring" value="Grenada_confirmed+Sum(cases_normalized)"/>
+                <entry key="133" type="xstring" value="Guatemala_confirmed+Sum(cases)"/>
+                <entry key="134" type="xstring" value="Guatemala_confirmed+Sum(cases_normalized)"/>
+                <entry key="135" type="xstring" value="Guinea_confirmed+Sum(cases)"/>
+                <entry key="136" type="xstring" value="Guinea_confirmed+Sum(cases_normalized)"/>
+                <entry key="137" type="xstring" value="Guinea-Bissau_confirmed+Sum(cases)"/>
+                <entry key="138" type="xstring" value="Guinea-Bissau_confirmed+Sum(cases_normalized)"/>
+                <entry key="139" type="xstring" value="Guyana_confirmed+Sum(cases)"/>
+                <entry key="140" type="xstring" value="Guyana_confirmed+Sum(cases_normalized)"/>
+                <entry key="141" type="xstring" value="Haiti_confirmed+Sum(cases)"/>
+                <entry key="142" type="xstring" value="Haiti_confirmed+Sum(cases_normalized)"/>
+                <entry key="143" type="xstring" value="Holy See_confirmed+Sum(cases)"/>
+                <entry key="144" type="xstring" value="Holy See_confirmed+Sum(cases_normalized)"/>
+                <entry key="145" type="xstring" value="Honduras_confirmed+Sum(cases)"/>
+                <entry key="146" type="xstring" value="Honduras_confirmed+Sum(cases_normalized)"/>
+                <entry key="147" type="xstring" value="Hungary_confirmed+Sum(cases)"/>
+                <entry key="148" type="xstring" value="Hungary_confirmed+Sum(cases_normalized)"/>
+                <entry key="149" type="xstring" value="Iceland_confirmed+Sum(cases)"/>
+                <entry key="150" type="xstring" value="Iceland_confirmed+Sum(cases_normalized)"/>
+                <entry key="151" type="xstring" value="India_confirmed+Sum(cases)"/>
+                <entry key="152" type="xstring" value="India_confirmed+Sum(cases_normalized)"/>
+                <entry key="153" type="xstring" value="Indonesia_confirmed+Sum(cases)"/>
+                <entry key="154" type="xstring" value="Indonesia_confirmed+Sum(cases_normalized)"/>
+                <entry key="155" type="xstring" value="Iran_confirmed+Sum(cases)"/>
+                <entry key="156" type="xstring" value="Iran_confirmed+Sum(cases_normalized)"/>
+                <entry key="157" type="xstring" value="Iraq_confirmed+Sum(cases)"/>
+                <entry key="158" type="xstring" value="Iraq_confirmed+Sum(cases_normalized)"/>
+                <entry key="159" type="xstring" value="Ireland_confirmed+Sum(cases)"/>
+                <entry key="160" type="xstring" value="Ireland_confirmed+Sum(cases_normalized)"/>
+                <entry key="161" type="xstring" value="Israel_confirmed+Sum(cases)"/>
+                <entry key="162" type="xstring" value="Israel_confirmed+Sum(cases_normalized)"/>
+                <entry key="163" type="xstring" value="Italy_confirmed+Sum(cases)"/>
+                <entry key="164" type="xstring" value="Italy_confirmed+Sum(cases_normalized)"/>
+                <entry key="165" type="xstring" value="Jamaica_confirmed+Sum(cases)"/>
+                <entry key="166" type="xstring" value="Jamaica_confirmed+Sum(cases_normalized)"/>
+                <entry key="167" type="xstring" value="Japan_confirmed+Sum(cases)"/>
+                <entry key="168" type="xstring" value="Japan_confirmed+Sum(cases_normalized)"/>
+                <entry key="169" type="xstring" value="Jordan_confirmed+Sum(cases)"/>
+                <entry key="170" type="xstring" value="Jordan_confirmed+Sum(cases_normalized)"/>
+                <entry key="171" type="xstring" value="Kazakhstan_confirmed+Sum(cases)"/>
+                <entry key="172" type="xstring" value="Kazakhstan_confirmed+Sum(cases_normalized)"/>
+                <entry key="173" type="xstring" value="Kenya_confirmed+Sum(cases)"/>
+                <entry key="174" type="xstring" value="Kenya_confirmed+Sum(cases_normalized)"/>
+                <entry key="175" type="xstring" value="Kuwait_confirmed+Sum(cases)"/>
+                <entry key="176" type="xstring" value="Kuwait_confirmed+Sum(cases_normalized)"/>
+                <entry key="177" type="xstring" value="Kyrgyzstan_confirmed+Sum(cases)"/>
+                <entry key="178" type="xstring" value="Kyrgyzstan_confirmed+Sum(cases_normalized)"/>
+                <entry key="179" type="xstring" value="Laos_confirmed+Sum(cases)"/>
+                <entry key="180" type="xstring" value="Laos_confirmed+Sum(cases_normalized)"/>
+                <entry key="181" type="xstring" value="Latvia_confirmed+Sum(cases)"/>
+                <entry key="182" type="xstring" value="Latvia_confirmed+Sum(cases_normalized)"/>
+                <entry key="183" type="xstring" value="Lebanon_confirmed+Sum(cases)"/>
+                <entry key="184" type="xstring" value="Lebanon_confirmed+Sum(cases_normalized)"/>
+                <entry key="185" type="xstring" value="Liberia_confirmed+Sum(cases)"/>
+                <entry key="186" type="xstring" value="Liberia_confirmed+Sum(cases_normalized)"/>
+                <entry key="187" type="xstring" value="Libya_confirmed+Sum(cases)"/>
+                <entry key="188" type="xstring" value="Libya_confirmed+Sum(cases_normalized)"/>
+                <entry key="189" type="xstring" value="Liechtenstein_confirmed+Sum(cases)"/>
+                <entry key="190" type="xstring" value="Liechtenstein_confirmed+Sum(cases_normalized)"/>
+                <entry key="191" type="xstring" value="Lithuania_confirmed+Sum(cases)"/>
+                <entry key="192" type="xstring" value="Lithuania_confirmed+Sum(cases_normalized)"/>
+                <entry key="193" type="xstring" value="Luxembourg_confirmed+Sum(cases)"/>
+                <entry key="194" type="xstring" value="Luxembourg_confirmed+Sum(cases_normalized)"/>
+                <entry key="195" type="xstring" value="Madagascar_confirmed+Sum(cases)"/>
+                <entry key="196" type="xstring" value="Madagascar_confirmed+Sum(cases_normalized)"/>
+                <entry key="197" type="xstring" value="Malaysia_confirmed+Sum(cases)"/>
+                <entry key="198" type="xstring" value="Malaysia_confirmed+Sum(cases_normalized)"/>
+                <entry key="199" type="xstring" value="Maldives_confirmed+Sum(cases)"/>
+                <entry key="200" type="xstring" value="Maldives_confirmed+Sum(cases_normalized)"/>
+                <entry key="201" type="xstring" value="Mali_confirmed+Sum(cases)"/>
+                <entry key="202" type="xstring" value="Mali_confirmed+Sum(cases_normalized)"/>
+                <entry key="203" type="xstring" value="Malta_confirmed+Sum(cases)"/>
+                <entry key="204" type="xstring" value="Malta_confirmed+Sum(cases_normalized)"/>
+                <entry key="205" type="xstring" value="Mauritania_confirmed+Sum(cases)"/>
+                <entry key="206" type="xstring" value="Mauritania_confirmed+Sum(cases_normalized)"/>
+                <entry key="207" type="xstring" value="Mauritius_confirmed+Sum(cases)"/>
+                <entry key="208" type="xstring" value="Mauritius_confirmed+Sum(cases_normalized)"/>
+                <entry key="209" type="xstring" value="Mexico_confirmed+Sum(cases)"/>
+                <entry key="210" type="xstring" value="Mexico_confirmed+Sum(cases_normalized)"/>
+                <entry key="211" type="xstring" value="Moldova_confirmed+Sum(cases)"/>
+                <entry key="212" type="xstring" value="Moldova_confirmed+Sum(cases_normalized)"/>
+                <entry key="213" type="xstring" value="Monaco_confirmed+Sum(cases)"/>
+                <entry key="214" type="xstring" value="Monaco_confirmed+Sum(cases_normalized)"/>
+                <entry key="215" type="xstring" value="Mongolia_confirmed+Sum(cases)"/>
+                <entry key="216" type="xstring" value="Mongolia_confirmed+Sum(cases_normalized)"/>
+                <entry key="217" type="xstring" value="Montenegro_confirmed+Sum(cases)"/>
+                <entry key="218" type="xstring" value="Montenegro_confirmed+Sum(cases_normalized)"/>
+                <entry key="219" type="xstring" value="Morocco_confirmed+Sum(cases)"/>
+                <entry key="220" type="xstring" value="Morocco_confirmed+Sum(cases_normalized)"/>
+                <entry key="221" type="xstring" value="Mozambique_confirmed+Sum(cases)"/>
+                <entry key="222" type="xstring" value="Mozambique_confirmed+Sum(cases_normalized)"/>
+                <entry key="223" type="xstring" value="Namibia_confirmed+Sum(cases)"/>
+                <entry key="224" type="xstring" value="Namibia_confirmed+Sum(cases_normalized)"/>
+                <entry key="225" type="xstring" value="Nepal_confirmed+Sum(cases)"/>
+                <entry key="226" type="xstring" value="Nepal_confirmed+Sum(cases_normalized)"/>
+                <entry key="227" type="xstring" value="Netherlands_confirmed+Sum(cases)"/>
+                <entry key="228" type="xstring" value="Netherlands_confirmed+Sum(cases_normalized)"/>
+                <entry key="229" type="xstring" value="New Zealand_confirmed+Sum(cases)"/>
+                <entry key="230" type="xstring" value="New Zealand_confirmed+Sum(cases_normalized)"/>
+                <entry key="231" type="xstring" value="Nicaragua_confirmed+Sum(cases)"/>
+                <entry key="232" type="xstring" value="Nicaragua_confirmed+Sum(cases_normalized)"/>
+                <entry key="233" type="xstring" value="Niger_confirmed+Sum(cases)"/>
+                <entry key="234" type="xstring" value="Niger_confirmed+Sum(cases_normalized)"/>
+                <entry key="235" type="xstring" value="Nigeria_confirmed+Sum(cases)"/>
+                <entry key="236" type="xstring" value="Nigeria_confirmed+Sum(cases_normalized)"/>
+                <entry key="237" type="xstring" value="North Macedonia_confirmed+Sum(cases)"/>
+                <entry key="238" type="xstring" value="North Macedonia_confirmed+Sum(cases_normalized)"/>
+                <entry key="239" type="xstring" value="Norway_confirmed+Sum(cases)"/>
+                <entry key="240" type="xstring" value="Norway_confirmed+Sum(cases_normalized)"/>
+                <entry key="241" type="xstring" value="Oman_confirmed+Sum(cases)"/>
+                <entry key="242" type="xstring" value="Oman_confirmed+Sum(cases_normalized)"/>
+                <entry key="243" type="xstring" value="Pakistan_confirmed+Sum(cases)"/>
+                <entry key="244" type="xstring" value="Pakistan_confirmed+Sum(cases_normalized)"/>
+                <entry key="245" type="xstring" value="Panama_confirmed+Sum(cases)"/>
+                <entry key="246" type="xstring" value="Panama_confirmed+Sum(cases_normalized)"/>
+                <entry key="247" type="xstring" value="Papua New Guinea_confirmed+Sum(cases)"/>
+                <entry key="248" type="xstring" value="Papua New Guinea_confirmed+Sum(cases_normalized)"/>
+                <entry key="249" type="xstring" value="Paraguay_confirmed+Sum(cases)"/>
+                <entry key="250" type="xstring" value="Paraguay_confirmed+Sum(cases_normalized)"/>
+                <entry key="251" type="xstring" value="Peru_confirmed+Sum(cases)"/>
+                <entry key="252" type="xstring" value="Peru_confirmed+Sum(cases_normalized)"/>
+                <entry key="253" type="xstring" value="Philippines_confirmed+Sum(cases)"/>
+                <entry key="254" type="xstring" value="Philippines_confirmed+Sum(cases_normalized)"/>
+                <entry key="255" type="xstring" value="Poland_confirmed+Sum(cases)"/>
+                <entry key="256" type="xstring" value="Poland_confirmed+Sum(cases_normalized)"/>
+                <entry key="257" type="xstring" value="Portugal_confirmed+Sum(cases)"/>
+                <entry key="258" type="xstring" value="Portugal_confirmed+Sum(cases_normalized)"/>
+                <entry key="259" type="xstring" value="Qatar_confirmed+Sum(cases)"/>
+                <entry key="260" type="xstring" value="Qatar_confirmed+Sum(cases_normalized)"/>
+                <entry key="261" type="xstring" value="Romania_confirmed+Sum(cases)"/>
+                <entry key="262" type="xstring" value="Romania_confirmed+Sum(cases_normalized)"/>
+                <entry key="263" type="xstring" value="Russia_confirmed+Sum(cases)"/>
+                <entry key="264" type="xstring" value="Russia_confirmed+Sum(cases_normalized)"/>
+                <entry key="265" type="xstring" value="Rwanda_confirmed+Sum(cases)"/>
+                <entry key="266" type="xstring" value="Rwanda_confirmed+Sum(cases_normalized)"/>
+                <entry key="267" type="xstring" value="Saint Kitts and Nevis_confirmed+Sum(cases)"/>
+                <entry key="268" type="xstring" value="Saint Kitts and Nevis_confirmed+Sum(cases_normalized)"/>
+                <entry key="269" type="xstring" value="Saint Lucia_confirmed+Sum(cases)"/>
+                <entry key="270" type="xstring" value="Saint Lucia_confirmed+Sum(cases_normalized)"/>
+                <entry key="271" type="xstring" value="Saint Vincent and the Grenadines_confirmed+Sum(cases)"/>
+                <entry key="272" type="xstring" value="Saint Vincent and the Grenadines_confirmed+Sum(cases_normalized)"/>
+                <entry key="273" type="xstring" value="San Marino_confirmed+Sum(cases)"/>
+                <entry key="274" type="xstring" value="San Marino_confirmed+Sum(cases_normalized)"/>
+                <entry key="275" type="xstring" value="Saudi Arabia_confirmed+Sum(cases)"/>
+                <entry key="276" type="xstring" value="Saudi Arabia_confirmed+Sum(cases_normalized)"/>
+                <entry key="277" type="xstring" value="Senegal_confirmed+Sum(cases)"/>
+                <entry key="278" type="xstring" value="Senegal_confirmed+Sum(cases_normalized)"/>
+                <entry key="279" type="xstring" value="Serbia_confirmed+Sum(cases)"/>
+                <entry key="280" type="xstring" value="Serbia_confirmed+Sum(cases_normalized)"/>
+                <entry key="281" type="xstring" value="Seychelles_confirmed+Sum(cases)"/>
+                <entry key="282" type="xstring" value="Seychelles_confirmed+Sum(cases_normalized)"/>
+                <entry key="283" type="xstring" value="Singapore_confirmed+Sum(cases)"/>
+                <entry key="284" type="xstring" value="Singapore_confirmed+Sum(cases_normalized)"/>
+                <entry key="285" type="xstring" value="Slovakia_confirmed+Sum(cases)"/>
+                <entry key="286" type="xstring" value="Slovakia_confirmed+Sum(cases_normalized)"/>
+                <entry key="287" type="xstring" value="Slovenia_confirmed+Sum(cases)"/>
+                <entry key="288" type="xstring" value="Slovenia_confirmed+Sum(cases_normalized)"/>
+                <entry key="289" type="xstring" value="Somalia_confirmed+Sum(cases)"/>
+                <entry key="290" type="xstring" value="Somalia_confirmed+Sum(cases_normalized)"/>
+                <entry key="291" type="xstring" value="South Africa_confirmed+Sum(cases)"/>
+                <entry key="292" type="xstring" value="South Africa_confirmed+Sum(cases_normalized)"/>
+                <entry key="293" type="xstring" value="South Korea_confirmed+Sum(cases)"/>
+                <entry key="294" type="xstring" value="South Korea_confirmed+Sum(cases_normalized)"/>
+                <entry key="295" type="xstring" value="Spain_confirmed+Sum(cases)"/>
+                <entry key="296" type="xstring" value="Spain_confirmed+Sum(cases_normalized)"/>
+                <entry key="297" type="xstring" value="Sri Lanka_confirmed+Sum(cases)"/>
+                <entry key="298" type="xstring" value="Sri Lanka_confirmed+Sum(cases_normalized)"/>
+                <entry key="299" type="xstring" value="Sudan_confirmed+Sum(cases)"/>
+                <entry key="300" type="xstring" value="Sudan_confirmed+Sum(cases_normalized)"/>
+                <entry key="301" type="xstring" value="Suriname_confirmed+Sum(cases)"/>
+                <entry key="302" type="xstring" value="Suriname_confirmed+Sum(cases_normalized)"/>
+                <entry key="303" type="xstring" value="Sweden_confirmed+Sum(cases)"/>
+                <entry key="304" type="xstring" value="Sweden_confirmed+Sum(cases_normalized)"/>
+                <entry key="305" type="xstring" value="Switzerland_confirmed+Sum(cases)"/>
+                <entry key="306" type="xstring" value="Switzerland_confirmed+Sum(cases_normalized)"/>
+                <entry key="307" type="xstring" value="Syria_confirmed+Sum(cases)"/>
+                <entry key="308" type="xstring" value="Syria_confirmed+Sum(cases_normalized)"/>
+                <entry key="309" type="xstring" value="Taiwan*_confirmed+Sum(cases)"/>
+                <entry key="310" type="xstring" value="Taiwan*_confirmed+Sum(cases_normalized)"/>
+                <entry key="311" type="xstring" value="Tanzania_confirmed+Sum(cases)"/>
+                <entry key="312" type="xstring" value="Tanzania_confirmed+Sum(cases_normalized)"/>
+                <entry key="313" type="xstring" value="Thailand_confirmed+Sum(cases)"/>
+                <entry key="314" type="xstring" value="Thailand_confirmed+Sum(cases_normalized)"/>
+                <entry key="315" type="xstring" value="Timor-Leste_confirmed+Sum(cases)"/>
+                <entry key="316" type="xstring" value="Timor-Leste_confirmed+Sum(cases_normalized)"/>
+                <entry key="317" type="xstring" value="Togo_confirmed+Sum(cases)"/>
+                <entry key="318" type="xstring" value="Togo_confirmed+Sum(cases_normalized)"/>
+                <entry key="319" type="xstring" value="Trinidad and Tobago_confirmed+Sum(cases)"/>
+                <entry key="320" type="xstring" value="Trinidad and Tobago_confirmed+Sum(cases_normalized)"/>
+                <entry key="321" type="xstring" value="Tunisia_confirmed+Sum(cases)"/>
+                <entry key="322" type="xstring" value="Tunisia_confirmed+Sum(cases_normalized)"/>
+                <entry key="323" type="xstring" value="Turkey_confirmed+Sum(cases)"/>
+                <entry key="324" type="xstring" value="Turkey_confirmed+Sum(cases_normalized)"/>
+                <entry key="325" type="xstring" value="US_confirmed+Sum(cases)"/>
+                <entry key="326" type="xstring" value="US_confirmed+Sum(cases_normalized)"/>
+                <entry key="327" type="xstring" value="Uganda_confirmed+Sum(cases)"/>
+                <entry key="328" type="xstring" value="Uganda_confirmed+Sum(cases_normalized)"/>
+                <entry key="329" type="xstring" value="Ukraine_confirmed+Sum(cases)"/>
+                <entry key="330" type="xstring" value="Ukraine_confirmed+Sum(cases_normalized)"/>
+                <entry key="331" type="xstring" value="United Arab Emirates_confirmed+Sum(cases)"/>
+                <entry key="332" type="xstring" value="United Arab Emirates_confirmed+Sum(cases_normalized)"/>
+                <entry key="333" type="xstring" value="United Kingdom_confirmed+Sum(cases)"/>
+                <entry key="334" type="xstring" value="United Kingdom_confirmed+Sum(cases_normalized)"/>
+                <entry key="335" type="xstring" value="Uruguay_confirmed+Sum(cases)"/>
+                <entry key="336" type="xstring" value="Uruguay_confirmed+Sum(cases_normalized)"/>
+                <entry key="337" type="xstring" value="Uzbekistan_confirmed+Sum(cases)"/>
+                <entry key="338" type="xstring" value="Uzbekistan_confirmed+Sum(cases_normalized)"/>
+                <entry key="339" type="xstring" value="Venezuela_confirmed+Sum(cases)"/>
+                <entry key="340" type="xstring" value="Venezuela_confirmed+Sum(cases_normalized)"/>
+                <entry key="341" type="xstring" value="Vietnam_confirmed+Sum(cases)"/>
+                <entry key="342" type="xstring" value="Vietnam_confirmed+Sum(cases_normalized)"/>
+                <entry key="343" type="xstring" value="West Bank and Gaza_confirmed+Sum(cases)"/>
+                <entry key="344" type="xstring" value="West Bank and Gaza_confirmed+Sum(cases_normalized)"/>
+                <entry key="345" type="xstring" value="Zambia_confirmed+Sum(cases)"/>
+                <entry key="346" type="xstring" value="Zambia_confirmed+Sum(cases_normalized)"/>
+                <entry key="347" type="xstring" value="Zimbabwe_confirmed+Sum(cases)"/>
+                <entry key="348" type="xstring" value="Zimbabwe_confirmed+Sum(cases_normalized)"/>
+                <entry key="349" type="xstring" value="Afghanistan_deaths+Sum(cases)"/>
+                <entry key="350" type="xstring" value="Afghanistan_deaths+Sum(cases_normalized)"/>
+                <entry key="351" type="xstring" value="Albania_deaths+Sum(cases)"/>
+                <entry key="352" type="xstring" value="Albania_deaths+Sum(cases_normalized)"/>
+                <entry key="353" type="xstring" value="Algeria_deaths+Sum(cases)"/>
+                <entry key="354" type="xstring" value="Algeria_deaths+Sum(cases_normalized)"/>
+                <entry key="355" type="xstring" value="Andorra_deaths+Sum(cases)"/>
+                <entry key="356" type="xstring" value="Andorra_deaths+Sum(cases_normalized)"/>
+                <entry key="357" type="xstring" value="Angola_deaths+Sum(cases)"/>
+                <entry key="358" type="xstring" value="Angola_deaths+Sum(cases_normalized)"/>
+                <entry key="359" type="xstring" value="Antigua and Barbuda_deaths+Sum(cases)"/>
+                <entry key="360" type="xstring" value="Antigua and Barbuda_deaths+Sum(cases_normalized)"/>
+                <entry key="361" type="xstring" value="Argentina_deaths+Sum(cases)"/>
+                <entry key="362" type="xstring" value="Argentina_deaths+Sum(cases_normalized)"/>
+                <entry key="363" type="xstring" value="Armenia_deaths+Sum(cases)"/>
+                <entry key="364" type="xstring" value="Armenia_deaths+Sum(cases_normalized)"/>
+                <entry key="365" type="xstring" value="Australia_deaths+Sum(cases)"/>
+                <entry key="366" type="xstring" value="Australia_deaths+Sum(cases_normalized)"/>
+                <entry key="367" type="xstring" value="Austria_deaths+Sum(cases)"/>
+                <entry key="368" type="xstring" value="Austria_deaths+Sum(cases_normalized)"/>
+                <entry key="369" type="xstring" value="Azerbaijan_deaths+Sum(cases)"/>
+                <entry key="370" type="xstring" value="Azerbaijan_deaths+Sum(cases_normalized)"/>
+                <entry key="371" type="xstring" value="Bahamas_deaths+Sum(cases)"/>
+                <entry key="372" type="xstring" value="Bahamas_deaths+Sum(cases_normalized)"/>
+                <entry key="373" type="xstring" value="Bahrain_deaths+Sum(cases)"/>
+                <entry key="374" type="xstring" value="Bahrain_deaths+Sum(cases_normalized)"/>
+                <entry key="375" type="xstring" value="Bangladesh_deaths+Sum(cases)"/>
+                <entry key="376" type="xstring" value="Bangladesh_deaths+Sum(cases_normalized)"/>
+                <entry key="377" type="xstring" value="Barbados_deaths+Sum(cases)"/>
+                <entry key="378" type="xstring" value="Barbados_deaths+Sum(cases_normalized)"/>
+                <entry key="379" type="xstring" value="Belarus_deaths+Sum(cases)"/>
+                <entry key="380" type="xstring" value="Belarus_deaths+Sum(cases_normalized)"/>
+                <entry key="381" type="xstring" value="Belgium_deaths+Sum(cases)"/>
+                <entry key="382" type="xstring" value="Belgium_deaths+Sum(cases_normalized)"/>
+                <entry key="383" type="xstring" value="Belize_deaths+Sum(cases)"/>
+                <entry key="384" type="xstring" value="Belize_deaths+Sum(cases_normalized)"/>
+                <entry key="385" type="xstring" value="Benin_deaths+Sum(cases)"/>
+                <entry key="386" type="xstring" value="Benin_deaths+Sum(cases_normalized)"/>
+                <entry key="387" type="xstring" value="Bhutan_deaths+Sum(cases)"/>
+                <entry key="388" type="xstring" value="Bhutan_deaths+Sum(cases_normalized)"/>
+                <entry key="389" type="xstring" value="Bolivia_deaths+Sum(cases)"/>
+                <entry key="390" type="xstring" value="Bolivia_deaths+Sum(cases_normalized)"/>
+                <entry key="391" type="xstring" value="Bosnia and Herzegovina_deaths+Sum(cases)"/>
+                <entry key="392" type="xstring" value="Bosnia and Herzegovina_deaths+Sum(cases_normalized)"/>
+                <entry key="393" type="xstring" value="Brazil_deaths+Sum(cases)"/>
+                <entry key="394" type="xstring" value="Brazil_deaths+Sum(cases_normalized)"/>
+                <entry key="395" type="xstring" value="Brunei_deaths+Sum(cases)"/>
+                <entry key="396" type="xstring" value="Brunei_deaths+Sum(cases_normalized)"/>
+                <entry key="397" type="xstring" value="Bulgaria_deaths+Sum(cases)"/>
+                <entry key="398" type="xstring" value="Bulgaria_deaths+Sum(cases_normalized)"/>
+                <entry key="399" type="xstring" value="Burkina Faso_deaths+Sum(cases)"/>
+                <entry key="400" type="xstring" value="Burkina Faso_deaths+Sum(cases_normalized)"/>
+                <entry key="401" type="xstring" value="Cabo Verde_deaths+Sum(cases)"/>
+                <entry key="402" type="xstring" value="Cabo Verde_deaths+Sum(cases_normalized)"/>
+                <entry key="403" type="xstring" value="Cambodia_deaths+Sum(cases)"/>
+                <entry key="404" type="xstring" value="Cambodia_deaths+Sum(cases_normalized)"/>
+                <entry key="405" type="xstring" value="Cameroon_deaths+Sum(cases)"/>
+                <entry key="406" type="xstring" value="Cameroon_deaths+Sum(cases_normalized)"/>
+                <entry key="407" type="xstring" value="Canada_deaths+Sum(cases)"/>
+                <entry key="408" type="xstring" value="Canada_deaths+Sum(cases_normalized)"/>
+                <entry key="409" type="xstring" value="Central African Republic_deaths+Sum(cases)"/>
+                <entry key="410" type="xstring" value="Central African Republic_deaths+Sum(cases_normalized)"/>
+                <entry key="411" type="xstring" value="Chad_deaths+Sum(cases)"/>
+                <entry key="412" type="xstring" value="Chad_deaths+Sum(cases_normalized)"/>
+                <entry key="413" type="xstring" value="Chile_deaths+Sum(cases)"/>
+                <entry key="414" type="xstring" value="Chile_deaths+Sum(cases_normalized)"/>
+                <entry key="415" type="xstring" value="China_deaths+Sum(cases)"/>
+                <entry key="416" type="xstring" value="China_deaths+Sum(cases_normalized)"/>
+                <entry key="417" type="xstring" value="Colombia_deaths+Sum(cases)"/>
+                <entry key="418" type="xstring" value="Colombia_deaths+Sum(cases_normalized)"/>
+                <entry key="419" type="xstring" value="Congo (Brazzaville)_deaths+Sum(cases)"/>
+                <entry key="420" type="xstring" value="Congo (Brazzaville)_deaths+Sum(cases_normalized)"/>
+                <entry key="421" type="xstring" value="Congo (Kinshasa)_deaths+Sum(cases)"/>
+                <entry key="422" type="xstring" value="Congo (Kinshasa)_deaths+Sum(cases_normalized)"/>
+                <entry key="423" type="xstring" value="Costa Rica_deaths+Sum(cases)"/>
+                <entry key="424" type="xstring" value="Costa Rica_deaths+Sum(cases_normalized)"/>
+                <entry key="425" type="xstring" value="Cote d'Ivoire_deaths+Sum(cases)"/>
+                <entry key="426" type="xstring" value="Cote d'Ivoire_deaths+Sum(cases_normalized)"/>
+                <entry key="427" type="xstring" value="Croatia_deaths+Sum(cases)"/>
+                <entry key="428" type="xstring" value="Croatia_deaths+Sum(cases_normalized)"/>
+                <entry key="429" type="xstring" value="Cuba_deaths+Sum(cases)"/>
+                <entry key="430" type="xstring" value="Cuba_deaths+Sum(cases_normalized)"/>
+                <entry key="431" type="xstring" value="Cyprus_deaths+Sum(cases)"/>
+                <entry key="432" type="xstring" value="Cyprus_deaths+Sum(cases_normalized)"/>
+                <entry key="433" type="xstring" value="Czech Republic_deaths+Sum(cases)"/>
+                <entry key="434" type="xstring" value="Czech Republic_deaths+Sum(cases_normalized)"/>
+                <entry key="435" type="xstring" value="Denmark_deaths+Sum(cases)"/>
+                <entry key="436" type="xstring" value="Denmark_deaths+Sum(cases_normalized)"/>
+                <entry key="437" type="xstring" value="Diamond Princess_deaths+Sum(cases)"/>
+                <entry key="438" type="xstring" value="Diamond Princess_deaths+Sum(cases_normalized)"/>
+                <entry key="439" type="xstring" value="Djibouti_deaths+Sum(cases)"/>
+                <entry key="440" type="xstring" value="Djibouti_deaths+Sum(cases_normalized)"/>
+                <entry key="441" type="xstring" value="Dominica_deaths+Sum(cases)"/>
+                <entry key="442" type="xstring" value="Dominica_deaths+Sum(cases_normalized)"/>
+                <entry key="443" type="xstring" value="Dominican Republic_deaths+Sum(cases)"/>
+                <entry key="444" type="xstring" value="Dominican Republic_deaths+Sum(cases_normalized)"/>
+                <entry key="445" type="xstring" value="Ecuador_deaths+Sum(cases)"/>
+                <entry key="446" type="xstring" value="Ecuador_deaths+Sum(cases_normalized)"/>
+                <entry key="447" type="xstring" value="Egypt_deaths+Sum(cases)"/>
+                <entry key="448" type="xstring" value="Egypt_deaths+Sum(cases_normalized)"/>
+                <entry key="449" type="xstring" value="El Salvador_deaths+Sum(cases)"/>
+                <entry key="450" type="xstring" value="El Salvador_deaths+Sum(cases_normalized)"/>
+                <entry key="451" type="xstring" value="Equatorial Guinea_deaths+Sum(cases)"/>
+                <entry key="452" type="xstring" value="Equatorial Guinea_deaths+Sum(cases_normalized)"/>
+                <entry key="453" type="xstring" value="Eritrea_deaths+Sum(cases)"/>
+                <entry key="454" type="xstring" value="Eritrea_deaths+Sum(cases_normalized)"/>
+                <entry key="455" type="xstring" value="Estonia_deaths+Sum(cases)"/>
+                <entry key="456" type="xstring" value="Estonia_deaths+Sum(cases_normalized)"/>
+                <entry key="457" type="xstring" value="Eswatini_deaths+Sum(cases)"/>
+                <entry key="458" type="xstring" value="Eswatini_deaths+Sum(cases_normalized)"/>
+                <entry key="459" type="xstring" value="Ethiopia_deaths+Sum(cases)"/>
+                <entry key="460" type="xstring" value="Ethiopia_deaths+Sum(cases_normalized)"/>
+                <entry key="461" type="xstring" value="Fiji_deaths+Sum(cases)"/>
+                <entry key="462" type="xstring" value="Fiji_deaths+Sum(cases_normalized)"/>
+                <entry key="463" type="xstring" value="Finland_deaths+Sum(cases)"/>
+                <entry key="464" type="xstring" value="Finland_deaths+Sum(cases_normalized)"/>
+                <entry key="465" type="xstring" value="France_deaths+Sum(cases)"/>
+                <entry key="466" type="xstring" value="France_deaths+Sum(cases_normalized)"/>
+                <entry key="467" type="xstring" value="Gabon_deaths+Sum(cases)"/>
+                <entry key="468" type="xstring" value="Gabon_deaths+Sum(cases_normalized)"/>
+                <entry key="469" type="xstring" value="Gambia_deaths+Sum(cases)"/>
+                <entry key="470" type="xstring" value="Gambia_deaths+Sum(cases_normalized)"/>
+                <entry key="471" type="xstring" value="Georgia_deaths+Sum(cases)"/>
+                <entry key="472" type="xstring" value="Georgia_deaths+Sum(cases_normalized)"/>
+                <entry key="473" type="xstring" value="Germany_deaths+Sum(cases)"/>
+                <entry key="474" type="xstring" value="Germany_deaths+Sum(cases_normalized)"/>
+                <entry key="475" type="xstring" value="Ghana_deaths+Sum(cases)"/>
+                <entry key="476" type="xstring" value="Ghana_deaths+Sum(cases_normalized)"/>
+                <entry key="477" type="xstring" value="Greece_deaths+Sum(cases)"/>
+                <entry key="478" type="xstring" value="Greece_deaths+Sum(cases_normalized)"/>
+                <entry key="479" type="xstring" value="Grenada_deaths+Sum(cases)"/>
+                <entry key="480" type="xstring" value="Grenada_deaths+Sum(cases_normalized)"/>
+                <entry key="481" type="xstring" value="Guatemala_deaths+Sum(cases)"/>
+                <entry key="482" type="xstring" value="Guatemala_deaths+Sum(cases_normalized)"/>
+                <entry key="483" type="xstring" value="Guinea_deaths+Sum(cases)"/>
+                <entry key="484" type="xstring" value="Guinea_deaths+Sum(cases_normalized)"/>
+                <entry key="485" type="xstring" value="Guinea-Bissau_deaths+Sum(cases)"/>
+                <entry key="486" type="xstring" value="Guinea-Bissau_deaths+Sum(cases_normalized)"/>
+                <entry key="487" type="xstring" value="Guyana_deaths+Sum(cases)"/>
+                <entry key="488" type="xstring" value="Guyana_deaths+Sum(cases_normalized)"/>
+                <entry key="489" type="xstring" value="Haiti_deaths+Sum(cases)"/>
+                <entry key="490" type="xstring" value="Haiti_deaths+Sum(cases_normalized)"/>
+                <entry key="491" type="xstring" value="Holy See_deaths+Sum(cases)"/>
+                <entry key="492" type="xstring" value="Holy See_deaths+Sum(cases_normalized)"/>
+                <entry key="493" type="xstring" value="Honduras_deaths+Sum(cases)"/>
+                <entry key="494" type="xstring" value="Honduras_deaths+Sum(cases_normalized)"/>
+                <entry key="495" type="xstring" value="Hungary_deaths+Sum(cases)"/>
+                <entry key="496" type="xstring" value="Hungary_deaths+Sum(cases_normalized)"/>
+                <entry key="497" type="xstring" value="Iceland_deaths+Sum(cases)"/>
+                <entry key="498" type="xstring" value="Iceland_deaths+Sum(cases_normalized)"/>
+                <entry key="499" type="xstring" value="India_deaths+Sum(cases)"/>
+                <entry key="500" type="xstring" value="India_deaths+Sum(cases_normalized)"/>
+                <entry key="501" type="xstring" value="Indonesia_deaths+Sum(cases)"/>
+                <entry key="502" type="xstring" value="Indonesia_deaths+Sum(cases_normalized)"/>
+                <entry key="503" type="xstring" value="Iran_deaths+Sum(cases)"/>
+                <entry key="504" type="xstring" value="Iran_deaths+Sum(cases_normalized)"/>
+                <entry key="505" type="xstring" value="Iraq_deaths+Sum(cases)"/>
+                <entry key="506" type="xstring" value="Iraq_deaths+Sum(cases_normalized)"/>
+                <entry key="507" type="xstring" value="Ireland_deaths+Sum(cases)"/>
+                <entry key="508" type="xstring" value="Ireland_deaths+Sum(cases_normalized)"/>
+                <entry key="509" type="xstring" value="Israel_deaths+Sum(cases)"/>
+                <entry key="510" type="xstring" value="Israel_deaths+Sum(cases_normalized)"/>
+                <entry key="511" type="xstring" value="Italy_deaths+Sum(cases)"/>
+                <entry key="512" type="xstring" value="Italy_deaths+Sum(cases_normalized)"/>
+                <entry key="513" type="xstring" value="Jamaica_deaths+Sum(cases)"/>
+                <entry key="514" type="xstring" value="Jamaica_deaths+Sum(cases_normalized)"/>
+                <entry key="515" type="xstring" value="Japan_deaths+Sum(cases)"/>
+                <entry key="516" type="xstring" value="Japan_deaths+Sum(cases_normalized)"/>
+                <entry key="517" type="xstring" value="Jordan_deaths+Sum(cases)"/>
+                <entry key="518" type="xstring" value="Jordan_deaths+Sum(cases_normalized)"/>
+                <entry key="519" type="xstring" value="Kazakhstan_deaths+Sum(cases)"/>
+                <entry key="520" type="xstring" value="Kazakhstan_deaths+Sum(cases_normalized)"/>
+                <entry key="521" type="xstring" value="Kenya_deaths+Sum(cases)"/>
+                <entry key="522" type="xstring" value="Kenya_deaths+Sum(cases_normalized)"/>
+                <entry key="523" type="xstring" value="Kuwait_deaths+Sum(cases)"/>
+                <entry key="524" type="xstring" value="Kuwait_deaths+Sum(cases_normalized)"/>
+                <entry key="525" type="xstring" value="Kyrgyzstan_deaths+Sum(cases)"/>
+                <entry key="526" type="xstring" value="Kyrgyzstan_deaths+Sum(cases_normalized)"/>
+                <entry key="527" type="xstring" value="Laos_deaths+Sum(cases)"/>
+                <entry key="528" type="xstring" value="Laos_deaths+Sum(cases_normalized)"/>
+                <entry key="529" type="xstring" value="Latvia_deaths+Sum(cases)"/>
+                <entry key="530" type="xstring" value="Latvia_deaths+Sum(cases_normalized)"/>
+                <entry key="531" type="xstring" value="Lebanon_deaths+Sum(cases)"/>
+                <entry key="532" type="xstring" value="Lebanon_deaths+Sum(cases_normalized)"/>
+                <entry key="533" type="xstring" value="Liberia_deaths+Sum(cases)"/>
+                <entry key="534" type="xstring" value="Liberia_deaths+Sum(cases_normalized)"/>
+                <entry key="535" type="xstring" value="Libya_deaths+Sum(cases)"/>
+                <entry key="536" type="xstring" value="Libya_deaths+Sum(cases_normalized)"/>
+                <entry key="537" type="xstring" value="Liechtenstein_deaths+Sum(cases)"/>
+                <entry key="538" type="xstring" value="Liechtenstein_deaths+Sum(cases_normalized)"/>
+                <entry key="539" type="xstring" value="Lithuania_deaths+Sum(cases)"/>
+                <entry key="540" type="xstring" value="Lithuania_deaths+Sum(cases_normalized)"/>
+                <entry key="541" type="xstring" value="Luxembourg_deaths+Sum(cases)"/>
+                <entry key="542" type="xstring" value="Luxembourg_deaths+Sum(cases_normalized)"/>
+                <entry key="543" type="xstring" value="Madagascar_deaths+Sum(cases)"/>
+                <entry key="544" type="xstring" value="Madagascar_deaths+Sum(cases_normalized)"/>
+                <entry key="545" type="xstring" value="Malaysia_deaths+Sum(cases)"/>
+                <entry key="546" type="xstring" value="Malaysia_deaths+Sum(cases_normalized)"/>
+                <entry key="547" type="xstring" value="Maldives_deaths+Sum(cases)"/>
+                <entry key="548" type="xstring" value="Maldives_deaths+Sum(cases_normalized)"/>
+                <entry key="549" type="xstring" value="Mali_deaths+Sum(cases)"/>
+                <entry key="550" type="xstring" value="Mali_deaths+Sum(cases_normalized)"/>
+                <entry key="551" type="xstring" value="Malta_deaths+Sum(cases)"/>
+                <entry key="552" type="xstring" value="Malta_deaths+Sum(cases_normalized)"/>
+                <entry key="553" type="xstring" value="Mauritania_deaths+Sum(cases)"/>
+                <entry key="554" type="xstring" value="Mauritania_deaths+Sum(cases_normalized)"/>
+                <entry key="555" type="xstring" value="Mauritius_deaths+Sum(cases)"/>
+                <entry key="556" type="xstring" value="Mauritius_deaths+Sum(cases_normalized)"/>
+                <entry key="557" type="xstring" value="Mexico_deaths+Sum(cases)"/>
+                <entry key="558" type="xstring" value="Mexico_deaths+Sum(cases_normalized)"/>
+                <entry key="559" type="xstring" value="Moldova_deaths+Sum(cases)"/>
+                <entry key="560" type="xstring" value="Moldova_deaths+Sum(cases_normalized)"/>
+                <entry key="561" type="xstring" value="Monaco_deaths+Sum(cases)"/>
+                <entry key="562" type="xstring" value="Monaco_deaths+Sum(cases_normalized)"/>
+                <entry key="563" type="xstring" value="Mongolia_deaths+Sum(cases)"/>
+                <entry key="564" type="xstring" value="Mongolia_deaths+Sum(cases_normalized)"/>
+                <entry key="565" type="xstring" value="Montenegro_deaths+Sum(cases)"/>
+                <entry key="566" type="xstring" value="Montenegro_deaths+Sum(cases_normalized)"/>
+                <entry key="567" type="xstring" value="Morocco_deaths+Sum(cases)"/>
+                <entry key="568" type="xstring" value="Morocco_deaths+Sum(cases_normalized)"/>
+                <entry key="569" type="xstring" value="Mozambique_deaths+Sum(cases)"/>
+                <entry key="570" type="xstring" value="Mozambique_deaths+Sum(cases_normalized)"/>
+                <entry key="571" type="xstring" value="Namibia_deaths+Sum(cases)"/>
+                <entry key="572" type="xstring" value="Namibia_deaths+Sum(cases_normalized)"/>
+                <entry key="573" type="xstring" value="Nepal_deaths+Sum(cases)"/>
+                <entry key="574" type="xstring" value="Nepal_deaths+Sum(cases_normalized)"/>
+                <entry key="575" type="xstring" value="Netherlands_deaths+Sum(cases)"/>
+                <entry key="576" type="xstring" value="Netherlands_deaths+Sum(cases_normalized)"/>
+                <entry key="577" type="xstring" value="New Zealand_deaths+Sum(cases)"/>
+                <entry key="578" type="xstring" value="New Zealand_deaths+Sum(cases_normalized)"/>
+                <entry key="579" type="xstring" value="Nicaragua_deaths+Sum(cases)"/>
+                <entry key="580" type="xstring" value="Nicaragua_deaths+Sum(cases_normalized)"/>
+                <entry key="581" type="xstring" value="Niger_deaths+Sum(cases)"/>
+                <entry key="582" type="xstring" value="Niger_deaths+Sum(cases_normalized)"/>
+                <entry key="583" type="xstring" value="Nigeria_deaths+Sum(cases)"/>
+                <entry key="584" type="xstring" value="Nigeria_deaths+Sum(cases_normalized)"/>
+                <entry key="585" type="xstring" value="North Macedonia_deaths+Sum(cases)"/>
+                <entry key="586" type="xstring" value="North Macedonia_deaths+Sum(cases_normalized)"/>
+                <entry key="587" type="xstring" value="Norway_deaths+Sum(cases)"/>
+                <entry key="588" type="xstring" value="Norway_deaths+Sum(cases_normalized)"/>
+                <entry key="589" type="xstring" value="Oman_deaths+Sum(cases)"/>
+                <entry key="590" type="xstring" value="Oman_deaths+Sum(cases_normalized)"/>
+                <entry key="591" type="xstring" value="Pakistan_deaths+Sum(cases)"/>
+                <entry key="592" type="xstring" value="Pakistan_deaths+Sum(cases_normalized)"/>
+                <entry key="593" type="xstring" value="Panama_deaths+Sum(cases)"/>
+                <entry key="594" type="xstring" value="Panama_deaths+Sum(cases_normalized)"/>
+                <entry key="595" type="xstring" value="Papua New Guinea_deaths+Sum(cases)"/>
+                <entry key="596" type="xstring" value="Papua New Guinea_deaths+Sum(cases_normalized)"/>
+                <entry key="597" type="xstring" value="Paraguay_deaths+Sum(cases)"/>
+                <entry key="598" type="xstring" value="Paraguay_deaths+Sum(cases_normalized)"/>
+                <entry key="599" type="xstring" value="Peru_deaths+Sum(cases)"/>
+                <entry key="600" type="xstring" value="Peru_deaths+Sum(cases_normalized)"/>
+                <entry key="601" type="xstring" value="Philippines_deaths+Sum(cases)"/>
+                <entry key="602" type="xstring" value="Philippines_deaths+Sum(cases_normalized)"/>
+                <entry key="603" type="xstring" value="Poland_deaths+Sum(cases)"/>
+                <entry key="604" type="xstring" value="Poland_deaths+Sum(cases_normalized)"/>
+                <entry key="605" type="xstring" value="Portugal_deaths+Sum(cases)"/>
+                <entry key="606" type="xstring" value="Portugal_deaths+Sum(cases_normalized)"/>
+                <entry key="607" type="xstring" value="Qatar_deaths+Sum(cases)"/>
+                <entry key="608" type="xstring" value="Qatar_deaths+Sum(cases_normalized)"/>
+                <entry key="609" type="xstring" value="Romania_deaths+Sum(cases)"/>
+                <entry key="610" type="xstring" value="Romania_deaths+Sum(cases_normalized)"/>
+                <entry key="611" type="xstring" value="Russia_deaths+Sum(cases)"/>
+                <entry key="612" type="xstring" value="Russia_deaths+Sum(cases_normalized)"/>
+                <entry key="613" type="xstring" value="Rwanda_deaths+Sum(cases)"/>
+                <entry key="614" type="xstring" value="Rwanda_deaths+Sum(cases_normalized)"/>
+                <entry key="615" type="xstring" value="Saint Kitts and Nevis_deaths+Sum(cases)"/>
+                <entry key="616" type="xstring" value="Saint Kitts and Nevis_deaths+Sum(cases_normalized)"/>
+                <entry key="617" type="xstring" value="Saint Lucia_deaths+Sum(cases)"/>
+                <entry key="618" type="xstring" value="Saint Lucia_deaths+Sum(cases_normalized)"/>
+                <entry key="619" type="xstring" value="Saint Vincent and the Grenadines_deaths+Sum(cases)"/>
+                <entry key="620" type="xstring" value="Saint Vincent and the Grenadines_deaths+Sum(cases_normalized)"/>
+                <entry key="621" type="xstring" value="San Marino_deaths+Sum(cases)"/>
+                <entry key="622" type="xstring" value="San Marino_deaths+Sum(cases_normalized)"/>
+                <entry key="623" type="xstring" value="Saudi Arabia_deaths+Sum(cases)"/>
+                <entry key="624" type="xstring" value="Saudi Arabia_deaths+Sum(cases_normalized)"/>
+                <entry key="625" type="xstring" value="Senegal_deaths+Sum(cases)"/>
+                <entry key="626" type="xstring" value="Senegal_deaths+Sum(cases_normalized)"/>
+                <entry key="627" type="xstring" value="Serbia_deaths+Sum(cases)"/>
+                <entry key="628" type="xstring" value="Serbia_deaths+Sum(cases_normalized)"/>
+                <entry key="629" type="xstring" value="Seychelles_deaths+Sum(cases)"/>
+                <entry key="630" type="xstring" value="Seychelles_deaths+Sum(cases_normalized)"/>
+                <entry key="631" type="xstring" value="Singapore_deaths+Sum(cases)"/>
+                <entry key="632" type="xstring" value="Singapore_deaths+Sum(cases_normalized)"/>
+                <entry key="633" type="xstring" value="Slovakia_deaths+Sum(cases)"/>
+                <entry key="634" type="xstring" value="Slovakia_deaths+Sum(cases_normalized)"/>
+                <entry key="635" type="xstring" value="Slovenia_deaths+Sum(cases)"/>
+                <entry key="636" type="xstring" value="Slovenia_deaths+Sum(cases_normalized)"/>
+                <entry key="637" type="xstring" value="Somalia_deaths+Sum(cases)"/>
+                <entry key="638" type="xstring" value="Somalia_deaths+Sum(cases_normalized)"/>
+                <entry key="639" type="xstring" value="South Africa_deaths+Sum(cases)"/>
+                <entry key="640" type="xstring" value="South Africa_deaths+Sum(cases_normalized)"/>
+                <entry key="641" type="xstring" value="South Korea_deaths+Sum(cases)"/>
+                <entry key="642" type="xstring" value="South Korea_deaths+Sum(cases_normalized)"/>
+                <entry key="643" type="xstring" value="Spain_deaths+Sum(cases)"/>
+                <entry key="644" type="xstring" value="Spain_deaths+Sum(cases_normalized)"/>
+                <entry key="645" type="xstring" value="Sri Lanka_deaths+Sum(cases)"/>
+                <entry key="646" type="xstring" value="Sri Lanka_deaths+Sum(cases_normalized)"/>
+                <entry key="647" type="xstring" value="Sudan_deaths+Sum(cases)"/>
+                <entry key="648" type="xstring" value="Sudan_deaths+Sum(cases_normalized)"/>
+                <entry key="649" type="xstring" value="Suriname_deaths+Sum(cases)"/>
+                <entry key="650" type="xstring" value="Suriname_deaths+Sum(cases_normalized)"/>
+                <entry key="651" type="xstring" value="Sweden_deaths+Sum(cases)"/>
+                <entry key="652" type="xstring" value="Sweden_deaths+Sum(cases_normalized)"/>
+                <entry key="653" type="xstring" value="Switzerland_deaths+Sum(cases)"/>
+                <entry key="654" type="xstring" value="Switzerland_deaths+Sum(cases_normalized)"/>
+                <entry key="655" type="xstring" value="Syria_deaths+Sum(cases)"/>
+                <entry key="656" type="xstring" value="Syria_deaths+Sum(cases_normalized)"/>
+                <entry key="657" type="xstring" value="Taiwan*_deaths+Sum(cases)"/>
+                <entry key="658" type="xstring" value="Taiwan*_deaths+Sum(cases_normalized)"/>
+                <entry key="659" type="xstring" value="Tanzania_deaths+Sum(cases)"/>
+                <entry key="660" type="xstring" value="Tanzania_deaths+Sum(cases_normalized)"/>
+                <entry key="661" type="xstring" value="Thailand_deaths+Sum(cases)"/>
+                <entry key="662" type="xstring" value="Thailand_deaths+Sum(cases_normalized)"/>
+                <entry key="663" type="xstring" value="Timor-Leste_deaths+Sum(cases)"/>
+                <entry key="664" type="xstring" value="Timor-Leste_deaths+Sum(cases_normalized)"/>
+                <entry key="665" type="xstring" value="Togo_deaths+Sum(cases)"/>
+                <entry key="666" type="xstring" value="Togo_deaths+Sum(cases_normalized)"/>
+                <entry key="667" type="xstring" value="Trinidad and Tobago_deaths+Sum(cases)"/>
+                <entry key="668" type="xstring" value="Trinidad and Tobago_deaths+Sum(cases_normalized)"/>
+                <entry key="669" type="xstring" value="Tunisia_deaths+Sum(cases)"/>
+                <entry key="670" type="xstring" value="Tunisia_deaths+Sum(cases_normalized)"/>
+                <entry key="671" type="xstring" value="Turkey_deaths+Sum(cases)"/>
+                <entry key="672" type="xstring" value="Turkey_deaths+Sum(cases_normalized)"/>
+                <entry key="673" type="xstring" value="US_deaths+Sum(cases)"/>
+                <entry key="674" type="xstring" value="US_deaths+Sum(cases_normalized)"/>
+                <entry key="675" type="xstring" value="Uganda_deaths+Sum(cases)"/>
+                <entry key="676" type="xstring" value="Uganda_deaths+Sum(cases_normalized)"/>
+                <entry key="677" type="xstring" value="Ukraine_deaths+Sum(cases)"/>
+                <entry key="678" type="xstring" value="Ukraine_deaths+Sum(cases_normalized)"/>
+                <entry key="679" type="xstring" value="United Arab Emirates_deaths+Sum(cases)"/>
+                <entry key="680" type="xstring" value="United Arab Emirates_deaths+Sum(cases_normalized)"/>
+                <entry key="681" type="xstring" value="United Kingdom_deaths+Sum(cases)"/>
+                <entry key="682" type="xstring" value="United Kingdom_deaths+Sum(cases_normalized)"/>
+                <entry key="683" type="xstring" value="Uruguay_deaths+Sum(cases)"/>
+                <entry key="684" type="xstring" value="Uruguay_deaths+Sum(cases_normalized)"/>
+                <entry key="685" type="xstring" value="Uzbekistan_deaths+Sum(cases)"/>
+                <entry key="686" type="xstring" value="Uzbekistan_deaths+Sum(cases_normalized)"/>
+                <entry key="687" type="xstring" value="Venezuela_deaths+Sum(cases)"/>
+                <entry key="688" type="xstring" value="Venezuela_deaths+Sum(cases_normalized)"/>
+                <entry key="689" type="xstring" value="Vietnam_deaths+Sum(cases)"/>
+                <entry key="690" type="xstring" value="Vietnam_deaths+Sum(cases_normalized)"/>
+                <entry key="691" type="xstring" value="West Bank and Gaza_deaths+Sum(cases)"/>
+                <entry key="692" type="xstring" value="West Bank and Gaza_deaths+Sum(cases_normalized)"/>
+                <entry key="693" type="xstring" value="Zambia_deaths+Sum(cases)"/>
+                <entry key="694" type="xstring" value="Zambia_deaths+Sum(cases_normalized)"/>
+                <entry key="695" type="xstring" value="Zimbabwe_deaths+Sum(cases)"/>
+                <entry key="696" type="xstring" value="Zimbabwe_deaths+Sum(cases_normalized)"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value="*_normalized*"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.time.localdate.LocalDateValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value=""/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="427"/>
+        <entry key="y-coordinate" type="xint" value="419"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="15"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="9"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.split2.SplitNodeFactory2"/>
+    <entry key="node-name" type="xstring" value="Column Splitter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202301251625"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.2.v202303231026"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Splitter"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 184, Cols: 377"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 184, Cols: 376"/>
+            <entry key="port_dir_location" type="xstring" value="port_2"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="9593c400-1ca0-4fbe-a976-8c98adc35a6d"/>
+    </config>
+</config>

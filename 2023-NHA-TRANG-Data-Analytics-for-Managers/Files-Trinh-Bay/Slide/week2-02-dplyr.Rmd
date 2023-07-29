@@ -1,0 +1,147 @@
+---
+title     : "Nền Tảng Cần Thiết cho việc Phân Tích Dữ Liệu với R"
+subtitle  : "Thay đổi dữ liệu với gói phụ kiện Dplyr"
+author    : "[Lê Thanh Nam](https://namkyodai.github.io)"
+date      : "Ngày 15, tháng 1, năm 2022"
+output    :
+  slidy_presentation:
+#   css: assets/css/styles.css
+#   css: assets/css/ribbons.css
+    mathjax: local
+    self_contained: false
+    font_adjustment: 0
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    incremental: false #for bullet increment
+    highlight: pygments
+    footer: "Bản quyền thuộc công ty TNHH ASQ Vietnam - Cùng phối hợp với Đại Học UEH"
+    includes:
+      in_header: assets/layouts/header.html
+      #before_body: doc_prefix.html
+      #after_body: doc_suffix.html
+    duration: 45
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Dữ liệu thực hành
+
+- Gói dữ liệu về dự án thẩm định công trình ()
+
+- Gói dữ liệu iris có sẵn trên nền tảng R
+
+- [Gói dữ liệu về giá nhà của thành phố boston](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html)
+
+- Gói dữ liệu về tình hình covid trên toàn thế giới
+
+
+Gói dữ liệu được tải từ link sau
+
+
+## Gói phụ kiện Dplyr
+
+
+## Các động từ quan trọng của gói phụ kiện
+
+- **select()**:     chọn các biến dựa vào tên của biến
+- **filter()**:     lọc các trường hợp dựa vào giá trị của biến
+- **arrange()**:    sắp xếp hay thay đổi thứ tự các hàng
+- **mutate()**:     thêm các cột với giá trị là phương trình phụ thuộc (hoặc không phụ thuộc) vào các biến đã có.
+- **summarise()**:    giản lược nhiều giá trị thành một giá trị tổng hợp
+
+
+## Chọn các biến - sử dụng select()
+
+
+
+## lọc và sắp sếp - sử dụng filter() và arrange()
+
+### sắp sếp các quan sát
+
+### lọc có điều kiện
+
+### lọc và sắp sếp
+
+## thêm các cột (biến) mới vào dữ liệu
+
+### tính toán
+
+### tính toán
+
+
+### kết hợp với select(), mutate(), filter(), và arrange()
+
+<!-- Aggregating data -->
+
+## Các cách tính tổng hợp
+
+### Động từ đếm count()
+
+### Đếm theo XXX
+
+
+### Đếm them YYY
+
+### Thêm cột và đếm
+
+## Tóm tắt, Gộp và tách dùng động từ summarize(), groupby() và ungroup()
+
+### Tóm tắt 1
+
+### Tóm tắt 2
+
+### Tóm tắt 3
+
+## the top_ verb
+
+### selecting a county from each region
+
+### finding the highest-income state in each region
+
+### using summarize, top_n, và count together
+
+
+<!-- Selecting and Transforming Data -->
+
+## Chọn và Thay Đổi Dữ Liệu
+
+### Chọn dữ liêu
+
+#### Chọn cột
+
+#### Chọn helpers
+
+<!-- rename verb -->
+### Thay đổi tên động từ
+
+
+<!-- rename a column after count -->
+#### thay đổi tên một cột sau khi đếm
+
+
+<!-- rename a column as part of a select -->
+#### thay đổi tên một cột như là một phần của lệch select
+
+<!-- transmute verb -->
+### Chuyển đổi động từ
+
+<!-- Choosing among verb -->
+#### Chọn giữa các động tư
+
+
+<!-- using transmute -->
+#### sử dụng động từ transmute
+
+<!-- matching verbs to their definition -->
+#### Tìm sự tương ứng các động từ
+
+
+<!-- chosing among the four verb -->
+#### chọn giữa 4 động từ
+
+
+## Thực hành với gói dữ liệu AAA

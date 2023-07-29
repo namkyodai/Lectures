@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+<met:element form="text" read-only="false" name="Author">paolotamag</met:element>
+<met:element form="date" read-only="false" name="Creation Date">13/2/2020/12:00:01 +02:00</met:element>
+<met:element form="multiline" read-only="false" name="Comments">COVID-19 Live Visualization using Guided Analytics
+
+This workflow is connecting an API to get new data on the spreading of the virus COVID-19. Confirmed cases and deaths time series are visualized by country in different ways. &#13;
+&#13;
+The dashboard can be displayed locally on the open source KNIME Analytics Platform desktop tool and it can be also deployed on KNIME Server via KNIME WebPortal as a remotely accessible web based application.&#13;
+&#13;
+&#13;
+&#13;
+
+
+URL: GitHub - ExpDev - coronavirus-tracker (API) https://github.com/ExpDev07/coronavirus-tracker-api
+URL: United Nations - unistats.un.org - Countries or areas / geographical regions https://unstats.un.org/unsd/methodology/m49/
+URL: Data Hub - Country and Continent Codes List https://datahub.io/JohnSnowLabs/country-and-continent-codes-list
+URL: Towards Data Science - Following the Spread of Coronavirus - Paolo Tamagnini and Rosaria Silipo https://towardsdatascience.com/following-the-spread-of-coronavirus-23626940c125
+TAGS: COVID-19,REST,API,Coronavirus,dashboard,guided analytics,Plotly,Stacked bar chart,JSON,JSONPath,WebPortal</met:element>
+</met:KNIMEMetaInfo>
