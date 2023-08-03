@@ -2,7 +2,7 @@
 title     : "Các Nguyên Lý Cơ Bản Trong Phân Tích Dữ Liệu"
 subtitle  : "Lý Thuyết Về Dữ Liệu"
 author    : "[TS. Lê Thanh Nam](https://namkyodai.github.io)"
-date      : "4-tháng 8-2023"
+date      : "tháng 8-2023"
 output    : 
   slidy_presentation:
 #   css: assets/css/styles.css

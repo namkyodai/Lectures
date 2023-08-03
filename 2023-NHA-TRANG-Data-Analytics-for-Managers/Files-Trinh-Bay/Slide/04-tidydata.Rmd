@@ -2,7 +2,7 @@
 title     : "Các Nguyên Lý Cơ Bản Trong Phân Tích Dữ Liệu"
 subtitle  : "Làm Sạch và Xác Thực Dữ Liệu, Dữ Liệu Gọn Gàng"
 author    : "[TS. Lê Thanh Nam](https://namkyodai.github.io)"
-date      : "4-tháng 8-2023"
+date      : "tháng 8-2023"
 #date      : "`r format(Sys.time(), '%d %B, %Y')`"
 output    : 
   slidy_presentation:
@@ -219,17 +219,43 @@ source: [Openscapes](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
 </div>
 
 
-## Column headers are values, not variable names (1)
+## Tên Các Cột Là Giá Trị, Không Phải là Tên Biến (1)
+
+```{r, echo=FALSE, out.width="90%", fig.cap="", fig.align = 'center'}
+knitr::include_graphics("assets/img/pew-raw.png")
+```
+
+<!-- ## Column headers are values, not variable names (2) -->
+
+<!-- Billboard Ranking -->
+
+<!-- ```{r echo=FALSE, message=FALSE,warning=FALSE} -->
+<!-- df=read.csv("../data/tidy-data/data/billboard.csv", sep=",", header=TRUE) -->
+<!-- library(DT) -->
+<!-- p<-datatable(df,rownames = FALSE,extensions = c('FixedColumns'), -->
+<!--              options = list(pageLength = 10, -->
+<!--             columnDefs = list(list(className = 'dt-left')) -->
+<!--             ,autoWidth = TRUE,scrollX = TRUE,fixedColumns = TRUE) -->
+<!--              ) -->
+<!-- p -->
+<!-- ``` -->
 
 
-<div class='left' style='float:left;width:48%'>
+## Tên Các Cột Là Giá Trị, Không Phải là Tên Biến (2)
 
-Messy Data
-
+Bảng xếp hạng âm nhạc Billboard
 
 ```{r echo=FALSE, message=FALSE,warning=FALSE}
-source("../Code/pew-tidying.R")
-#library(dplyr)
-#library(reshape2)
-#df=read.csv("../Data/tidy-data/data/pew-raw.csv", sep=",", header=TRUE)
-</div>
+library(DT)
+source("../data/tidy-data/data/billboard.r")
+p<-datatable(clean,rownames = FALSE,
+             options = list(pageLength = 10,
+            columnDefs = list(list(className = 'dt-left', targets = c(1:6)))
+            ,autoWidth = TRUE)
+             )
+p
+```
+
+
+
+

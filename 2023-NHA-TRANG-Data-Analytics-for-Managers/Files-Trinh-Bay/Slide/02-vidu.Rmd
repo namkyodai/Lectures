@@ -2,7 +2,7 @@
 title     : "Phân Tích và Tính Toán  với Dữ Liệu Đô Thị <br> Urban Computation"
 subtitle  : "Ví Dụ"
 author    : "[TS. Lê Thanh Nam](https://namkyodai.github.io)"
-date      : "4-tháng 8-2023"
+date      : "tháng 8-2023"
 output    :
   slidy_presentation:
 #   css: assets/css/styles.css
