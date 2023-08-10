@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
+    <entry key="created_by" type="xstring" value="5.1.0.v202307121410"/>
+    <entry key="created_by_nightly" type="xboolean" value="false"/>
+    <entry key="version" type="xstring" value="5.1.0"/>
+    <entry key="name" type="xstring" isnull="true" value=""/>
+    <config key="authorInformation">
+        <entry key="authored-by" type="xstring" value="Maarit Laukkanen"/>
+        <entry key="authored-when" type="xstring" value="2020-04-20 13:09:26 +0200"/>
+        <entry key="lastEdited-by" type="xstring" value="le.nam"/>
+        <entry key="lastEdited-when" type="xstring" value="2023-08-05 20:33:19 +0700"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <config key="workflow_credentials"/>
+    <config key="annotations">
+        <config key="annotation_0">
+            <entry key="text" type="xstring" value="Nhiệm vụ 1: Đọc Dữ Liệu Từ 1 file%%00013%%00010%%00013%%000101. Đọc các files sau đây trong thư mục Data thông qua việc sử dụng các NODES phù hợp%%00013%%00010- adult.csv%%00013%%00010- adult_education.table%%00013%%00010- adult_income.xlsx%%00013%%00010%%00013%%00010Gợi ý: Bạn có thể kéo và thả các file đó từ KNIME Explorer tới màn hình chính%%00013%%00010%%00013%%00010%%00013%%000102. Thay đổi các đường dẫn các file tới các đường dẫn gắn liền với workflow"/>
+            <entry key="contentType" type="xstring" value="text/plain"/>
+            <entry key="bgcolor" type="xint" value="16777215"/>
+            <entry key="x-coordinate" type="xint" value="20"/>
+            <entry key="y-coordinate" type="xint" value="40"/>
+            <entry key="width" type="xint" value="501"/>
+            <entry key="height" type="xint" value="201"/>
+            <entry key="alignment" type="xstring" value="LEFT"/>
+            <entry key="borderSize" type="xint" value="4"/>
+            <entry key="borderColor" type="xint" value="16766976"/>
+            <entry key="defFontSize" type="xint" value="9"/>
+            <entry key="annotation-version" type="xint" value="20230412"/>
+            <config key="styles">
+                <config key="style_0">
+                    <entry key="start" type="xint" value="0"/>
+                    <entry key="length" type="xint" value="37"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="1"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_1">
+                    <entry key="start" type="xint" value="37"/>
+                    <entry key="length" type="xint" value="2"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_2">
+                    <entry key="start" type="xint" value="39"/>
+                    <entry key="length" type="xint" value="1"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="1"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_3">
+                    <entry key="start" type="xint" value="40"/>
+                    <entry key="length" type="xint" value="85"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_4">
+                    <entry key="start" type="xint" value="125"/>
+                    <entry key="length" type="xint" value="9"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="2"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_5">
+                    <entry key="start" type="xint" value="134"/>
+                    <entry key="length" type="xint" value="4"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_6">
+                    <entry key="start" type="xint" value="138"/>
+                    <entry key="length" type="xint" value="21"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="2"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_7">
+                    <entry key="start" type="xint" value="159"/>
+                    <entry key="length" type="xint" value="4"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_8">
+                    <entry key="start" type="xint" value="163"/>
+                    <entry key="length" type="xint" value="17"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="2"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_9">
+                    <entry key="start" type="xint" value="180"/>
+                    <entry key="length" type="xint" value="161"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+            </config>
+        </config>
+        <config key="annotation_1">
+            <entry key="text" type="xstring" value="Nhiệm vụ 2: Truy Xuất vào các cơ sở dữ liệu%%00013%%00010%%00013%%000101. Đọc  bảng có tiêu đề web_activity trên cơ sở dữ liệu WebActivity.sqlite có trong thư mục dữ liệu%%00013%%000102. Đọc file dữ liệu trực tiếp từ thư mục data"/>
+            <entry key="contentType" type="xstring" value="text/plain"/>
+            <entry key="bgcolor" type="xint" value="16777215"/>
+            <entry key="x-coordinate" type="xint" value="20"/>
+            <entry key="y-coordinate" type="xint" value="620"/>
+            <entry key="width" type="xint" value="501"/>
+            <entry key="height" type="xint" value="110"/>
+            <entry key="alignment" type="xstring" value="LEFT"/>
+            <entry key="borderSize" type="xint" value="4"/>
+            <entry key="borderColor" type="xint" value="16766976"/>
+            <entry key="defFontSize" type="xint" value="9"/>
+            <entry key="annotation-version" type="xint" value="20230412"/>
+            <config key="styles">
+                <config key="style_0">
+                    <entry key="start" type="xint" value="0"/>
+                    <entry key="length" type="xint" value="47"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="1"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_1">
+                    <entry key="start" type="xint" value="47"/>
+                    <entry key="length" type="xint" value="2"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_2">
+                    <entry key="start" type="xint" value="49"/>
+                    <entry key="length" type="xint" value="1"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="1"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_3">
+                    <entry key="start" type="xint" value="50"/>
+                    <entry key="length" type="xint" value="21"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_4">
+                    <entry key="start" type="xint" value="71"/>
+                    <entry key="length" type="xint" value="12"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="2"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_5">
+                    <entry key="start" type="xint" value="83"/>
+                    <entry key="length" type="xint" value="20"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_6">
+                    <entry key="start" type="xint" value="103"/>
+                    <entry key="length" type="xint" value="18"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="2"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+                <config key="style_7">
+                    <entry key="start" type="xint" value="121"/>
+                    <entry key="length" type="xint" value="72"/>
+                    <entry key="fontname" type="xstring" value="Arial"/>
+                    <entry key="fontstyle" type="xint" value="0"/>
+                    <entry key="fontsize" type="xint" value="9"/>
+                    <entry key="fgcolor" type="xint" value="0"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="nodes"/>
+    <config key="connections"/>
+    <config key="workflow_editor_settings">
+        <entry key="workflow.editor.snapToGrid" type="xboolean" value="true"/>
+        <entry key="workflow.editor.ShowGrid" type="xboolean" value="true"/>
+        <entry key="workflow.editor.gridX" type="xint" value="20"/>
+        <entry key="workflow.editor.gridY" type="xint" value="20"/>
+        <entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
+        <entry key="workflow.editor.curvedConnections" type="xboolean" value="false"/>
+        <entry key="workflow.editor.connectionWidth" type="xint" value="1"/>
+    </config>
+</config>

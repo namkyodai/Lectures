@@ -13,6 +13,7 @@
         </config>
         <entry key="table_rowcount" type="xint" value="14"/>
         <entry key="duplicate_row_key_suffix" type="xstring" value="_dup"/>
+        <entry key="duplicate_row_key_policy" type="xstring" value="AppendSuffix"/>
     </config>
     <entry key="table_file_name" type="xstring" isnull="true" value=""/>
 </config>

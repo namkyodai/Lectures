@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>Ferry</author>
+    <created>2016-04-19T12:00:01.000+02:00</created>
+    <last-modified>2020-01-29T14:46:51.000+01:00</last-modified>
+    <description>Basic Examples for using the GroupBy Node
+
+This workflow shows the many aggregation options that the GroupBy node offers.
+We start from customer data, group on Gender or more features, and run a few different aggregation methods on a few different features.</description>
+    <tags>
+        <tag>ETL</tag>
+        <tag>groupby</tag>
+        <tag>aggregation</tag>
+    </tags>
+</workflow-metadata>

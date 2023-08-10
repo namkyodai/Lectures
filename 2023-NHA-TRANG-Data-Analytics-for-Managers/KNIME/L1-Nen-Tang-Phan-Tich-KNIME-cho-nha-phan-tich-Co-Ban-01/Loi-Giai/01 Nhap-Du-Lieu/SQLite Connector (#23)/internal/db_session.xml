@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="db_session">
+    <config key="Session Info">
+        <entry key="version" type="xint" value="4"/>
+        <entry key="sessionID" type="xstring" value="630f4ef4-fe7c-4b4d-b9f2-a07486c0d747"/>
+        <entry key="dbTypeId" type="xstring" value="sqlite"/>
+        <entry key="dialectId" type="xstring" value="sqlite"/>
+        <entry key="dbURL" type="xstring" value="jdbc:sqlite:C:\Nam\Lectures\2023-NHA-TRANG-Data-Analytics-for-Managers\KNIME\L1-Nen-Tang-Phan-Tich-KNIME-cho-nha-phan-tich-Co-Ban-01\data\WebActivity.sqlite"/>
+    </config>
+    <config key="Driver Definition">
+        <entry key="driverId" type="xstring" value="SQLite"/>
+        <entry key="driverName" type="xstring" value="SQLite"/>
+        <entry key="driverVersion" type="xstring" value="3.23.0"/>
+        <entry key="driverClass" type="xstring" value="org.sqlite.JDBC"/>
+        <entry key="driverDescription" type="xstring" value=""/>
+        <entry key="driverOrigin" type="xstring" value="EXTENSION"/>
+    </config>
+    <config key="Attributes">
+        <config key="java.lang.Boolean">
+            <entry key="knime.db.capability.multi.dbs" type="xboolean" value="false"/>
+            <entry key="knime.db.connection.restore" type="xboolean" value="true"/>
+            <entry key="knime.db.agent.writer.fail_on_missing_in_where_clause" type="xboolean" value="false"/>
+            <entry key="knime.db.connection.reconnect" type="xboolean" value="true"/>
+        </config>
+        <config key="java.lang.String">
+            <entry key="knime.db.connection.metadata.table.types" type="xstring" value="TABLE, VIEW"/>
+        </config>
+    </config>
+</config>

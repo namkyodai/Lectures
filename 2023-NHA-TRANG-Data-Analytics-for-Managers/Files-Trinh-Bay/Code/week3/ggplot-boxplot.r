@@ -8,23 +8,23 @@ library(ggplot2)
 
 # Biểu đồ hộp cho 1 biến
 
-mtcars
+dulieu<-mtcars
 
-ggplot(mtcars, aes(x="", y=mpg)) +
+ggplot(dulieu, aes(x="", y=mpg)) +
   geom_boxplot()
 
 
-ggplot(mtcars, aes(x="", y=mpg)) +
+ggplot(dulieu, aes(x="", y=mpg)) +
   geom_boxplot() +
   xlab("")
 
 
-ggplot(mtcars, aes(x="", y=mpg)) +
-  geom_boxplot(alpha=0.2, colour = "red", fill = "blue") +
+ggplot(dulieu, aes(x="", y=mpg)) +
+  geom_boxplot(alpha=0.6, colour = "lightgreen", fill = "hotpink2") +
   xlab("")
 
 
-ggplot(mtcars, aes(x="", y=mpg)) +
+ggplot(dulieu, aes(x="", y=mpg)) +
   geom_boxplot(fill="midnightblue", alpha=0.3, colour = "mediumseagreen") +
   xlab("")+
   labs(title="Biểu đồ hộp cho biến mpg",
@@ -33,7 +33,7 @@ ggplot(mtcars, aes(x="", y=mpg)) +
 
 
 #thêm một lớp cho biểu đồ
-ggplot(mtcars, aes(x="", y=mpg)) +
+ggplot(dulieu, aes(x="", y=mpg)) +
   geom_boxplot(fill="slateblue", alpha=0.2) +
   xlab("")+
   ylab("Quãng đường trên 1 lít xăng")

@@ -1,0 +1,978 @@
+2023-08-05 20:21:27,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-05 20:21:27,223 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-05 20:21:27,223 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-05 20:21:27,223 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-05 20:21:27,223 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-05 20:21:27,224 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-05 20:21:27,224 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-05 20:21:27,224 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-05 20:21:27,224 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-05 20:21:27,224 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-05 20:22:27,630 : WARN  : ModalContext :  : Node : Missing Value : 3:63:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Tổng IP" still contains missing values.
+2023-08-05 20:22:27,636 : WARN  : ModalContext :  : Node : Data Explorer : 3:23 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-05 20:22:27,732 : WARN  : ModalContext :  : Node : Data Explorer : 3:22 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-05 20:22:27,808 : WARN  : ModalContext :  : Node : Missing Value : 3:62:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+2023-08-05 20:22:27,813 : WARN  : ModalContext :  : Node : Data Explorer : 3:24 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-05 20:22:27,882 : WARN  : ModalContext :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-05 20:54:48,102 : WARN  : KNIME-Worker-18-String Manipulation 6:28 :  : ColumnCalculator : String Manipulation : 6:28 : Row "Row14" contains missing value in column "native-country" - returning missing (omitting further warnings)
+2023-08-05 20:58:52,177 : WARN  : ModalContext :  : Node : GroupBy : 6:4 : No grouping column included. Aggregate complete table.
+2023-08-05 21:12:22,396 : WARN  : KNIME-Worker-26-CSV Reader 6:30 :  : Node : GroupBy : 6:4 : No grouping column included. Aggregate complete table.
+2023-08-05 21:27:12,143 : WARN  : KNIME-Worker-37-Bar Chart (JavaScript) 5:7 :  : Node : Bar Chart (JavaScript) : 5:7 : The following data columns have missing values, which were ignored during the aggregation:
+    >50K - 2 missing value(s)
+2023-08-05 21:34:42,840 : WARN  : ModalContext :  : Node : Color Manager : 6:11 : Column "marital-status" has no nominal values set: execute predecessor or add Binner.
+2023-08-05 21:34:42,887 : WARN  : ModalContext :  : Node : Scatter Plot (JavaScript) : 6:32:0:3 : Table contains missing or unsupported values - these values will be omitted.
+2023-08-05 21:38:22,449 : WARN  : KNIME-Worker-45-Scatter Plot (JavaScript) 6:3 :  : Node : Scatter Plot (JavaScript) : 6:3 : Table contains missing or unsupported values - these values will be omitted.
+2023-08-05 21:39:01,891 : WARN  : ModalContext :  : Node : Bar Chart (JavaScript) : 7:7 : The following data columns have missing values, which were ignored during the aggregation:
+    >50K - 2 missing value(s)
+2023-08-05 21:52:17,220 : WARN  : KNIME-Worker-57-Bar Chart (JavaScript) 5:21 :  : Node : Bar Chart (JavaScript) : 5:21 : The following data columns have missing values, which were ignored during the aggregation:
+    Terminal 2 - 1 missing value(s),
+    Landside - 5 missing value(s),
+    Terminal 1 - 3 missing value(s),
+    General - 6 missing value(s),
+    Airside - 5 missing value(s)
+2023-08-06 07:17:13,124 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-06 07:17:13,125 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-06 07:17:13,126 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-06 07:17:13,126 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-06 07:17:13,126 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-06 07:38:45,815 : WARN  : ModalContext :  : Node : Line Plot (JavaScript) : 4:15 : Only the first 2500 rows are displayed.
+2023-08-06 07:38:46,102 : WARN  : ModalContext :  : Node : 2D Density Plot (Plotly) : 4:21 : Only the first 2500 rows are displayed.
+2023-08-06 07:38:46,223 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: 1-Gia-nha-o-Singapore 4 loaded with errors
+2023-08-06 07:38:46,224 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: 1-Gia-nha-o-Singapore 4
+2023-08-06 07:38:46,224 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Line Chart (JFreeChart)" not available (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2023-08-06 07:39:22,018 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-06 07:39:22,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-06 07:39:22,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-06 07:39:22,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-06 07:39:22,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-06 08:20:45,016 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-06 08:20:45,018 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-06 08:20:45,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-06 08:54:19,003 : WARN  : main :  : Node : CSV Reader : 3:2 : Please specify a file
+2023-08-06 08:56:17,950 : WARN  : main :  : Node : Excel Reader : 3:3 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-06 09:08:56,896 : WARN  : main :  : Node : Row Filter : 4:27 : No row filter specified
+2023-08-06 09:15:36,330 : WARN  : KNIME-Worker-28-Row Filter 4:31 :  : Node : Row Filter : 4:31 : Node created an empty data table.
+2023-08-06 09:15:48,853 : WARN  : KNIME-Worker-29-Row Filter 4:31 :  : Node : Row Filter : 4:31 : Node created an empty data table.
+2023-08-06 09:16:20,660 : WARN  : KNIME-Worker-30-Row Filter 4:31 :  : Node : Row Filter : 4:31 : Node created an empty data table.
+2023-08-06 10:30:46,603 : WARN  : main :  : WrappedNodeDialog : GroupBy : 3:4 : failed to apply settings: Duplicate column names: occupation. Not possible with 'Keep original name(s)' option
+org.knime.core.node.InvalidSettingsException: Duplicate column names: occupation. Not possible with 'Keep original name(s)' option
+	at org.knime.base.node.preproc.groupby.GroupByNodeModel.validateSettings(GroupByNodeModel.java:428)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:635)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-08-06 10:30:48,694 : WARN  : main :  : WrappedNodeDialog : GroupBy : 3:4 : failed to apply settings: Duplicate column names: occupation. Not possible with 'Keep original name(s)' option
+org.knime.core.node.InvalidSettingsException: Duplicate column names: occupation. Not possible with 'Keep original name(s)' option
+	at org.knime.base.node.preproc.groupby.GroupByNodeModel.validateSettings(GroupByNodeModel.java:428)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:635)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-08-06 10:30:56,640 : WARN  : main :  : Node : GroupBy : 3:4 : No grouping column included. Aggregate complete table.
+2023-08-06 10:47:35,358 : WARN  : ModalContext :  : Node : Scatter Plot (JavaScript) : 3:3 : Table contains missing or unsupported values - these values will be omitted.
+2023-08-06 11:02:27,129 : WARN  : ModalContext :  : Node : Missing Value : 3:63:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Tổng IP" still contains missing values.
+2023-08-06 11:02:27,135 : WARN  : ModalContext :  : Node : Data Explorer : 3:23 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-06 11:02:27,155 : WARN  : ModalContext :  : Node : Data Explorer : 3:22 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-06 11:02:27,200 : WARN  : ModalContext :  : Node : Missing Value : 3:62:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+2023-08-06 11:02:27,204 : WARN  : ModalContext :  : Node : Data Explorer : 3:24 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-06 11:02:27,273 : WARN  : ModalContext :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-06 11:21:35,318 : WARN  : KNIME-Worker-49-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-06 11:21:35,319 : WARN  : KNIME-Worker-49-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-06 11:22:15,459 : WARN  : KNIME-Worker-50-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-06 11:22:15,459 : WARN  : KNIME-Worker-50-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-06 11:22:30,885 : WARN  : main :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-06 11:22:30,886 : WARN  : main :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-06 11:22:32,620 : WARN  : KNIME-Worker-51-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-06 11:22:32,621 : WARN  : KNIME-Worker-51-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-06 11:22:47,815 : WARN  : KNIME-Worker-52-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-06 11:22:47,815 : WARN  : KNIME-Worker-52-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-06 11:23:07,429 : WARN  : KNIME-Worker-55-Missing Value 3:66:59 :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-06 12:36:33,735 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-06 12:36:33,736 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-06 12:38:45,711 : ERROR : Worker-5: Download and open remote items :  : WorkflowDownload :  :  : Unable to download workflow: The entity is not backed by an input stream, entity class is : java.io.InputStream
+2023-08-06 12:43:26,321 : ERROR : Worker-3: Download and open remote items :  : WorkflowDownload :  :  : Unable to download workflow: closed
+2023-08-06 12:43:26,431 : ERROR : Worker-1: Download and open remote items :  : WorkflowDownload :  :  : Unable to download workflow: closed
+2023-08-06 14:46:29,625 : WARN  : KNIME-Worker-35-Bar Chart (JavaScript) 4:21 :  : Node : Bar Chart (JavaScript) : 4:21 : The following data columns have missing values, which were ignored during the aggregation:
+    Terminal 2 - 1 missing value(s),
+    Landside - 5 missing value(s),
+    Terminal 1 - 3 missing value(s),
+    General - 6 missing value(s),
+    Airside - 5 missing value(s)
+2023-08-07 13:38:20,637 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-07 13:38:20,638 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-07 13:38:20,639 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-07 13:38:54,187 : WARN  : ModalContext :  : Node : Bar Chart (JavaScript) : 3:21 : The following data columns have missing values, which were ignored during the aggregation:
+    Terminal 2 - 1 missing value(s),
+    Landside - 5 missing value(s),
+    Terminal 1 - 3 missing value(s),
+    General - 6 missing value(s),
+    Airside - 5 missing value(s)
+2023-08-07 16:28:36,588 : WARN  : main :  : Node : GroupBy : 3:3 : No grouping column included. Aggregate complete table.
+2023-08-07 16:28:36,589 : WARN  : main :  : Node : GroupBy : 3:3 : No aggregation column defined
+2023-08-07 16:28:36,589 : WARN  : main :  : Node : GroupBy : 3:3 : Please select at least one group or aggregation column
+2023-08-07 16:44:09,077 : WARN  : main :  : WrappedNodeDialog : Rule Engine : 3:6 : failed to apply settings: line 5, col 18: Expected: =>
+org.knime.core.node.InvalidSettingsException: line 5, col 18: Expected: =>
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:571)
+	at org.knime.base.node.rules.engine.RuleEngineNodeDialog.saveSettingsTo(RuleEngineNodeDialog.java:114)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:539)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:778)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.text.ParseException: line 5, col 18: Expected: =>
+	at org.knime.base.node.rules.engine.BaseRuleParser$ParseState.consumeText(BaseRuleParser.java:292)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseOutcome(SimpleRuleParser.java:262)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:232)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:468)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:496)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:507)
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:569)
+	... 18 more
+2023-08-07 16:47:06,919 : WARN  : main :  : Node : GroupBy : 3:3 : No aggregation column defined
+2023-08-07 16:47:06,919 : WARN  : main :  : Node : GroupBy : 3:3 : 1 invalid aggregation column(s) found.
+2023-08-07 16:47:06,919 : WARN  : main :  : Node : GroupBy : 3:3 : Group column 'season' not in spec.
+2023-08-07 16:48:25,234 : WARN  : main :  : Node : Number To String : 3:4 : No columns selected.
+2023-08-07 16:50:25,323 : WARN  : main :  : Node : GroupBy : 3:7 : No grouping column included. Aggregate complete table.
+2023-08-07 16:50:25,324 : WARN  : main :  : Node : GroupBy : 3:7 : No aggregation column defined
+2023-08-07 16:50:25,324 : WARN  : main :  : Node : GroupBy : 3:7 : Please select at least one group or aggregation column
+2023-08-07 16:51:30,469 : WARN  : main :  : Node : GroupBy : 3:7 : No grouping column included. Aggregate complete table.
+2023-08-07 17:38:50,590 : WARN  : main :  : Node : GroupBy : 3:11 : No grouping column included. Aggregate complete table.
+2023-08-07 17:39:12,115 : WARN  : main :  : Node : GroupBy : 3:11 : No grouping column included. Aggregate complete table.
+2023-08-07 17:46:06,899 : WARN  : main :  : Node : Pivot : 3:15 : No pivot columns selected.
+2023-08-07 17:52:07,156 : WARN  : main :  : Node : Math Formula : 3:16 : No configuration available
+2023-08-07 17:58:11,529 : WARN  : main :  : Node : Math Formula (Multi Column) : 3:18 : No configuration available
+2023-08-07 19:12:41,168 : WARN  : main :  : WrappedNodeDialog : Math Formula (Multi Column) : 3:18 : failed to apply settings: Unable to parse m_expression
+No expression entered
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+No expression entered
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeModel.createParsersForSelectedColumns(MultiColumnJEPNodeModel.java:301)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeDialogPane.saveSettingsTo(MultiColumnJEPNodeDialogPane.java:323)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:539)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:778)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2023-08-07 19:23:36,597 : WARN  : main :  : Node : Column Resorter : 3:19 : All columns stay in same order.
+2023-08-08 10:48:57,719 : WARN  : main :  : Node : Date&Time Difference : 3:23 : The node was not configured yet.
+2023-08-08 10:49:18,959 : WARN  : main :  : Node : Date&Time-based Row Filter : 3:24 : The node was not configured yet.
+2023-08-08 10:53:21,106 : WARN  : main :  : Node : Joiner : 3:23 : No join columns passed.
+2023-08-08 10:53:30,612 : WARN  : main :  : WrappedNodeDialog : Joiner : 3:23 : failed to apply settings: Please define at least one joining column pair.
+org.knime.core.node.InvalidSettingsException: Please define at least one joining column pair.
+	at org.knime.base.node.preproc.joiner3.Joiner3Settings.validateSettings(Joiner3Settings.java:393)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:241)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-08-08 10:53:32,854 : WARN  : main :  : WrappedNodeDialog : Joiner : 3:23 : failed to apply settings: Please define at least one joining column pair.
+org.knime.core.node.InvalidSettingsException: Please define at least one joining column pair.
+	at org.knime.base.node.preproc.joiner3.Joiner3Settings.validateSettings(Joiner3Settings.java:393)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:241)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-08-08 10:54:07,771 : WARN  : main :  : WrappedNodeDialog : Joiner : 3:23 : failed to apply settings: Please define at least one joining column pair.
+org.knime.core.node.InvalidSettingsException: Please define at least one joining column pair.
+	at org.knime.base.node.preproc.joiner3.Joiner3Settings.validateSettings(Joiner3Settings.java:393)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:241)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-08-08 11:11:47,376 : WARN  : main :  : Node : Column Combiner : 3:24 : No settings available.
+2023-08-08 11:13:39,668 : WARN  : main :  : WrappedNodeDialog : Column Combiner : 3:24 : failed to apply settings: Quote field is empty
+org.knime.core.node.InvalidSettingsException: Quote field is empty
+	at org.knime.base.node.preproc.colcombine2.ColCombine2NodeDialog.saveSettingsTo(ColCombine2NodeDialog.java:251)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:539)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:778)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2023-08-08 11:16:23,357 : WARN  : main :  : Node : String Manipulation : 3:25 : No expression has been set.
+2023-08-08 11:18:19,655 : WARN  : main :  : Node : String to Date&Time : 3:26 : Node must be configured.
+2023-08-08 11:18:59,942 : ERROR : KNIME-Worker-72-String to Date&Time 3:26 :  : Node : String to Date&Time : 3:26 : Could not parse date in cell [Row0_Row0, column "ngay.gio", row 1]: Text '2021-01-01 01:25' could not be parsed at index 2.
+  RowID   |   ..   |    Date    |    ngay.gio   
+------------------------------------------------
+Row0_Row0 | ..     | 2021-01-01 | 2021-01-01 ...
+                                 ^^^^^^^^^^^^^^^
+Could not parse date in cell [Row0_Row0, column "ngay.gio", row 1]: Text '2021-01-01 01:25' could not be parsed at index 2.
+org.knime.core.node.KNIMEException$KNIMERuntimeException: Could not parse date in cell [Row0_Row0, column "ngay.gio", row 1]: Text '2021-01-01 01:25' could not be parsed at index 2.
+	at org.knime.core.node.KNIMEException.toUnchecked(KNIMEException.java:144)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:542)
+	at org.knime.core.data.container.SingleCellFactory.getCells(SingleCellFactory.java:105)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:207)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:435)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel.execute(StringToDateTimeNodeModel.java:336)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:780)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.node.KNIMEException: Could not parse date in cell [Row0_Row0, column "ngay.gio", row 1]: Text '2021-01-01 01:25' could not be parsed at index 2.
+	at org.knime.core.node.KNIMEException.of(KNIMEException.java:135)
+	... 22 more
+Caused by: java.time.format.DateTimeParseException: Text '2021-01-01 01:25' could not be parsed at index 2
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.base/java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.base/java.time.LocalDateTime.parse(Unknown Source)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:515)
+	... 21 more
+2023-08-08 11:19:52,975 : ERROR : KNIME-Worker-73-String to Date&Time 3:26 :  : Node : String to Date&Time : 3:26 : Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+  RowID   |   ..   |    Date    |    ngay.gio   
+------------------------------------------------
+Row0_Row0 | ..     | 2021-01-01 | 2021-01-01 ...
+                                 ^^^^^^^^^^^^^^^
+Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+org.knime.core.node.KNIMEException$KNIMERuntimeException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.toUnchecked(KNIMEException.java:144)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:542)
+	at org.knime.core.data.container.SingleCellFactory.getCells(SingleCellFactory.java:105)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:207)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:435)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel.execute(StringToDateTimeNodeModel.java:336)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:780)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.node.KNIMEException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.of(KNIMEException.java:135)
+	... 22 more
+Caused by: java.time.format.DateTimeParseException: Text '2021-01-01 01:25' could not be parsed at index 16
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.base/java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.base/java.time.LocalDateTime.parse(Unknown Source)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:515)
+	... 21 more
+2023-08-08 11:21:30,733 : ERROR : KNIME-Worker-74-String to Date&Time 3:26 :  : Node : String to Date&Time : 3:26 : Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+  RowID   |   ..   |    Date    |    ngay.gio   
+------------------------------------------------
+Row0_Row0 | ..     | 2021-01-01 | 2021-01-01 ...
+                                 ^^^^^^^^^^^^^^^
+Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+org.knime.core.node.KNIMEException$KNIMERuntimeException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.toUnchecked(KNIMEException.java:144)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:542)
+	at org.knime.core.data.container.SingleCellFactory.getCells(SingleCellFactory.java:105)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:207)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:435)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel.execute(StringToDateTimeNodeModel.java:336)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:780)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.node.KNIMEException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.of(KNIMEException.java:135)
+	... 22 more
+Caused by: java.time.format.DateTimeParseException: Text '2021-01-01 01:25' could not be parsed at index 16
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.base/java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.base/java.time.LocalDateTime.parse(Unknown Source)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:515)
+	... 21 more
+2023-08-08 20:33:24,742 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-08 20:33:24,744 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-08 20:35:57,400 : WARN  : ModalContext :  : Node : String to Date&Time : 3:26 : Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+  RowID   |   ..   |    Date    |    ngay.gio   
+------------------------------------------------
+Row0_Row0 | ..     | 2021-01-01 | 2021-01-01 ...
+                                 ^^^^^^^^^^^^^^^
+Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+2023-08-08 20:36:13,647 : ERROR : KNIME-Worker-14-String to Date&Time 3:26 :  : Node : String to Date&Time : 3:26 : Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+  RowID   |   ..   |    Date    |    ngay.gio   
+------------------------------------------------
+Row0_Row0 | ..     | 2021-01-01 | 2021-01-01 ...
+                                 ^^^^^^^^^^^^^^^
+Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+org.knime.core.node.KNIMEException$KNIMERuntimeException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.toUnchecked(KNIMEException.java:144)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:542)
+	at org.knime.core.data.container.SingleCellFactory.getCells(SingleCellFactory.java:105)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:565)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:484)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:207)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:435)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel.execute(StringToDateTimeNodeModel.java:336)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:780)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.node.KNIMEException: Could not parse date in cell [Row0_Row0, column "ngay.gio(Date&Time)", row 1]: Text '2021-01-01 01:25' could not be parsed at index 16.
+	at org.knime.core.node.KNIMEException.of(KNIMEException.java:135)
+	... 22 more
+Caused by: java.time.format.DateTimeParseException: Text '2021-01-01 01:25' could not be parsed at index 16
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.base/java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.base/java.time.LocalDateTime.parse(Unknown Source)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:515)
+	... 21 more
+2023-08-08 20:42:29,052 : WARN  : main :  : Node : Java Snippet : 3:27 : The column "column1(Date&Time)" is not found in the input table.
+2023-08-08 20:49:07,868 : WARN  : main :  : Node : Extract Date&Time Fields : 3:28 : Node must be configured.
+2023-08-08 20:57:58,414 : WARN  : KNIME-Worker-37-Column Expressions 3:29 :  : Node : Column Expressions : 3:29 : An error occurred in script 1:
+Reference error: '$Date$' is not defined (line 1):
+join($Date$," ",$thoigian.nhietdo.thap$)
+2023-08-08 21:03:20,431 : WARN  : main :  : Node : Java Snippet : 3:31 : The column "ngay.gio" is not found in the input table.
+2023-08-08 21:10:00,374 : WARN  : main :  : Node : Java Snippet : 3:31 : Compile with errors:
+Error in line 45: Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+Error in line 45: Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+
+2023-08-08 21:10:47,181 : WARN  : main :  : WrappedNodeDialog : Java Snippet : 3:31 : failed to apply settings: java.lang.IllegalArgumentException: The output fields table has errors.
+org.knime.core.node.InvalidSettingsException: java.lang.IllegalArgumentException: The output fields table has errors.
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:545)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:778)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The output fields table has errors.
+	at org.knime.base.node.jsnippet.JavaSnippetNodeDialog.saveSettingsTo(JavaSnippetNodeDialog.java:733)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:539)
+	... 16 more
+2023-08-08 21:18:02,946 : WARN  : main :  : Node : Java Snippet : 3:31 : The column "ngay.gio" is not found in the input table.
+2023-08-08 21:19:42,366 : WARN  : main :  : Node : Java Snippet : 3:31 : The column "ngay.gio" is not found in the input table.
+2023-08-08 21:21:41,507 : WARN  : main :  : WrappedNodeDialog : Java Snippet : 3:31 : failed to apply settings: java.lang.IllegalArgumentException: The output fields table has errors.
+org.knime.core.node.InvalidSettingsException: java.lang.IllegalArgumentException: The output fields table has errors.
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:545)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:778)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The output fields table has errors.
+	at org.knime.base.node.jsnippet.JavaSnippetNodeDialog.saveSettingsTo(JavaSnippetNodeDialog.java:733)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:539)
+	... 16 more
+2023-08-08 21:27:44,607 : WARN  : main :  : Node : Extract Date&Time Fields : 3:32 : Column rounded not found in the input table.
+2023-08-09 10:50:26,412 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\le.nam\.eclipse\903338280_win32_win32_x86_64\configuration\org.eclipse.osgi\125\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2023-08-09 10:50:32,292 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-09 10:50:32,293 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-09 11:12:47,125 : WARN  : main :  : ExplorerURIDropUtil :  :  : Object from URI 'https://hub.knime.com/mpicbg-tds/extensions/de.mpicbg.tds.knime.scripting.r.feature/latest' couldn't be pasted
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:395)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:836)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:869)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:845)
+	at org.knime.workbench.explorer.view.dnd.ExplorerURIDropUtil.performDrop(ExplorerURIDropUtil.java:170)
+	at org.knime.workbench.explorer.view.dnd.ExplorerDropListener.performDrop(ExplorerDropListener.java:94)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:273)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:104)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:120)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.ClassCastException: class com.knime.explorer.server.internal.HubURIImporter$3 cannot be cast to class org.knime.workbench.core.imports.RepoObjectImport (com.knime.explorer.server.internal.HubURIImporter$3 is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @370b0c03; org.knime.workbench.core.imports.RepoObjectImport is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2ac8b2a)
+	at org.knime.workbench.explorer.view.dnd.ExplorerURIDropUtil.lambda$0(ExplorerURIDropUtil.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-08-09 11:43:45,504 : WARN  : main :  : ExplorerURIDropUtil :  :  : Object from URI 'https://hub.knime.com/mpicbg-tds/extensions/de.mpicbg.tds.knime.scripting.r.feature/latest/de.mpicbg.knime.scripting.r.node.generic.plot.GenericRPlotFactory2' couldn't be pasted
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:395)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:836)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:869)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:845)
+	at org.knime.workbench.explorer.view.dnd.ExplorerURIDropUtil.performDrop(ExplorerURIDropUtil.java:170)
+	at org.knime.workbench.explorer.view.dnd.ExplorerDropListener.performDrop(ExplorerDropListener.java:94)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:273)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:104)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:120)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.ClassCastException: class com.knime.explorer.server.internal.HubURIImporter$2 cannot be cast to class org.knime.workbench.core.imports.RepoObjectImport (com.knime.explorer.server.internal.HubURIImporter$2 is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @370b0c03; org.knime.workbench.core.imports.RepoObjectImport is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @2ac8b2a)
+	at org.knime.workbench.explorer.view.dnd.ExplorerURIDropUtil.lambda$0(ExplorerURIDropUtil.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-08-09 11:44:16,870 : WARN  : main :  : Node : Column Selection (legacy) : 3:36:14 : Auto-guessing default column.
+2023-08-09 11:44:16,871 : WARN  : main :  : Node : Column Selection (legacy) : 3:36:13 : Auto-guessing default column.
+2023-08-09 11:44:16,871 : WARN  : main :  : Node : Column Selection (legacy) : 3:36:15 : Auto-guessing default column.
+2023-08-09 11:44:31,385 : WARN  : KNIME-Worker-14-Column Filter 3:36:11 :  : Node : Column Selection (legacy) : 3:36:14 : Auto-guessing default column.
+2023-08-09 11:44:31,386 : WARN  : KNIME-Worker-14-Column Filter 3:36:11 :  : Node : Column Selection (legacy) : 3:36:13 : Auto-guessing default column.
+2023-08-09 11:44:31,387 : WARN  : KNIME-Worker-15-Column Filter 3:36:10 :  : Node : Column Selection (legacy) : 3:36:15 : Auto-guessing default column.
+2023-08-09 11:44:31,387 : WARN  : KNIME-Worker-17-Column Selection (legacy) 3:36:13 :  : Node : Column Selection (legacy) : 3:36:13 : Auto-guessing default column.
+2023-08-09 11:44:31,388 : WARN  : KNIME-Worker-16-Column Selection (legacy) 3:36:14 :  : Node : Column Selection (legacy) : 3:36:14 : Auto-guessing default column.
+2023-08-09 11:44:31,388 : WARN  : KNIME-Worker-19-Column Selection (legacy) 3:36:15 :  : Node : Column Selection (legacy) : 3:36:15 : Auto-guessing default column.
+2023-08-09 11:45:51,029 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-09 11:45:51,030 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-09 11:45:51,030 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-09 11:45:51,031 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-09 11:46:37,254 : WARN  : ModalContext :  : Node : Column Selection (legacy) : 3:36:15 : Auto-guessing default column.
+2023-08-09 11:46:37,257 : WARN  : ModalContext :  : Node : Column Selection (legacy) : 3:36:14 : Auto-guessing default column.
+2023-08-09 11:46:37,260 : WARN  : ModalContext :  : Node : Column Selection (legacy) : 3:36:13 : Auto-guessing default column.
+2023-08-09 11:47:17,993 : WARN  : AWT-EventQueue-0 :  : ScriptingNodeDialog : R Plot : 3:37 : [No templates for https://raw.githubusercontent.com/knime-mpicbg/scripting-templates/master/knime-scripting-templates/R/figure-templates.txt have been loaded]
+2023-08-09 11:50:06,459 : WARN  : main :  : Node : Column Selection (legacy) : 3:16:11 : Auto-guessing default column.
+2023-08-09 11:50:06,460 : WARN  : main :  : Node : Column Selection (legacy) : 3:16:12 : Auto-guessing default column.
+2023-08-09 11:50:12,888 : WARN  : KNIME-Worker-15-Column Filter 3:16:10 :  : Node : Column Selection (legacy) : 3:16:11 : Auto-guessing default column.
+2023-08-09 11:50:12,889 : WARN  : KNIME-Worker-15-Column Filter 3:16:10 :  : Node : Column Selection (legacy) : 3:16:12 : Auto-guessing default column.
+2023-08-09 11:50:12,890 : WARN  : KNIME-Worker-16-Column Selection (legacy) 3:16:11 :  : Node : Column Selection (legacy) : 3:16:11 : Auto-guessing default column.
+2023-08-09 11:50:12,890 : WARN  : KNIME-Worker-17-Column Selection (legacy) 3:16:12 :  : Node : Column Selection (legacy) : 3:16:12 : Auto-guessing default column.
+2023-08-09 11:50:30,063 : WARN  : main :  : Node : Column Selection (legacy) : 3:39:14 : Auto-guessing default column.
+2023-08-09 11:50:30,063 : WARN  : main :  : Node : Column Selection (legacy) : 3:39:13 : Auto-guessing default column.
+2023-08-09 11:50:30,063 : WARN  : main :  : Node : Column Selection (legacy) : 3:39:15 : Auto-guessing default column.
+2023-08-09 11:50:31,988 : WARN  : KNIME-Worker-20-Column Filter 3:39:11 :  : Node : Column Selection (legacy) : 3:39:14 : Auto-guessing default column.
+2023-08-09 11:50:31,988 : WARN  : KNIME-Worker-20-Column Filter 3:39:11 :  : Node : Column Selection (legacy) : 3:39:13 : Auto-guessing default column.
+2023-08-09 11:50:31,989 : WARN  : KNIME-Worker-21-Column Filter 3:39:10 :  : Node : Column Selection (legacy) : 3:39:15 : Auto-guessing default column.
+2023-08-09 11:50:31,989 : WARN  : KNIME-Worker-13-Column Selection (legacy) 3:39:15 :  : Node : Column Selection (legacy) : 3:39:15 : Auto-guessing default column.
+2023-08-09 11:50:31,989 : WARN  : KNIME-Worker-22-Column Selection (legacy) 3:39:14 :  : Node : Column Selection (legacy) : 3:39:14 : Auto-guessing default column.
+2023-08-09 11:50:31,990 : WARN  : KNIME-Worker-23-Column Selection (legacy) 3:39:13 :  : Node : Column Selection (legacy) : 3:39:13 : Auto-guessing default column.
+2023-08-10 14:24:54,108 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

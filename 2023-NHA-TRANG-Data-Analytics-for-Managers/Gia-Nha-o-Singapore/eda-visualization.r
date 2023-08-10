@@ -167,7 +167,7 @@ ggplot(df1, aes(x=price_m2))+
   scale_y_continuous(labels=comma)+
   theme(axis.text.x = element_text(angle=45, vjust=1,hjust=1))
 
-# as we can see from this graph there is a wide variety of price. This is because we consider all observations in the graph and observations are mixed of flat_type and flat_model, town, streat, blocks and floor ranges. We need later to separate them.
+# as we can see from this graph there is a wide variety of price. This is because we consider all observations in the graph and observations are mixed of flat_type and flat_model, town, street, blocks and floor ranges. We need later to separate them.
 
 
 #one way to separate them is to use boxplot.

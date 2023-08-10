@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="scriptImports" type="xstring" value="// Your custom imports:%%00010"/>
+        <entry key="scriptFields" type="xstring" value="// Your custom variables:%%00010"/>
+        <entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010%%00010final int minutes01 = bien01.getMinute();%%00010final double normalizedMinutes01 = minutes01 / 60.0;%%00010final double round01 = Math.round(normalizedMinutes01);%%00010final int roundedMinutes01 = (int)(round01 * 60);%%00010final LocalDateTime prepped01 = bien01.minusMinutes(minutes01);%%00010out_rounded01 = prepped01.plusMinutes(roundedMinutes01);%%00010%%00010final int minutes02 = bien02.getMinute();%%00010final double normalizedMinutes02 = minutes02 / 60.0;%%00010final double round02 = Math.round(normalizedMinutes02);%%00010final int roundedMinutes02 = (int)(round02 * 60);%%00010final LocalDateTime prepped02 = bien02.minusMinutes(minutes02);%%00010out_rounded02 = prepped02.plusMinutes(roundedMinutes02);%%00010%%00010final int minutes03 = bien03.getMinute();%%00010final double normalizedMinutes03 = minutes03 / 60.0;%%00010final double round03 = Math.round(normalizedMinutes03);%%00010final int roundedMinutes03 = (int)(round03 * 60);%%00010final LocalDateTime prepped03 = bien03.minusMinutes(minutes03);%%00010out_rounded03 = prepped03.plusMinutes(roundedMinutes03);%%00010%%00010"/>
+        <config key="jarFiles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="outCols">
+            <entry key="array-size" type="xint" value="3"/>
+            <config key="0">
+                <entry key="Name" type="xstring" value="round01"/>
+                <entry key="JavaName" type="xstring" value="out_rounded01"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCellFactory.create(class java.time.LocalDateTime)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="1">
+                <entry key="Name" type="xstring" value="round02"/>
+                <entry key="JavaName" type="xstring" value="out_rounded02"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCellFactory.create(class java.time.LocalDateTime)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="2">
+                <entry key="Name" type="xstring" value="round03"/>
+                <entry key="JavaName" type="xstring" value="out_rounded03"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCellFactory.create(class java.time.LocalDateTime)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <config key="outVars">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="inCols">
+            <entry key="array-size" type="xint" value="3"/>
+            <config key="0">
+                <entry key="Name" type="xstring" value="date.thoigian.nhietdo.thap"/>
+                <entry key="JavaName" type="xstring" value="bien01"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(LocalDateTimeValue,class java.time.LocalDateTime,LocalDateTime)"/>
+            </config>
+            <config key="1">
+                <entry key="Name" type="xstring" value="date.thoigian.nhietdo.cao"/>
+                <entry key="JavaName" type="xstring" value="bien02"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(LocalDateTimeValue,class java.time.LocalDateTime,LocalDateTime)"/>
+            </config>
+            <config key="2">
+                <entry key="Name" type="xstring" value="date.thoigian.gio.giat"/>
+                <entry key="JavaName" type="xstring" value="bien03"/>
+                <entry key="JavaType" type="xstring" value="java.time.LocalDateTime"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.time.localdatetime.LocalDateTimeCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(LocalDateTimeValue,class java.time.LocalDateTime,LocalDateTime)"/>
+            </config>
+        </config>
+        <config key="inVars">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="runOnExecute" type="xboolean" value="false"/>
+        <config key="bundles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.jsnippet.JavaSnippetNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Java Snippet"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.1.0.v202305191913"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.1.0.v202305191913"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Java Snippet"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 365, Cols: 22"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="bd8b4adc-8b8c-4b1c-ba2a-00a9bbc472ff"/>
+    </config>
+</config>

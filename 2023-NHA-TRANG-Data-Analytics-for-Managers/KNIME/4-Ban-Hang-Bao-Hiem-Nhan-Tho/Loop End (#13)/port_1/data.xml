@@ -15,6 +15,7 @@
         </config>
         <entry key="table_rowcount" type="xint" value="79"/>
         <entry key="duplicate_row_key_suffix" type="xstring" isnull="true" value=""/>
+        <entry key="duplicate_row_key_policy" type="xstring" value="Fail"/>
     </config>
     <entry key="table_file_name" type="xstring" isnull="true" value=""/>
 </config>

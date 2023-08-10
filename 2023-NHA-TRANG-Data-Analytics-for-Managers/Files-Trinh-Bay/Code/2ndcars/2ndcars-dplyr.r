@@ -15,6 +15,9 @@ library(dplyr) # gói phụ kiện để tương tác và thay đổi dữ liệ
 df <- read.csv("https://www.biz.uiowa.edu/faculty/jledolter/DataMining/ToyotaCorolla.csv")
 
 
+nam = 40
+
+
 
 df <- data.frame(df) # Chuyển đổi dữ liệu thành dạng khung
 

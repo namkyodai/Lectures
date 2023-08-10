@@ -22,6 +22,8 @@ df=read_excel("data.xlsx",sheet="Capex",skip = 0)
 df = df%>%
   select(Items,System, Cause, Operated_by, Vendors, Area, Level, Zone, Facility, Discipline, YearBuilt, S, CO, SE, HE,R,Findings,Interventions,IS, Quantity, Unit, InterPer, Cost, Probability, Year, Binary_highrisk, Binary_option, NPV, NPV_HighRisk, NPV_Option)
 
+
+
 glimpse(df)
 
 df$System <- as.factor(df$System)
@@ -53,8 +55,6 @@ df2 <- aggregate(df$NPV_HighRisk, by=list(Discipline = df$Discipline), FUN=sum)%
 df3 <- aggregate(df$NPV_Option, by=list(Discipline = df$Discipline), FUN=sum)%>%filter(x>0)
 write.csv(df1, file = "df1.csv")
 
-
-
 write.csv(df2, file = "df2.csv")
 write.csv(df3, file = "df3.csv")
 
@@ -64,6 +64,11 @@ df1_t1 <- df %>%
   group_by(Discipline) %>%
   summarize(NPV = sum(NPV))%>%
   filter(NPV>0)
+
+
+
+
+
 write.csv(df1_t1, file = "df1_t1.csv")
 
 df1_t2 <- df %>%

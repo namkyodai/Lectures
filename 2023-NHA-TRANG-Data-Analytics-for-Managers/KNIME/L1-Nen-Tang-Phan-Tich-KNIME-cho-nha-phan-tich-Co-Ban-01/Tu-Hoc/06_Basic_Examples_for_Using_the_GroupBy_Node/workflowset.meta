@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">Ferry</element>
+    <element form="date" name="Creation Date" read-only="false">19/3/2016/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+Basic Examples for using the GroupBy Node
+
+This workflow shows the many aggregation options that the GroupBy node offers.
+We start from customer data, group on Gender or more features, and run a few different aggregation methods on a few different features.
+
+TAGS: ETL,groupby,aggregation</element>
+    <element form="text" name="Last Edited" read-only="true">2020-01-29 14:46:51 +0100</element>
+</KNIMEMetaInfo>

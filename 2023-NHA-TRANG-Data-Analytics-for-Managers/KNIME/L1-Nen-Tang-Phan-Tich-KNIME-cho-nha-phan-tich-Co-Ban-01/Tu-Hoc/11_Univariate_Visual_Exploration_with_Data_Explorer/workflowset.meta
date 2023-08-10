@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+<met:element form="text" read-only="false" name="Author">Paolo</met:element>
+<met:element form="date" read-only="false" name="Creation Date">27/7/2018/12:00:01 +02:00</met:element>
+<met:element form="multiline" read-only="false" name="Comments">Univariate Visual Exploration with Data Explorer node
+
+This is an example for univariate interactive data visualization using the Data Explorer node. Use this workflow to:&#13;
+&#13;
+Read the dataset about weather in Austin from Austin KATT station&#13;
+Execute the Data Explorer node and open its view.&#13;
+Explore statistical properties, histograms, and bar charts for numeric and nominal columns in the corresponding tabs of the view;&#13;
+In the view, exclude irrelevant columns, e.g. based on your known knowledge or number of missing values.&#13;
+&#13;
+Right click the node and select "Execute and Open Views". &#13;
+To change the settings to be visualized, double click the nodes. &#13;
+To save your in-view interaction use "Apply" and "Close" in the View lower right corner.&#13;
+
+
+VIDEO: Data Explorer: Interactive Univariate Visual Exploration https://youtu.be/iHr9V94Kxk8
+URL: Data Source: Austin KATT station - License GPLv2 https://www.wunderground.com/history/airport/KATT/
+URL: GPLv2 License Terms https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+TAGS: Data Visualization,dataviz,univariate,statistics,histograms,bar charts</met:element>
+</met:KNIMEMetaInfo>

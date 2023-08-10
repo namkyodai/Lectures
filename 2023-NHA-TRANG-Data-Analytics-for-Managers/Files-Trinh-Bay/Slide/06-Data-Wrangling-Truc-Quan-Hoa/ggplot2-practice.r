@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 
+
 # The mtcars dataset is natively available
 # head(mtcars)
 
@@ -50,7 +51,7 @@ ggplot(mtcars, aes(x="", y=mpg))+
 ggplot(mtcars, aes(x="", y=mpg)) +
   geom_boxplot() +
   xlab("")+
-  ylab("Mile per gallon")
+  ylab("Đoạn đường/lít xăng")
 
 
 ggplot(mtcars, aes(x="", y=mpg)) +

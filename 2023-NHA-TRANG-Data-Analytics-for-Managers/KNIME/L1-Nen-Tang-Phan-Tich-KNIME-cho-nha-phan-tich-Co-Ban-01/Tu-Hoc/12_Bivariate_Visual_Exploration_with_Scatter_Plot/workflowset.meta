@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+<met:element form="text" read-only="false" name="Author">Paolo</met:element>
+<met:element form="date" read-only="false" name="Creation Date">27/7/2018/12:00:01 +02:00</met:element>
+<met:element form="multiline" read-only="false" name="Comments">Bivariate Visual Exploration with a Scatter Plot
+
+This is an example for a bivariate interactive data visualization using the Scatter Plot node. Use this workflow to:&#13;
+1. Read the dataset about weather in Austin from Austin KATT station&#13;
+2. Execute the Color Manager&#13;
+3. Execute the Scatter Plot and open its view&#13;
+4. Explore the data points which visually represent the relationship across two columns&#13;
+5. In the view, select data points more interesting to you to further investigate them at the output of Scatter Plot node&#13;
+&#13;
+Right click on the node and select "Execute and Open Views". &#13;
+To change the settings to be visualized double click on the nodes. &#13;
+To save your in-view interaction use "Apply" and "Close" in the View lower right corner.&#13;
+&#13;
+
+
+VIDEO: Scatter Plot: Interactive Bivariate Visual Exploration https://youtu.be/Yn0OMjhlDMk
+URL: Data Source and License : Austin KATT station - GPLv2 https://www.wunderground.com/history/airport/KATT/
+URL: License GPLv2 Terms https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+TAGS: Data Visualization,dataviz,bivariate,scatter,scatter plot</met:element>
+</met:KNIMEMetaInfo>

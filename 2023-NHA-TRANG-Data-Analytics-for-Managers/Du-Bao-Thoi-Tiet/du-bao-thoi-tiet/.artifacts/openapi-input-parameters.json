@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "color-selection-16:11": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "description": "Choose a column from which to generate colors.",
+            "example": {
+                "column": ""
+            }
+        },
+        "title-input-16:13": {
+            "type": "string",
+            "default": "My Plot",
+            "description": "Choose a title for your plot.\t",
+            "example": "My Plot"
+        },
+        "bar-selection-16:12": {
+            "type": "object",
+            "properties": {
+                "column": {
+                    "type": "string",
+                    "default": ""
+                }
+            },
+            "description": "Choose a column from which to generate bars.",
+            "example": {
+                "column": ""
+            }
+        }
+    }
+}

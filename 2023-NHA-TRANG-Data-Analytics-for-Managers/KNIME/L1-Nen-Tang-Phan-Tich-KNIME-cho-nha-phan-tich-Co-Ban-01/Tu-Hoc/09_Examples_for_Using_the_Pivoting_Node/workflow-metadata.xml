@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>Ferry</author>
+    <created>2016-04-19T12:00:01.000+02:00</created>
+    <last-modified>2020-01-29T15:10:12.000+01:00</last-modified>
+    <description>Basic and Advanced Usage of the Pivoting Node
+
+Create a pivot table with one or more group columns and one or more pivot columns. Apply basic aggregation methods like sum and count, statistical aggregation methods, and aggregation methods available for columns of type Date&amp;Time. Apply multiple aggregation methods to one or more aggregation columns.</description>
+    <tags>
+        <tag>ETL</tag>
+        <tag>data aggregation</tag>
+        <tag>pivoting</tag>
+        <tag>grouping</tag>
+        <tag>data transformation</tag>
+        <tag>data preprocessing</tag>
+        <tag>summarizing data</tag>
+        <tag>organizing data</tag>
+    </tags>
+    <links>
+        <link href="https://www.youtube.com/watch?v=zo9YdH9kgKQ&amp;t=2s">The Pivoting Node: Basic Examples</link>
+        <link href="https://www.youtube.com/watch?v=WXt7iiu9c98">The Pivoting Node: Advanced Examples I</link>
+        <link href="https://www.youtube.com/watch?v=1Dilumi6X2I&amp;t=1s">The Pivoting Node: Advanced Examples II</link>
+    </links>
+</workflow-metadata>

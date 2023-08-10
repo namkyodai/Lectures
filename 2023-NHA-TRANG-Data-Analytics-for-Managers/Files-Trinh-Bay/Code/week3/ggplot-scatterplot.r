@@ -5,6 +5,8 @@ library(ggplot2)
 
 # basic scatterplot
 
+dulieu<-iris
+
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) +
    geom_point()
 

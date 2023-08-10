@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">Ferry</element>
+    <element form="date" name="Creation Date" read-only="false">19/3/2016/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+Basic and Advanced Usage of the Pivoting Node
+
+Create a pivot table with one or more group columns and one or more pivot columns. Apply basic aggregation methods like sum and count, statistical aggregation methods, and aggregation methods available for columns of type Date&amp;Time. Apply multiple aggregation methods to one or more aggregation columns.
+
+URL: The Pivoting Node: Basic Examples https://www.youtube.com/watch?v=zo9YdH9kgKQ&amp;t=2s
+URL: The Pivoting Node: Advanced Examples I https://www.youtube.com/watch?v=WXt7iiu9c98
+URL: The Pivoting Node: Advanced Examples II https://www.youtube.com/watch?v=1Dilumi6X2I&amp;t=1s
+
+TAGS: ETL,data aggregation,pivoting,grouping,data transformation,data preprocessing,summarizing data,organizing data</element>
+    <element form="text" name="Last Edited" read-only="true">2020-01-29 15:10:12 +0100</element>
+</KNIMEMetaInfo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">glandrum</element>
+    <element form="date" name="Creation Date" read-only="false">4/4/2016/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+Join example workflow
+
+A Joiner node joins two tables together based on one or more common key values.
+Possible join modes: inner join, left outer join, right outer join, full outer join
+Two tabs: "Joiner Settings" and "Column Selection".
+"Joiner Settings" defines the parameters for the join operation: join mode and column keys
+"Column Selection" sets which columns to  keep and/or drop and strategies to deal with duplicate columns
+
+URL: Joiner Part I (inner join) https://youtu.be/9uV99ByH-TA
+URL: Joiner part II (left, right, full outer join) https://youtu.be/gj66visISa8
+
+TAGS: join,joiner,cross join,cross-join,inner join,full outer join,right outer join,left outer join,ETL</element>
+    <element form="text" name="Last Edited" read-only="true">2023-08-06 07:22:49 +0700</element>
+</KNIMEMetaInfo>
