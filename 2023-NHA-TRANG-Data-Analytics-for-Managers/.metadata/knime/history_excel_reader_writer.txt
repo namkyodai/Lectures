@@ -1,1 +1,5 @@
+C:\Nam\Lectures\2023-NHA-TRANG-Data-Analytics-for-Managers\Files-Trinh-Bay\Data\introduction.xlsx
+/Bai-Tap/Nhom-02/WASH-data-PB-VN-Household.xlsx
+/Bai-Tap/Data/DS nld Nha Trang G?i phòng HCNV.xls
+/Mo-Hinh/DecisionTrees/weather.xlsx
 /KNIME/L1-Nen-Tang-Phan-Tich-KNIME-cho-nha-phan-tich-Co-Ban-01/data/adult_income.xlsx

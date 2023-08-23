@@ -49,26 +49,26 @@
                 </config>
             </config>
         </config>
-        <config key="removeAggregationColumns_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="removeAggregationColumns" type="xboolean" value="false"/>
         <config key="removeRetainedColumns_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="removeRetainedColumns" type="xboolean" value="false"/>
-        <config key="maxNoneNumericalVals_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+        <config key="removeAggregationColumns_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="maxNoneNumericalVals" type="xint" value="10000"/>
+        <entry key="removeAggregationColumns" type="xboolean" value="false"/>
         <config key="valueDelimiter_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="valueDelimiter" type="xstring" value=", "/>
+        <config key="maxNoneNumericalVals_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="maxNoneNumericalVals" type="xint" value="10000"/>
         <config key="aggregationMethods">
             <config key="resultColName">
                 <entry key="array-size" type="xint" value="1"/>
@@ -131,6 +131,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9a4caf92-ff26-4aca-8c4c-ad0b2349f522"/>
+        <entry key="file_store_id" type="xstring" value="6c396526-cfcf-4a14-9c7f-d6e30956c85c"/>
     </config>
 </config>

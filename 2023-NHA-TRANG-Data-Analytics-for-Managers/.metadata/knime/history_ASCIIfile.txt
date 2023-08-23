@@ -1,1 +1,2 @@
 knime://knime.workflow/data.all
+knime://knime.workflow/../../data/german-credit-scoring.csv

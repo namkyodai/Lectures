@@ -976,3 +976,365 @@ Caused by: java.lang.ClassCastException: class com.knime.explorer.server.interna
 2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
 2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
 2023-08-10 14:24:54,110 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-10 14:40:02,132 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-10 14:40:02,133 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-10 14:40:02,133 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-10 14:40:02,133 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-10 14:40:02,133 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-10 14:40:02,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-10 14:40:02,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-10 14:40:02,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-10 14:40:02,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-10 14:40:02,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-10 14:53:26,299 : WARN  : main :  : Node : Column Selection (legacy) : 3:15:14 : Auto-guessing default column.
+2023-08-10 14:53:26,300 : WARN  : main :  : Node : Column Selection (legacy) : 3:15:13 : Auto-guessing default column.
+2023-08-10 14:53:26,300 : WARN  : main :  : Node : Column Selection (legacy) : 3:15:15 : No column available for selection in input table.
+2023-08-10 14:53:31,918 : WARN  : KNIME-Worker-23-Column Filter 3:15:10 :  : Node : Column Selection (legacy) : 3:15:15 : No column available for selection in input table.
+2023-08-10 14:53:31,919 : WARN  : KNIME-Worker-22-Column Filter 3:15:11 :  : Node : Column Selection (legacy) : 3:15:14 : Auto-guessing default column.
+2023-08-10 14:53:31,919 : WARN  : KNIME-Worker-22-Column Filter 3:15:11 :  : Node : Column Selection (legacy) : 3:15:13 : Auto-guessing default column.
+2023-08-10 14:53:31,920 : WARN  : KNIME-Worker-24-Column Selection (legacy) 3:15:14 :  : Node : Column Selection (legacy) : 3:15:14 : Auto-guessing default column.
+2023-08-10 14:53:31,920 : WARN  : KNIME-Worker-25-Column Selection (legacy) 3:15:13 :  : Node : Column Selection (legacy) : 3:15:13 : Auto-guessing default column.
+2023-08-10 14:58:20,542 : WARN  : main :  : Node : Linear Correlation : 3:13 : Auto configuration: Using all suitable columns (in total 7)
+2023-08-10 15:17:09,367 : WARN  : main :  : Node : Partitioning : 3:15 : No sampling method selected
+2023-08-10 15:20:34,507 : WARN  : ModalContext :  : Node : File Reader (deprecated) : 4:1 : Can't access 'knime://knime.workflow/../../data/german-credit-scoring.csv'. (C:\Nam\Lectures\2023-NHA-TRANG-Data-Analytics-for-Managers\Mo-Hinh\21_Regression_Model_Evaluation - Solution\..\..\data\german-credit-scoring.csv (The system cannot find the path specified))
+2023-08-10 15:20:34,509 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: 21_Regression_Model_Evaluation - Solution 4 loaded with warnings
+2023-08-10 15:20:34,509 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: 21_Regression_Model_Evaluation - Solution 4
+2023-08-10 15:20:34,509 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: File Reader (deprecated) 4:1
+2023-08-10 15:20:34,509 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2023-08-10 15:20:34,509 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: State has changed from CONFIGURED to IDLE
+2023-08-10 15:24:10,470 : WARN  : KNIME-Worker-35-Missing Value 5:6 :  : Node : Missing Value : 5:6 : The current settings use missing value handling methods that cannot be represented in PMML 4.2.
+2023-08-10 15:27:55,936 : WARN  : main :  : Node : Numeric Scorer : 3:18 : No columns selected for reference
+2023-08-10 15:33:32,802 : WARN  : main :  : Node : Math Formula : 3:68:60 : No such column: Prediction (Credit amount)
+2023-08-10 15:33:36,330 : WARN  : main :  : Node : Math Formula : 3:68:60 : No such column: Prediction (Credit amount)
+2023-08-10 15:33:37,019 : WARN  : main :  : Node : Math Formula : 3:68:60 : No such column: Prediction (Credit amount)
+2023-08-10 15:34:09,935 : WARN  : main :  : Node : Math Formula : 3:68:60 : No such column: Prediction (Credit amount)
+2023-08-10 15:43:12,084 : WARN  : ModalContext :  : Node : Bar Chart (JavaScript) : 6:21 : The following data columns have missing values, which were ignored during the aggregation:
+    Terminal 2 - 1 missing value(s),
+    Landside - 5 missing value(s),
+    Terminal 1 - 3 missing value(s),
+    General - 6 missing value(s),
+    Airside - 5 missing value(s)
+2023-08-11 09:47:57,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-11 09:47:57,697 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-11 09:47:57,698 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-11 09:47:57,698 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-11 09:47:57,698 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-11 10:11:26,094 : WARN  : ModalContext :  : Node : Missing Value : 5:6 : The current settings use missing value handling methods that cannot be represented in PMML 4.2.
+2023-08-11 10:24:14,914 : WARN  : ModalContext :  : Node : File Reader (deprecated) : 5:1 : Can't access 'knime://knime.workflow/../../data/german-credit-scoring.csv'. (C:\Nam\Lectures\2023-NHA-TRANG-Data-Analytics-for-Managers\Mo-Hinh\21_Regression_Model_Evaluation - Solution\..\..\data\german-credit-scoring.csv (The system cannot find the path specified))
+2023-08-11 10:24:14,915 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: 21_Regression_Model_Evaluation - Solution 5 loaded with warnings
+2023-08-11 10:24:14,915 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: 21_Regression_Model_Evaluation - Solution 5
+2023-08-11 10:24:14,915 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: File Reader (deprecated) 5:1
+2023-08-11 10:24:14,915 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2023-08-11 10:24:14,915 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: State has changed from CONFIGURED to IDLE
+2023-08-11 10:33:34,438 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 6:14 : Internal model could not be loaded.
+2023-08-11 10:45:11,184 : WARN  : KNIME-Worker-14-Table Reader 6:12 :  : Node : Scorer (JavaScript) : 6:13 : The columns selected don't contain any values.
+2023-08-11 22:13:54,664 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-11 22:13:54,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-11 22:13:54,666 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-12 05:20:12,255 : WARN  : main :  : Node : Excel Reader : 5:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-12 05:22:35,899 : ERROR : comm-pool-thread-1 :  : DefaultNodeService :  :  : java.io.IOException: Invalid node settings: Select a column to be renamed.
+2023-08-12 05:29:22,109 : WARN  : main :  : Node : String Manipulation : 5:6 : No expression has been set.
+2023-08-12 05:42:49,293 : WARN  : main :  : Node : Interactive Range Slider Filter Widget : 5:6 : No domain column set
+2023-08-12 05:43:36,418 : WARN  : ModalContext :  : Node : Counter Generation : 5:7:0:13 : Errors overwriting node settings with flow variables: Can't evaluate variable "ascending" as xint expression, it is a STRING (""ascending" (STRING: Ascending)"
+2023-08-12 05:43:36,482 : WARN  : ModalContext :  : Node : Counter Generation : 5:7:0:13 : Errors overwriting node settings with flow variables: Can't evaluate variable "ascending" as xint expression, it is a STRING (""ascending" (STRING: Ascending)"
+2023-08-12 05:45:32,757 : WARN  : main :  : Node : Numeric Binner : 5:8 : No column select for binning.
+2023-08-12 05:47:19,036 : WARN  : main :  : Node : Edit Numeric Domain : 5:9 : Missing Configuration.
+2023-08-12 05:59:01,771 : WARN  : main :  : Node : Column Resorter : 5:12 : All columns stay in same order.
+2023-08-12 06:03:57,592 : WARN  : main :  : Node : Partitioning : 5:13 : No sampling method selected
+2023-08-12 06:05:05,182 : WARN  : main :  : Node : Decision Tree Learner : 5:14 : Guessing target column: "lam.gi".
+2023-08-12 06:07:00,264 : WARN  : KNIME-Worker-46-Decision Tree Predictor 5:15 :  : Node : Decision Tree Predictor : 5:15 : Node created an empty data table.
+2023-08-12 08:30:14,838 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-12 08:30:14,839 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-12 13:42:16,625 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-12 13:42:16,629 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-12 13:42:16,629 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-12 13:42:16,629 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-12 13:42:16,629 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-12 13:42:16,629 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-12 13:42:16,630 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-12 13:42:16,630 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-12 13:42:16,630 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-12 13:42:16,630 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-12 14:06:01,019 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-12 14:06:01,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-12 14:06:01,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-12 14:06:01,020 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-12 14:06:01,021 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-12 16:26:23,590 : WARN  : main :  : Node : Linear Correlation : 4:19 : Auto configuration: Using all suitable columns (in total 8)
+2023-08-12 22:06:17,541 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-12 22:06:17,542 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-12 22:06:17,543 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-12 22:06:17,543 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-12 22:06:17,543 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-13 07:19:38,186 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-13 07:19:38,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-13 07:19:38,189 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-13 07:19:38,189 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-13 07:37:40,201 : WARN  : ModalContext :  : Node : Missing Value : 3:63:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Tổng IP" still contains missing values.
+2023-08-13 07:37:40,206 : WARN  : ModalContext :  : Node : Data Explorer : 3:23 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 07:37:40,223 : WARN  : ModalContext :  : Node : Data Explorer : 3:22 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 07:37:40,265 : WARN  : ModalContext :  : Node : Missing Value : 3:62:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+2023-08-13 07:37:40,269 : WARN  : ModalContext :  : Node : Data Explorer : 3:24 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 07:37:40,321 : WARN  : ModalContext :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-13 08:22:14,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-13 08:22:14,009 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-13 08:22:14,009 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-13 08:22:14,009 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-13 08:22:14,010 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-13 09:47:13,068 : WARN  : ModalContext :  : Node : Missing Value : 6:63:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Tổng IP" still contains missing values.
+2023-08-13 09:47:13,079 : WARN  : ModalContext :  : Node : Data Explorer : 6:23 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 09:47:13,164 : WARN  : ModalContext :  : Node : Data Explorer : 6:22 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 09:47:13,257 : WARN  : ModalContext :  : Node : Missing Value : 6:62:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+2023-08-13 09:47:13,264 : WARN  : ModalContext :  : Node : Data Explorer : 6:24 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-13 09:47:13,365 : WARN  : ModalContext :  : Node : Missing Value : 6:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-13 10:22:55,510 : WARN  : main :  : Node : GroupBy : 3:3 : No grouping column included. Aggregate complete table.
+2023-08-13 10:22:55,511 : WARN  : main :  : Node : GroupBy : 3:3 : No aggregation column defined
+2023-08-13 10:22:55,512 : WARN  : main :  : Node : GroupBy : 3:3 : Please select at least one group or aggregation column
+2023-08-13 17:00:32,060 : WARN  : ModalContext :  : Node : Line Plot (JavaScript) : 8:42 : Only the first 25 rows are displayed.
+2023-08-13 17:00:32,078 : WARN  : ModalContext :  : Node : Scatter Plot (JavaScript) : 8:65 : Only the first 2500 rows are displayed.
+2023-08-13 17:08:42,469 : WARN  : KNIME-Worker-50-Line Plot (JavaScript) 8:42 :  : Node : Line Plot (JavaScript) : 8:42 : Only the first 25 rows are displayed.
+2023-08-13 17:10:13,111 : WARN  : KNIME-Worker-51-Scatter Plot (JavaScript) 8:65 :  : Node : Scatter Plot (JavaScript) : 8:65 : Only the first 2500 rows are displayed.
+2023-08-13 17:12:55,685 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 9:18 : Internal model could not be loaded.
+2023-08-13 17:36:23,144 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-13 17:36:23,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-13 17:36:23,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-13 17:36:23,147 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-15 21:00:15,700 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-15 21:00:15,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-15 21:10:00,800 : WARN  : KNIME-Worker-15-Table Creator 3:16 :  : Node : Table Creator : 3:16 : Node created an empty data table.
+2023-08-15 21:10:06,590 : WARN  : main :  : Node : Excel Reader : 3:16 : Please specify a file
+2023-08-15 21:11:32,422 : WARN  : main :  : Node : Excel Reader : 3:16 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-15 22:25:07,237 : WARN  : ModalContext :  : Node : Missing Value : 3:63:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Tổng IP" still contains missing values.
+2023-08-15 22:25:07,242 : WARN  : ModalContext :  : Node : Data Explorer : 3:23 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-15 22:25:07,259 : WARN  : ModalContext :  : Node : Data Explorer : 3:22 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-15 22:25:07,305 : WARN  : ModalContext :  : Node : Missing Value : 3:62:31 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+2023-08-15 22:25:07,311 : WARN  : ModalContext :  : Node : Data Explorer : 3:24 : The following columns have non-generic type and will be excluded from  calculation: 
+[Ngày Refer]
+2023-08-15 22:25:07,359 : WARN  : ModalContext :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-15 22:36:45,372 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:45,373 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:45,375 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:45,379 : WARN  : main :  : Node : Excel Reader : 3:67:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:45,381 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-08-15 22:36:58,766 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:58,768 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Unknown variable "Path"
+2023-08-15 22:36:58,769 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:58,770 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:36:58,771 : WARN  : main :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: )"
+2023-08-15 22:37:03,217 : WARN  : KNIME-Worker-29-Group Loop Start 3:29 :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: Temp/RM-1.xlsx)"
+2023-08-15 22:37:03,226 : WARN  : KNIME-Worker-30-Table Row To Variable 3:30 :  : Node : Excel Reader : 3:28 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-15 22:37:03,314 : WARN  : KNIME-Worker-33-Group Loop Start 3:29 :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: Temp/RM-2.xlsx)"
+2023-08-15 22:37:03,316 : WARN  : KNIME-Worker-34-Table Row To Variable 3:30 :  : Node : Excel Reader : 3:28 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-15 22:37:03,426 : WARN  : KNIME-Worker-37-Group Loop Start 3:29 :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: Temp/RM-3.xlsx)"
+2023-08-15 22:37:03,428 : WARN  : KNIME-Worker-38-Table Row To Variable 3:30 :  : Node : Excel Reader : 3:28 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-15 22:37:03,497 : WARN  : KNIME-Worker-28-Group Loop Start 3:29 :  : Node : Excel Reader : 3:28 : Errors overwriting node settings with flow variables: Can't evaluate variable "Path" as config expression, it is a STRING (""Path" (STRING: Temp/RM-4.xlsx)"
+2023-08-15 22:37:03,499 : WARN  : KNIME-Worker-29-Table Row To Variable 3:30 :  : Node : Excel Reader : 3:28 : The node configuration changed and the table spec will be recalculated during execution.
+2023-08-15 22:37:13,248 : WARN  : KNIME-Worker-33-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:37:13,249 : WARN  : KNIME-Worker-33-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:37:13,253 : WARN  : KNIME-Worker-34-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:37:13,253 : WARN  : KNIME-Worker-34-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:37:13,254 : WARN  : KNIME-Worker-35-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:37:13,254 : WARN  : KNIME-Worker-35-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:37:13,261 : WARN  : KNIME-Worker-38-Missing Value 3:66:59 :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-15 22:38:02,962 : WARN  : KNIME-Worker-27-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:38:02,962 : WARN  : KNIME-Worker-27-Pivot 3:66:61 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:38:19,975 : WARN  : KNIME-Worker-28-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:38:19,975 : WARN  : KNIME-Worker-28-Column Aggregator 3:66:54 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:38:19,977 : WARN  : KNIME-Worker-29-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : No grouping column included. Aggregate complete table.
+2023-08-15 22:38:19,977 : WARN  : KNIME-Worker-29-Column Aggregator 3:66:55 :  : Node : GroupBy : 3:66:57 : 2 invalid aggregation column(s) found.
+2023-08-15 22:38:19,980 : WARN  : KNIME-Worker-32-Missing Value 3:66:59 :  : Node : Missing Value : 3:66:59 : Column "IP Dự Kiến (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "Mã KH (First*)+Tiềm Năng Chốt Deal" still contains missing values.
+Column "IP Dự Kiến (First*)+ Tiềm Năng" still contains missing values.
+Column "Mã KH (First*)+ Tiềm Năng" still contains missing values.
+Column "IP Dự Kiến (First*)+Từ Chối" still contains missing values.
+Column "Mã KH (First*)+Từ Chối" still contains missing values.
+Column "IP Dự Kiến (First*)+Cần Follow Thêm" still contains missing values.
+Column "Mã KH (First*)+Cần Follow Thêm" still contains missing values.
+Column "IP Dự Kiến (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+Column "Mã KH (First*)+Chốt Deal (Đã Thu Tiền)" still contains missing values.
+2023-08-15 22:41:29,255 : WARN  : main :  : Node : Row Filter : 3:68 : No row filter specified
+2023-08-15 22:46:25,190 : WARN  : KNIME-Worker-50-CSV Reader 3:52 :  : Node : GroupBy : 3:53 : No grouping column included. Aggregate complete table.
+2023-08-15 22:46:25,191 : WARN  : KNIME-Worker-50-CSV Reader 3:52 :  : Node : GroupBy : 3:53 : No aggregation column defined
+2023-08-15 22:46:25,191 : WARN  : KNIME-Worker-50-CSV Reader 3:52 :  : Node : GroupBy : 3:53 : Please select at least one group or aggregation column
+2023-08-15 22:48:11,829 : WARN  : main :  : Node : GroupBy : 3:53 : No aggregation column defined
+2023-08-15 22:48:25,762 : WARN  : main :  : Node : GroupBy : 3:55 : No aggregation column defined
+2023-08-15 22:48:33,909 : WARN  : main :  : Node : GroupBy : 3:55 : No aggregation column defined
+2023-08-15 22:49:11,047 : WARN  : main :  : Node : One Rule Inserter : 3:56 : Unknown column, please configure the node.
+2023-08-15 22:49:16,889 : WARN  : main :  : Node : One Rule Inserter : 3:56 : Unknown column, please configure the node.
+2023-08-15 22:52:02,895 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:52:41,928 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:52:44,395 : WARN  : KNIME-Worker-57-Rule Engine 3:56 :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:53:49,674 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:53:51,871 : WARN  : KNIME-Worker-59-Rule Engine 3:56 :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:54:26,863 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:54:29,877 : WARN  : KNIME-Worker-61-Rule Engine 3:56 :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-08-15 22:54:48,982 : WARN  : main :  : Node : GroupBy : 3:59 : No aggregation column defined
+2023-08-15 22:56:22,764 : WARN  : main :  : Node : Pivot : 3:61 : No pivot columns selected.
+2023-08-17 11:56:18,919 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-17 11:56:18,920 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-17 11:56:18,921 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-17 11:56:18,921 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-17 11:56:18,921 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-17 11:56:18,921 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-17 11:56:18,921 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-17 11:56:18,922 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-17 11:56:18,922 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-17 11:56:18,922 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-18 17:45:12,909 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-18 17:45:12,911 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-18 17:45:12,912 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-21 11:05:11,059 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled did not terminate successfully.
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-MpComputerStatus : A general error occurred that is not covered by a more specific error code.
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandPropert ...
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : NotSpecified: (MSFT_MpComputerStatus:ROOT\Microsoft\...pComputerStatus) [Get-MpComputerS 
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    tatus], CimException
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : HRESULT 0x800106ba,Get-MpComputerStatus
+2023-08-21 11:05:11,061 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-08-21 11:05:49,489 : WARN  : ModalContext :  : Node : Bar Chart (JavaScript) : 3:21 : The following data columns have missing values, which were ignored during the aggregation:
+    Terminal 2 - 1 missing value(s),
+    Landside - 5 missing value(s),
+    Terminal 1 - 3 missing value(s),
+    General - 6 missing value(s),
+    Airside - 5 missing value(s)

@@ -116,24 +116,24 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeFactory"/>
     <entry key="node-name" type="xstring" value="Excel Writer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME POI (Excel) Plug-in"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.poi3"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202211171209"/>
+    <entry key="node-bundle-version" type="xstring" value="5.1.0.v202307031219"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Excel Support"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.poi.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.7.0.v202211171209"/>
+    <entry key="node-feature-version" type="xstring" value="5.1.0.v202307031219"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="File System Connection"/>
         <config key="Sheet Input Ports"/>
     </config>
     <entry key="name" type="xstring" value="Excel Writer"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
     <config key="filestores">

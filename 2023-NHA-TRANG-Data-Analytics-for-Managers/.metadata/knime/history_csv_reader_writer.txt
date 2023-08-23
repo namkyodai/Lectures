@@ -1,1 +1,5 @@
+/Bai-Tap/Nhom-01/So-Lieu-Gia-Nha-o-Singapore.csv
+/Bai-Tap/Nhom-06/weather.csv
+/Bai-Tap/Nhom-06/OACensus.csv
+/Mo-Hinh/FuelEfficiency/FuelEfficiency.csv
 /Du-Bao-Thoi-Tiet/weather.csv

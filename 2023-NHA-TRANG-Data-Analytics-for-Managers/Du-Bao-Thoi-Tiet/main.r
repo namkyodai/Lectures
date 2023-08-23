@@ -44,7 +44,6 @@ nrow(weather) == sum(complete.cases(weather))
 # Các biến có thể dễ dàng chuyển đổi thành dạng Factors (Nhân tố) sử dụng hàm as.factor(). Hàm này là một dạng của hàm chính factor() trong R. Sử dụng as.factor() thì R sẽ sắp xêp các cấp độ theo bảng chữ cái khi mà biến ban đầu là một chuỗi (ở trong R gọi là lớp đặc điểm), mà với chuỗi thì đôi khi chúng ta không muốn dùng cho các biến. Ví dụ như, mùa trong năm.
 
 
-
 class(weather$season) # kiểm tra dạng của biến mùa
 summary(weather$season)
 
