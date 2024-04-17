@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>ashok kumar harnal</author>
+    <created>2022-02-26T12:00:01.000+02:00</created>
+    <last-modified>2023-12-07T22:34:45.173+05:30</last-modified>
+    <description>t-tests in KNIME on diabetes health indicators dataset
+
+This workflow demonstrates performimg t-tests. Dataset is from Kaggle.</description>
+    <tags>
+        <tag>Single sample t-test</tag>
+        <tag>Independent groups t-test</tag>
+    </tags>
+    <links>
+        <link href="https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset">Diabetes Health Indicators Dataset</link>
+    </links>
+</workflow-metadata>

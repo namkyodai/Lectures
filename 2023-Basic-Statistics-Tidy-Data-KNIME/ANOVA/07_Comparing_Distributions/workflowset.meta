@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">stelfrich</element>
+    <element form="date" name="Creation Date" read-only="false">2/11/2019/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+Comparing Distributions
+
+This workflow checks if all the samples for groups in the input data themselves are normally distributed and, subsequently, checks if the samples originate from the same population.
+
+TAGS: statistics,anova,shapiro-wilk,kruskal-wallis,hyothesis tests</element>
+    <element form="text" name="Last Edited" read-only="true">2019-12-06 17:01:42 +0100</element>
+</KNIMEMetaInfo>

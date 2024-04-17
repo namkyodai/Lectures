@@ -1,0 +1,728 @@
+2023-12-07 22:21:18,431 : WARN  : main :  : LongStartupHandler :  :  : Startup took 91273 seconds.
+2023-12-08 07:46:40,949 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : 07_Comparing_Distributions : 4 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.dynamic.js.v30.DynamicJSNodeFactory]" [node name: "Violin Plot (Plotly)", bundle-symbolic-name: org.knime.js.plotly, bundle-name: Plotly.js integration into KNIME, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.js.plotly.feature.group, feature-name: KNIME Plotly,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.1.0.v201911250844]")
+2023-12-08 07:46:40,968 : WARN  : ModalContext :  : Node : MISSING Violin Plot (Plotly) : 4:36 : Node can't be executed - Node "Violin Plot (Plotly)" not available from extension "KNIME Plotly" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.js.plotly" is not installed)
+2023-12-08 07:46:40,969 : WARN  : ModalContext :  : Node : MISSING Shapiro-Wilk Test : 4:29 : Node can't be executed - Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-12-08 07:46:41,079 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: 07_Comparing_Distributions 4 loaded with error during data load
+2023-12-08 07:46:41,079 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: 07_Comparing_Distributions 4
+2023-12-08 07:46:41,079 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Kruskal-Wallis Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.dynamic.js.v30.DynamicJSNodeFactory]" [node name: "Violin Plot (Plotly)", bundle-symbolic-name: org.knime.js.plotly, bundle-name: Plotly.js integration into KNIME, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.js.plotly.feature.group, feature-name: KNIME Plotly,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.1.0.v201911250844]")
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Data Generator 4:15
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Data Generator": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Data Generator (#15)\port_1\data.xml
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to CONFIGURED
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Group Loop Start 4:27
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Group Loop Start": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Group Loop Start (#27)\port_1\data.xml
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING Violin Plot (Plotly) 4:36
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING Violin Plot (Plotly)": Can't read spec file E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Violin Plot _Plotly_ (#36)\port_1\spec\spec.zip
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING Shapiro-Wilk Test 4:29
+2023-12-08 07:46:41,080 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING Shapiro-Wilk Test": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Shapiro_Wilk Normality Test (#29)\port_1\data.xml
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Loop End (deprecated) 4:28
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Loop End (deprecated)": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Loop End (#28)\port_1\data.xml
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: GroupBy 4:30
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "GroupBy": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\GroupBy (#30)\port_1\data.xml
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Java Snippet (simple) 4:34
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Java Snippet (simple)": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Java Snippet _simple_ (#34)\port_1\data.xml
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Table Row to Variable (deprecated) 4:31
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Table Row to Variable (deprecated)": Can't read spec file E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\Table Row to Variable (#31)\port_1\spec\spec.zip
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: IF Switch 4:19
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "IF Switch": Can't read spec file E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\IF Switch (#19)\port_1\spec\spec.zip
+2023-12-08 07:46:41,081 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: One-way ANOVA 4:18
+2023-12-08 07:46:41,082 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "One-way ANOVA": No such data file: E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\One_way ANOVA (#18)\port_1\data.xml
+2023-12-08 07:46:41,082 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load internally held tables for node "One-way ANOVA": Cannot read directory E:\Git\Lectures\2023-Basic-Statistics-Tidy-Data-KNIME\ANOVA\07_Comparing_Distributions\One_way ANOVA (#18)\internalTables\object_0
+2023-12-08 07:46:41,082 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: State has changed from EXECUTED to IDLE
+2023-12-08 07:52:30,191 : WARN  : ModalContext :  : Node : Violin Plot (Plotly) : 3:36 : Node can't be executed - Node "Violin Plot (Plotly)" not available from extension "KNIME Plotly" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.js.plotly" is not installed)
+2023-12-08 07:52:30,215 : WARN  : ModalContext :  : Node : Shapiro-Wilk Test : 3:29 : Node can't be executed - Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: 07_Comparing_Distributions 3 loaded with warnings
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: 07_Comparing_Distributions 3
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Violin Plot (Plotly) 3:36
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Shapiro-Wilk Test 3:29
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Loop End (deprecated) 3:28
+2023-12-08 07:52:30,290 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2023-12-08 07:52:42,721 : WARN  : KNIME-Worker-9-Loop End (deprecated) 3:28 :  : Node : GroupBy : 3:30 : No grouping column included. Aggregate complete table.
+2023-12-08 09:06:02,024 : WARN  : main :  : Node : Excel Reader : 6:1 : Please specify a file
+2023-12-08 09:06:13,108 : WARN  : Basic L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2023-12-08 09:06:13,123 : WARN  : Basic L&F File Loading Thread :  : NioFile :  :  : Could not list files in '/Users': /Users
+2023-12-08 09:06:53,366 : WARN  : main :  : Node : Excel Reader : 6:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-12-08 09:08:33,324 : WARN  : main :  : Node : Independent groups t-test : 6:4 : Please define a grouping column.
+2023-12-08 09:09:14,905 : WARN  : main :  : Node : Paired t-test : 6:5 : Please select at least one pair.
+2023-12-08 09:15:16,478 : WARN  : main :  : Node : Paired t-test : 6:5 : Please select at least one pair.
+2023-12-08 09:17:25,207 : WARN  : main :  : Node : One-way ANOVA : 6:6 : Please define a grouping column.
+2023-12-08 11:29:56,705 : WARN  : main :  : Node : Excel Reader : 3:1 : Please specify a file
+2023-12-08 11:35:30,909 : WARN  : main :  : Node : Excel Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2023-12-08 11:48:15,245 : WARN  : main :  : Node : Row Filter : 3:4 : No row filter specified
+2023-12-08 12:05:03,268 : WARN  : main :  : Node : Row Filter : 3:5 : Column value filter: Specified lower bound of range doesn't fit column type. (Col#:9,ColType:Number (integer),RangeType:Number (double)
+2023-12-08 12:06:38,735 : ERROR : KNIME-Worker-13-Excel Reader 3:2 :  : Node : Excel Reader : 3:2 : Execute failed: Row with ID 'Row35' can't be converted to the configured data types. Increasing the number of scanned rows or changing the target types might resolve the issue. Content of row: [VAN-007 (STRING), Trịnh Minh Tuân (STRING), 1 (INT), 85 (INT), Thôn 3 (STRING), 1 (INT), lớp 7/10 (STRING), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 45 (INT), 1 (INT), 0 (INT), 0 (INT), 15 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 1.5 (DOUBLE), 0.5 (DOUBLE), 1 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 3 (INT), 3 (INT), 2 (INT), 2(1) (STRING), 3 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 1 (INT), 0 (INT), 2 (INT)]
+org.knime.filehandling.core.node.table.reader.type.mapping.MappingRuntimeException: Row with ID 'Row35' can't be converted to the configured data types. Increasing the number of scanned rows or changing the target types might resolve the issue. Content of row: [VAN-007 (STRING), Trịnh Minh Tuân (STRING), 1 (INT), 85 (INT), Thôn 3 (STRING), 1 (INT), lớp 7/10 (STRING), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 45 (INT), 1 (INT), 0 (INT), 0 (INT), 15 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 1.5 (DOUBLE), 0.5 (DOUBLE), 1 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 3 (INT), 3 (INT), 2 (INT), 2(1) (STRING), 3 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 1 (INT), 0 (INT), 2 (INT)]
+	at org.knime.filehandling.core.node.table.reader.TypeMapperExceptionParser.parse(TypeMapperExceptionParser.java:84)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:202)
+	at org.knime.filehandling.core.node.table.reader.util.MultiTableRead.readTable(MultiTableRead.java:113)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:170)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.filehandling.core.node.table.reader.type.mapping.TypeMapperException: java.lang.UnsupportedOperationException: Datatype 'DOUBLE' does not support this call.
+	at org.knime.filehandling.core.node.table.reader.type.mapping.DefaultTypeMapper.map(DefaultTypeMapper.java:107)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.toRow(DefaultIndividualTableReader.java:108)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutputWithProgress(DefaultIndividualTableReader.java:149)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutput(DefaultIndividualTableReader.java:121)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:200)
+	... 17 more
+Caused by: java.lang.UnsupportedOperationException: Datatype 'DOUBLE' does not support this call.
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelCell.unsupportedOperationException(ExcelCell.java:194)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelCell.getIntValue(ExcelCell.java:143)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelReadAdapterFactory$StringToIntCellValueProducer.produceIntCellValue(ExcelReadAdapterFactory.java:176)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelReadAdapterFactory$StringToIntCellValueProducer.produceIntCellValue(ExcelReadAdapterFactory.java:1)
+	at org.knime.core.data.convert.map.IntCellValueProducer.produceCellValue(IntCellValueProducer.java:79)
+	at org.knime.core.data.convert.map.IntCellValueProducer.produceCellValue(IntCellValueProducer.java:1)
+	at org.knime.core.data.convert.map.DefaultDataRowProducer$ObjectMapper.map(DefaultDataRowProducer.java:428)
+	at org.knime.core.data.convert.map.DefaultDataRowProducer.produceDataRow(DefaultDataRowProducer.java:283)
+	at org.knime.filehandling.core.node.table.reader.type.mapping.DefaultTypeMapper.map(DefaultTypeMapper.java:105)
+	... 21 more
+2023-12-08 12:06:41,242 : ERROR : KNIME-Worker-14-Excel Reader 3:2 :  : Node : Excel Reader : 3:2 : Execute failed: Row with ID 'Row35' can't be converted to the configured data types. Increasing the number of scanned rows or changing the target types might resolve the issue. Content of row: [VAN-007 (STRING), Trịnh Minh Tuân (STRING), 1 (INT), 85 (INT), Thôn 3 (STRING), 1 (INT), lớp 7/10 (STRING), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 45 (INT), 1 (INT), 0 (INT), 0 (INT), 15 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 1.5 (DOUBLE), 0.5 (DOUBLE), 1 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 3 (INT), 3 (INT), 2 (INT), 2(1) (STRING), 3 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 1 (INT), 0 (INT), 2 (INT)]
+org.knime.filehandling.core.node.table.reader.type.mapping.MappingRuntimeException: Row with ID 'Row35' can't be converted to the configured data types. Increasing the number of scanned rows or changing the target types might resolve the issue. Content of row: [VAN-007 (STRING), Trịnh Minh Tuân (STRING), 1 (INT), 85 (INT), Thôn 3 (STRING), 1 (INT), lớp 7/10 (STRING), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 45 (INT), 1 (INT), 0 (INT), 0 (INT), 15 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 1.5 (DOUBLE), 0.5 (DOUBLE), 1 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 20 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 5 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 0 (INT), 2 (INT), 3 (INT), 3 (INT), 2 (INT), 2(1) (STRING), 3 (INT), 1 (INT), 2 (INT), 0 (INT), 0 (INT), 1 (INT), 1 (INT), 1 (INT), 0 (INT), 3 (INT), 1 (INT), 1 (INT), 1 (INT), 1 (INT), 3 (INT), 1 (INT), 0 (INT), 2 (INT)]
+	at org.knime.filehandling.core.node.table.reader.TypeMapperExceptionParser.parse(TypeMapperExceptionParser.java:84)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:202)
+	at org.knime.filehandling.core.node.table.reader.util.MultiTableRead.readTable(MultiTableRead.java:113)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:170)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:558)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1274)
+	at org.knime.core.node.Node.execute(Node.java:1036)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.filehandling.core.node.table.reader.type.mapping.TypeMapperException: java.lang.UnsupportedOperationException: Datatype 'DOUBLE' does not support this call.
+	at org.knime.filehandling.core.node.table.reader.type.mapping.DefaultTypeMapper.map(DefaultTypeMapper.java:107)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.toRow(DefaultIndividualTableReader.java:108)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutputWithProgress(DefaultIndividualTableReader.java:149)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutput(DefaultIndividualTableReader.java:121)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:200)
+	... 17 more
+Caused by: java.lang.UnsupportedOperationException: Datatype 'DOUBLE' does not support this call.
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelCell.unsupportedOperationException(ExcelCell.java:194)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelCell.getIntValue(ExcelCell.java:143)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelReadAdapterFactory$StringToIntCellValueProducer.produceIntCellValue(ExcelReadAdapterFactory.java:176)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.read.ExcelReadAdapterFactory$StringToIntCellValueProducer.produceIntCellValue(ExcelReadAdapterFactory.java:1)
+	at org.knime.core.data.convert.map.IntCellValueProducer.produceCellValue(IntCellValueProducer.java:79)
+	at org.knime.core.data.convert.map.IntCellValueProducer.produceCellValue(IntCellValueProducer.java:1)
+	at org.knime.core.data.convert.map.DefaultDataRowProducer$ObjectMapper.map(DefaultDataRowProducer.java:428)
+	at org.knime.core.data.convert.map.DefaultDataRowProducer.produceDataRow(DefaultDataRowProducer.java:283)
+	at org.knime.filehandling.core.node.table.reader.type.mapping.DefaultTypeMapper.map(DefaultTypeMapper.java:105)
+	... 21 more
+2023-12-08 12:09:58,449 : WARN  : main :  : Node : GroupBy : 3:7 : No grouping column included. Aggregate complete table.
+2023-12-08 12:09:58,449 : WARN  : main :  : Node : GroupBy : 3:7 : No aggregation column defined
+2023-12-08 12:09:58,475 : WARN  : main :  : Node : GroupBy : 3:7 : Please select at least one group or aggregation column
+2023-12-08 12:13:21,955 : WARN  : main :  : WrappedNodeDialog : GroupBy : 3:7 : failed to apply settings: Duplicate settings: Column LN06 with aggregation method Mean
+org.knime.core.node.InvalidSettingsException: Duplicate settings: Column LN06 with aggregation method Mean
+	at org.knime.base.node.preproc.groupby.GroupByNodeModel.validateSettings(GroupByNodeModel.java:428)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-12-08 12:13:24,839 : WARN  : main :  : WrappedNodeDialog : GroupBy : 3:7 : failed to apply settings: Duplicate settings: Column LN06 with aggregation method Mean
+org.knime.core.node.InvalidSettingsException: Duplicate settings: Column LN06 with aggregation method Mean
+	at org.knime.base.node.preproc.groupby.GroupByNodeModel.validateSettings(GroupByNodeModel.java:428)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-12-08 12:13:31,113 : WARN  : main :  : WrappedNodeDialog : GroupBy : 3:7 : failed to apply settings: Duplicate settings: Column LN06 with aggregation method Mean
+org.knime.core.node.InvalidSettingsException: Duplicate settings: Column LN06 with aggregation method Mean
+	at org.knime.base.node.preproc.groupby.GroupByNodeModel.validateSettings(GroupByNodeModel.java:428)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2177)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1141)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4785)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:193)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-12-08 12:16:08,902 : WARN  : main :  : Node : Pivot : 3:8 : No pivot columns selected.
+2023-12-19 08:37:58,066 : ERROR : ModalContext :  : Node : Table Reader : 7:237 : Loading model settings failed: Data cell implementation 'org.knime.chem.types.SmilesCell' not found.
+org.knime.core.node.InvalidSettingsException: Data cell implementation 'org.knime.chem.types.SmilesCell' not found.
+	at org.knime.core.data.DataType.load(DataType.java:664)
+	at org.knime.core.node.config.Config.getDataType(Config.java:643)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorConfigSerializer$DataTypeSerializer.load(TableManipulatorConfigSerializer.java:108)
+	at org.knime.base.node.preproc.manipulator.TableManipulatorConfigSerializer$DataTypeSerializer.load(TableManipulatorConfigSerializer.java:1)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.TypedReaderColumnSpecSerializer.load(TypedReaderColumnSpecSerializer.java:85)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.ColumnTransformationSerializer.load(ColumnTransformationSerializer.java:98)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.TableTransformationSerializer.loadColumnTransformations(TableTransformationSerializer.java:147)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.TableTransformationSerializer.load(TableTransformationSerializer.java:131)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.V44TableSpecConfigSerializer.load(V44TableSpecConfigSerializer.java:120)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.V44TableSpecConfigSerializer.load(V44TableSpecConfigSerializer.java:1)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.VersionedTableSpecConfigSerializer.load(VersionedTableSpecConfigSerializer.java:92)
+	at org.knime.filehandling.core.node.table.reader.config.tablespec.VersionedTableSpecConfigSerializer.load(VersionedTableSpecConfigSerializer.java:1)
+	at org.knime.base.node.io.filehandling.table.reader.KnimeTableMultiTableReadConfigSerializer.loadTableSpecConfig(KnimeTableReaderMultiTableReadConfigSerializer.java:139)
+	at org.knime.base.node.io.filehandling.table.reader.KnimeTableMultiTableReadConfigSerializer.validate(KnimeTableReaderMultiTableReadConfigSerializer.java:253)
+	at org.knime.base.node.io.filehandling.table.reader.KnimeTableMultiTableReadConfigSerializer.validate(KnimeTableReaderMultiTableReadConfigSerializer.java:1)
+	at org.knime.filehandling.core.node.table.reader.config.AbstractMultiTableReadConfig.validate(AbstractMultiTableReadConfig.java:147)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.validateSettings(TableReaderNodeModel.java:229)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:696)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:212)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,072 : WARN  : ModalContext :  : Node : Table Reader : 7:237 : Please specify a file
+2023-12-19 08:37:58,100 : WARN  : ModalContext :  : Node : Component Input : 7:145:0:145 : Component does not have input data, execute upstream nodes first
+2023-12-19 08:37:58,158 : WARN  : ModalContext :  : WorkflowManager : Random Forest : 7:146 : Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,160 : WARN  : ModalContext :  : FileNodePersistor : MISSING Parameter Optimization Loop End : 7:146:0:122 : Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+org.knime.core.node.InvalidSettingsException: Invalid outport index in settings: 2
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:325)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,204 : WARN  : ModalContext :  : Node : Random Forest Learner : 7:146:0:149:154 : Errors loading flow variables into node : Invalid value for number of maximum tree depth (#level): -1
+2023-12-19 08:37:58,314 : WARN  : ModalContext :  : WorkflowManager : H2O Gradient Boosting : 7:117 : Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,314 : WARN  : ModalContext :  : WorkflowManager : H2O Gradient Boosting : 7:117 : Unable to insert connection "[11(1) -> 209( 0)]"
+2023-12-19 08:37:58,315 : WARN  : ModalContext :  : FileNodePersistor : MISSING Parameter Optimization Loop End : 7:117:0:122 : Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+org.knime.core.node.InvalidSettingsException: Invalid outport index in settings: 2
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:325)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,449 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Naive Bayes : 7:222 : Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+	at org.knime.core.node.port.PortType.lambda$0(PortType.java:276)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.port.PortType.load(PortType.java:276)
+	at org.knime.core.node.port.PortType.load(PortType.java:260)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:453)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:285)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:1035)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadNodeContainer(FileSubNodeContainerPersistor.java:466)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,454 : WARN  : ModalContext :  : WorkflowManager : Naive Bayes : 7:222 : Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,455 : WARN  : ModalContext :  : FileNodePersistor : MISSING Parameter Optimization Loop End : 7:222:0:122 : Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+org.knime.core.node.InvalidSettingsException: Invalid outport index in settings: 2
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:325)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,468 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Collect Statistics : 7:222:0:214 : Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+	at org.knime.core.node.port.PortType.lambda$0(PortType.java:276)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.port.PortType.load(PortType.java:276)
+	at org.knime.core.node.port.PortType.load(PortType.java:260)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:453)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:285)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:1035)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,492 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Get FP Bayes Model Parameters : 7:222:0:214:213 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,494 : WARN  : ModalContext :  : WorkflowManager : Get FP Bayes Model Parameters : 7:222:0:214:213 : Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,495 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Get FP Bayes Model Parameters : 7:222:0:214:213 : Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+java.lang.ClassCastException: class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:740)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:2138)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:434)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8746)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,562 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Get FP Bayes Model Parameters : 7:222:0:203 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,564 : WARN  : ModalContext :  : WorkflowManager : Get FP Bayes Model Parameters : 7:222:0:203 : Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,565 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Get FP Bayes Model Parameters : 7:222:0:203 : Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+java.lang.ClassCastException: class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:740)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:2138)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:434)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8746)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,621 : WARN  : ModalContext :  : WorkflowManager : Logistic Regression : 7:226 : Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,622 : WARN  : ModalContext :  : FileNodePersistor : MISSING Parameter Optimization Loop End : 7:226:0:122 : Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+org.knime.core.node.InvalidSettingsException: Invalid outport index in settings: 2
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:325)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,724 : WARN  : ModalContext :  : WorkflowManager :  :  : Unable to insert connection "[6(1) -> 5( 2)]"
+2023-12-19 08:37:58,724 : WARN  : ModalContext :  : FileNodePersistor : MISSING H2O Local Context : 7:231:203:6 : Unable to load port content for node "MISSING H2O Local Context": Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:422)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:422)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:374)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:331)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,729 : WARN  : ModalContext :  : Node : MISSING H2O Local Context : 7:231:203:6 : Node can't be executed - Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,740 : WARN  : ModalContext :  : Node : Expand Byte Vector : 7:231:203:150:147 : No compatible column found!
+2023-12-19 08:37:58,743 : WARN  : ModalContext :  : Node : CASE Switch Data (Start) (deprecated) : 7:231:177 : Invalid Port Index 3
+2023-12-19 08:37:58,774 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Build NB Model : 7:231:204 : Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+	at org.knime.core.node.port.PortType.lambda$0(PortType.java:276)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.port.PortType.load(PortType.java:276)
+	at org.knime.core.node.port.PortType.load(PortType.java:260)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:453)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:285)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:1035)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,787 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Get FP Bayes Model Parameters : 7:231:204:203 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,792 : WARN  : ModalContext :  : WorkflowManager : Get FP Bayes Model Parameters : 7:231:204:203 : Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,792 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Get FP Bayes Model Parameters : 7:231:204:203 : Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+java.lang.ClassCastException: class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:740)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:2138)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:434)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8746)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:2151)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:867)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,833 : WARN  : ModalContext :  : WorkflowManager :  :  : Unable to insert connection "[150(0) -> 182( 1)]"
+2023-12-19 08:37:58,841 : WARN  : ModalContext :  : FileNodePersistor : MISSING H2O Local Context : 7:233:186:181 : Unable to load port content for node "MISSING H2O Local Context": Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:422)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:422)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:374)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:331)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:996)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:255)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:267)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8846)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8862)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8748)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8611)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8532)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8505)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8350)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2023-12-19 08:37:58,845 : WARN  : ModalContext :  : Node : MISSING H2O Local Context : 7:233:186:181 : Node can't be executed - Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: 08_Model_Optimization_and_Selection 7 loaded with error during data load
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: 08_Model_Optimization_and_Selection 7
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Table Reader 7:237
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Loading model settings failed: Data cell implementation 'org.knime.chem.types.SmilesCell' not found.
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Random Forest 7:146
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop Start" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop End" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,924 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING Parameter Optimization Loop End 7:146:0:122
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: H2O Gradient Boosting 7:117
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "H2O to Table" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop Start" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop End" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "H2O Gradient Boosting Machine Learner" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "H2O Predictor (Classification)" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to insert connection "[11(1) -> 209( 0)]"
+2023-12-19 08:37:58,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING Parameter Optimization Loop End 7:117:0:122
+2023-12-19 08:37:58,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+2023-12-19 08:37:58,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Collect Statistics 7:117:0:178
+2023-12-19 08:37:58,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O to Table" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Gradient Boosting Machine Learner" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Predictor (Classification)" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Naive Bayes 7:222
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop Start" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop End" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Fingerprint Bayesian Learner" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: wrapped node with ID suffix 203
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING Parameter Optimization Loop End 7:222:0:122
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Collect Statistics 7:222:0:214
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Fingerprint Bayesian Learner" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: wrapped node with ID suffix 213
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Get FP Bayes Model Parameters 7:222:0:214:213
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 202)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Get FP Bayes Predictions 7:222:0:214:212
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Get FP Bayes Model Parameters 7:222:0:203
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 202)
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Get FP Bayes Predictions 7:222:0:210
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Logistic Regression 7:226
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop Start" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Parameter Optimization Loop End" not available from extension "KNIME Optimization extension" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.optimization" is not installed)
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to insert connection "[209(0) -> 122( 1)]"
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING Parameter Optimization Loop End 7:226:0:122
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING Parameter Optimization Loop End": Invalid outport index in settings: 2
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Build Model with Selected Parameters 7:231
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Build H2O Model 7:231:203
+2023-12-19 08:37:58,929 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Gradient Boosting Machine Learner" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Unable to insert connection "[6(1) -> 5( 2)]"
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: MISSING H2O Local Context 7:231:203:6
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: DataLoadError: Unable to load port content for node "MISSING H2O Local Context": Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: DataLoadError: State has changed from EXECUTED to IDLE
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Build NB Model 7:231:204
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Fingerprint Bayesian Learner" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,930 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: wrapped node with ID suffix 203
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.chem.base.node.mine.bayes.fingerprint.portobject.FPNaiveBayesPortObject"
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Get FP Bayes Model Parameters 7:231:204:203
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "Component Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.core.feature.group, feature-name: KNIME AP Core feature,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 4.4.1.v202108201740]")
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Unable to insert connection "[199(1) -> 182( 1)]"
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Post-load error (ClassCastException): class org.knime.core.node.missing.MissingNodeModel cannot be cast to class org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel (org.knime.core.node.missing.MissingNodeModel and org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @38d08cb5)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 204)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Score Model with Validation Data 7:233
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: H2O prediction 7:233:186
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Local Context" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o.local" is not installed)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Table to H2O" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O to Table" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "H2O Predictor (Classification)" not available from extension "KNIME H2O Machine Learning Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.h2o" is not installed)
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Unable to insert connection "[150(0) -> 182( 1)]"
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: MISSING H2O Local Context 7:233:186:181
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: DataLoadError: Unable to load port content for node "MISSING H2O Local Context": Invalid spec class "org.knime.ext.h2o.ports.H2OFileImportPortObjectSpec"
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :           Status: DataLoadError: State has changed from EXECUTED to IDLE
+2023-12-19 08:37:58,931 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Get FP Bayes Predictions 7:233:230
+2023-12-19 08:37:58,932 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Error: Node "Fingerprint Bayesian Predictor" not available from extension "KNIME Base Chemistry Types & Nodes" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.chem.base" is not installed)

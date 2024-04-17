@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <author>kathrinmelcher</author>
+    <created>2021-06-11T12:00:01.000+02:00</created>
+    <last-modified>2023-12-20T10:57:21.736+09:00</last-modified>
+    <description>CNN for Image Classification of the MNIST Fashion Dataset
+
+This workflow trains a Convolution Neural Network (CNN) to classify the images of the MNIST Fashion Dataset into ten different classes.</description>
+    <tags>
+        <tag>CNN</tag>
+        <tag>Image Classification</tag>
+        <tag>Deep Learning</tag>
+        <tag>Keras</tag>
+    </tags>
+    <links>
+        <link href="https://kni.me/e/JMlIEafbwxOPn652">KNIME Image Processing - Deep Learning Extension</link>
+        <link href="https://peltarion.com/knowledge-center/documentation/datasets-view/datasets-used-in-tutorials/fashion-mnist-dataset">Dataset</link>
+    </links>
+</workflow-metadata>

@@ -1,3 +1,4 @@
+data.xlsx
 C:\Nam\Lectures\2023-NHA-TRANG-Data-Analytics-for-Managers\Files-Trinh-Bay\Data\introduction.xlsx
 /Bai-Tap/Nhom-02/WASH-data-PB-VN-Household.xlsx
 /Bai-Tap/Data/DS nld Nha Trang G?i phòng HCNV.xls

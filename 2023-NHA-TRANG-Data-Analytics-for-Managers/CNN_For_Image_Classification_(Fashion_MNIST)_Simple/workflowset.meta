@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">kathrinmelcher</element>
+    <element form="date" name="Creation Date" read-only="false">11/5/2021/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+CNN for Image Classification of the MNIST Fashion Dataset
+
+This workflow trains a Convolution Neural Network (CNN) to classify the images of the MNIST Fashion Dataset into ten different classes.
+
+URL: KNIME Image Processing - Deep Learning Extension https://kni.me/e/JMlIEafbwxOPn652
+URL: Dataset https://peltarion.com/knowledge-center/documentation/datasets-view/datasets-used-in-tutorials/fashion-mnist-dataset
+
+TAGS: CNN,Image Classification,Deep Learning,Keras</element>
+    <element form="text" name="Last Edited" read-only="true">2023-12-20 10:57:21 +0900</element>
+</KNIMEMetaInfo>

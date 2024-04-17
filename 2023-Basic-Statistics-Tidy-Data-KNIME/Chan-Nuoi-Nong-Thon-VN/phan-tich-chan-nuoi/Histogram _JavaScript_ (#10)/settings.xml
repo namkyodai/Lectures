@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="generateImagemodel_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="generateImagemodel" type="xboolean" value="false"/>
+        <config key="cat_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="cat" type="xstring" value="G03"/>
+        <config key="aggr_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="aggr" type="xstring" value="Sum"/>
+        <config key="freq_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_columnfilter"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="freq">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="LN06"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="125"/>
+                <entry key="0" type="xstring" value="G03"/>
+                <entry key="1" type="xstring" value="G04"/>
+                <entry key="2" type="xstring" value="G06"/>
+                <entry key="3" type="xstring" value="LN"/>
+                <entry key="4" type="xstring" value="LN01"/>
+                <entry key="5" type="xstring" value="LN02"/>
+                <entry key="6" type="xstring" value="LN03"/>
+                <entry key="7" type="xstring" value="LN04"/>
+                <entry key="8" type="xstring" value="LN05"/>
+                <entry key="9" type="xstring" value="LT"/>
+                <entry key="10" type="xstring" value="LT01"/>
+                <entry key="11" type="xstring" value="LT02"/>
+                <entry key="12" type="xstring" value="LT03"/>
+                <entry key="13" type="xstring" value="LT04"/>
+                <entry key="14" type="xstring" value="LT05"/>
+                <entry key="15" type="xstring" value="LT06"/>
+                <entry key="16" type="xstring" value="LC"/>
+                <entry key="17" type="xstring" value="LC01"/>
+                <entry key="18" type="xstring" value="LC02"/>
+                <entry key="19" type="xstring" value="LC03"/>
+                <entry key="20" type="xstring" value="LC04"/>
+                <entry key="21" type="xstring" value="LC05"/>
+                <entry key="22" type="xstring" value="LC06"/>
+                <entry key="23" type="xstring" value="GA01"/>
+                <entry key="24" type="xstring" value="GA02"/>
+                <entry key="25" type="xstring" value="GA03"/>
+                <entry key="26" type="xstring" value="GA04"/>
+                <entry key="27" type="xstring" value="GA05"/>
+                <entry key="28" type="xstring" value="GA06"/>
+                <entry key="29" type="xstring" value="GA07"/>
+                <entry key="30" type="xstring" value="NV01"/>
+                <entry key="31" type="xstring" value="NV02"/>
+                <entry key="32" type="xstring" value="NV03"/>
+                <entry key="33" type="xstring" value="NV04"/>
+                <entry key="34" type="xstring" value="NV05"/>
+                <entry key="35" type="xstring" value="NV06"/>
+                <entry key="36" type="xstring" value="NV07"/>
+                <entry key="37" type="xstring" value="TR01"/>
+                <entry key="38" type="xstring" value="TR02"/>
+                <entry key="39" type="xstring" value="TR03"/>
+                <entry key="40" type="xstring" value="TR04"/>
+                <entry key="41" type="xstring" value="TR05"/>
+                <entry key="42" type="xstring" value="TR06"/>
+                <entry key="43" type="xstring" value="TR07"/>
+                <entry key="44" type="xstring" value="BO01"/>
+                <entry key="45" type="xstring" value="BO02"/>
+                <entry key="46" type="xstring" value="BO03"/>
+                <entry key="47" type="xstring" value="BO04"/>
+                <entry key="48" type="xstring" value="BO05"/>
+                <entry key="49" type="xstring" value="BO06"/>
+                <entry key="50" type="xstring" value="BO07"/>
+                <entry key="51" type="xstring" value="CH01"/>
+                <entry key="52" type="xstring" value="CH02"/>
+                <entry key="53" type="xstring" value="CH03"/>
+                <entry key="54" type="xstring" value="CH04"/>
+                <entry key="55" type="xstring" value="CH05"/>
+                <entry key="56" type="xstring" value="CH06"/>
+                <entry key="57" type="xstring" value="CH07"/>
+                <entry key="58" type="xstring" value="Q01"/>
+                <entry key="59" type="xstring" value="Q02"/>
+                <entry key="60" type="xstring" value="Q03"/>
+                <entry key="61" type="xstring" value="Q04"/>
+                <entry key="62" type="xstring" value="Q05"/>
+                <entry key="63" type="xstring" value="Q06"/>
+                <entry key="64" type="xstring" value="Q07"/>
+                <entry key="65" type="xstring" value="Q08"/>
+                <entry key="66" type="xstring" value="Q09"/>
+                <entry key="67" type="xstring" value="Q10"/>
+                <entry key="68" type="xstring" value="Q11"/>
+                <entry key="69" type="xstring" value="Q12"/>
+                <entry key="70" type="xstring" value="Q13"/>
+                <entry key="71" type="xstring" value="Q14"/>
+                <entry key="72" type="xstring" value="Q15"/>
+                <entry key="73" type="xstring" value="Q16"/>
+                <entry key="74" type="xstring" value="Q17"/>
+                <entry key="75" type="xstring" value="Q18"/>
+                <entry key="76" type="xstring" value="Q19"/>
+                <entry key="77" type="xstring" value="Q20"/>
+                <entry key="78" type="xstring" value="Q21"/>
+                <entry key="79" type="xstring" value="Q22"/>
+                <entry key="80" type="xstring" value="Q23"/>
+                <entry key="81" type="xstring" value="Q24"/>
+                <entry key="82" type="xstring" value="Q25"/>
+                <entry key="83" type="xstring" value="Q26"/>
+                <entry key="84" type="xstring" value="Q27"/>
+                <entry key="85" type="xstring" value="Q28"/>
+                <entry key="86" type="xstring" value="Q29"/>
+                <entry key="87" type="xstring" value="Q30"/>
+                <entry key="88" type="xstring" value="Q31"/>
+                <entry key="89" type="xstring" value="Q32"/>
+                <entry key="90" type="xstring" value="Q33"/>
+                <entry key="91" type="xstring" value="Q34"/>
+                <entry key="92" type="xstring" value="Q35"/>
+                <entry key="93" type="xstring" value="Q36"/>
+                <entry key="94" type="xstring" value="Q37"/>
+                <entry key="95" type="xstring" value="Q38"/>
+                <entry key="96" type="xstring" value="Q39"/>
+                <entry key="97" type="xstring" value="Q40"/>
+                <entry key="98" type="xstring" value="Q41"/>
+                <entry key="99" type="xstring" value="Q42"/>
+                <entry key="100" type="xstring" value="Q43"/>
+                <entry key="101" type="xstring" value="Q44"/>
+                <entry key="102" type="xstring" value="Q45"/>
+                <entry key="103" type="xstring" value="Q46"/>
+                <entry key="104" type="xstring" value="Q47"/>
+                <entry key="105" type="xstring" value="Q48"/>
+                <entry key="106" type="xstring" value="Q49"/>
+                <entry key="107" type="xstring" value="Q51"/>
+                <entry key="108" type="xstring" value="Q52"/>
+                <entry key="109" type="xstring" value="Q53"/>
+                <entry key="110" type="xstring" value="Q54"/>
+                <entry key="111" type="xstring" value="Q55"/>
+                <entry key="112" type="xstring" value="Q56"/>
+                <entry key="113" type="xstring" value="Q57"/>
+                <entry key="114" type="xstring" value="Q58"/>
+                <entry key="115" type="xstring" value="Q59"/>
+                <entry key="116" type="xstring" value="Q60"/>
+                <entry key="117" type="xstring" value="Q61"/>
+                <entry key="118" type="xstring" value="Q62"/>
+                <entry key="119" type="xstring" value="Q63"/>
+                <entry key="120" type="xstring" value="Q64"/>
+                <entry key="121" type="xstring" value="Q65"/>
+                <entry key="122" type="xstring" value="Q66"/>
+                <entry key="123" type="xstring" value="Q67"/>
+                <entry key="124" type="xstring" value="Q68"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                </config>
+            </config>
+        </config>
+        <config key="processInMemory_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="processInMemory" type="xboolean" value="true"/>
+        <config key="reportOnMissingValues_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="reportOnMissingValues" type="xboolean" value="true"/>
+        <config key="includeMissValCat_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="includeMissValCat" type="xboolean" value="true"/>
+        <config key="bin_method_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="bin_method" type="xstring" value="Fixed number of bins"/>
+        <config key="num_bins_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="num_bins" type="xint" value="5"/>
+        <config key="bin_equal_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="bin_equal" type="xstring" value="width"/>
+        <config key="bin_quantiles_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="bin_quantiles" type="xstring" value="0.0, 0.25, 0.5, 0.75, 1.0"/>
+        <config key="bin_naming_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="bin_naming" type="xstring" value="Midpoints"/>
+        <config key="bin_force_int_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="bin_force_int" type="xboolean" value="false"/>
+        <config key="num_format_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="num_format" type="xstring" value="Default formatting"/>
+        <config key="out_format_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="out_format" type="xstring" value="Standard String"/>
+        <config key="format_precision_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="format_precision" type="xint" value="3"/>
+        <config key="format_prec_mode_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="format_prec_mode" type="xstring" value="Decimal places"/>
+        <config key="format_rounding_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="false"/>
+        </config>
+        <entry key="format_rounding" type="xstring" value="HALF_UP"/>
+        <config key="title_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="title" type="xstring" value="Histogram"/>
+        <config key="subtitle_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="subtitle" type="xstring" value=""/>
+        <config key="catLabel_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="catLabel" type="xstring" value=""/>
+        <config key="freqLabel_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="freqLabel" type="xstring" value=""/>
+        <config key="chartType_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="chartType" type="xstring" value="Grouped"/>
+        <config key="legend_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="legend" type="xboolean" value="true"/>
+        <config key="tooltip_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="tooltip" type="xboolean" value="true"/>
+        <config key="orientation_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="orientation" type="xboolean" value="false"/>
+        <config key="displayFullscreenButton_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="displayFullscreenButton" type="xboolean" value="true"/>
+        <config key="showMaximum_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="showMaximum" type="xboolean" value="true"/>
+        <config key="svg_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_svg"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="svg">
+            <entry key="width" type="xint" value="800"/>
+            <entry key="height" type="xint" value="600"/>
+            <entry key="fullscreen" type="xboolean" value="true"/>
+            <entry key="showFullscreen" type="xboolean" value="true"/>
+        </config>
+        <config key="showWarnings_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="showWarnings" type="xboolean" value="true"/>
+        <config key="enableViewControls_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableViewControls" type="xboolean" value="true"/>
+        <config key="enableStackedEdit_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableStackedEdit" type="xboolean" value="true"/>
+        <config key="enableHorizontalToggle_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableHorizontalToggle" type="xboolean" value="true"/>
+        <config key="enableTitleEdit_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableTitleEdit" type="xboolean" value="true"/>
+        <config key="enableSubtitleEdit_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableSubtitleEdit" type="xboolean" value="true"/>
+        <config key="enableAxisEdit_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableAxisEdit" type="xboolean" value="true"/>
+        <config key="enableSwitchMissValCat_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableSwitchMissValCat" type="xboolean" value="true"/>
+        <config key="enableMaximumValue_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableMaximumValue" type="xboolean" value="true"/>
+        <config key="enableSelection_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="enableSelection" type="xboolean" value="true"/>
+        <config key="subscribeToSelection_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="subscribeToSelection" type="xboolean" value="true"/>
+        <config key="publishSelection_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="publishSelection" type="xboolean" value="true"/>
+        <config key="displayClearSelectionButton_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="displayClearSelectionButton" type="xboolean" value="true"/>
+        <entry key="hideInWizard" type="xboolean" value="false"/>
+        <entry key="maxRows" type="xint" value="2500"/>
+        <entry key="generateImage" type="xboolean" value="false"/>
+        <entry key="customCSS" type="xstring" value=""/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.dynamic.js.v30.DynamicJSNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Histogram (JavaScript)"/>
+    <entry key="node-bundle-name" type="xstring" value="D3 Samples for KNIME Dynamic JavaScript Node Generation"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.dynamic.js.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.1.0.v202303061417"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME JavaScript Views"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.views.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.1.0.v202303061417"/>
+    <config key="factory_settings">
+        <entry key="nodeDir" type="xstring" value="org.knime.dynamic.js.base:nodes/:histogram"/>
+    </config>
+    <entry key="name" type="xstring" value="Histogram (JavaScript)"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="e16d5488-70a6-406c-bb2e-f6288947b716"/>
+    </config>
+</config>

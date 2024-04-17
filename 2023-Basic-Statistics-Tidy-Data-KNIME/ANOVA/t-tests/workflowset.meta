@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is auto-generated and is overwritten each time the workflow is saved.
+    The metadata have moved to the `workflow-metadata.xml` file.-->
+<KNIMEMetaInfo nrOfElements="4" xmlns="http://www.knime.org/2.9/metainfo">
+    <element form="text" name="Author" read-only="false">ashok kumar harnal</element>
+    <element form="date" name="Creation Date" read-only="false">26/1/2022/12:00:01 +02:00</element>
+    <element form="multiline" name="Comments" read-only="false">There has been no title set for this workflow's metadata.
+
+t-tests in KNIME on diabetes health indicators dataset
+
+This workflow demonstrates performimg t-tests. Dataset is from Kaggle.
+
+URL: Diabetes Health Indicators Dataset https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset
+
+TAGS: Single sample t-test,Independent groups t-test</element>
+    <element form="text" name="Last Edited" read-only="true">2023-12-07 22:34:45 +0530</element>
+</KNIMEMetaInfo>
